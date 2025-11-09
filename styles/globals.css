@@ -130,3 +130,26 @@ code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; font-size: 0.9
   .nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
   .header h1 { font-size: 1.5rem; text-align: left; }
 }
+
+/* Homepage hero/feature styles */
+.hero { display:flex; gap:24px; align-items:center; flex-wrap:wrap; }
+.hero .small { color:#475569; }
+
+/* Newsletter form tweaks */
+#subscribeForm input[type="email"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6eef2;
+  width: 100%;
+  font-size: 14px;
+}
+#subscribeForm button { padding: 10px 14px; }
+
+/* Feature card minor spacing */
+.card h2, .card h3 { margin-top: 0; }
+
+/* Testimonials / trust (placeholder) */
+.testimonials { display:flex; gap:12px; flex-wrap:wrap; }
+
+/* Footer small adjustments */
+footer a { color: #0f172a; text-decoration: none; }
