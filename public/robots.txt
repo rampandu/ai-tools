@@ -1,6 +1,4 @@
-# public/robots.txt
 User-agent: *
 Allow: /
 
 Sitemap: https://dev-brains-ai.com/sitemap.xml
-Host: https://dev-brains-ai.com/

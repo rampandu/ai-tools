@@ -1,37 +1,44 @@
 // pages/sitemap.xml.js
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
-const staticPages = [
-  '',
-  'regex-generator',
-  'sql-generator',
-  'privacy'
-];
+export async function getServerSideProps({ res }) {
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://dev-brains-ai.com";
 
-export function getServerSideProps({ res }) {
-  const baseUrl = SITE_URL.replace(/\/$/, '');
-  const pages = staticPages.map(p => `${baseUrl}/${p}`.replace(/\/$/, '/'));
-  const now = new Date().toISOString();
+  // Add all important URLs here
+  const pages = [
+    "",
+    "regex-generator",
+    "sql-generator",
+    "about",
+    "contact",
+    "terms",
+    "blog/regex-examples",
+    "blog/ai-sql-helper",
+  ];
 
-  const xml = `<?xml version="1.0" encoding="UTF-8"?>
+  const urls = pages
+    .map(
+      (page) => `
+    <url>
+      <loc>${baseUrl}/${page}</loc>
+      <lastmod>${new Date().toISOString()}</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>${page === "" ? "1.0" : "0.8"}</priority>
+    </url>`
+    )
+    .join("\n");
+
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    ${pages.map(url => `
-      <url>
-        <loc>${url}</loc>
-        <lastmod>${now}</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.7</priority>
-      </url>
-    `).join('')}
+    ${urls}
   </urlset>`;
 
-  res.setHeader('Content-Type', 'text/xml');
-  res.write(xml);
+  res.setHeader("Content-Type", "text/xml");
+  res.write(sitemap);
   res.end();
+
   return { props: {} };
 }
 
 export default function Sitemap() {
-  // getServerSideProps handles the response.
   return null;
 }
