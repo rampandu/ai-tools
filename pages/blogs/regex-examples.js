@@ -26,17 +26,25 @@ export default function RegexExamples() {
           Regular expressions (regex) can look scary, but they’re incredibly powerful once you learn
           the basics. Here are a few examples that every developer should keep handy:
         </p>
+
         <ul className="list-disc pl-6 mb-4 space-y-2">
-          <li><code>^\d+$</code> — match only numbers.</li>
-          <li><code>^[A-Za-z]+$</code> — match only letters.</li>
           <li>
-            <code>^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$</code> — validate email.
+            <code>{`^\\d+$`}</code> — match only numbers.
           </li>
-          <li><code>https?:\/\/[^\s]+</code> — find URLs in text.</li>
           <li>
-            <code>\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b</code> — case-insensitive email match.
+            <code>{`^[A-Za-z]+$`}</code> — match only letters.
+          </li>
+          <li>
+            <code>{`^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$`}</code> — validate email.
+          </li>
+          <li>
+            <code>{`https?:\\/\\/[^\\s]+`}</code> — find URLs in text.
+          </li>
+          <li>
+            <code>{`\\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,}\\b`}</code> — case-insensitive email match.
           </li>
         </ul>
+
         <p>
           Want to skip memorizing these patterns? Try our free{" "}
           <a href="/regex-generator" className="text-blue-600 underline">
