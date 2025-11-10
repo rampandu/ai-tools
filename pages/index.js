@@ -2,19 +2,11 @@
 import Head from 'next/head';
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import Link from 'next/link';
-
-const ORG_JSONLD = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "AI Dev Tools",
-  "url": process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000",
-  "logo": `${process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"}/logo.png`,
-  "sameAs": []
-};
+import AdSlot from '../components/AdSlot'; // optional; keep if you created the component
 
 export default function Home() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+
   return (
     <>
       <Head>
@@ -25,17 +17,19 @@ export default function Home() {
         <meta property="og:title" content="AI Dev Tools — Regex & SQL Generator" />
         <meta property="og:description" content="Free developer tools: convert plain English to regular expressions and SQL queries." />
         <meta property="og:image" content={`${siteUrl}/logo.png`} />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_JSONLD) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
         <Hero />
 
+        {/* Optional ad slot — safe placeholder if AdSlot exists */}
+        {typeof AdSlot !== 'undefined' && <AdSlot adSlot="" style={{ marginTop: 18 }} />}
+
         <section className="card" style={{ marginTop: 22 }}>
           <h2>Get started</h2>
-          <p className="small">Pick a tool: high-quality SEO-friendly pages for regex and SQL generators are ready. Each tool includes examples and FAQ required for AdSense reviews.</p>
+          <p className="small">Pick a tool: high-quality SEO-friendly pages for regex and SQL generators are ready. Each tool includes examples and FAQ.</p>
           <div style={{ marginTop: 12 }}>
-            <Link href="/regex-generator"><button>Open Regex Generator</button></Link>
+            <a href="/regex-generator"><button>Open Regex Generator</button></a>
           </div>
         </section>
 

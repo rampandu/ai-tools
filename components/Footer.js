@@ -1,6 +1,4 @@
 // components/Footer.js
-import Link from 'next/link';
-
 export default function Footer() {
   return (
     <footer style={{ marginTop: 36, padding: '28px 0', color: '#475569' }}>
@@ -11,11 +9,11 @@ export default function Footer() {
             <div className="small" style={{ marginTop: 6 }}>Free developer utilities — regex & SQL generators.</div>
           </div>
           <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-            <Link href="/regex-generator" className="small">Regex</Link>
-            <Link href="/sql-generator" className="small">SQL</Link>
-            <Link href="/contact" className="small">Contact</Link>
-            <Link href="/privacy" className="small">Privacy</Link>
-            <Link href="/terms" className="small">Terms</Link>
+            <a href="/regex-generator" className="small">Regex</a>
+            <a href="/sql-generator" className="small">SQL</a>
+            <a href="/contact" className="small">Contact</a>
+            <a href="/privacy" className="small">Privacy</a>
+            <a href="/terms" className="small">Terms</a>
           </div>
         </div>
 

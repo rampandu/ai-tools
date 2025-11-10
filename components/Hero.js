@@ -1,5 +1,4 @@
 // components/Hero.js
-import Link from 'next/link';
 import Image from 'next/image';
 
 export default function Hero() {
@@ -13,11 +12,11 @@ export default function Hero() {
         </p>
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginBottom: 16 }}>
-          <Link href="/regex-generator"><button>Try Regex Generator</button></Link>
-          <Link href="/sql-generator"><button>Try SQL Generator</button></Link>
-          <Link href="/privacy" style={{ alignSelf: 'center', marginLeft: 6 }}>
+          <a href="/regex-generator"><button>Try Regex Generator</button></a>
+          <a href="/sql-generator"><button>Try SQL Generator</button></a>
+          <a href="/privacy" style={{ alignSelf: 'center', marginLeft: 6 }}>
             <span style={{ color: '#0f172a', fontWeight: 600 }}>Privacy</span>
-          </Link>
+          </a>
         </div>
 
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
@@ -37,7 +36,8 @@ export default function Hero() {
       </div>
 
       <div style={{ width: 160, textAlign: 'center', flexShrink: 0 }}>
-        <Image src="/logo.png" alt="AI Dev Tools" width={120} height={120} />
+        {/* Use public logo (png) to match your file */}
+        <img src="/logo.png" alt="AI Dev Tools" width={120} height={120} style={{ display: 'block' }} />
         <div className="small" style={{ marginTop: 8 }}>Built for developers</div>
       </div>
     </section>
