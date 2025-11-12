@@ -74,11 +74,23 @@ export default function RegexGenerator() {
 
   return (
     <div className="container" style={{ paddingTop: 16 }}>
-      <Head>
-        <title>Regex Generator — AI Dev Tools</title>
-        <meta name="description" content="Convert plain English to regular expressions. Test and copy regex patterns instantly." />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      </Head>
+import Head from "next/head";
+
+<Head>
+  <title>AI Regex Generator — Free Online Regex Builder | Dev Brains AI</title>
+  <meta
+    name="description"
+    content="Generate regular expressions instantly with our free AI Regex Generator. Describe your pattern in plain English and get accurate regex results with explanations."
+  />
+  <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder" />
+  <meta
+    property="og:description"
+    content="Easily build regex patterns using AI. Perfect for developers and testers — no manual regex writing needed."
+  />
+  <meta property="og:url" content="https://dev-brains-ai.com/regex-generator" />
+  <meta property="og:type" content="article" />
+</Head>
+
 
       <div className="card" aria-live="polite">
         <h1>Regex Generator</h1>

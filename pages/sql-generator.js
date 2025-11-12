@@ -68,11 +68,23 @@ export default function SQLGenerator() {
 
   return (
     <div className="container" style={{ paddingTop: 16 }}>
-      <Head>
-        <title>SQL Generator — AI Dev Tools</title>
-        <meta name="description" content="Convert plain English to SQL. Quick SELECT generator for developers." />
-        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
-      </Head>
+import Head from "next/head";
+
+<Head>
+  <title>AI SQL Query Generator — Free SQL Builder | Dev Brains AI</title>
+  <meta
+    name="description"
+    content="Turn plain English into SQL queries using our free AI SQL Generator. Generate SELECT, JOIN, and filter queries instantly — no coding required."
+  />
+  <meta property="og:title" content="AI SQL Query Generator — Free SQL Builder" />
+  <meta
+    property="og:description"
+    content="Quickly build SQL queries from text prompts. Free, fast, and powered by open AI models."
+  />
+  <meta property="og:url" content="https://dev-brains-ai.com/sql-generator" />
+  <meta property="og:type" content="article" />
+</Head>
+
 
       <div className="card" aria-live="polite">
         <h1>SQL Query Generator</h1>

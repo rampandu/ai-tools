@@ -7,12 +7,12 @@ export default function About() {
         <title>About Dev Brains AI | Free AI Developer Tools</title>
         <meta
           name="description"
-          content="Learn about Dev Brains AI — a platform offering free AI-powered developer tools like Regex and SQL Generators to boost productivity."
+          content="Dev Brains AI creates free, open, and intelligent tools for developers — from Regex and SQL Generators to AI-powered productivity utilities."
         />
         <meta property="og:title" content="About Dev Brains AI" />
         <meta
           property="og:description"
-          content="Discover how Dev Brains AI helps developers save time with smart, free AI tools."
+          content="Our mission is to make AI accessible to every developer through free tools and open-source technology."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/about" />
         <meta property="og:type" content="website" />
@@ -38,3 +38,5 @@ export default function About() {
     </>
   );
 }
+
+

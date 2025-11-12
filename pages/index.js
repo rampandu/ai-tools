@@ -4,14 +4,15 @@ import Hero from '../components/Hero';
 import Footer from '../components/Footer';
 import AdSlot from '../components/AdSlot'; // optional; keep if you created the component
 
+
 export default function Home() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
 
   return (
     <>
       <Head>
-        <title>AI Dev Tools — Free Regex & SQL Generators</title>
-        <meta name="description" content="Free developer tools: convert plain English to regular expressions and SQL queries. Fast, private, and ad-friendly." />
+        <title>Dev Brains AI — Free AI Tools for Developers (Regex, SQL & More)</title>
+        <meta name="description" content="Dev Brains AI offers free AI-powered developer tools like Regex Generator and SQL Query Builder. Generate code, queries, and patterns instantly with open models." />
         <meta name="keywords" content="regex generator, sql generator, developer tools" />
         <link rel="canonical" href={siteUrl} />
         <meta property="og:title" content="AI Dev Tools — Regex & SQL Generator" />
