@@ -68,7 +68,7 @@ export default function SQLGenerator() {
 
   return (
     <div className="container" style={{ paddingTop: 16 }}>
-import Head from "next/head";
+
 
 <Head>
   <title>AI SQL Query Generator — Free SQL Builder | Dev Brains AI</title>

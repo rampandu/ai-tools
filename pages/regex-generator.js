@@ -74,7 +74,7 @@ export default function RegexGenerator() {
 
   return (
     <div className="container" style={{ paddingTop: 16 }}>
-import Head from "next/head";
+
 
 <Head>
   <title>AI Regex Generator — Free Online Regex Builder | Dev Brains AI</title>
