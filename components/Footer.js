@@ -13,6 +13,7 @@ export default function Footer() {
             <a href="/sql-generator" className="small">SQL</a>
             <a href="/blog" className="small">Blog</a>
             <a href="/contact" className="small">Contact</a>
+            <a href="/about" className="small">About</a>
             <a href="/privacy" className="small">Privacy</a>
             <a href="/terms" className="small">Terms</a>
           </div>
