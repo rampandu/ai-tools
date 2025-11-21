@@ -1,5 +1,6 @@
 // pages/sql-generator.js
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import ResultBox from '../components/ResultBox';
 
@@ -103,6 +104,25 @@ export default function SQLGenerator() {
     }
   };
 
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://dev-brains-ai.com/'
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'SQL Generator',
+        item: 'https://dev-brains-ai.com/sql-generator'
+      }
+    ]
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -124,7 +144,7 @@ export default function SQLGenerator() {
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/sql-generator" />
 
-        {/* Structured data for FAQ and software/app listing */}
+        {/* Structured data for FAQ, software/app listing & breadcrumbs */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -133,10 +153,34 @@ export default function SQLGenerator() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
       </Head>
 
       {/* Main tool card */}
       <div className="card" aria-live="polite">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="small" style={{ marginBottom: 12 }}>
+          <ol
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 4,
+              listStyle: 'none',
+              padding: 0,
+              margin: 0
+            }}
+          >
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">SQL Generator</li>
+          </ol>
+        </nav>
+
         <h1>AI SQL Query Generator</h1>
         <p className="small">
           Use this free AI SQL query generator to convert plain English into clean SQL. Describe the
@@ -359,7 +403,6 @@ export default function SQLGenerator() {
         </ul>
       </div>
 
-      {/* Simple internal navigation / cross-link hint for SEO (optional text only, no actual links if not ready) */}
       <div className="card small">
         <h4>More AI tools from Dev Brains AI</h4>
         <p className="small">

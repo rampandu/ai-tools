@@ -1,5 +1,6 @@
 // pages/regex-generator.js
 import Head from 'next/head';
+import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import ResultBox from '../components/ResultBox';
 import RegexTester from '../components/RegexTester';
@@ -72,35 +73,86 @@ export default function RegexGenerator() {
     }))
   };
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://dev-brains-ai.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Regex Generator",
+        "item": "https://dev-brains-ai.com/regex-generator"
+      }
+    ]
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
+      <Head>
+        <title>AI Regex Generator — Free Online Regex Builder | Dev Brains AI</title>
+        <meta
+          name="description"
+          content="Generate regular expressions instantly with our free AI Regex Generator. Describe your pattern in plain English and get accurate regex results with explanations."
+        />
+        <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder" />
+        <meta
+          property="og:description"
+          content="Easily build regex patterns using AI. Perfect for developers and testers — no manual regex writing needed."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/regex-generator" />
+        <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://dev-brains-ai.com/regex-generator" />
 
-
-<Head>
-  <title>AI Regex Generator — Free Online Regex Builder | Dev Brains AI</title>
-  <meta
-    name="description"
-    content="Generate regular expressions instantly with our free AI Regex Generator. Describe your pattern in plain English and get accurate regex results with explanations."
-  />
-  <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder" />
-  <meta
-    property="og:description"
-    content="Easily build regex patterns using AI. Perfect for developers and testers — no manual regex writing needed."
-  />
-  <meta property="og:url" content="https://dev-brains-ai.com/regex-generator" />
-  <meta property="og:type" content="article" />
-</Head>
-
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+      </Head>
 
       <div className="card" aria-live="polite">
+        {/* Breadcrumb */}
+        <nav aria-label="Breadcrumb" className="small" style={{ marginBottom: 12 }}>
+          <ol
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 4,
+              listStyle: 'none',
+              padding: 0,
+              margin: 0
+            }}
+          >
+            <li>
+              <Link href="/">Home</Link>
+            </li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page">Regex Generator</li>
+          </ol>
+        </nav>
+
         <h1>Regex Generator</h1>
-        <p className="small">Type a short request (e.g., <code>regex for Indian mobile number</code>) and get a ready-to-use regular expression.</p>
+        <p className="small">
+          Type a short request (e.g., <code>regex for Indian mobile number</code>) and get a
+          ready-to-use regular expression.
+        </p>
 
         <label htmlFor="prompt"><strong>Prompt</strong></label>
         <textarea id="prompt" value={prompt} onChange={(e) => setPrompt(e.target.value)} />
 
         <div style={{ marginTop: 10, display: 'flex', gap: 8, flexWrap: 'wrap' }}>
-          <button onClick={handleGenerate} disabled={loading}>{loading ? 'Generating...' : 'Generate Regex'}</button>
+          <button onClick={handleGenerate} disabled={loading}>
+            {loading ? 'Generating...' : 'Generate Regex'}
+          </button>
           <button onClick={() => { setPrompt(''); setResult(null); setError(null); }}>Clear</button>
           <button onClick={() => { navigator.clipboard?.writeText(prompt); }}>Copy Prompt</button>
         </div>
@@ -108,28 +160,39 @@ export default function RegexGenerator() {
         <div style={{ marginTop: 12 }}>
           <strong>Examples</strong>
           <div style={{ display: 'flex', gap: 8, marginTop: 8, flexWrap: 'wrap' }}>
-            {EXAMPLES.map((ex) => (<button key={ex} onClick={() => setPrompt(ex)} className="small">{ex}</button>))}
+            {EXAMPLES.map((ex) => (
+              <button key={ex} onClick={() => setPrompt(ex)} className="small">
+                {ex}
+              </button>
+            ))}
           </div>
         </div>
 
         <div style={{ marginTop: 14 }}>
-          {error && <div role="alert" style={{ color: 'crimson' }}><strong>Error:</strong> {String(error)}</div>}
+          {error && (
+            <div role="alert" style={{ color: 'crimson' }}>
+              <strong>Error:</strong> {String(error)}
+            </div>
+          )}
           {result && <ResultBox data={result} />}
-          {!result && !error && <div className="small">No result yet — press <strong>Generate Regex</strong>.</div>}
+          {!result && !error && (
+            <div className="small">
+              No result yet — press <strong>Generate Regex</strong>.
+            </div>
+          )}
         </div>
 
         {/* Regex Tester — interactive */}
         <RegexTester pattern={result?.regex ?? result?.out ?? null} />
       </div>
 
-            {/* ✅ SEO Content for AdSense & Google */}
+      {/* SEO Content for AdSense & Google */}
       <div className="card">
         <h2>About this AI Regex Generator</h2>
-
         <p>
-          Regular expressions (regex) are a compact and powerful way to match text patterns, but they can be
-          confusing and difficult to write correctly. This AI Regex Generator is built to help you create
-          accurate, production-ready patterns without memorising complex syntax.
+          Regular expressions (regex) are a compact and powerful way to match text patterns, but
+          they can be confusing and difficult to write correctly. This AI Regex Generator is built
+          to help you create accurate, production-ready patterns without memorising complex syntax.
         </p>
 
         <p>
@@ -157,8 +220,8 @@ export default function RegexGenerator() {
 
         <h3>How to write a good prompt</h3>
         <p>
-          To get the best results, be specific in your prompt. Mention what you want to match, any special
-          conditions, and whether it should match the full string or part of it.
+          To get the best results, be specific in your prompt. Mention what you want to match, any
+          special conditions, and whether it should match the full string or part of it.
         </p>
 
         <ul>
@@ -167,7 +230,7 @@ export default function RegexGenerator() {
           <li><code>email validation excluding gmail.com</code></li>
         </ul>
 
-        <h3>Tips & best practices</h3>
+        <h3>Tips &amp; best practices</h3>
         <ul>
           <li>Use <code>^</code> and <code>$</code> for full string matches</li>
           <li>Prefer specific classes like <code>\d</code> instead of <code>.</code></li>
@@ -176,11 +239,10 @@ export default function RegexGenerator() {
         </ul>
 
         <p>
-          If you're new to regular expressions, this tool is a great way to learn by doing. Experiment with
-          different prompts and observe how patterns change.
+          If you're new to regular expressions, this tool is a great way to learn by doing.
+          Experiment with different prompts and observe how patterns change.
         </p>
       </div>
-
 
       <div className="card">
         <h3>FAQ</h3>
@@ -194,13 +256,24 @@ export default function RegexGenerator() {
 
       <div className="card small">
         <h4>Recent prompts</h4>
-        {history.length === 0 && <div className="small">No history yet — your recent prompts will appear here.</div>}
+        {history.length === 0 && (
+          <div className="small">
+            No history yet — your recent prompts will appear here.
+          </div>
+        )}
         <ul>
           {history.map((h, idx) => (
             <li key={h.ts + idx} style={{ marginBottom: 8 }}>
-              <button className="small" onClick={() => { setPrompt(h.prompt); setResult(h.out); }}>{'Reuse'}</button>
+              <button
+                className="small"
+                onClick={() => { setPrompt(h.prompt); setResult(h.out); }}
+              >
+                Reuse
+              </button>
               <code style={{ marginLeft: 8 }}>{h.prompt}</code>
-              <div className="small" style={{ color: '#666' }}>{new Date(h.ts).toLocaleString()}</div>
+              <div className="small" style={{ color: '#666' }}>
+                {new Date(h.ts).toLocaleString()}
+              </div>
             </li>
           ))}
         </ul>
