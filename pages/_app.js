@@ -31,14 +31,13 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   // === AdSense control: only allow ads on these paths (prefix match)
-  const allowAdsPrefixes = [
-    '/', // homepage (optional)
-    '/regex-generator',
-    '/sql-generator',
-    '/blog',
-    '/blog/ai-sql-practical',
-    '/blog/regex-top-patterns',
-  ];
+const allowAdsPrefixes = [
+  '/',
+  '/regex-generator',
+  '/sql-generator',
+  '/blog', // covers /blog and all blog posts
+];
+
 
   const isAdAllowed = allowAdsPrefixes.some(
     (p) => router.pathname === p || router.pathname.startsWith(p + '/')
