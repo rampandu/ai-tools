@@ -4,7 +4,9 @@ import Hero from '../components/Hero';
 import AdSlot from '../components/AdSlot'; // keep this
 
 export default function Home() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  //const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dev-brains-ai.com';
+
 
   return (
     <>
@@ -36,10 +38,8 @@ export default function Home() {
             Pick a tool: high-quality SEO-friendly pages for regex and SQL generators are ready.
             Each tool includes examples and FAQ.
           </p>
-          <div style={{ marginTop: 12 }}>
-            <a href="/regex-generator">
-              <button>Open Regex Generator</button>
-            </a>
+          <div style={{ marginTop: 12 }}>   
+        <a href="/regex-generator" className="btn">Open Regex Generator</a>
           </div>
         </section>
 
