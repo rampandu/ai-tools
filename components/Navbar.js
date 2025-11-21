@@ -15,7 +15,7 @@ export default function Navbar() {
         <nav className="nav-links" aria-label="Main navigation">
           <Link href="/regex-generator">Regex</Link>
           <Link href="/sql-generator">SQL</Link>
-          <Link href="/privacy">Privacy</Link>
+          <Link href="/blog">Blog</Link>         
         </nav>
       </div>
     </header>

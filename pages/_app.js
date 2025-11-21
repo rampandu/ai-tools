@@ -1,6 +1,7 @@
 // pages/_app.js
 import '../styles/globals.css'; // must exist
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';  // ✅ add this
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 
@@ -30,7 +31,6 @@ export default function App({ Component, pageProps }) {
   const router = useRouter();
 
   // === AdSense control: only allow ads on these paths (prefix match)
-  // Add any new content pages here that you want ads on.
   const allowAdsPrefixes = [
     '/', // homepage (optional)
     '/regex-generator',
@@ -40,7 +40,9 @@ export default function App({ Component, pageProps }) {
     '/blog/regex-top-patterns',
   ];
 
-  const isAdAllowed = allowAdsPrefixes.some((p) => router.pathname === p || router.pathname.startsWith(p + '/'));
+  const isAdAllowed = allowAdsPrefixes.some(
+    (p) => router.pathname === p || router.pathname.startsWith(p + '/')
+  );
 
   const ADSENSE_ENABLED = process.env.NEXT_PUBLIC_ENABLE_ADSENSE === 'true';
   const ADSENSE_CLIENT = process.env.NEXT_PUBLIC_ADSENSE_CLIENT || '';
@@ -50,7 +52,9 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     const handleRoute = (url) => {
       if (window.gtag && process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) {
-        window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, { page_path: url });
+        window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, {
+          page_path: url,
+        });
       }
     };
     router.events.on('routeChangeComplete', handleRoute);
@@ -64,7 +68,10 @@ export default function App({ Component, pageProps }) {
       {/* Google Analytics */}
       {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
         <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`} />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID}`}
+          />
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -89,6 +96,8 @@ export default function App({ Component, pageProps }) {
 
       <Navbar />
       <Component {...pageProps} />
+      {/* ✅ Footer now visible on every page */}
+      <Footer />
     </>
   );
 }

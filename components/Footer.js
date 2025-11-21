@@ -11,6 +11,7 @@ export default function Footer() {
           <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
             <a href="/regex-generator" className="small">Regex</a>
             <a href="/sql-generator" className="small">SQL</a>
+            <a href="/blog" className="small">Blog</a>
             <a href="/contact" className="small">Contact</a>
             <a href="/privacy" className="small">Privacy</a>
             <a href="/terms" className="small">Terms</a>
