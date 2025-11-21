@@ -35,6 +35,7 @@ const allowAdsPrefixes = [
   '/',
   '/regex-generator',
   '/sql-generator',
+  '/json-formatter', 
   '/blog', // covers /blog and all blog posts
 ];
 

@@ -11,6 +11,7 @@ const routes = [
 
   { path: "regex-generator", changefreq: "weekly", priority: "0.9" },
   { path: "sql-generator", changefreq: "weekly", priority: "0.9" },
+  { path: "json-formatter", changefreq: "weekly", priority: "0.9" }, 
 
   { path: "blog", changefreq: "weekly", priority: "0.7" },
   { path: "blog/ai-sql-practical", changefreq: "monthly", priority: "0.6" },

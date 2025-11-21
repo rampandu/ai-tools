@@ -4,9 +4,7 @@ import Hero from '../components/Hero';
 import AdSlot from '../components/AdSlot'; // keep this
 
 export default function Home() {
-  //const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000';
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dev-brains-ai.com';
-
 
   return (
     <>
@@ -14,14 +12,17 @@ export default function Home() {
         <title>Dev Brains AI — Free AI Tools for Developers (Regex, SQL & More)</title>
         <meta
           name="description"
-          content="Dev Brains AI offers free AI-powered developer tools like Regex Generator and SQL Query Builder. Generate code, queries, and patterns instantly with open models."
+          content="Dev Brains AI offers free AI-powered developer tools like Regex Generator, SQL Query Builder, and JSON Formatter. Generate patterns, queries, and clean JSON instantly with open models."
         />
-        <meta name="keywords" content="regex generator, sql generator, developer tools" />
+        <meta
+          name="keywords"
+          content="regex generator, sql generator, json formatter, developer tools, Dev Brains AI"
+        />
         <link rel="canonical" href={siteUrl} />
-        <meta property="og:title" content="AI Dev Tools — Regex & SQL Generator" />
+        <meta property="og:title" content="AI Dev Tools — Regex, SQL & JSON" />
         <meta
           property="og:description"
-          content="Free developer tools: convert plain English to regular expressions and SQL queries."
+          content="Free developer tools: convert plain English to regular expressions and SQL queries, and format JSON in your browser."
         />
         <meta property="og:image" content={`${siteUrl}/logo.png`} />
       </Head>
@@ -35,11 +36,26 @@ export default function Home() {
         <section className="card" style={{ marginTop: 22 }}>
           <h2>Get started</h2>
           <p className="small">
-            Pick a tool: high-quality SEO-friendly pages for regex and SQL generators are ready.
-            Each tool includes examples and FAQ.
+            Pick a tool to begin. Each page is SEO-friendly and includes examples, explanations, and
+            FAQs to help you work faster with regex, SQL, and JSON.
           </p>
-          <div style={{ marginTop: 12 }}>   
-        <a href="/regex-generator" className="btn">Open Regex Generator</a>
+          <div
+            style={{
+              marginTop: 12,
+              display: 'flex',
+              gap: 8,
+              flexWrap: 'wrap',
+            }}
+          >
+            <a href="/regex-generator" className="btn">
+              Open Regex Generator
+            </a>
+            <a href="/sql-generator" className="btn">
+              Open SQL Generator
+            </a>
+            <a href="/json-formatter" className="btn">
+              Open JSON Formatter
+            </a>
           </div>
         </section>
 
