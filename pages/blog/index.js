@@ -15,6 +15,12 @@ const POSTS = [
     description:
       'Real-world examples of using AI to generate reports, analytics queries, and dashboards from plain English.',
   },
+  {
+    slug: 'ai-dev-tools-save-time',
+    title: '5 AI Dev Tools That Save You Time (Using Dev Brains AI)',
+    description:
+      'Overview of five free tools — regex, SQL, JSON formatting, error explaining, and schema generation — and how to use them together.',
+  },
 ];
 
 export default function BlogIndex() {

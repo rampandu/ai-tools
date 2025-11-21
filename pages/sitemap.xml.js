@@ -21,6 +21,8 @@ const routes = [
   { path: "blog", changefreq: "weekly", priority: "0.7" },
   { path: "blog/ai-sql-practical", changefreq: "monthly", priority: "0.6" },
   { path: "blog/regex-top-patterns", changefreq: "monthly", priority: "0.6" },
+  { path: "blog/ai-dev-tools-save-time", changefreq: "monthly", priority: "0.6" },
+
 
   // Info / legal
   { path: "about", changefreq: "monthly", priority: "0.5" },
