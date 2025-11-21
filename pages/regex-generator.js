@@ -122,6 +122,66 @@ export default function RegexGenerator() {
         <RegexTester pattern={result?.regex ?? result?.out ?? null} />
       </div>
 
+            {/* ✅ SEO Content for AdSense & Google */}
+      <div className="card">
+        <h2>About this AI Regex Generator</h2>
+
+        <p>
+          Regular expressions (regex) are a compact and powerful way to match text patterns, but they can be
+          confusing and difficult to write correctly. This AI Regex Generator is built to help you create
+          accurate, production-ready patterns without memorising complex syntax.
+        </p>
+
+        <p>
+          Simply describe your requirement in plain English — for example,
+          <i> "match valid email addresses"</i> or <i>"extract phone numbers from text"</i> — and this tool
+          will instantly generate a clean and usable regex along with an explanation.
+        </p>
+
+        <h3>Why use an AI-powered regex generator?</h3>
+        <ul>
+          <li>✅ Saves time by eliminating trial and error</li>
+          <li>✅ Reduces regex mistakes and syntax errors</li>
+          <li>✅ Provides readable explanations for learning</li>
+          <li>✅ Works for beginners and professionals alike</li>
+        </ul>
+
+        <h3>Common use cases</h3>
+        <ul>
+          <li>Email and phone number validation</li>
+          <li>Extracting data from logs or files</li>
+          <li>Verifying password formats</li>
+          <li>Matching dates, URLs and file names</li>
+          <li>Cleaning and filtering large text blocks</li>
+        </ul>
+
+        <h3>How to write a good prompt</h3>
+        <p>
+          To get the best results, be specific in your prompt. Mention what you want to match, any special
+          conditions, and whether it should match the full string or part of it.
+        </p>
+
+        <ul>
+          <li><code>regex for Indian mobile number starting with 9, 8 or 7</code></li>
+          <li><code>match YYYY-MM-DD date format</code></li>
+          <li><code>email validation excluding gmail.com</code></li>
+        </ul>
+
+        <h3>Tips & best practices</h3>
+        <ul>
+          <li>Use <code>^</code> and <code>$</code> for full string matches</li>
+          <li>Prefer specific classes like <code>\d</code> instead of <code>.</code></li>
+          <li>Avoid overly greedy patterns like <code>.*</code></li>
+          <li>Always test your regex before production use</li>
+        </ul>
+
+        <p>
+          If you're new to regular expressions, this tool is a great way to learn by doing. Experiment with
+          different prompts and observe how patterns change.
+        </p>
+      </div>
+
+
       <div className="card">
         <h3>FAQ</h3>
         {FAQ.map((f, i) => (

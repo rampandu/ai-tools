@@ -11,8 +11,8 @@ export async function getServerSideProps({ res }) {
     "about",
     "contact",
     "terms",
-    "blog/regex-examples",
-    "blog/ai-sql-helper",
+    "blog/ai-sql-practical",
+    "blog/regex-top-patterns",
   ];
 
   const urls = pages

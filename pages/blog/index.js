@@ -1,0 +1,60 @@
+// pages/blog/index.js
+import Head from 'next/head';
+import Link from 'next/link';
+
+const POSTS = [
+  {
+    slug: 'ai-sql-practical',
+    title: 'Practical AI SQL Use Cases',
+    description:
+      'Real-world examples of using AI to generate reports, analytics queries, and dashboards from plain English.',
+  },
+  {
+    slug: 'regex-top-patterns',
+    title: 'Top Regex Patterns You Should Know',
+    description:
+      'Email validation, phone numbers, URLs, and other must-know regex patterns with explanations.',
+  },
+];
+
+export default function BlogIndex() {
+  return (
+    <div className="container" style={{ paddingTop: 16 }}>
+      <Head>
+        <title>Dev Brains AI Blog — Regex & SQL with AI</title>
+        <meta
+          name="description"
+          content="Browse Dev Brains AI blog posts on regular expressions, SQL, and practical AI tools for developers."
+        />
+        <link rel="canonical" href="https://dev-brains-ai.com/blog" />
+      </Head>
+
+      <div className="card">
+        <h1>Dev Brains AI Blog</h1>
+        <p className="small">
+          Tutorials and practical guides on regular expressions, SQL, and AI-powered developer tools.
+        </p>
+
+        <ul style={{ listStyle: 'none', padding: 0, marginTop: 16 }}>
+          {POSTS.map((post) => (
+            <li
+              key={post.slug}
+              className="card small"
+              style={{ marginBottom: 12, padding: 12 }}
+            >
+              <h2 style={{ marginBottom: 4, fontSize: '1.1rem' }}>
+                <Link href={`/blog/${post.slug}`}>{post.title}</Link>
+              </h2>
+              <p className="small" style={{ marginTop: 4 }}>
+                {post.description}
+              </p>
+              <Link href={`/blog/${post.slug}`} className="small">
+                Read article →
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  );
+}
