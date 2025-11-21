@@ -32,12 +32,15 @@ export default function App({ Component, pageProps }) {
 
   // === AdSense control: only allow ads on these paths (prefix match)
 const allowAdsPrefixes = [
-  '/',
+  '/',                 // homepage
   '/regex-generator',
   '/sql-generator',
-  '/json-formatter', 
-  '/blog', // covers /blog and all blog posts
+  '/json-formatter',
+  '/ai-error-explainer',
+  '/json-schema-generator',
+  '/blog',            
 ];
+
 
 
   const isAdAllowed = allowAdsPrefixes.some(

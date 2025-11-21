@@ -5,23 +5,30 @@ export async function getServerSideProps({ res }) {
   // normalize to avoid trailing slash issues
   const baseUrl = rawBaseUrl.replace(/\/+$/, "");
 
-  // Define all important URLs explicitly
+// pages/sitemap.xml.js
+
 const routes = [
   { path: "", changefreq: "daily", priority: "1.0" },
 
+  // Core tools
   { path: "regex-generator", changefreq: "weekly", priority: "0.9" },
   { path: "sql-generator", changefreq: "weekly", priority: "0.9" },
-  { path: "json-formatter", changefreq: "weekly", priority: "0.9" }, 
+  { path: "json-formatter", changefreq: "weekly", priority: "0.9" },
+  { path: "ai-error-explainer", changefreq: "weekly", priority: "0.8" },
+  { path: "json-schema-generator", changefreq: "weekly", priority: "0.8" },
 
+  // Blog
   { path: "blog", changefreq: "weekly", priority: "0.7" },
   { path: "blog/ai-sql-practical", changefreq: "monthly", priority: "0.6" },
   { path: "blog/regex-top-patterns", changefreq: "monthly", priority: "0.6" },
 
+  // Info / legal
   { path: "about", changefreq: "monthly", priority: "0.5" },
   { path: "contact", changefreq: "yearly", priority: "0.3" },
   { path: "privacy", changefreq: "yearly", priority: "0.3" },
   { path: "terms", changefreq: "yearly", priority: "0.3" },
 ];
+
 
   const urls = routes
     .map(({ path, changefreq, priority }) => {

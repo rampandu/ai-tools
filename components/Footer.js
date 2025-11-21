@@ -18,15 +18,17 @@ export default function Footer() {
               Free developer utilities — regex, SQL & JSON tools.
             </div>
           </div>
-          <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
-            <a href="/regex-generator" className="small">Regex</a>
-            <a href="/sql-generator" className="small">SQL</a>
-            <a href="/json-formatter" className="small">JSON</a> {/* ✅ new */}
-            <a href="/blog" className="small">Blog</a>
-            <a href="/about" className="small">About</a>
-            <a href="/contact" className="small">Contact</a>
-            <a href="/privacy" className="small">Privacy</a>
-            <a href="/terms" className="small">Terms</a>
+          <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>             
+              <a href="/regex-generator" className="small">Regex</a>
+              <a href="/sql-generator" className="small">SQL</a>
+              <a href="/json-formatter" className="small">JSON</a>
+              <a href="/ai-error-explainer" className="small">Error Helper</a>
+              <a href="/json-schema-generator" className="small">JSON Schema</a>
+              <a href="/blog" className="small">Blog</a>
+              <a href="/about" className="small">About</a>
+              <a href="/contact" className="small">Contact</a>
+              <a href="/privacy" className="small">Privacy</a>
+              <a href="/terms" className="small">Terms</a>
           </div>
         </div>
 

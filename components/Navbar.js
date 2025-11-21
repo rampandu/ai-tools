@@ -15,8 +15,10 @@ export default function Navbar() {
         <nav className="nav-links" aria-label="Main navigation">
           <Link href="/regex-generator">Regex</Link>
           <Link href="/sql-generator">SQL</Link>
-          <Link href="/json-formatter">JSON</Link>
-          <Link href="/blog">Blog</Link>         
+          <Link href="/json-formatter">JSON</Link>     
+          <Link href="/ai-error-explainer">Error</Link> 
+          <Link href="/json-schema-generator">JSON Schema</Link> 
+          <Link href="/blog">Blog</Link>      
         </nav>
       </div>
     </header>
