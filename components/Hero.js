@@ -70,11 +70,6 @@ export default function Hero() {
                 Practical AI SQL Use Cases
               </Link>
             </li>
-            <li>
-              <Link href="/blog/ai-sql-helper">
-                How AI Can Help You Write Better SQL
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
