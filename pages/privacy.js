@@ -1,7 +1,27 @@
 // pages/privacy.js
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Privacy() {
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://dev-brains-ai.com/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Privacy Policy",
+        item: "https://dev-brains-ai.com/privacy",
+      },
+    ],
+  };
+
   return (
     <>
       <Head>
@@ -18,6 +38,11 @@ export default function Privacy() {
         <meta property="og:type" content="article" />
         <meta property="og:url" content="https://dev-brains-ai.com/privacy" />
         <link rel="canonical" href="https://dev-brains-ai.com/privacy" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -25,6 +50,26 @@ export default function Privacy() {
           className="card"
           style={{ maxWidth: 800, margin: "0 auto", padding: 24, color: "#0f172a" }}
         >
+          {/* Breadcrumb */}
+          <nav aria-label="Breadcrumb" className="small" style={{ marginBottom: 12 }}>
+            <ol
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                gap: 4,
+                listStyle: "none",
+                padding: 0,
+                margin: 0,
+              }}
+            >
+              <li>
+                <Link href="/">Home</Link>
+              </li>
+              <li aria-hidden="true">/</li>
+              <li aria-current="page">Privacy Policy</li>
+            </ol>
+          </nav>
+
           <h1 style={{ fontSize: "2rem", fontWeight: 700, marginBottom: 12 }}>
             Privacy Policy
           </h1>
