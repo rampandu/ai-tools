@@ -152,7 +152,7 @@ export default function Home() {
               Get notified when new tools or features are added. No spam — you can unsubscribe
               anytime.
             </p>
-
+            {/*
             <form
               id="subscribeForm"
               onSubmit={async (e) => {
@@ -175,6 +175,8 @@ export default function Home() {
                 }
               }}
             >
+              */}
+              
               <div style={{ display: 'flex', gap: 8, maxWidth: 520 }}>
                 <input name="email" type="email" placeholder="you@yourdomain.com" required />
                 <button type="submit">Subscribe</button>
