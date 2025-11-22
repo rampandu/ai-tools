@@ -2,7 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -14,18 +15,11 @@ html, body {
   line-height: 1.6;
 }
 
-
-@media (max-width: 720px) {
-  .container {
-    max-width: 100%;
-    width: 100%;
-    padding: 14px 12px;
-  }
-
-  .header h1 { font-size: 1.5rem; text-align: left; }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 18px;
 }
-
-
 
 /* Header / Page title */
 .header h1 {
@@ -42,7 +36,7 @@ html, body {
   border-radius: 12px;
   padding: 18px;
   margin-top: 18px;
-  box-shadow: 0 2px 12px rgba(2,6,23,0.06);
+  box-shadow: 0 2px 12px rgba(2, 6, 23, 0.06);
 }
 
 /* small text */
@@ -52,7 +46,10 @@ html, body {
 }
 
 /* Inputs */
-textarea, input[type="text"], input[type="search"] {
+textarea,
+input[type="text"],
+input[type="search"],
+input[type="email"] {
   width: 100%;
   border: 1px solid #e6eef2;
   border-radius: 8px;
@@ -63,10 +60,12 @@ textarea, input[type="text"], input[type="search"] {
   box-sizing: border-box;
   transition: box-shadow 0.12s, border-color 0.12s;
 }
-textarea:focus, input:focus {
+
+textarea:focus,
+input:focus {
   outline: none;
   border-color: #0ea5a6;
-  box-shadow: 0 0 0 4px rgba(14,165,166,0.12);
+  box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.12);
 }
 
 /* Buttons */
@@ -81,8 +80,37 @@ button {
   font-weight: 600;
   transition: transform 0.12s, background 0.12s;
 }
-button:hover { transform: translateY(-2px); background: #059fa0; }
-button[disabled] { opacity: 0.6; cursor: not-allowed; transform: none; }
+
+button:hover {
+  transform: translateY(-2px);
+  background: #059fa0;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Generic link buttons */
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #0ea5a6;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.12s, background 0.12s;
+}
+
+a.btn:hover {
+  transform: translateY(-2px);
+  background: #059fa0;
+}
 
 /* Preformatted result area */
 pre {
@@ -97,14 +125,22 @@ pre {
 }
 
 /* Inline code */
-code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; font-size: 0.9rem; }
+code {
+  background: #eef2f7;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
 
-/* Navbar */
+/* ===========================
+   NAVBAR
+   ========================== */
+
 .topnav {
-  background: linear-gradient(90deg,#0ea5a6 0%,#06b6d4 100%);
-  color: white;
+  background: linear-gradient(90deg, #0ea5a6 0%, #06b6d4 100%);
+  color: #ffffff;
   padding: 10px 0;
-  box-shadow: 0 2px 12px rgba(6,95,94,0.08);
+  box-shadow: 0 2px 12px rgba(6, 95, 94, 0.08);
   position: sticky;
   top: 0;
   z-index: 50;
@@ -115,6 +151,7 @@ code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; font-size: 0.9
   align-items: center;
   justify-content: space-between;
   gap: 12px;
+  flex-wrap: wrap; /* allows wrapping on smaller widths */
 }
 
 .topnav .brand {
@@ -124,76 +161,69 @@ code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; font-size: 0.9
   text-decoration: none;
 }
 
-.topnav .brand strong {
-  color: #ffffff;
-  font-size: 1.05rem;
+.topnav .brand img {
+  display: block;
 }
 
+.topnav .brand-text {
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.1;
+  color: #f9fafb;
+}
+
+/* nav links */
 .nav-links {
   display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.9rem;
 }
 
 .nav-links a {
-  color: rgba(255,255,255,0.95);
-  margin-left: 14px;
+  color: rgba(255, 255, 255, 0.95);
   text-decoration: none;
   font-weight: 600;
+  padding: 2px 0;
 }
 
 .nav-links a:hover {
-  opacity: .95;
+  opacity: 0.95;
   transform: translateY(-1px);
 }
 
-/* responsive */
-@media (max-width: 720px) {
-  .container {
-    padding: 14px;
-  }
+/* ===========================
+   CARD LISTS / MISC
+   ========================== */
 
-  /* Stack brand on top, links below */
-  .topnav .nav-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-top: 6px;
-  }
-
-  .nav-links a {
-    margin-left: 0;       /* remove big left margin on mobile */
-  }
-
-  .header h1 {
-    font-size: 1.5rem;
-    text-align: left;
-  }
+.card ul {
+  margin: 0;
+  padding-left: 1rem;
 }
 
-
-/* Card lists */
-.card ul { margin: 0; padding-left: 1rem; }
-.card li { line-height: 1.5; }
+.card li {
+  line-height: 1.5;
+}
 
 /* Regex tester tweaks */
-.card input[type="text"], .card input[type="search"] { font-size: 14px; }
-
-/* responsive */
-@media (max-width: 720px) {
-  .container { padding: 14px; }
-  .topnav .nav-inner { flex-direction: row; }
-  .nav-links { display: flex; gap: 8px; flex-wrap: wrap; }
-  .header h1 { font-size: 1.5rem; text-align: left; }
+.card input[type="text"],
+.card input[type="search"] {
+  font-size: 14px;
 }
 
 /* Homepage hero/feature styles */
-.hero { display:flex; gap:24px; align-items:center; flex-wrap:wrap; }
-.hero .small { color:#475569; }
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero .small {
+  color: #475569;
+}
 
 /* Newsletter form tweaks */
 #subscribeForm input[type="email"] {
@@ -203,16 +233,61 @@ code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; font-size: 0.9
   width: 100%;
   font-size: 14px;
 }
-#subscribeForm button { padding: 10px 14px; }
+
+#subscribeForm button {
+  padding: 10px 14px;
+}
 
 /* Feature card minor spacing */
-.card h2, .card h3 { margin-top: 0; }
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
 
 /* Testimonials / trust (placeholder) */
-.testimonials { display:flex; gap:12px; flex-wrap:wrap; }
+.testimonials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
 
 /* Footer small adjustments */
-footer a { color: #0f172a; text-decoration: none; }
+footer a {
+  color: #0f172a;
+  text-decoration: none;
+}
 
+/* ===========================
+   RESPONSIVE
+   ========================== */
 
+@media (max-width: 720px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 14px 12px;
+  }
 
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  /* stack brand on top, links below */
+  .topnav .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 4px;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a {
+    margin: 0;
+  }
+}
