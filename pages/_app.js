@@ -1,6 +1,7 @@
 // pages/_app.js
 import '../styles/globals.css';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
@@ -22,7 +23,10 @@ if (typeof window !== 'undefined') {
       fetch('/api/log', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: 'UnhandledRejection', detail: String(e.reason || '') }),
+        body: JSON.stringify({
+          message: 'UnhandledRejection',
+          detail: String(e.reason || ''),
+        }),
       });
     } catch {}
   });
@@ -53,7 +57,9 @@ export default function App({ Component, pageProps }) {
   useEffect(() => {
     const handleRoute = (url) => {
       if (window.gtag && process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) {
-        window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, { page_path: url });
+        window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, {
+          page_path: url,
+        });
       }
     };
 
@@ -101,6 +107,7 @@ export default function App({ Component, pageProps }) {
 
       <Navbar />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }

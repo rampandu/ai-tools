@@ -1,52 +1,36 @@
-// components/Navbar.js
-import Link from 'next/link';
-import { useRouter } from 'next/router';
-
-const NAV_LINKS = [
-  { href: '/regex-generator', label: 'Regex' },
-  { href: '/sql-generator', label: 'SQL' },
-  { href: '/json-formatter', label: 'JSON' },
-  { href: '/ai-error-explainer', label: 'Error' },
-  { href: '/json-schema-generator', label: 'JSON Schema' },
-  { href: '/blog', label: 'Blog' },
-];
+import Link from "next/link";
 
 export default function Navbar() {
-  const router = useRouter();
-
-  const isActive = (href) =>
-    router.pathname === href || router.pathname.startsWith(href + '/');
-
   return (
-    <header className="topnav">
-      <div className="nav-inner container">
-        {/* Brand / Logo */}
-        <Link href="/">
-          <a className="brand">
-            <img
-              src="/logo.png"
-              alt="Dev Brains AI"
-              width={32}
-              height={32}
-              style={{ borderRadius: 6, flexShrink: 0 }}
-            />
-            <div className="brand-text">AI Dev Tools</div>
-          </a>
+    <div className="navbar">
+      <div className="navbar-inner">
+
+        {/* BRAND */}
+        <Link href="/" className="brand">
+          <img
+            src="/logo.png"
+            width={34}
+            height={34}
+            alt="Dev Brains AI"
+          />
+          <div className="brand-text">
+            <span>AI</span>
+            <span>Dev</span>
+            <span>Tools</span>
+          </div>
         </Link>
 
-        {/* Navigation links */}
-        <nav className="nav-links" aria-label="Main navigation">
-          {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href}>
-              <a
-                className={`nav-link ${isActive(link.href) ? 'active' : ''}`}
-              >
-                {link.label}
-              </a>
-            </Link>
-          ))}
-        </nav>
+        {/* LINKS */}
+        <div className="nav-links">
+          <Link href="/regex-generator">Regex</Link>
+          <Link href="/sql-generator">SQL</Link>
+          <Link href="/json-formatter">JSON</Link>
+          <Link href="/error-explainer">Error</Link>
+          <Link href="/json-schema-generator">JSON Schema</Link>
+          <Link href="/blog">Blog</Link>
+        </div>
+
       </div>
-    </header>
+    </div>
   );
 }
