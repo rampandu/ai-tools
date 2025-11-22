@@ -19,81 +19,90 @@ html, body {
   padding: 16px;
 }
 
-/* ================================
-   NAVBAR
-================================ */
+/* =======================
+   NAVBAR - CLEAN VERSION
+   ======================= */
+
 .topnav {
-  background: linear-gradient(90deg, #0891b2, #22c55e);
-  width: 100%;
+  background: linear-gradient(90deg,#0ea5a6 0%,#06b6d4 100%);
+  padding: 12px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: none;  /* ✅ Remove double-shadow effect */
 }
 
-.topnav .nav-inner {
-  max-width: 1100px;
+.navbar-inner {
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 12px 16px;
-
+  padding: 0 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  flex-wrap: wrap;
+  gap: 16px;
 }
 
+/* Brand */
 .brand {
   display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
-  color: white;
 }
 
-.brand img {
-  width: 32px;
-  height: auto;
-}
-
-.brand strong {
-  font-size: 1.1rem;
-  color: white;
-}
-
-.nav-links {
+.brand-text {
   display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  align-items: center;
-}
-
-.nav-links a {
-  background: rgba(255,255,255,0.12);
-  padding: 6px 12px;
-  border-radius: 8px;
+  gap: 6px;     /* ✅ spacing between AI / Dev / Tools */
+  font-weight: 700;
+  font-size: 1rem;
   color: white;
+}
+
+/* Links container */
+.navbar-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Each link */
+.navbar-links a {
   text-decoration: none;
+  color: white;
   font-size: 0.9rem;
-  white-space: nowrap;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.12);  /* ✅ Softer background */
+  border: 1px solid rgba(255,255,255,0.15); /* ✅ crisp outline */
+  transition: all 0.2s ease;
 }
 
-.nav-links a:hover {
-  background: rgba(255,255,255,0.2);
+/* Hover */
+.navbar-links a:hover {
+  background: rgba(255,255,255,0.22);
+  transform: translateY(-1px);
 }
 
-/* Mobile Navbar Fix */
-@media (max-width: 768px) {
-  .topnav .nav-inner {
+/* ACTIVE LINK (optional) */
+.navbar-links a.active {
+  background: white;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Mobile fix */
+@media (max-width: 720px) {
+  .navbar-inner {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .nav-links {
+  .navbar-links {
     width: 100%;
-    gap: 8px;
-  }
-
-  .nav-links a {
-    display: inline-block;
+    justify-content: flex-start;
   }
 }
+
 
 /* ================================
    CARDS
