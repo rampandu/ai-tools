@@ -1,7 +1,8 @@
 // pages/index.js
 import Head from 'next/head';
 import Hero from '../components/Hero';
-import AdSlot from '../components/AdSlot'; // keep this
+import AdSlot from '../components/AdSlot'; 
+import Footer from '../components/Footer';
 
 export default function Home() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dev-brains-ai.com';
@@ -190,6 +191,7 @@ export default function Home() {
         </section>
         */}
       </main>
+        <Footer />
     </>
   );
 }

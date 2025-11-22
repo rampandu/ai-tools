@@ -1,279 +1,85 @@
-/* styles/globals.css - full polished UI */
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-html,
-body {
+html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial;
   background: #f9fafb;
   color: #0f172a;
   line-height: 1.6;
 }
 
+* { box-sizing: border-box; }
+
 .container {
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 18px;
+  padding: 16px;
 }
 
-/* Header / Page title */
-.header h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 6px;
-  color: #0f172a;
-  text-align: left;
-}
-
-/* Cards */
-.card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 18px;
-  margin-top: 18px;
-  box-shadow: 0 2px 12px rgba(2, 6, 23, 0.06);
-}
-
-/* small text */
-.small {
-  font-size: 0.9rem;
-  color: #475569;
-}
-
-/* Inputs */
-textarea,
-input[type="text"],
-input[type="search"],
-input[type="email"] {
-  width: 100%;
-  border: 1px solid #e6eef2;
-  border-radius: 8px;
-  padding: 10px;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-  font-size: 14px;
-  resize: vertical;
-  box-sizing: border-box;
-  transition: box-shadow 0.12s, border-color 0.12s;
-}
-
-textarea:focus,
-input:focus {
-  outline: none;
-  border-color: #0ea5a6;
-  box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.12);
-}
-
-/* Buttons */
-button {
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
-  padding: 8px 14px;
-  background: #0ea5a6;
-  color: white;
-  font-size: 0.95rem;
-  font-weight: 600;
-  transition: transform 0.12s, background 0.12s;
-}
-
-button:hover {
-  transform: translateY(-2px);
-  background: #059fa0;
-}
-
-button[disabled] {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-/* Generic link buttons */
-a.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 8px 14px;
-  border-radius: 8px;
-  background: #0ea5a6;
-  color: #ffffff;
-  font-size: 0.95rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.12s, background 0.12s;
-}
-
-a.btn:hover {
-  transform: translateY(-2px);
-  background: #059fa0;
-}
-
-/* Preformatted result area */
-pre {
-  background: #0f172a;
-  color: #e6eef6;
-  padding: 12px;
-  border-radius: 8px;
-  overflow-x: auto;
-  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
-  font-size: 0.95rem;
-  margin-top: 8px;
-}
-
-/* Inline code */
-code {
-  background: #eef2f7;
-  padding: 2px 6px;
-  border-radius: 6px;
-  font-size: 0.9rem;
-}
-
-/* ===========================
+/* ================================
    NAVBAR
-   ========================== */
-
+================================ */
 .topnav {
-  background: linear-gradient(90deg, #0ea5a6 0%, #06b6d4 100%);
-  color: #ffffff;
-  padding: 10px 0;
-  box-shadow: 0 2px 12px rgba(6, 95, 94, 0.08);
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  background: linear-gradient(90deg, #0891b2, #22c55e);
+  width: 100%;
 }
 
 .topnav .nav-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 12px;
-  flex-wrap: wrap; /* allows wrapping on smaller widths */
+  gap: 14px;
+  flex-wrap: wrap;
 }
 
-.topnav .brand {
+.brand {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   text-decoration: none;
+  color: white;
 }
 
-.topnav .brand img {
-  display: block;
+.brand img {
+  width: 32px;
+  height: auto;
 }
 
-.topnav .brand-text {
-  display: flex;
-  flex-direction: column;
-  font-weight: 700;
-  font-size: 0.9rem;
-  line-height: 1.1;
-  color: #f9fafb;
+.brand strong {
+  font-size: 1.1rem;
+  color: white;
 }
 
-/* nav links */
 .nav-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
-  font-size: 0.9rem;
+  gap: 14px;
+  align-items: center;
 }
 
 .nav-links a {
-  color: rgba(255, 255, 255, 0.95);
+  background: rgba(255,255,255,0.12);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: white;
   text-decoration: none;
-  font-weight: 600;
-  padding: 2px 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
 }
 
 .nav-links a:hover {
-  opacity: 0.95;
-  transform: translateY(-1px);
+  background: rgba(255,255,255,0.2);
 }
 
-/* ===========================
-   CARD LISTS / MISC
-   ========================== */
-
-.card ul {
-  margin: 0;
-  padding-left: 1rem;
-}
-
-.card li {
-  line-height: 1.5;
-}
-
-/* Regex tester tweaks */
-.card input[type="text"],
-.card input[type="search"] {
-  font-size: 14px;
-}
-
-/* Homepage hero/feature styles */
-.hero {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.hero .small {
-  color: #475569;
-}
-
-/* Newsletter form tweaks */
-#subscribeForm input[type="email"] {
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #e6eef2;
-  width: 100%;
-  font-size: 14px;
-}
-
-#subscribeForm button {
-  padding: 10px 14px;
-}
-
-/* Feature card minor spacing */
-.card h2,
-.card h3 {
-  margin-top: 0;
-}
-
-/* Testimonials / trust (placeholder) */
-.testimonials {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-/* Footer small adjustments */
-footer a {
-  color: #0f172a;
-  text-decoration: none;
-}
-
-/* ===========================
-   RESPONSIVE
-   ========================== */
-
-@media (max-width: 720px) {
-  .container {
-    max-width: 100%;
-    width: 100%;
-    padding: 14px 12px;
-  }
-
-  .header h1 {
-    font-size: 1.5rem;
-    text-align: left;
-  }
-
-  /* stack brand on top, links below */
+/* Mobile Navbar Fix */
+@media (max-width: 768px) {
   .topnav .nav-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -281,13 +87,104 @@ footer a {
 
   .nav-links {
     width: 100%;
-    justify-content: flex-start;
     gap: 8px;
-    margin-top: 4px;
-    font-size: 0.85rem;
   }
 
   .nav-links a {
-    margin: 0;
+    display: inline-block;
   }
+}
+
+/* ================================
+   CARDS
+================================ */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+
+.small {
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+/* ================================
+   BUTTONS
+================================ */
+button,
+.btn {
+  background: #0ea5a6;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover,
+.btn:hover {
+  background: #0891b2;
+}
+
+button[disabled] {
+  opacity: 0.6;
+}
+
+/* ================================
+   FORMS
+================================ */
+textarea,
+input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+  border-color: #0ea5a6;
+  box-shadow: 0 0 0 3px rgba(14,165,166,0.15);
+}
+
+/* ================================
+   GRID FIX FOR MOBILE
+================================ */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+/* ================================
+   HERO FIX
+================================ */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+/* ================================
+   FOOTER
+================================ */
+footer {
+  margin-top: 40px;
+  border-top: 1px solid #e5e7eb;
+  background: white;
+  padding: 32px 0;
+}
+
+footer a {
+  color: #0f172a;
+  text-decoration: none;
 }
