@@ -1,9 +1,9 @@
 // pages/_app.js
-import '../styles/globals.css'; // must exist
+import '../styles/globals.css';
 import Navbar from '../components/Navbar';
-import Footer from '../components/Footer';  // ✅ add this
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 
 // client-side snippet to send logs (keeps your previous behavior)
 if (typeof window !== 'undefined') {
@@ -16,6 +16,7 @@ if (typeof window !== 'undefined') {
       });
     } catch {}
   });
+
   window.addEventListener('unhandledrejection', (e) => {
     try {
       fetch('/api/log', {
@@ -30,18 +31,15 @@ if (typeof window !== 'undefined') {
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
-  // === AdSense control: only allow ads on these paths (prefix match)
-const allowAdsPrefixes = [
-  '/',                 // homepage
-  '/regex-generator',
-  '/sql-generator',
-  '/json-formatter',
-  '/ai-error-explainer',
-  '/json-schema-generator',
-  '/blog',            
-];
-
-
+  // === Allow AdSense only on content-rich pages
+  const allowAdsPrefixes = [
+    '/', // homepage
+    '/regex-generator',
+    '/sql-generator',
+    '/blog',
+    '/blog/ai-sql-practical',
+    '/blog/regex-top-patterns',
+  ];
 
   const isAdAllowed = allowAdsPrefixes.some(
     (p) => router.pathname === p || router.pathname.startsWith(p + '/')
@@ -55,11 +53,10 @@ const allowAdsPrefixes = [
   useEffect(() => {
     const handleRoute = (url) => {
       if (window.gtag && process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID) {
-        window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, {
-          page_path: url,
-        });
+        window.gtag('config', process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID, { page_path: url });
       }
     };
+
     router.events.on('routeChangeComplete', handleRoute);
     return () => {
       router.events.off('routeChangeComplete', handleRoute);
@@ -68,6 +65,11 @@ const allowAdsPrefixes = [
 
   return (
     <>
+      {/* ✅ Very important: force full-width layout on mobile */}
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </Head>
+
       {/* Google Analytics */}
       {process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID && (
         <>
@@ -88,7 +90,7 @@ const allowAdsPrefixes = [
         </>
       )}
 
-      {/* Only inject AdSense script on allowed, content-rich pages */}
+      {/* Only inject AdSense script on allowed pages */}
       {SHOW_ADS && (
         <script
           async
@@ -99,8 +101,6 @@ const allowAdsPrefixes = [
 
       <Navbar />
       <Component {...pageProps} />
-      {/* ✅ Footer now visible on every page */}
-      <Footer />
     </>
   );
 }
