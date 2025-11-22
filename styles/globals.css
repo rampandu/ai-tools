@@ -153,3 +153,34 @@ code { background: #eef2f7; padding: 2px 6px; border-radius: 6px; font-size: 0.9
 
 /* Footer small adjustments */
 footer a { color: #0f172a; text-decoration: none; }
+
+/* Navbar layout */
+.navbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap; /* important for mobile */
+}
+
+.navbar-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.85rem;
+}
+
+/* On small screens, put links on a separate row and left-align */
+@media (max-width: 640px) {
+  .navbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    width: 100%;
+    justify-content: flex-start;
+    row-gap: 6px;
+  }
+}
+
