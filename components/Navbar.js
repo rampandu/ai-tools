@@ -1,51 +1,51 @@
 // components/Navbar.js
-import Link from "next/link";
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+
+const NAV_LINKS = [
+  { href: '/regex-generator', label: 'Regex' },
+  { href: '/sql-generator', label: 'SQL' },
+  { href: '/json-formatter', label: 'JSON' },
+  { href: '/ai-error-explainer', label: 'Error' },
+  { href: '/json-schema-generator', label: 'JSON Schema' },
+  { href: '/blog', label: 'Blog' },
+];
 
 export default function Navbar() {
+  const router = useRouter();
+
+  const isActive = (href) =>
+    router.pathname === href || router.pathname.startsWith(href + '/');
+
   return (
     <header className="topnav">
-      <div className="container">
-        <div className="nav-inner">
-          {/* Brand / Logo */}
-          <Link href="/">
-            <a className="brand">
-              <img
-                src="/logo.png"
-                alt="Dev Brains AI"
-                width={32}
-                height={32}
-                style={{ borderRadius: 6, flexShrink: 0 }}
-              />
-              <div className="brand-text">
-                <span>AI</span>
-                <span>Dev</span>
-                <span>Tools</span>
-              </div>
-            </a>
-          </Link>
+      <div className="nav-inner container">
+        {/* Brand / Logo */}
+        <Link href="/">
+          <a className="brand">
+            <img
+              src="/logo.png"
+              alt="Dev Brains AI"
+              width={32}
+              height={32}
+              style={{ borderRadius: 6, flexShrink: 0 }}
+            />
+            <div className="brand-text">AI Dev Tools</div>
+          </a>
+        </Link>
 
-          {/* Navigation links */}
-          <nav className="nav-links" aria-label="Main navigation">
-            <Link href="/regex-generator">
-              <a>Regex</a>
+        {/* Navigation links */}
+        <nav className="nav-links" aria-label="Main navigation">
+          {NAV_LINKS.map((link) => (
+            <Link key={link.href} href={link.href}>
+              <a
+                className={`nav-link ${isActive(link.href) ? 'active' : ''}`}
+              >
+                {link.label}
+              </a>
             </Link>
-            <Link href="/sql-generator">
-              <a>SQL</a>
-            </Link>
-            <Link href="/json-formatter">
-              <a>JSON</a>
-            </Link>
-            <Link href="/ai-error-explainer">
-              <a>Error</a>
-            </Link>
-            <Link href="/json-schema-generator">
-              <a>JSON Schema</a>
-            </Link>
-            <Link href="/blog">
-              <a>Blog</a>
-            </Link>
-          </nav>
-        </div>
+          ))}
+        </nav>
       </div>
     </header>
   );

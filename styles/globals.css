@@ -1,199 +1,313 @@
+/* styles/globals.css - full polished UI */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
-  font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Arial;
+  font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
   background: #f9fafb;
   color: #0f172a;
   line-height: 1.6;
 }
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 .container {
-  max-width: 1100px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 18px;
 }
 
-/* =======================
-   NAVBAR - CLEAN VERSION
-   ======================= */
-
-.topnav {
-  background: linear-gradient(90deg,#0ea5a6 0%,#06b6d4 100%);
-  padding: 12px 0;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: none;  /* ✅ Remove double-shadow effect */
-}
-
-.navbar-inner {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 18px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-}
-
-/* Brand */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
-}
-
-.brand-text {
-  display: flex;
-  gap: 6px;     /* ✅ spacing between AI / Dev / Tools */
+/* Header / Page title */
+.header h1 {
+  font-size: 2rem;
   font-weight: 700;
-  font-size: 1rem;
-  color: white;
-}
-
-/* Links container */
-.navbar-links {
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-/* Each link */
-.navbar-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 0.9rem;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.12);  /* ✅ Softer background */
-  border: 1px solid rgba(255,255,255,0.15); /* ✅ crisp outline */
-  transition: all 0.2s ease;
-}
-
-/* Hover */
-.navbar-links a:hover {
-  background: rgba(255,255,255,0.22);
-  transform: translateY(-1px);
-}
-
-/* ACTIVE LINK (optional) */
-.navbar-links a.active {
-  background: white;
+  margin-bottom: 6px;
   color: #0f172a;
-  font-weight: 600;
+  text-align: left;
 }
 
-/* Mobile fix */
-@media (max-width: 720px) {
-  .navbar-inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .navbar-links {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
-
-
-/* ================================
-   CARDS
-================================ */
+/* Cards */
 .card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  margin-top: 18px;
+  box-shadow: 0 2px 12px rgba(2, 6, 23, 0.06);
 }
 
+/* small text */
 .small {
   font-size: 0.9rem;
   color: #475569;
 }
 
-/* ================================
-   BUTTONS
-================================ */
-button,
-.btn {
-  background: #0ea5a6;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-}
-
-button:hover,
-.btn:hover {
-  background: #0891b2;
-}
-
-button[disabled] {
-  opacity: 0.6;
-}
-
-/* ================================
-   FORMS
-================================ */
+/* Inputs */
 textarea,
-input {
+input[type="text"],
+input[type="search"],
+input[type="email"] {
   width: 100%;
-  padding: 12px;
-  border-radius: 10px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #e6eef2;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
   font-size: 14px;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: box-shadow 0.12s, border-color 0.12s;
 }
 
 textarea:focus,
 input:focus {
   outline: none;
   border-color: #0ea5a6;
-  box-shadow: 0 0 0 3px rgba(14,165,166,0.15);
+  box-shadow: 0 0 0 4px rgba(14, 165, 166, 0.12);
 }
 
-/* ================================
-   GRID FIX FOR MOBILE
-================================ */
+/* Buttons */
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 14px;
+  background: #0ea5a6;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.12s, background 0.12s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: #059fa0;
+}
+
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Generic link buttons */
+a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #0ea5a6;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.12s, background 0.12s;
+}
+
+a.btn:hover {
+  transform: translateY(-2px);
+  background: #059fa0;
+}
+
+/* Preformatted result area */
+pre {
+  background: #0f172a;
+  color: #e6eef6;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono", monospace;
+  font-size: 0.95rem;
+  margin-top: 8px;
+}
+
+/* Inline code */
+code {
+  background: #eef2f7;
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+/* ===========================
+   NAVBAR
+   ========================== */
+
+.topnav {
+  background: linear-gradient(90deg, #0ea5a6 0%, #06b6d4 100%);
+  color: #ffffff;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.06);
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap; /* allows wrapping on smaller widths */
+}
+
+/* Brand */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.brand img {
+  display: block;
+}
+
+.brand-text {
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.1;
+  color: #f9fafb;
+}
+
+/* nav links */
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.9rem;
+}
+
+/* individual nav link */
+.nav-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.95);
+  font-weight: 600;
+  padding: 4px 0;
+  border-radius: 6px;
+  background: transparent; /* no pill background = no double shadow */
+  border: none;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: #e0f2fe;
+}
+
+/* active link */
+.nav-link.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ===========================
+   CARD LISTS / MISC
+   ========================== */
+
+.card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.card li {
+  line-height: 1.5;
+}
+
+/* Regex tester tweaks */
+.card input[type="text"],
+.card input[type="search"] {
+  font-size: 14px;
+}
+
+/* Homepage hero/feature styles */
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero .small {
+  color: #475569;
+}
+
+/* Newsletter form tweaks */
+#subscribeForm input[type="email"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6eef2;
+  width: 100%;
+  font-size: 14px;
+}
+
+#subscribeForm button {
+  padding: 10px 14px;
+}
+
+/* Feature card minor spacing */
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+/* Testimonials / trust (placeholder) */
+.testimonials {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Footer small adjustments */
+footer a {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+/* Tools grid helper (if you use it) */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
 }
 
-/* ================================
-   HERO FIX
-================================ */
-.hero {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: center;
-}
+/* ===========================
+   RESPONSIVE
+   ========================== */
 
-/* ================================
-   FOOTER
-================================ */
-footer {
-  margin-top: 40px;
-  border-top: 1px solid #e5e7eb;
-  background: white;
-  padding: 32px 0;
-}
+@media (max-width: 720px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 14px 12px;
+  }
 
-footer a {
-  color: #0f172a;
-  text-decoration: none;
+  .header h1 {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  /* stack brand on top, links below */
+  .nav-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-top: 4px;
+    font-size: 0.85rem;
+  }
+
+  .nav-link {
+    margin: 0;
+  }
 }
