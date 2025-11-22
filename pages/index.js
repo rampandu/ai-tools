@@ -144,7 +144,7 @@ export default function Home() {
             advertising or analytics.
           </p>
         </section>
-
+{/*
         <section style={{ marginTop: 18 }}>
           <div className="card">
             <h3>Newsletter (optional)</h3>
@@ -188,6 +188,7 @@ export default function Home() {
             </form>
           </div>
         </section>
+        */}
       </main>
     </>
   );
