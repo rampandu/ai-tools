@@ -26,7 +26,6 @@ export default function Navbar() {
           <Link href="/regex-generator">Regex</Link>
           <Link href="/sql-generator">SQL</Link>
           <Link href="/json-formatter">JSON</Link>
-          {/* ✅ IMPORTANT: use /ai-error-explainer, not /error-explainer */}
           <Link href="/ai-error-explainer">Error Explainer</Link>
           <Link href="/json-schema-generator">JSON Schema</Link>
           <Link href="/blog">Blog</Link>
