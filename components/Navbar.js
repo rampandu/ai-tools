@@ -1,10 +1,10 @@
+// components/Navbar.js
 import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <div className="navbar">
+    <header className="navbar">
       <div className="navbar-inner">
-
         {/* BRAND */}
         <Link href="/" className="brand">
           <img
@@ -12,6 +12,7 @@ export default function Navbar() {
             width={34}
             height={34}
             alt="Dev Brains AI"
+            style={{ borderRadius: 6, flexShrink: 0 }}
           />
           <div className="brand-text">
             <span>AI</span>
@@ -21,16 +22,15 @@ export default function Navbar() {
         </Link>
 
         {/* LINKS */}
-        <div className="nav-links">
+        <nav className="nav-links" aria-label="Main navigation">
           <Link href="/regex-generator">Regex</Link>
           <Link href="/sql-generator">SQL</Link>
           <Link href="/json-formatter">JSON</Link>
-          <Link href="/error-explainer">Error</Link>
+          <Link href="/ai-error-explainer">Error Explainer</Link>
           <Link href="/json-schema-generator">JSON Schema</Link>
           <Link href="/blog">Blog</Link>
-        </div>
-
+        </nav>
       </div>
-    </div>
+    </header>
   );
 }
