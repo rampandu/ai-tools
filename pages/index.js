@@ -27,16 +27,24 @@ export default function Home() {
         />
         <meta property="og:image" content={`${siteUrl}/logo.png`} />
 
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17753334820">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  gtag('config', 'AW-17753334820');
-</script>
+  {/* Google Ads Conversion Tracking */}
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=AW-17753334820"
+  ></script>
+
+  <script
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'AW-17753334820');
+      `,
+    }}
+  />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
