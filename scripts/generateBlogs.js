@@ -8,11 +8,36 @@ if (!fs.existsSync(BLOG_DIR)) {
 }
 
 const topics = [
-  "AI Microservices Tutorial for Backend Developers",
-  "Best Free Developer Tools for Indian Programmers",
-  "Fix Node.js Errors Beginners India",
-  "JSON Formatter for Indian GST APIs",
-  "Python AI Projects for Engineering Students India"
+"Regex for Indian Phone Number Validation",
+"Regex for Aadhaar Card Validation",
+"Regex for PAN Card Validation",
+"Regex for GST Number Validation",
+"Regex for IFSC Code Validation",
+"Regex for Indian PIN Code Validation",
+"Regex for Email Validation JavaScript Example",
+"Regex for Password Validation Rules",
+"Top 50 Useful Regex Patterns for Developers",
+"Regex Cheat Sheet for Backend Developers",
+"Top SQL Interview Questions TCS Infosys Wipro",
+"SQL Queries Asked in Accenture Capgemini Interviews",
+"50 SQL Queries for Freshers in India",
+"SQL Join Interview Questions With Examples",
+"SQL Query for Duplicate Records Detection",
+"SQL Query for Sales Report Dashboard",
+"SQL Optimization Techniques for Large Tables",
+"MySQL vs PostgreSQL Performance Comparison",
+"Common SQL Errors and Fix Using AI",
+"SQL Query Generator Tutorial for Beginners",
+"JSON Formatter for Indian GST APIs",
+"Fix Invalid JSON Error in Node.js",
+"How to Validate JSON in Python and JavaScript",
+"JSON Schema Generator Tutorial With Examples",
+"Common API Errors and How to Fix Them",
+"How to Debug REST API Errors Using AI",
+"AI Microservices Tutorial for Backend Developers",
+"AI Anomaly Detection for Server Logs Python Example",
+"AI Projects for Engineering Students India",
+"Best AI Projects for Final Year BTech"
 ];
 
 // slug
