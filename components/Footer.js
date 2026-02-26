@@ -24,6 +24,9 @@ export default function Footer() {
               <a href="/json-formatter" className="small">JSON</a>
               <a href="/ai-error-explainer" className="small">Error Helper</a>
               <a href="/json-schema-generator" className="small">JSON Schema</a>
+              <a href="/cron-generator" className="small">Cron</a>
+              <a href="/base64-tool" className="small">Base64</a>
+              <a href="/url-encoder" className="small">URL Encode</a>
               <a href="/blog" className="small">Blog</a>
               <a href="/about" className="small">About</a>
               <a href="/contact" className="small">Contact</a>

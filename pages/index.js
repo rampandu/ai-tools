@@ -13,11 +13,11 @@ export default function Home() {
         <title>Dev Brains AI — Free AI Tools for Developers (Regex, SQL & More)</title>
         <meta
           name="description"
-          content="Dev Brains AI offers free AI-powered developer tools like Regex Generator, SQL Query Builder, JSON Formatter, Error Explainer, and JSON Schema Generator."
+          content="Dev Brains AI offers free AI-powered developer tools: Regex Generator, SQL Query Builder, JSON Formatter, Error Explainer, JSON Schema Generator, Cron Expression Generator, Base64 Encoder, and URL Encoder."
         />
         <meta
           name="keywords"
-          content="regex generator, sql generator, json formatter, error explainer, json schema generator, developer tools, Dev Brains AI"
+          content="regex generator, sql generator, json formatter, error explainer, json schema generator, cron generator, base64 encoder, url encoder, developer tools, Dev Brains AI"
         />
         <link rel="canonical" href={siteUrl} />
         <meta property="og:title" content="AI Dev Tools — Regex, SQL & JSON" />
@@ -125,6 +125,39 @@ export default function Home() {
                 style={{ marginTop: 8, display: 'inline-block' }}
               >
                 Open Schema Generator →
+              </a>
+            </div>
+
+            <div className="card small">
+              <h3 style={{ marginBottom: 6 }}>Cron Expression Generator</h3>
+              <p className="small">
+                Describe your schedule in plain English — "every weekday at 9am" — and get the
+                correct cron expression with a human-readable explanation.
+              </p>
+              <a href="/cron-generator" className="small" style={{ marginTop: 8, display: 'inline-block' }}>
+                Open Cron Generator →
+              </a>
+            </div>
+
+            <div className="card small">
+              <h3 style={{ marginBottom: 6 }}>Base64 Encoder / Decoder</h3>
+              <p className="small">
+                Encode text to Base64 or decode Base64 back to plain text in your browser.
+                Supports standard and URL-safe modes. No data uploaded.
+              </p>
+              <a href="/base64-tool" className="small" style={{ marginTop: 8, display: 'inline-block' }}>
+                Open Base64 Tool →
+              </a>
+            </div>
+
+            <div className="card small">
+              <h3 style={{ marginBottom: 6 }}>URL Encoder / Decoder</h3>
+              <p className="small">
+                Percent-encode or decode URL strings in your browser. Supports both
+                encodeURIComponent and encodeURI modes. No data uploaded.
+              </p>
+              <a href="/url-encoder" className="small" style={{ marginTop: 8, display: 'inline-block' }}>
+                Open URL Encoder →
               </a>
             </div>
           </div>

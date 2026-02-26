@@ -28,6 +28,9 @@ export default function Navbar() {
           <Link href="/json-formatter">JSON</Link>
           <Link href="/ai-error-explainer">Error Explainer</Link>
           <Link href="/json-schema-generator">JSON Schema</Link>
+          <Link href="/cron-generator">Cron</Link>
+          <Link href="/base64-tool">Base64</Link>
+          <Link href="/url-encoder">URL Encode</Link>
           <Link href="/blog">Blog</Link>
         </nav>
       </div>
