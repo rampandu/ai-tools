@@ -8,21 +8,32 @@ export default function AdSlot({
   className = '',
   responsive = true
 }) {
-  const enabled = process.env.NEXT_PUBLIC_ENABLE_ADSENSE === 'true' && !!adClient && !!adSlot;
+  const enabled =
+    process.env.NEXT_PUBLIC_ENABLE_ADSENSE === 'true' && !!adClient && !!adSlot;
+
+  // Warn in dev if adSlot is missing
+  if (process.env.NODE_ENV !== 'production' && !adSlot) {
+    console.warn('[AdSlot] adSlot prop is required');
+  }
 
   useEffect(() => {
-    if (enabled && typeof window !== 'undefined' && window.adsbygoogle) {
-      try {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-      } catch (e) {
-        // non-fatal, just log
-        // eslint-disable-next-line no-console
-        console.warn('adsbygoogle push error', e?.message || e);
-      }
+    if (!enabled) return;
+
+    // Push without checking window.adsbygoogle first — the || [] pattern
+    // acts as a command queue and works before the script has loaded.
+    try {
+      (window.adsbygoogle = window.adsbygoogle || []).push({});
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.warn('adsbygoogle push error', e?.message || e);
     }
-  }, [enabled]);
+  }, [enabled, adSlot]); // adSlot ensures re-push if slot changes
 
   if (!enabled) {
+    // In production, render nothing — don't expose a visible placeholder
+    if (process.env.NODE_ENV === 'production') return null;
+
+    // In development, show a visual stand-in so layout is visible
     return (
       <div
         className={className}

@@ -15,7 +15,7 @@ export default function Hero() {
         <p className="small" style={{ fontSize: '1rem', marginBottom: 16 }}>
           Convert plain English into production-ready <strong>Regular Expressions</strong> and
           <strong> SQL queries</strong>.  
-          Fast, private, and developer-friendly — no signup required for basic usage.
+          Fast, private, and developer-friendly — no signup required for usage.
         </p>
 
         {/* Main Action Buttons */}
