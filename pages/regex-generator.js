@@ -95,15 +95,19 @@ export default function RegexGenerator() {
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
-        <title>AI Regex Generator — Free Online Regex Builder | Dev Brains AI</title>
+        <title>Free AI Regex Generator — Online Regex Builder &amp; Tester | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate regular expressions instantly with our free AI Regex Generator. Describe your pattern in plain English and get accurate regex results with explanations."
+          content="Generate regex patterns instantly with our free AI Regex Generator. Type your pattern in plain English — get accurate regex with explanations for JavaScript, Python, and more."
         />
-        <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder" />
+        <meta
+          name="keywords"
+          content="regex generator, ai regex, regex builder, regex ai generator, automatic regex generator, online regex builder, regular expression builder, regex pattern generator"
+        />
+        <meta property="og:title" content="Free AI Regex Generator — Online Regex Builder &amp; Tester" />
         <meta
           property="og:description"
-          content="Easily build regex patterns using AI. Perfect for developers and testers — no manual regex writing needed."
+          content="Build regex patterns from plain English. Free AI regex generator with live tester — no manual writing needed. Works for JavaScript, Python, and all major languages."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/regex-generator" />
         <meta property="og:type" content="article" />
@@ -158,10 +162,13 @@ export default function RegexGenerator() {
           </ol>
         </nav>
 
-        <h1>Regex Generator</h1>
+        <h1>Free AI Regex Generator — Online Regex Builder</h1>
         <p className="small">
-          Type a short request (e.g., <code>regex for Indian mobile number</code>) and get a
-          ready-to-use regular expression.
+          Type a plain English description and get an accurate regular expression instantly — with a
+          full explanation and live tester. Works for <strong>JavaScript</strong>,{" "}
+          <strong>Python</strong>, <strong>Java</strong>, and all languages that support standard
+          regex. No signup, no cost, no limit. Great for email validation, phone numbers, date
+          formats, URL matching, and custom patterns.
         </p>
 
         <label htmlFor="prompt"><strong>Prompt</strong></label>
@@ -275,25 +282,29 @@ export default function RegexGenerator() {
       <div className="card small">
         <h4>Recent prompts</h4>
         {history.length === 0 && (
-          <div className="small">
-            No history yet — your recent prompts will appear here.
-          </div>
+          <div className="small">No history yet — your recent prompts will appear here.</div>
         )}
         <ul>
           {history.map((h, idx) => (
             <li key={h.ts + idx} style={{ marginBottom: 8 }}>
-              <button
-                className="small"
-                onClick={() => { setPrompt(h.prompt); setResult(h.out); }}
-              >
-                Reuse
-              </button>
+              <button className="small" onClick={() => { setPrompt(h.prompt); setResult(h.out); }}>Reuse</button>
               <code style={{ marginLeft: 8 }}>{h.prompt}</code>
-              <div className="small" style={{ color: '#666' }}>
-                {new Date(h.ts).toLocaleString()}
-              </div>
+              <div className="small" style={{ color: '#666' }}>{new Date(h.ts).toLocaleString()}</div>
             </li>
           ))}
+        </ul>
+      </div>
+      <div className="card small">
+        <h4>Regex guides and tutorials</h4>
+        <ul className="small">
+          <li><Link href="/blog/regex-top-patterns">Top 10 Regex Patterns Every Developer Should Know</Link></li>
+          <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>
+          <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">Top 50 Useful Regex Patterns for Developers</Link></li>
+          <li><Link href="/blog/regex-for-email-validation-javascript-example">Regex for Email Validation in JavaScript</Link></li>
+          <li><Link href="/blog/regex-for-indian-phone-number-validation">Regex for Indian Phone Number Validation</Link></li>
+          <li><Link href="/blog/regex-for-password-validation-rules">Regex for Password Validation Rules</Link></li>
+          <li><Link href="/blog/regex-for-gst-number-validation">Regex for GST Number Validation</Link></li>
+          <li><Link href="/blog/regex-for-pan-card-validation">Regex for PAN Card Validation</Link></li>
         </ul>
       </div>
     </div>

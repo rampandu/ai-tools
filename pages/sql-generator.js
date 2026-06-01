@@ -126,19 +126,19 @@ export default function SQLGenerator() {
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
-        <title>AI SQL Query Generator — Free SQL Builder | Dev Brains AI</title>
+        <title>Free MySQL & SQL Query Generator — AI SQL Builder Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Turn plain English into SQL queries using our free AI SQL Generator. Generate SELECT, JOIN, and filter queries instantly — no coding required."
+          content="Free AI SQL query generator that converts plain English to MySQL, PostgreSQL, SQL Server and SQLite queries instantly. No signup required. Try it now."
         />
         <meta
           name="keywords"
-          content="AI SQL generator, SQL query generator, natural language to SQL, free SQL builder, online SQL generator, Dev Brains AI"
+          content="mysql query generator, sql query generator, AI sql generator, natural language to sql, free sql builder, online sql generator, sql query builder free, ai sql query builder"
         />
-        <meta property="og:title" content="AI SQL Query Generator — Free SQL Builder" />
+        <meta property="og:title" content="Free MySQL & SQL Query Generator — AI SQL Builder Online" />
         <meta
           property="og:description"
-          content="Quickly build SQL queries from text prompts. Free, fast, and powered by AI models to help developers and analysts write better SQL."
+          content="Convert plain English to MySQL, PostgreSQL, SQL Server and SQLite queries instantly. Free AI SQL generator — no signup needed."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/sql-generator" />
         <meta property="og:type" content="article" />
@@ -199,12 +199,13 @@ export default function SQLGenerator() {
           </ol>
         </nav>
 
-        <h1>AI SQL Query Generator</h1>
+        <h1>Free MySQL & SQL Query Generator — AI SQL Builder</h1>
         <p className="small">
-          Use this free AI SQL query generator to convert plain English into clean SQL. Describe the
-          data you need and get a ready-to-run SQL query for popular databases like MySQL,
-          PostgreSQL, SQL Server, SQLite, and more. Always review the output before running it in
-          production.
+          Use this free AI SQL query generator to convert plain English into clean SQL instantly.
+          Works with <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>SQL Server</strong>,
+          <strong> SQLite</strong>, and <strong>MariaDB</strong>. Describe the data you need — the AI
+          builds a ready-to-use query including SELECT, WHERE, JOIN, GROUP BY, and ORDER BY. No
+          signup, no cost, no limit. Always review generated SQL before running on production.
         </p>
 
         <label htmlFor="prompt">
@@ -428,6 +429,20 @@ export default function SQLGenerator() {
           helpers, API testers, and content generators. Check the other pages on this site to
           explore more utilities as they become available.
         </p>
+      </div>
+
+      {/* Internal linking to blog posts — boosts crawl + relevance signals */}
+      <div className="card small">
+        <h4>SQL guides and tutorials</h4>
+        <ul className="small">
+          <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
+          <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+          <li><Link href="/blog/common-sql-errors-and-fix-using-ai">Common SQL Errors and How to Fix Them with AI</Link></li>
+          <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>
+          <li><Link href="/blog/mysql-vs-postgresql-performance-comparison">MySQL vs PostgreSQL Performance Comparison</Link></li>
+          <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers and Beginners</Link></li>
+          <li><Link href="/blog/ai-sql-practical">Practical AI SQL Use Cases for Developers</Link></li>
+        </ul>
       </div>
     </div>
   );

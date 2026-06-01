@@ -27,6 +27,8 @@ export default function UrlEncodingRestApi() {
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-rest-api-query-parameters',
+    datePublished: '2026-02-26',
+    dateModified: '2026-06-01',
   };
 
   return (
@@ -173,6 +175,24 @@ const q = url.searchParams.get('q'); // auto-decoded`}
             logs to read them clearly.
           </p>
 
+        <div style={{ marginTop: 28, padding: 16, background: '#f0f9ff', borderRadius: 8, border: '1px solid #bae6fd' }}>
+            <strong>Need to URL-encode query parameters automatically?</strong>
+            <p className="small" style={{ marginTop: 8, marginBottom: 12 }}>
+              Use the free Dev Brains AI URL Encoder — paste your value and get the encoded output instantly.
+            </p>
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <Link href="/url-encoder"><button style={{ background: '#0ea5e9', color: 'white', border: 'none', padding: '8px 16px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>URL Encoder →</button></Link>
+              <Link href="/base64-tool"><button style={{ background: '#8b5cf6', color: 'white', border: 'none', padding: '8px 16px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>Base64 Tool →</button></Link>
+            </div>
+          </div>
+          <div style={{ marginTop: 24 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/url-encoding-guide-for-web-developers">URL Encoding Guide for Web Developers</Link></li>
+              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding — What\'s the Difference?</Link></li>
+              <li><Link href="/blog/decode-jwt-tokens-base64-javascript">Decode JWT Tokens Using Base64 in JavaScript</Link></li>
+            </ul>
+          </div>
         </article>
       </main>
     </>

@@ -27,6 +27,8 @@ export default function CronVsSetInterval() {
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-vs-setinterval-nodejs',
+    datePublished: '2026-02-26',
+    dateModified: '2026-06-01',
   };
 
   return (
@@ -161,6 +163,17 @@ cron.schedule('*/5 * * * *', async () => {
             string for node-cron.
           </p>
 
+        <div style={{ marginTop: 28, padding: 16, background: '#f0fdf4', borderRadius: 8, border: '1px solid #bbf7d0' }}>
+            <strong>Need to build a SQL query or regex for your Node.js project?</strong>
+            <p className="small" style={{ marginTop: 8, marginBottom: 12 }}>
+              Use our free AI tools — no signup required.
+            </p>
+            <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
+              <Link href="/sql-generator"><button style={{ background: '#16a34a', color: 'white', border: 'none', padding: '8px 16px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>SQL Generator →</button></Link>
+              <Link href="/regex-generator"><button style={{ background: '#0ea5e9', color: 'white', border: 'none', padding: '8px 16px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>Regex Generator →</button></Link>
+              <Link href="/cron-generator"><button style={{ background: '#8b5cf6', color: 'white', border: 'none', padding: '8px 16px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>Cron Generator →</button></Link>
+            </div>
+          </div>
         </article>
       </main>
     </>

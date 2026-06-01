@@ -68,16 +68,11 @@ export default function Hero() {
         <div style={{ marginTop: 28 }}>
           <h3 style={{ marginBottom: 8 }}>Popular Guides</h3>
           <ul className="small">
-            <li>
-              <Link href="/blog/regex-top-patterns">
-                Top Regex Patterns Every Developer Should Know
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog/ai-sql-practical">
-                Practical AI SQL Use Cases
-              </Link>
-            </li>
+            <li><Link href="/blog/free-mysql-query-generator-online">Free MySQL Query Generator Online</Link></li>
+            <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL — How It Works</Link></li>
+            <li><Link href="/blog/ai-regex-generator-guide">AI Regex Generator Guide</Link></li>
+            <li><Link href="/blog/regex-top-patterns">Top Regex Patterns Every Developer Should Know</Link></li>
+            <li><Link href="/blog/cron-vs-setinterval-nodejs">Cron vs setInterval in Node.js</Link></li>
           </ul>
         </div>
       </div>
