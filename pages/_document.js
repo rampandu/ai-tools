@@ -15,10 +15,13 @@ class MyDocument extends Document {
 
 
           {/* ✅ Google AdSense verification script (auto toggled) */}
-          {ADSENSE_ENABLED && ADSENSE_CLIENT && (
- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9535310271167305"
-     crossorigin="anonymous"></script>
-          )}
+            {ADSENSE_ENABLED && ADSENSE_CLIENT && (
+            <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT}`}
+            crossOrigin="anonymous"
+            />
+            )}
         </Head>
         <body>
           <Main />
