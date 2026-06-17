@@ -35,17 +35,19 @@ if (typeof window !== 'undefined') {
 export default function App({ Component, pageProps }) {
   const router = useRouter();
 
-  // === Allow AdSense only on content-rich pages
-  const allowAdsPrefixes = [
-    '/', // homepage
-    '/regex-generator',
-    '/sql-generator',
-    '/blog',
-    '/blog/ai-sql-practical',
-    '/blog/regex-top-patterns',
+  // === Show ads everywhere EXCEPT these utility/legal pages
+  // (no real content for ads to run alongside, or policy-sensitive)
+  const denyAdsPrefixes = [
+    '/privacy',
+    '/terms',
+    '/contact',
+    '/about',
+    '/api',
+    '/404',
+    '/500',
   ];
 
-  const isAdAllowed = allowAdsPrefixes.some(
+  const isAdAllowed = !denyAdsPrefixes.some(
     (p) => router.pathname === p || router.pathname.startsWith(p + '/')
   );
 
@@ -96,7 +98,7 @@ export default function App({ Component, pageProps }) {
         </>
       )}
 
-      {/* Only inject AdSense script on allowed pages */}
+      {/* AdSense script — loaded on every page except the deny-list above */}
       {SHOW_ADS && (
         <script
           async
