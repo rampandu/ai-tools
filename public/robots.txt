@@ -7,4 +7,4 @@ Disallow: /_next/static/
 Disallow: /_next/image/
 
 Sitemap: https://dev-brains-ai.com/sitemap.xml
-Host: dev-brains-ai.com
+
