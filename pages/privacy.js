@@ -124,7 +124,7 @@ export default function Privacy() {
 
           <p className="small" style={{ marginTop: 24 }}>
             If you have any questions about our Privacy Policy, you can contact us
-            at <strong>support@dev-brains-ai.com</strong>.
+            at <strong>rampandu.cheti@gmail.com</strong>.
           </p>
         </section>
       </main>

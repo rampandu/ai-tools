@@ -13,11 +13,12 @@ export default function Hero() {
           Plain English → Production-Ready Code
         </h1>
 
-        {/* UPDATED: Subtitle mentions all 5 tools, not just 2 */}
         <p className="small" style={{ fontSize: '1rem', marginBottom: 16 }}>
-          Free AI tools for developers — generate <strong>Regex</strong>,{' '}
-          <strong>SQL queries</strong>, <strong>JSON Schemas</strong>, format{' '}
-          <strong>JSON</strong>, and explain <strong>error messages</strong>.
+          18 free tools for developers — generate <strong>Regex</strong>,{' '}
+          <strong>SQL queries</strong>, <strong>README files</strong>, and{' '}
+          <strong>commit messages</strong>; explain <strong>error stack traces</strong>,{' '}
+          <strong>SQL queries</strong>, and <strong>code</strong>; convert and format{' '}
+          <strong>JSON</strong>, <strong>Base64</strong>, and <strong>curl commands</strong>.
           Fast, private, no signup required.
         </p>
 
@@ -42,25 +43,23 @@ export default function Hero() {
           </Link>
         </div>
 
-        {/* Trust signals — UPDATED: removed misleading "Deterministic engines" copy */}
+        {/* Trust signals — real, verifiable numbers only (no fabricated stats) */}
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <div style={{ padding: 8 }}>
-            <div style={{ fontSize: 20, fontWeight: 700 }}>Free</div>
-            <div className="small">Use without signup</div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>18</div>
+            <div className="small">Free tools</div>
           </div>
           <div style={{ padding: 8 }}>
-            <div style={{ fontSize: 20, fontWeight: 700 }}>Fast</div>
-            {/* UPDATED: was "Deterministic engines" — contradicted the AI branding */}
-            <div className="small">Instant results</div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>150+</div>
+            <div className="small">In-depth guides</div>
+          </div>
+          <div style={{ padding: 8 }}>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>Free</div>
+            <div className="small">No signup required</div>
           </div>
           <div style={{ padding: 8 }}>
             <div style={{ fontSize: 20, fontWeight: 700 }}>Private</div>
             <div className="small">No personal data stored</div>
-          </div>
-          {/* ADDED: Social proof signal */}
-          <div style={{ padding: 8 }}>
-            <div style={{ fontSize: 20, fontWeight: 700 }}>10,000+</div>
-            <div className="small">Queries generated</div>
           </div>
         </div>
 

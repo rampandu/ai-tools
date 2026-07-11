@@ -13,9 +13,9 @@ export default function Footer() {
           }}
         >
           <div>
-            <div style={{ fontWeight: 700 }}>AI Dev Tools</div>
+            <div style={{ fontWeight: 700 }}>Dev Brains AI</div>
             <div className="small" style={{ marginTop: 6 }}>
-              Free developer utilities — regex, SQL & JSON tools.
+              Free developer utilities — regex, SQL, JSON, and more.
             </div>
           </div>
           <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>             
@@ -48,9 +48,9 @@ export default function Footer() {
           }}
         >
           <div className="small">
-            © {new Date().getFullYear()} AI Dev Tools — Built with open models
+            © {new Date().getFullYear()} Dev Brains AI — Free tools for developers
           </div>
-          <div className="small">Made with ♥ — Host responsibly</div>
+          <div className="small">No signup required</div>
         </div>
       </div>
     </footer>

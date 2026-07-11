@@ -146,19 +146,7 @@ export default function Base64Tool() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Google Ads Conversion Tracking */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17753334820"></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17753334820');
-            `,
-          }}
-        />
-      </Head>
+</Head>
 
       <div className="card" aria-live="polite">
         {/* Breadcrumb */}

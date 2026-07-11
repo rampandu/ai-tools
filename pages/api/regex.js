@@ -1,8 +1,10 @@
 // pages/api/regex.js
 // Deterministic regex generator — no external APIs required.
+import { rateLimit } from '../../lib/rateLimit';
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end('Method Not Allowed');
+  if (!(await rateLimit(req, res, { key: 'regex', points: 20, duration: 60 }))) return;
 
   const { prompt } = req.body || {};
   if (!prompt || String(prompt).trim().length < 3) return res.status(400).json({ error: 'Prompt required (≥3 chars)' });

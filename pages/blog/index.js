@@ -41,22 +41,7 @@ export default function BlogIndex({ posts }) {
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {/* Google Ads */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=AW-17753334820"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'AW-17753334820');
-            `,
-          }}
-        />
-      </Head>
+</Head>
 
       <div className="card" style={{ maxWidth: 900, margin: "0 auto", padding: 24 }}>
         {/* Breadcrumb */}
@@ -255,6 +240,17 @@ const POST_META = {
   "common-git-errors-and-how-to-fix-them": { title: "Common Git Errors and How to Fix Them", description: "Fixes for the most common Git errors: merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push — with real commands." },
   "docker-errors-for-beginners-explained": { title: "Docker Errors for Beginners Explained", description: "The most common Docker errors beginners hit — port already in use, cannot connect to daemon, no space left, image not found — explained with fixes." },
   "how-to-fix-cannot-read-property-of-undefined-javascript": { title: "How to Fix 'Cannot Read Property of Undefined' in JavaScript", description: "Why 'Cannot read property of undefined' happens in JavaScript, how to read the message, and how to fix and prevent it with optional chaining and defaults." },
+
+  "regex-explainer-guide-how-it-works": { title: "How to Read Any Regex Pattern — A Step-by-Step Explainer Guide", description: "Learn a systematic method for reading any regex pattern, with a token-by-token breakdown of a real email validation regex and a symbol reference table." },
+  "sql-explainer-guide-how-it-works": { title: "How to Read a SQL Query You Did Not Write — A Step-by-Step Guide", description: "Learn how to read any SQL query clause by clause, understand execution order vs reading order, and parse nested subqueries with a worked JOIN example." },
+  "how-to-write-conventional-commit-messages": { title: "How to Write Conventional Commit Messages — A Practical Guide", description: "A practical guide to Conventional Commits: the exact spec, the 8 standard types, imperative mood, breaking change syntax, and how semantic-release uses it." },
+  "jsdoc-vs-python-docstrings-guide": { title: "JSDoc vs Python Docstrings — How to Document Functions Properly", description: "A comparison guide to JSDoc and Python docstrings, with worked @param/@returns and Google-style Args/Returns examples, plus tips for writing useful documentation." },
+  "how-to-read-a-stack-trace": { title: "How to Read a Stack Trace (JavaScript and Python)", description: "Learn how to read a stack trace in JavaScript, Node.js, and Python with annotated real-world examples. Find the actual error origin fast, not just the first line." },
+  "how-to-quickly-understand-unfamiliar-code": { title: "How to Quickly Understand Unfamiliar Code", description: "A systematic approach to quickly getting oriented in unfamiliar code — entry points, naming clues, top-down vs bottom-up reading, and when to just run it." },
+  "jest-vs-pytest-getting-started-guide": { title: "Jest vs pytest — Getting Started Guide", description: "A beginner-friendly Jest vs pytest comparison: install, setup, syntax side by side, a worked example in each, common assertions, and basic mocking." },
+  "how-to-write-a-great-readme": { title: "How to Write a Great README.md (With Examples)", description: "Learn what makes a README great: essential sections, badges explained, good vs mediocre examples, and how to keep your README.md maintained as your project grows." },
+  "how-to-document-a-rest-api-endpoint": { title: "How to Document a REST API Endpoint (With a Worked Example)", description: "Learn what to include when documenting a REST API endpoint, see a full worked example, and understand when you need Markdown docs vs an OpenAPI spec." },
+  "convert-curl-commands-to-fetch-axios-python": { title: "Convert cURL Commands to fetch, axios, and Python requests", description: "Learn how to read curl flags and convert curl commands into working JavaScript fetch, axios, and Python requests code, with a full side-by-side example." },
 };
 
 export async function getStaticProps() {
