@@ -1,6 +1,7 @@
 // pages/api/cron.js
 // Deterministic plain-English → cron expression converter.
 // No external APIs required — matches the same pattern as api/regex.js and api/sql.js.
+import { rateLimit } from '../../lib/rateLimit';
 
 function pad(n) {
   return String(n).padStart(2, '0');
@@ -111,8 +112,9 @@ function buildExplanation(min, hour, dom, month, dow) {
   return parts.join(', ') + '.';
 }
 
-export default function handler(req, res) {
+export default async function handler(req, res) {
   if (req.method !== 'POST') return res.status(405).end('Method Not Allowed');
+  if (!(await rateLimit(req, res, { key: 'cron', points: 20, duration: 60 }))) return;
 
   const { prompt } = req.body || {};
   if (!prompt || String(prompt).trim().length < 3) {
