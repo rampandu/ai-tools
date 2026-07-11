@@ -115,7 +115,7 @@ a {
 .nav-dropdown-menu {
   position: absolute;
   top: calc(100% + 10px);
-  left: 0;
+  right: 0;
   background: white;
   border-radius: 12px;
   box-shadow: 0 10px 30px rgba(2,6,23,0.18);
@@ -124,6 +124,7 @@ a {
   gap: 28px;
   z-index: 50;
   min-width: 560px;
+  max-width: calc(100vw - 40px);
 }
 
 .nav-dropdown-col {
