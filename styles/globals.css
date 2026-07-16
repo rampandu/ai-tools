@@ -123,8 +123,9 @@ a {
   display: flex;
   gap: 28px;
   z-index: 50;
-  min-width: 560px;
+  min-width: 740px;
   max-width: calc(100vw - 40px);
+  flex-wrap: wrap;
 }
 
 .nav-dropdown-col {

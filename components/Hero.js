@@ -14,11 +14,12 @@ export default function Hero() {
         </h1>
 
         <p className="small" style={{ fontSize: '1rem', marginBottom: 16 }}>
-          18 free tools for developers — generate <strong>Regex</strong>,{' '}
-          <strong>SQL queries</strong>, <strong>README files</strong>, and{' '}
-          <strong>commit messages</strong>; explain <strong>error stack traces</strong>,{' '}
-          <strong>SQL queries</strong>, and <strong>code</strong>; convert and format{' '}
-          <strong>JSON</strong>, <strong>Base64</strong>, and <strong>curl commands</strong>.
+          28 free tools for developers — generate <strong>Regex</strong>,{' '}
+          <strong>SQL queries</strong>, <strong>UUIDs</strong>, and{' '}
+          <strong>passwords</strong>; decode <strong>JWTs</strong> and explain{' '}
+          <strong>errors</strong> and <strong>code</strong>; format <strong>SQL</strong> and{' '}
+          <strong>JSON</strong>; convert <strong>YAML</strong>, <strong>timestamps</strong>,
+          and <strong>colors</strong>; diff any two texts.
           Fast, private, no signup required.
         </p>
 
@@ -46,7 +47,7 @@ export default function Hero() {
         {/* Trust signals — real, verifiable numbers only (no fabricated stats) */}
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <div style={{ padding: 8 }}>
-            <div style={{ fontSize: 20, fontWeight: 700 }}>18</div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>28</div>
             <div className="small">Free tools</div>
           </div>
           <div style={{ padding: 8 }}>

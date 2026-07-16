@@ -29,6 +29,7 @@ const TOOL_SECTIONS = [
       { href: '/code-explainer', name: 'Code Explainer', desc: 'Paste a code snippet and get a structural, plain-English walkthrough.' },
       { href: '/stack-trace-analyzer', name: 'Stack Trace Analyzer', desc: 'Paste a full error stack trace and get the likely cause and fix.' },
       { href: '/ai-error-explainer', name: 'Error Explainer', desc: 'Paste an error message and get a human-readable explanation plus debugging steps.' },
+      { href: '/jwt-decoder', name: 'JWT Decoder', desc: 'Decode a JWT’s header, payload, and expiry instantly — without sending it anywhere.' },
     ],
   },
   {
@@ -41,6 +42,22 @@ const TOOL_SECTIONS = [
       { href: '/base64-tool', name: 'Base64 Tool', desc: 'Encode or decode Base64 strings in your browser. No data uploaded.' },
       { href: '/url-encoder', name: 'URL Encoder', desc: 'Percent-encode or decode URL strings in your browser.' },
       { href: '/curl-converter', name: 'cURL to Code', desc: 'Paste a curl command and get equivalent fetch, axios, or Python requests code.' },
+      { href: '/sql-formatter', name: 'SQL Formatter', desc: 'Beautify or minify any SQL query with consistent keyword casing.' },
+      { href: '/yaml-json-converter', name: 'YAML ↔ JSON Converter', desc: 'Convert YAML to JSON and back, with clear error messages for invalid input.' },
+      { href: '/markdown-preview', name: 'Markdown Previewer', desc: 'Write markdown on the left, see the rendered result live on the right.' },
+    ],
+  },
+  {
+    id: 'utilities',
+    heading: 'Utilities',
+    blurb: 'Everyday developer utilities — fast, private, and free.',
+    tools: [
+      { href: '/diff-checker', name: 'Diff Checker', desc: 'Compare two texts line by line and see additions and removals highlighted.' },
+      { href: '/timestamp-converter', name: 'Timestamp Converter', desc: 'Convert unix timestamps to human dates and back, with a live epoch clock.' },
+      { href: '/uuid-generator', name: 'UUID Generator', desc: 'Generate cryptographically random UUID v4 identifiers in bulk.' },
+      { href: '/password-generator', name: 'Password Generator', desc: 'Generate strong random passwords locally, with a live entropy meter.' },
+      { href: '/hash-generator', name: 'Hash Generator', desc: 'Compute MD5, SHA-1, SHA-256, and SHA-512 hashes of any text instantly.' },
+      { href: '/color-converter', name: 'Color Converter', desc: 'Convert colors between HEX, RGB, and HSL with a live preview swatch.' },
     ],
   },
 ];
@@ -77,17 +94,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dev Brains AI — 18 Free Tools for Developers (Regex, SQL, JSON &amp; More)</title>
+        <title>Dev Brains AI — 28 Free Tools for Developers (Regex, SQL, JSON &amp; More)</title>
         <meta
           name="description"
-          content="18 free developer tools: generate regex, SQL, cron, README files and commit messages; explain error stack traces, SQL queries and code; format JSON and Base64. No signup."
+          content="28 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; format SQL and JSON; convert YAML, timestamps and colors; diff text. No signup."
         />
         <meta
           name="keywords"
-          content="regex generator, sql generator, json formatter, error explainer, json schema generator, cron generator, base64 encoder, url encoder, readme generator, commit message generator, developer tools, Dev Brains AI"
+          content="regex generator, sql generator, json formatter, jwt decoder, sql formatter, diff checker, timestamp converter, uuid generator, password generator, hash generator, yaml to json, markdown preview, color converter, developer tools, Dev Brains AI"
         />
         <link rel="canonical" href={siteUrl} />
-        <meta property="og:title" content="Dev Brains AI — 18 Free Tools for Developers" />
+        <meta property="og:title" content="Dev Brains AI — 28 Free Tools for Developers" />
         <meta
           property="og:description"
           content="Free developer tools: generate regex, SQL, and READMEs; explain errors, SQL, and code; format JSON and Base64. No signup, no cost."

@@ -24,6 +24,7 @@ const TOOL_GROUPS = [
       { href: '/code-explainer', label: 'Code Explainer' },
       { href: '/stack-trace-analyzer', label: 'Stack Trace Analyzer' },
       { href: '/ai-error-explainer', label: 'Error Explainer' },
+      { href: '/jwt-decoder', label: 'JWT Decoder' },
     ],
   },
   {
@@ -34,6 +35,20 @@ const TOOL_GROUPS = [
       { href: '/base64-tool', label: 'Base64 Tool' },
       { href: '/url-encoder', label: 'URL Encoder' },
       { href: '/curl-converter', label: 'cURL to Code' },
+      { href: '/sql-formatter', label: 'SQL Formatter' },
+      { href: '/yaml-json-converter', label: 'YAML ↔ JSON' },
+      { href: '/markdown-preview', label: 'Markdown Preview' },
+    ],
+  },
+  {
+    heading: 'Utilities',
+    items: [
+      { href: '/diff-checker', label: 'Diff Checker' },
+      { href: '/timestamp-converter', label: 'Timestamp Converter' },
+      { href: '/uuid-generator', label: 'UUID Generator' },
+      { href: '/password-generator', label: 'Password Generator' },
+      { href: '/hash-generator', label: 'Hash Generator' },
+      { href: '/color-converter', label: 'Color Converter' },
     ],
   },
 ];
