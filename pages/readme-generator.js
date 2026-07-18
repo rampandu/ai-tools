@@ -413,6 +413,17 @@ export default function ReadmeGeneratorPage() {
           </Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: README and Markdown</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-write-a-great-readme">How to Write a Great README.md (With Examples)</Link></li>
+          <li><Link href="/blog/markdown-syntax-cheat-sheet">Markdown Syntax Cheat Sheet — Every Element with Examples</Link></li>
+          <li><Link href="/blog/github-flavored-markdown-guide">GitHub Flavored Markdown (GFM) — The Complete Guide</Link></li>
+          <li><Link href="/blog/writing-github-issues-and-prs-with-markdown">Writing GitHub Issues and PRs with Markdown</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

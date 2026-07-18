@@ -405,6 +405,17 @@ export default function StackTraceAnalyzerPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: debugging</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-read-a-stack-trace">How to Read a Stack Trace (JavaScript and Python)</Link></li>
+          <li><Link href="/blog/common-nodejs-npm-errors-and-fixes">Common Node.js and npm Errors and How to Fix Them</Link></li>
+          <li><Link href="/blog/how-to-fix-cannot-read-property-of-undefined-javascript">How to Fix 'Cannot Read Property of Undefined' in JavaScript</Link></li>
+          <li><Link href="/blog/debugging-memory-leaks-in-nodejs">Debugging Memory Leaks in Node.js — A Practical Walkthrough</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

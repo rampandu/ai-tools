@@ -486,6 +486,18 @@ export default function YamlJsonConverterPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: YAML and config</h3>
+        <ul className="small">
+          <li><Link href="/blog/yaml-vs-json-differences-explained">YAML vs JSON — Key Differences Explained with Examples</Link></li>
+          <li><Link href="/blog/yaml-syntax-guide-for-beginners">YAML Syntax Guide for Beginners — Complete Walkthrough</Link></li>
+          <li><Link href="/blog/common-yaml-errors-in-kubernetes-and-ci">Common YAML Errors in Kubernetes and CI Pipelines</Link></li>
+          <li><Link href="/blog/convert-yaml-to-json-javascript-python">How to Convert YAML to JSON in JavaScript and Python</Link></li>
+          <li><Link href="/blog/when-to-use-yaml-json-toml-config">YAML vs JSON vs TOML — Choosing the Right Config Format</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

@@ -240,6 +240,16 @@ export default function UnitTestGeneratorPage() {
           <Link href="/code-explainer">Code Explainer</Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: testing</h3>
+        <ul className="small">
+          <li><Link href="/blog/jest-vs-pytest-getting-started-guide">Jest vs pytest — Getting Started Guide</Link></li>
+          <li><Link href="/blog/how-to-handle-async-errors-in-nodejs">How to Handle Async Errors in Node.js the Right Way</Link></li>
+          <li><Link href="/blog/express-js-error-handling-middleware-guide">Express.js Error Handling Middleware — A Complete Guide</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

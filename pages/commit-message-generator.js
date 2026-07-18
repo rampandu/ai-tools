@@ -353,6 +353,16 @@ export default function CommitMessageGenerator() {
           <li><Link href="/blog/common-git-errors-and-how-to-fix-them">Common Git Errors and How to Fix Them</Link></li>
         </ul>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: git and commits</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-write-conventional-commit-messages">How to Write Conventional Commit Messages — A Practical Guide</Link></li>
+          <li><Link href="/blog/common-git-errors-and-how-to-fix-them">Common Git Errors and How to Fix Them</Link></li>
+          <li><Link href="/blog/git-diff-explained-for-beginners">Git Diff Explained for Beginners: Every Variant You Need</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

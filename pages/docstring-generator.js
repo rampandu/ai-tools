@@ -276,6 +276,16 @@ export default function DocstringGenerator() {
           <li><Link href="/blog/ai-powered-code-documentation-generator-guide">AI-Powered Code Documentation Generator Guide</Link></li>
         </ul>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: code documentation</h3>
+        <ul className="small">
+          <li><Link href="/blog/jsdoc-vs-python-docstrings-guide">JSDoc vs Python Docstrings — How to Document Functions Properly</Link></li>
+          <li><Link href="/blog/markdown-for-technical-documentation-tips">Markdown for Technical Documentation — 7 Tips That Keep Docs Readable</Link></li>
+          <li><Link href="/blog/how-to-write-a-great-readme">How to Write a Great README.md (With Examples)</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

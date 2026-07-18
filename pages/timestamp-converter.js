@@ -466,6 +466,18 @@ export default function TimestampConverterPage() {
           <Link href="/blog/sql-date-functions-cheat-sheet">SQL Date Functions Cheat Sheet</Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: timestamp and date</h3>
+        <ul className="small">
+          <li><Link href="/blog/unix-timestamp-explained-epoch-time-guide">Unix Timestamp Explained — A Complete Guide to Epoch Time</Link></li>
+          <li><Link href="/blog/convert-timestamp-to-date-javascript-python-sql">How to Convert a Timestamp to a Date in JavaScript, Python, and SQL</Link></li>
+          <li><Link href="/blog/handling-timezones-in-web-applications">Handling Timezones in Web Applications — A Practical Guide</Link></li>
+          <li><Link href="/blog/milliseconds-vs-seconds-timestamp-bugs">Milliseconds vs Seconds — The 1000x Timestamp Bug Explained</Link></li>
+          <li><Link href="/blog/date-formatting-cheat-sheet-iso-8601">Date Formatting Cheat Sheet — ISO 8601, RFC 3339, and Format Tokens</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

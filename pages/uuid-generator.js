@@ -390,6 +390,18 @@ export default function UuidGeneratorPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: UUID</h3>
+        <ul className="small">
+          <li><Link href="/blog/what-is-a-uuid-guid-explained">What Is a UUID? GUIDs Explained for Developers</Link></li>
+          <li><Link href="/blog/uuid-v1-v4-v5-v7-differences">UUID v1 vs v4 vs v5 vs v7 — Differences Explained</Link></li>
+          <li><Link href="/blog/uuid-vs-auto-increment-database-keys">UUID vs Auto-Increment Database Keys — Trade-offs Explained</Link></li>
+          <li><Link href="/blog/generate-uuids-javascript-python-sql">How to Generate UUIDs in JavaScript, Python, and SQL</Link></li>
+          <li><Link href="/blog/are-uuids-really-unique-collision-probability">Are UUIDs Really Unique? Collision Probability Explained</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

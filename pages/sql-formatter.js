@@ -412,6 +412,18 @@ LIMIT 50`}</code>
           , and the <Link href="/blog/sql-code-review-checklist">SQL Code Review Checklist</Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: SQL formatting</h3>
+        <ul className="small">
+          <li><Link href="/blog/sql-formatting-best-practices-style-guide">SQL Formatting Best Practices — A Practical Style Guide</Link></li>
+          <li><Link href="/blog/why-consistent-sql-style-matters-for-teams">Why Consistent SQL Style Matters for Teams</Link></li>
+          <li><Link href="/blog/sql-keywords-uppercase-or-lowercase">SQL Keywords: Uppercase or Lowercase? The Casing Debate</Link></li>
+          <li><Link href="/blog/how-to-format-long-sql-queries-for-readability">How to Format Long SQL Queries for Readability</Link></li>
+          <li><Link href="/blog/sql-code-review-checklist">SQL Code Review Checklist: Correctness, Performance, Safety</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

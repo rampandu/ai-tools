@@ -541,6 +541,18 @@ export default function JwtDecoderPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: JWT</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-decode-a-jwt-token-safely">How to Decode a JWT Token Safely</Link></li>
+          <li><Link href="/blog/jwt-structure-explained-header-payload-signature">JWT Structure Explained: Header, Payload, Signature</Link></li>
+          <li><Link href="/blog/jwt-expiry-claims-exp-iat-nbf-explained">JWT Expiry Claims Explained: exp, iat, and nbf</Link></li>
+          <li><Link href="/blog/jwt-security-best-practices-for-developers">JWT Security Best Practices for Developers</Link></li>
+          <li><Link href="/blog/common-jwt-errors-and-how-to-fix-them">Common JWT Errors and How to Fix Them</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

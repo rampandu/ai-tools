@@ -500,6 +500,18 @@ export default function PasswordGeneratorPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: password security</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-create-strong-passwords-guide">How to Create Strong Passwords — A Practical Guide</Link></li>
+          <li><Link href="/blog/password-entropy-explained-length-vs-complexity">Password Entropy Explained — Length vs Complexity</Link></li>
+          <li><Link href="/blog/passphrases-vs-random-passwords">Passphrases vs Random Passwords — Which Should You Use?</Link></li>
+          <li><Link href="/blog/how-password-managers-work">How Password Managers Work — Under the Hood</Link></li>
+          <li><Link href="/blog/common-password-attacks-explained">Common Password Attacks Explained</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

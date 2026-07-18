@@ -248,6 +248,16 @@ export default function CurlConverterPage() {
           JSON body? Use the <Link href="/json-formatter">JSON Formatter</Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: APIs and HTTP</h3>
+        <ul className="small">
+          <li><Link href="/blog/convert-curl-commands-to-fetch-axios-python">Convert cURL Commands to fetch, axios, and Python requests</Link></li>
+          <li><Link href="/blog/how-to-test-rest-apis-with-postman">How to Test REST APIs with Postman — Collections, Env Vars, and Automation</Link></li>
+          <li><Link href="/blog/rest-api-vs-graphql-comparison">REST vs GraphQL — A Practical Comparison for Backend Developers</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

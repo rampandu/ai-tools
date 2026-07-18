@@ -391,6 +391,18 @@ export default function ColorConverterPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: color</h3>
+        <ul className="small">
+          <li><Link href="/blog/hex-rgb-hsl-color-formats-explained">HEX vs RGB vs HSL — Color Formats Explained</Link></li>
+          <li><Link href="/blog/css-colors-guide-for-developers">CSS Colors Guide for Developers</Link></li>
+          <li><Link href="/blog/color-contrast-accessibility-wcag-guide">Color Contrast and Accessibility — A WCAG Guide</Link></li>
+          <li><Link href="/blog/convert-colors-in-javascript-examples">Convert Colors in JavaScript — Working Examples</Link></li>
+          <li><Link href="/blog/choosing-a-color-palette-for-your-website">Choosing a Color Palette for Your Website</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

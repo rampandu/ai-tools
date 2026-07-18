@@ -450,6 +450,18 @@ export default function HashGeneratorPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: hashing</h3>
+        <ul className="small">
+          <li><Link href="/blog/md5-vs-sha256-which-hash-should-you-use">MD5 vs SHA-256 — Which Hash Should You Use?</Link></li>
+          <li><Link href="/blog/what-is-hashing-explained-for-beginners">What Is Hashing? Explained for Beginners</Link></li>
+          <li><Link href="/blog/password-hashing-bcrypt-vs-sha256">Password Hashing — bcrypt vs SHA-256</Link></li>
+          <li><Link href="/blog/verify-file-integrity-with-checksums">Verify File Integrity with Checksums (Linux &amp;amp; Windows)</Link></li>
+          <li><Link href="/blog/hash-collisions-explained">Hash Collisions Explained — Birthday Paradox &amp;amp; Broken Hashes</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

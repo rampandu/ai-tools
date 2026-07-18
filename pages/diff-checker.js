@@ -429,6 +429,18 @@ export default function DiffCheckerPage() {
           .
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: diff and comparison</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-compare-two-text-files-online">How to Compare Two Text Files Online (Safely)</Link></li>
+          <li><Link href="/blog/understanding-diff-output-unified-vs-split-view">Understanding Diff Output: Unified vs Split View</Link></li>
+          <li><Link href="/blog/git-diff-explained-for-beginners">Git Diff Explained for Beginners: Every Variant You Need</Link></li>
+          <li><Link href="/blog/how-diff-algorithms-work-lcs-explained">How Diff Algorithms Work: LCS Explained</Link></li>
+          <li><Link href="/blog/compare-config-files-across-environments">Compare Config Files Across Environments: Find Drift</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

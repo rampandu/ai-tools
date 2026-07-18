@@ -303,6 +303,16 @@ export default function ApiDocsGeneratorPage() {
           working code? Use the <Link href="/curl-converter">cURL to Code Converter</Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: API documentation</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-document-a-rest-api-endpoint">How to Document a REST API Endpoint (With a Worked Example)</Link></li>
+          <li><Link href="/blog/how-to-design-a-rest-api-best-practices">How to Design a REST API — Best Practices That Actually Matter</Link></li>
+          <li><Link href="/blog/rest-api-json-response-best-practices">REST API JSON Response Best Practices</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

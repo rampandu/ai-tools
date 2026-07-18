@@ -312,6 +312,16 @@ export default function CodeExplainerPage() {
           <Link href="/blog/how-ai-code-generators-work-explained">How AI Code Generators Work, Explained</Link>.
         </p>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: reading code</h3>
+        <ul className="small">
+          <li><Link href="/blog/how-to-quickly-understand-unfamiliar-code">How to Quickly Understand Unfamiliar Code</Link></li>
+          <li><Link href="/blog/how-ai-code-generators-work-explained">How AI Code Generators Work, Explained</Link></li>
+          <li><Link href="/blog/ai-code-review-tools-for-developers">AI Code Review Tools for Developers — What They Catch and What They Miss</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }

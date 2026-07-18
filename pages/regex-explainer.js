@@ -341,6 +341,17 @@ export default function RegexExplainer() {
           <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>
         </ul>
       </div>
+      {/* Companion guides */}
+      <div className="card">
+        <h3>Guides and tutorials: regex</h3>
+        <ul className="small">
+          <li><Link href="/blog/regex-explainer-guide-how-it-works">How to Read Any Regex Pattern — A Step-by-Step Explainer Guide</Link></li>
+          <li><Link href="/blog/regex-top-patterns">Top 10 Regex Patterns Every Developer Should Know</Link></li>
+          <li><Link href="/blog/regex-lookahead-and-lookbehind-explained">Regex Lookahead and Lookbehind Explained (With Examples)</Link></li>
+          <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>
+        </ul>
+      </div>
+
     </div>
   );
 }
