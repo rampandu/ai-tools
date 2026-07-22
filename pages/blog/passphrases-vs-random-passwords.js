@@ -74,6 +74,10 @@ export default function PassphrasesVsRandomPasswords() {
           name="keywords"
           content="passphrase vs password, diceware passphrase, random password generator, correct horse battery staple, master password, password entropy, memorable strong password"
         />
+        <meta property="og:title" content="Passphrases vs Random Passwords — Which Should You Use?" />
+        <meta property="og:description" content="Diceware passphrases (~12.9 bits/word, memorable) vs random strings (denser, need a manager): threat models, honest math, and a real diceware how-to." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/passphrases-vs-random-passwords" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/passphrases-vs-random-passwords" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

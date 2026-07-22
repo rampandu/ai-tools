@@ -21,9 +21,9 @@ export default function Base64VsUrlEncoding() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Base64 vs URL Encoding — Key Differences Explained',
+    headline: 'Base64 vs URL Encoding: Key Differences (With Code)',
     description:
-      'Understand the key differences between Base64 encoding and URL percent-encoding. When to use each, how they work under the hood, and practical JavaScript examples.',
+      'Base64 and URL encoding solve different problems — compare output size, character sets, and JavaScript code, then see exactly when to use each one.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-vs-url-encoding-difference',
@@ -32,11 +32,15 @@ export default function Base64VsUrlEncoding() {
   return (
     <>
       <Head>
-        <title>Base64 vs URL Encoding — Key Differences Explained | Dev Brains AI</title>
+        <title>Base64 vs URL Encoding: Key Differences (With Code) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Understand the key differences between Base64 and URL percent-encoding. When to use each, output size, character sets, and practical JavaScript examples for developers."
+          content="Base64 and URL encoding solve different problems — compare output size, character sets, and JavaScript code, then see exactly when to use each one."
         />
+        <meta property="og:title" content="Base64 vs URL Encoding: Key Differences (With Code)" />
+        <meta property="og:description" content="Base64 and URL encoding solve different problems — compare output size, character sets, and JavaScript code, then see exactly when to use each one." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/base64-vs-url-encoding-difference" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-vs-url-encoding-difference" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

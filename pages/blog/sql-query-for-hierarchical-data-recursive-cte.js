@@ -21,14 +21,14 @@ export default function SqlHierarchicalDataRecursiveCte() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Query for Hierarchical Data with Recursive CTE — Org Charts and Category Trees',
+    headline: 'SQL Recursive CTE for Org Charts and Category Trees',
     description:
-      'Learn how to query hierarchical data in SQL using a recursive CTE (WITH RECURSIVE), with an employee-manager org chart example and a category tree example.',
+      'Write a WITH RECURSIVE query that walks org charts and category trees of any depth, including the depth-counter trick that stops infinite loops on bad data.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-query-for-hierarchical-data-recursive-cte',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlHierarchicalDataRecursiveCte() {
   return (
     <>
       <Head>
-        <title>SQL Query for Hierarchical Data with Recursive CTE | Dev Brains AI</title>
+        <title>SQL Recursive CTE for Org Charts and Category Trees | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to query hierarchical data in SQL using a recursive CTE (WITH RECURSIVE), with an employee-manager org chart example and a category tree example."
+          content="Write a WITH RECURSIVE query that walks org charts and category trees of any depth, including the depth-counter trick that stops infinite loops on bad data."
         />
         <meta
           name="keywords"
           content="sql recursive cte, with recursive sql, hierarchical data sql, org chart sql query, recursive query sql, sql tree structure, recursive common table expression, sql category tree"
         />
+        <meta property="og:title" content="SQL Recursive CTE for Org Charts and Category Trees" />
+        <meta property="og:description" content="Write a WITH RECURSIVE query that walks org charts and category trees of any depth, including the depth-counter trick that stops infinite loops on bad data." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-for-hierarchical-data-recursive-cte" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-for-hierarchical-data-recursive-cte" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

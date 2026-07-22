@@ -21,14 +21,14 @@ export default function UuidVsAutoIncrementDatabaseKeys() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'UUID vs Auto-Increment Database Keys — Trade-offs That Actually Matter',
+    headline: 'UUID vs Auto-Increment Keys: Trade-offs That Matter',
     description:
-      'Should your primary key be a UUID or an auto-increment integer? Enumeration attacks, distributed generation, replication, index locality, storage size, and the UUIDv7/ULID middle ground.',
+      'UUID or auto-increment for primary keys? Enumeration attacks, index locality, replication, storage size (16 vs 4/8 bytes), and the UUIDv7/ULID middle ground.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/uuid-vs-auto-increment-database-keys',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UuidVsAutoIncrementDatabaseKeys() {
   return (
     <>
       <Head>
-        <title>UUID vs Auto-Increment Database Keys — Trade-offs Explained | Dev Brains AI</title>
+        <title>UUID vs Auto-Increment Keys: Trade-offs That Matter | Dev Brains AI</title>
         <meta
           name="description"
-          content="Should your primary key be a UUID or an auto-increment integer? Enumeration attacks, distributed generation, replication, index locality, 16 vs 4/8 bytes, and the UUIDv7/ULID middle ground."
+          content="UUID or auto-increment for primary keys? Enumeration attacks, index locality, replication, storage size (16 vs 4/8 bytes), and the UUIDv7/ULID middle ground."
         />
         <meta
           name="keywords"
           content="uuid vs auto increment, uuid primary key, auto increment vs uuid performance, uuid primary key mysql, uuidv7 primary key, ulid vs uuid, database key design, sequential id security"
         />
+        <meta property="og:title" content="UUID vs Auto-Increment Keys: Trade-offs That Matter" />
+        <meta property="og:description" content="UUID or auto-increment for primary keys? Enumeration attacks, index locality, replication, storage size (16 vs 4/8 bytes), and the UUIDv7/ULID middle ground." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/uuid-vs-auto-increment-database-keys" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/uuid-vs-auto-increment-database-keys" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

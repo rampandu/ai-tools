@@ -20,14 +20,14 @@ export default function CommonApiErrorsAndHowToFixThem() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Common API Errors and How to Fix Them',
+    headline: '6 Common REST API Errors and How to Fix Them',
     description:
-      'A practical breakdown of the REST API error codes developers see most — 400, 401, 403, 404, 429, and 500 — with real causes and fixes for each.',
+      'Fix the 6 REST API errors developers hit most — 400, 401, 403, 404, 429, 500 — with the real cause and a concrete fix for each status code.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-api-errors-and-how-to-fix-them',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function CommonApiErrorsAndHowToFixThem() {
   return (
     <>
       <Head>
-        <title>Common API Errors and How to Fix Them | Dev Brains AI</title>
+        <title>6 Common REST API Errors and How to Fix Them | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical guide to the most common REST API error codes — 400, 401, 403, 404, 429, 500 — with real-world causes and how to fix each one."
+          content="Fix the 6 REST API errors developers hit most — 400, 401, 403, 404, 429, 500 — with the real cause and a concrete fix for each status code."
         />
         <meta
           name="keywords"
-          content="common api errors, rest api error codes, 400 bad request, 401 unauthorized, 403 forbidden, 404 not found, 429 too many requests, 500 internal server error"
+          content="common api errors, rest api error codes, 400 bad request fix, 401 vs 403 error, 404 not found api, 429 too many requests, 500 internal server error fix"
         />
+        <meta property="og:title" content="6 Common REST API Errors and How to Fix Them" />
+        <meta property="og:description" content="Fix the 6 REST API errors developers hit most — 400, 401, 403, 404, 429, 500 — with the real cause and a concrete fix for each status code." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/common-api-errors-and-how-to-fix-them" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-api-errors-and-how-to-fix-them" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

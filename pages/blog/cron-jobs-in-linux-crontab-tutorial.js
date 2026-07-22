@@ -21,14 +21,14 @@ export default function CronJobsInLinuxCrontabTutorial() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Jobs in Linux Crontab — Step-by-Step Tutorial',
+    headline: 'Linux Crontab Tutorial: Fix the #1 PATH Gotcha',
     description:
-      'A step-by-step tutorial on editing the Linux crontab with crontab -e, understanding syntax, logging output, and avoiding common gotchas like PATH and environment variable issues.',
+      'Edit the Linux crontab with crontab -e, redirect job output to a log file, and fix the #1 PATH gotcha that silently breaks cron jobs on every distro.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-jobs-in-linux-crontab-tutorial',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronJobsInLinuxCrontabTutorial() {
   return (
     <>
       <Head>
-        <title>Cron Jobs in Linux Crontab — Step-by-Step Tutorial | Dev Brains AI</title>
+        <title>Linux Crontab Tutorial: Fix the #1 PATH Gotcha | Dev Brains AI</title>
         <meta
           name="description"
-          content="Step-by-step tutorial on editing Linux crontab with crontab -e, syntax basics, logging job output, and common gotchas like PATH and environment variable issues."
+          content="Edit the Linux crontab with crontab -e, redirect job output to a log file, and fix the #1 PATH gotcha that silently breaks cron jobs on every distro."
         />
         <meta
           name="keywords"
           content="linux crontab tutorial, crontab -e, crontab syntax, cron job linux, crontab logging, crontab path issues, edit crontab"
         />
+        <meta property="og:title" content="Linux Crontab Tutorial: Fix the #1 PATH Gotcha" />
+        <meta property="og:description" content="Edit the Linux crontab with crontab -e, redirect job output to a log file, and fix the #1 PATH gotcha that silently breaks cron jobs on every distro." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-jobs-in-linux-crontab-tutorial" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-jobs-in-linux-crontab-tutorial" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

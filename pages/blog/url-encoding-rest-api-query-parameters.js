@@ -21,24 +21,28 @@ export default function UrlEncodingRestApi() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'URL Encoding for REST API Query Parameters',
+    headline: 'URL-Encode REST API Query Parameters (JS Examples)',
     description:
-      'Learn why and how to correctly URL-encode REST API query parameters. Covers encodeURIComponent, URLSearchParams, fetch, axios, and common mistakes that break API calls.',
+      'URL-encode REST API query parameters correctly with encodeURIComponent, URLSearchParams, fetch, and axios — the mistakes that silently break API calls.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-rest-api-query-parameters',
     datePublished: '2026-02-26',
-    dateModified: '2026-06-01',
+    dateModified: '2026-07-22',
   };
 
   return (
     <>
       <Head>
-        <title>URL Encoding for REST API Query Parameters | Dev Brains AI</title>
+        <title>URL-Encode REST API Query Parameters (JS Examples) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to correctly URL-encode REST API query parameters in JavaScript. Covers encodeURIComponent, URLSearchParams, fetch, axios, and the common mistakes that silently break your API calls."
+          content="URL-encode REST API query parameters correctly with encodeURIComponent, URLSearchParams, fetch, and axios — the mistakes that silently break API calls."
         />
+        <meta property="og:title" content="URL-Encode REST API Query Parameters (JS Examples)" />
+        <meta property="og:description" content="URL-encode REST API query parameters correctly with encodeURIComponent, URLSearchParams, fetch, and axios — the mistakes that silently break API calls." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/url-encoding-rest-api-query-parameters" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-encoding-rest-api-query-parameters" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

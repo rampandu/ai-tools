@@ -74,6 +74,13 @@ export default function HexRgbHslColorFormatsExplained() {
           name="keywords"
           content="hex vs rgb vs hsl, color formats explained, hex color code, rgb to hsl, hsl explained, css color formats, hex alpha, color converter"
         />
+        <meta property="og:title" content="HEX vs RGB vs HSL — Color Formats Explained" />
+        <meta
+          property="og:description"
+          content="Hex anatomy (#RRGGBB, shorthand, #RRGGBBAA), rgb()/rgba(), and HSL's human model — one color worked through all three formats, plus when to use which."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/hex-rgb-hsl-color-formats-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/hex-rgb-hsl-color-formats-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

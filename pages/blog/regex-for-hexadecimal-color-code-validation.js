@@ -74,6 +74,10 @@ export default function RegexForHexadecimalColorCodeValidation() {
           name="keywords"
           content="hex color regex, hex code validation regex, css hex color regex, rgba hex regex, validate hex color javascript"
         />
+        <meta property="og:title" content="Regex for Hexadecimal Color Code Validation (3, 6, 8-Digit)" />
+        <meta property="og:description" content="Regex patterns to validate 3-digit and 6-digit hex color codes, with and without #, plus the 8-digit alpha-channel format, with CSS and JS examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-hexadecimal-color-code-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-hexadecimal-color-code-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

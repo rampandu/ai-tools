@@ -74,6 +74,13 @@ export default function HashCollisionsExplained() {
           name="keywords"
           content="hash collision, hash collisions explained, birthday paradox hashing, pigeonhole principle hash, md5 collision, sha1 collision shattered, collision resistance, sha256 collision"
         />
+        <meta property="og:title" content="Hash Collisions Explained — Birthday Paradox &amp; Broken Hashes" />
+        <meta
+          property="og:description"
+          content="Hash collisions explained: the pigeonhole principle, the birthday paradox and the 2^(n/2) bound, how collisions broke MD5 and SHA-1 in the real world, and why SHA-256 is still collision-free."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/hash-collisions-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/hash-collisions-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

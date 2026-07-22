@@ -21,14 +21,14 @@ export default function PasswordHashingBcryptVsSha256() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Password Hashing — Why bcrypt Beats SHA-256 for Storing Passwords',
+    headline: 'Password Hashing: Why bcrypt Beats SHA-256 for Storing Passwords',
     description:
-      'Why fast hashes like SHA-256 fail for passwords: GPU brute-force economics, salting, and work factors explained. bcrypt vs scrypt vs Argon2 compared, with a Node.js bcrypt example and cost-factor guidance.',
+      'Why SHA-256 fails for passwords: GPU crack economics, salting, bcrypt vs scrypt vs Argon2, and a working Node.js bcrypt example with cost-factor guidance.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/password-hashing-bcrypt-vs-sha256',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function PasswordHashingBcryptVsSha256() {
   return (
     <>
       <Head>
-        <title>Password Hashing — bcrypt vs SHA-256 | Dev Brains AI</title>
+        <title>Password Hashing: Why bcrypt Beats SHA-256 | Dev Brains AI</title>
         <meta
           name="description"
-          content="Why fast hashes like SHA-256 fail for passwords: GPU brute-force economics, salting, work factors, bcrypt vs scrypt vs Argon2, a Node.js bcrypt example with cost guidance, and common mistakes."
+          content="Why SHA-256 fails for passwords: GPU crack economics, salting, bcrypt vs scrypt vs Argon2, and a working Node.js bcrypt example with cost-factor guidance."
         />
         <meta
           name="keywords"
           content="bcrypt vs sha256, password hashing best practices, bcrypt cost factor, argon2 vs bcrypt, salt password hash, nodejs bcrypt example, secure password storage, scrypt vs argon2"
         />
+        <meta property="og:title" content="Password Hashing: Why bcrypt Beats SHA-256" />
+        <meta property="og:description" content="Why SHA-256 fails for passwords: GPU crack economics, salting, bcrypt vs scrypt vs Argon2, and a working Node.js bcrypt example with cost-factor guidance." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/password-hashing-bcrypt-vs-sha256" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/password-hashing-bcrypt-vs-sha256" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

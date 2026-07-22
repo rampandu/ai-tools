@@ -74,6 +74,10 @@ export default function MarkdownForTechnicalDocumentationTips() {
           name="keywords"
           content="markdown technical documentation, docs as code, markdown best practices, markdown heading hierarchy, markdown relative links, documentation workflow, markdown docs tips"
         />
+        <meta property="og:title" content="Markdown for Technical Documentation — 7 Tips That Keep Docs Readable" />
+        <meta property="og:description" content="Practical Markdown tips for technical docs: heading hierarchy discipline, code block language tags, relative links, alt text, tables vs lists, and a docs-as-code CI workflow." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/markdown-for-technical-documentation-tips" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/markdown-for-technical-documentation-tips" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

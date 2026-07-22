@@ -21,14 +21,14 @@ export default function SqlQueryForEmployeeAttendanceReport() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Query for Employee Attendance Report — Daily, Monthly, and Late Arrivals',
+    headline: 'SQL Queries for Employee Attendance & Late Arrivals',
     description:
-      'Practical SQL queries for building an employee attendance report: daily and monthly attendance percentage, late arrival detection, and absentee reports.',
+      'Build an employee attendance report: daily status, monthly attendance percentage, late check-in detection, and absentee counts in MySQL and PostgreSQL.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-query-for-employee-attendance-report',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlQueryForEmployeeAttendanceReport() {
   return (
     <>
       <Head>
-        <title>SQL Query for Employee Attendance Report — Daily, Monthly, Late Arrivals | Dev Brains AI</title>
+        <title>SQL Queries for Employee Attendance & Late Arrivals | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical SQL queries for building an employee attendance report: daily and monthly attendance percentage, late arrival detection, and absentee reports."
+          content="Build an employee attendance report: daily status, monthly attendance percentage, late check-in detection, and absentee counts in MySQL and PostgreSQL."
         />
         <meta
           name="keywords"
           content="sql attendance report, employee attendance sql query, sql late arrival query, monthly attendance percentage sql, attendance_logs table sql, sql absentee report"
         />
+        <meta property="og:title" content="SQL Queries for Employee Attendance & Late Arrivals" />
+        <meta property="og:description" content="Build an employee attendance report: daily status, monthly attendance percentage, late check-in detection, and absentee counts in MySQL and PostgreSQL." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-for-employee-attendance-report" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-for-employee-attendance-report" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

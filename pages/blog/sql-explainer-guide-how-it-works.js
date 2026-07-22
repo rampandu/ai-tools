@@ -21,14 +21,14 @@ export default function SqlExplainerGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Read a SQL Query You Did Not Write — A Step-by-Step Guide',
+    headline: 'How to Read Any SQL Query: Execution Order Explained',
     description:
-      'Learn how to read and understand any SQL query, including the difference between reading order and execution order, with a worked example using JOIN, WHERE, GROUP BY, and ORDER BY.',
+      'Learn why SQL executes FROM before SELECT, then read a real JOIN, GROUP BY, and HAVING query clause by clause in the order the database actually runs it.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-explainer-guide-how-it-works',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlExplainerGuide() {
   return (
     <>
       <Head>
-        <title>How to Read a SQL Query You Did Not Write — A Step-by-Step Guide | Dev Brains AI</title>
+        <title>How to Read Any SQL Query: Execution Order Explained | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to read any SQL query clause by clause, understand execution order vs reading order, and parse nested subqueries with a worked JOIN example."
+          content="Learn why SQL executes FROM before SELECT, then read a real JOIN, GROUP BY, and HAVING query clause by clause in the order the database actually runs it."
         />
         <meta
           name="keywords"
-          content="sql explainer, how to read sql query, sql execution order, understand sql query, sql query breakdown, sql join example, sql group by explained, decode sql"
+          content="sql explainer, how to read sql query, sql execution order, understand sql query, sql query breakdown, sql join example, sql group by explained, decode sql, sql read vs execution order"
         />
+        <meta property="og:title" content="How to Read Any SQL Query: Execution Order Explained" />
+        <meta property="og:description" content="Learn why SQL executes FROM before SELECT, then read a real JOIN, GROUP BY, and HAVING query clause by clause in the order the database actually runs it." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-explainer-guide-how-it-works" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-explainer-guide-how-it-works" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

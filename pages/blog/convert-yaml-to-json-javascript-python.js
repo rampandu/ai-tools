@@ -21,14 +21,14 @@ export default function ConvertYamlToJsonJavascriptPython() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Convert YAML to JSON in JavaScript and Python (Safely)',
+    headline: 'Convert YAML to JSON in JavaScript & Python (Safely)',
     description:
-      'Convert YAML to JSON and back in JavaScript with js-yaml and Python with PyYAML: safe_load vs load security, round-trip caveats like lost comments and flattened anchors, plus yq one-liners for the command line.',
+      'Convert YAML to JSON using js-yaml and PyYAML safe_load, dodge the yaml.load security trap, and see what round-tripping silently loses: comments and anchors.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/convert-yaml-to-json-javascript-python',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ConvertYamlToJsonJavascriptPython() {
   return (
     <>
       <Head>
-        <title>How to Convert YAML to JSON in JavaScript and Python | Dev Brains AI</title>
+        <title>Convert YAML to JSON in JavaScript & Python (Safely) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Convert YAML to JSON in JavaScript (js-yaml) and Python (PyYAML safe_load) with security notes, round-trip caveats — lost comments, flattened anchors — and yq one-liners."
+          content="Convert YAML to JSON using js-yaml and PyYAML safe_load, dodge the yaml.load security trap, and see what round-tripping silently loses: comments and anchors."
         />
         <meta
           name="keywords"
           content="convert yaml to json, yaml to json javascript, js-yaml tutorial, pyyaml safe_load, yaml to json python, json to yaml, yq yaml to json, yaml deserialization security"
         />
+        <meta property="og:title" content="Convert YAML to JSON in JavaScript & Python (Safely)" />
+        <meta property="og:description" content="Convert YAML to JSON using js-yaml and PyYAML safe_load, dodge the yaml.load security trap, and see what round-tripping silently loses: comments and anchors." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/convert-yaml-to-json-javascript-python" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/convert-yaml-to-json-javascript-python" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

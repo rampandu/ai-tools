@@ -21,14 +21,14 @@ export default function CronVsQuartzSchedulerJava() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron vs Quartz Scheduler in Java — Syntax Differences Explained',
+    headline: 'Cron vs Quartz in Java: The Seconds Field Trap',
     description:
-      'Compare standard Unix cron syntax with Quartz Scheduler cron expressions in Java — the extra seconds field, the day-of-month/day-of-week conflict rule, and example expressions for both.',
+      'Convert Unix cron to Quartz syntax in Java: the extra seconds field, the day-of-month/day-of-week ? rule, and a side-by-side table of matching expressions.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-vs-quartz-scheduler-java',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronVsQuartzSchedulerJava() {
   return (
     <>
       <Head>
-        <title>Cron vs Quartz Scheduler in Java — Syntax Differences | Dev Brains AI</title>
+        <title>Cron vs Quartz in Java: The Seconds Field Trap | Dev Brains AI</title>
         <meta
           name="description"
-          content="Compare Unix cron syntax vs Quartz Scheduler's cron-like syntax in Java, including the extra seconds field and the day-of-month/day-of-week conflict rule."
+          content="Convert Unix cron to Quartz syntax in Java: the extra seconds field, the day-of-month/day-of-week ? rule, and a side-by-side table of matching expressions."
         />
         <meta
           name="keywords"
           content="quartz cron expression, quartz scheduler java, cron vs quartz, quartz cron syntax, java cron scheduler, quartz seconds field, quartz cron examples"
         />
+        <meta property="og:title" content="Cron vs Quartz in Java: The Seconds Field Trap" />
+        <meta property="og:description" content="Convert Unix cron to Quartz syntax in Java: the extra seconds field, the day-of-month/day-of-week ? rule, and a side-by-side table of matching expressions." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-vs-quartz-scheduler-java" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-vs-quartz-scheduler-java" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

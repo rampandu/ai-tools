@@ -21,14 +21,14 @@ export default function HowToHandleAsyncErrorsInNodejs() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Handle Async Errors in Node.js the Right Way',
+    headline: 'Node.js Async Error Handling: Avoid Unhandled Rejections',
     description:
-      'Best practices for handling errors in async/await and Promise-based Node.js code, including unhandled promise rejections and Express route wrappers.',
+      'Stop silent crashes from unhandled promise rejections in Node.js — working try/catch patterns, an Express async route wrapper, and Promise.allSettled examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-handle-async-errors-in-nodejs',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToHandleAsyncErrorsInNodejs() {
   return (
     <>
       <Head>
-        <title>How to Handle Async Errors in Node.js the Right Way | Dev Brains AI</title>
+        <title>Node.js Async Error Handling: Avoid Unhandled Rejections | Dev Brains AI</title>
         <meta
           name="description"
-          content="Best practices for handling errors in async/await and Promise-based Node.js code, including unhandled promise rejections and Express route wrappers."
+          content="Stop silent crashes from unhandled promise rejections in Node.js — working try/catch patterns, an Express async route wrapper, and Promise.allSettled examples."
         />
         <meta
           name="keywords"
-          content="nodejs async errors, unhandled promise rejection, async await error handling, try catch async javascript, express async errors"
+          content="nodejs async errors, unhandled promise rejection, async await error handling, try catch async javascript, express async errors, promise.allsettled"
         />
+        <meta property="og:title" content="Node.js Async Error Handling: Avoid Unhandled Rejections" />
+        <meta property="og:description" content="Stop silent crashes from unhandled promise rejections in Node.js — working try/catch patterns, an Express async route wrapper, and Promise.allSettled examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-handle-async-errors-in-nodejs" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-handle-async-errors-in-nodejs" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

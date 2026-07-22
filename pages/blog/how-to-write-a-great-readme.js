@@ -21,14 +21,14 @@ export default function HowToWriteAGreatReadme() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Write a Great README.md (With Examples)',
+    headline: 'How to Write a Great README.md: 8 Essential Sections',
     description:
-      'Learn what makes a README great: the essential sections, badges explained, good vs mediocre examples, and how to keep your README maintained as your project grows.',
+      'The 8 sections every great README needs, good-vs-mediocre examples for each, what badges actually signal, and how to keep your docs from going stale.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-write-a-great-readme',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToWriteAGreatReadme() {
   return (
     <>
       <Head>
-        <title>How to Write a Great README.md (With Examples) | Dev Brains AI</title>
+        <title>How to Write a Great README.md: 8 Essential Sections | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn what makes a README great: essential sections, badges explained, good vs mediocre examples, and how to keep your README.md maintained as your project grows."
+          content="The 8 sections every great README needs, good-vs-mediocre examples for each, what badges actually signal, and how to keep your docs from going stale."
         />
         <meta
           name="keywords"
           content="how to write a readme, readme.md guide, readme best practices, github readme template, readme sections, readme badges, readme generator, project documentation"
         />
+        <meta property="og:title" content="How to Write a Great README.md: 8 Essential Sections" />
+        <meta property="og:description" content="The 8 sections every great README needs, good-vs-mediocre examples for each, what badges actually signal, and how to keep your docs from going stale." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-write-a-great-readme" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-write-a-great-readme" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

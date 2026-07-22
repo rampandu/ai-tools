@@ -21,14 +21,14 @@ export default function HowToQuicklyUnderstandUnfamiliarCode() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Quickly Understand Unfamiliar Code — A Systematic Approach',
+    headline: 'Understand Unfamiliar Code Fast: A 4-Step Method',
     description:
-      'A practical, systematic approach for getting oriented in an unfamiliar codebase or snippet fast — entry points, naming clues, top-down vs bottom-up reading, and note-taking tips.',
+      'A 4-step method for getting oriented in unfamiliar code fast: find entry points, scan function names, spot complexity signals, and read the imports.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-quickly-understand-unfamiliar-code',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToQuicklyUnderstandUnfamiliarCode() {
   return (
     <>
       <Head>
-        <title>How to Quickly Understand Unfamiliar Code | Dev Brains AI</title>
+        <title>Understand Unfamiliar Code Fast: A 4-Step Method | Dev Brains AI</title>
         <meta
           name="description"
-          content="A systematic approach to quickly getting oriented in unfamiliar code — entry points, naming clues, top-down vs bottom-up reading, and when to just run it."
+          content="A 4-step method for getting oriented in unfamiliar code fast: find entry points, scan function names, spot complexity signals, and read the imports."
         />
         <meta
           name="keywords"
           content="how to understand unfamiliar code, reading unfamiliar codebase, code explainer, understanding legacy code, onboarding new codebase, code review tips, reading code effectively"
         />
+        <meta property="og:title" content="Understand Unfamiliar Code Fast: A 4-Step Method" />
+        <meta property="og:description" content="A 4-step method for getting oriented in unfamiliar code fast: find entry points, scan function names, spot complexity signals, and read the imports." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-quickly-understand-unfamiliar-code" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-quickly-understand-unfamiliar-code" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

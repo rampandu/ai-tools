@@ -73,6 +73,10 @@ export default function RegexForIndianPinCodeValidation() {
           name="keywords"
           content="regex for indian pin code validation, pin code regex, validate pincode javascript, india postal code regex, 6 digit pincode pattern"
         />
+        <meta property="og:title" content="Regex for Indian PIN Code Validation — 6-Digit Postal Codes" />
+        <meta property="og:description" content="Validate 6-digit Indian postal PIN codes using regex in JavaScript and Python. Covers the zone-digit rule, common mistakes, and address-form best practices." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-indian-pin-code-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-indian-pin-code-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

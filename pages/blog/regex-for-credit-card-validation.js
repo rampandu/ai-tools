@@ -74,6 +74,10 @@ export default function RegexForCreditCardValidation() {
           name="keywords"
           content="regex credit card validation, credit card number regex, visa mastercard amex regex, luhn algorithm, rupay card regex, javascript credit card validation"
         />
+        <meta property="og:title" content="Regex for Credit Card Validation — Visa, Mastercard, Amex, RuPay" />
+        <meta property="og:description" content="Regex patterns to validate major credit card formats — Visa, Mastercard, Amex, RuPay, Discover — plus why you also need the Luhn algorithm for real validity." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-credit-card-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-credit-card-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

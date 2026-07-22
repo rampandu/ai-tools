@@ -21,14 +21,14 @@ export default function VerifyFileIntegrityWithChecksums() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Verify File Integrity with Checksums on Linux and Windows',
+    headline: 'Verify File Integrity with SHA-256 Checksums on Linux and Windows',
     description:
-      'How to verify downloaded files with sha256sum, certutil, and Get-FileHash, compare against published hashes, why checksums catch corrupted and tampered downloads, and how to automate verification in CI.',
+      'Verify downloads with sha256sum, certutil, and Get-FileHash on Linux, macOS, and Windows — spot corrupted or tampered files, and automate checks in CI.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/verify-file-integrity-with-checksums',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function VerifyFileIntegrityWithChecksums() {
   return (
     <>
       <Head>
-        <title>Verify File Integrity with Checksums (Linux &amp; Windows) | Dev Brains AI</title>
+        <title>Verify File Integrity with SHA-256 Checksums | Dev Brains AI</title>
         <meta
           name="description"
-          content="Verify downloads with sha256sum, certutil, and Get-FileHash. Compare published hashes, understand why checksums catch corrupted or tampered files, and automate checks in CI."
+          content="Verify downloads with sha256sum, certutil, and Get-FileHash on Linux, macOS, and Windows — spot corrupted or tampered files, and automate checks in CI."
         />
         <meta
           name="keywords"
           content="verify file integrity, sha256sum check, certutil hashfile, Get-FileHash powershell, file checksum verification, verify download hash, sha256 checksum windows, checksum in ci pipeline"
         />
+        <meta property="og:title" content="Verify File Integrity with SHA-256 Checksums" />
+        <meta property="og:description" content="Verify downloads with sha256sum, certutil, and Get-FileHash on Linux, macOS, and Windows — spot corrupted or tampered files, and automate checks in CI." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/verify-file-integrity-with-checksums" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/verify-file-integrity-with-checksums" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

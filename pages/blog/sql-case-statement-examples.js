@@ -21,14 +21,14 @@ export default function SqlCaseStatementExamples() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL CASE Statement Examples — Conditional Logic in SELECT',
+    headline: 'SQL CASE Statement Examples: 4 Real-World Patterns',
     description:
-      'Learn the SQL CASE WHEN expression with real examples: age bands, order status labels, grading, conditional aggregation, and CASE inside ORDER BY.',
+      'Four copy-paste SQL CASE WHEN examples — age bands, order status labels, letter grades, and conditional SUM aggregation — plus CASE inside ORDER BY.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-case-statement-examples',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlCaseStatementExamples() {
   return (
     <>
       <Head>
-        <title>SQL CASE Statement Examples — Conditional Logic in SELECT | Dev Brains AI</title>
+        <title>SQL CASE Statement Examples: 4 Real-World Patterns | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn the SQL CASE WHEN expression with real examples: age bands, order status labels, grading, conditional aggregation, and CASE inside ORDER BY."
+          content="Four copy-paste SQL CASE WHEN examples — age bands, order status labels, letter grades, and conditional SUM aggregation — plus CASE inside ORDER BY."
         />
         <meta
           name="keywords"
-          content="sql case statement, case when sql, sql case when example, conditional logic sql, sql if else, case statement sql select, conditional aggregation sql"
+          content="sql case statement, case when sql, sql case when example, conditional logic sql, sql if else, case statement sql select, conditional aggregation sql, case in order by sql"
         />
+        <meta property="og:title" content="SQL CASE Statement Examples: 4 Real-World Patterns" />
+        <meta property="og:description" content="Four copy-paste SQL CASE WHEN examples — age bands, order status labels, letter grades, and conditional SUM aggregation — plus CASE inside ORDER BY." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-case-statement-examples" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-case-statement-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function RegexLookaheadAndLookbehindExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex Lookahead and Lookbehind Explained — With Practical Examples',
+    headline: 'Regex Lookahead vs Lookbehind: 4 Patterns Explained',
     description:
-      'A clear explanation of positive/negative lookahead (?=)/(?!) and lookbehind (?<=)/(?<!) in regex, with practical examples like password rules and currency formatting.',
+      'All four regex lookaround assertions — positive/negative lookahead and lookbehind — explained with password validation and currency-formatting examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-lookahead-and-lookbehind-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexLookaheadAndLookbehindExplained() {
   return (
     <>
       <Head>
-        <title>Regex Lookahead and Lookbehind Explained (With Examples) | Dev Brains AI</title>
+        <title>Regex Lookahead vs Lookbehind: 4 Patterns Explained | Dev Brains AI</title>
         <meta
           name="description"
-          content="A clear explanation of positive/negative lookahead and lookbehind in regex, with practical examples like password rules and currency formatting."
+          content="All four regex lookaround assertions — positive/negative lookahead and lookbehind — explained with password validation and currency-formatting examples."
         />
         <meta
           name="keywords"
-          content="regex lookahead, regex lookbehind, positive negative lookahead regex, javascript regex lookbehind example, regex assertions explained"
+          content="regex lookahead, regex lookbehind, positive negative lookahead regex, javascript regex lookbehind example, regex assertions explained, regex zero-width assertion"
         />
+        <meta property="og:title" content="Regex Lookahead vs Lookbehind: 4 Patterns Explained" />
+        <meta property="og:description" content="All four regex lookaround assertions — positive/negative lookahead and lookbehind — explained with password validation and currency-formatting examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-lookahead-and-lookbehind-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-lookahead-and-lookbehind-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

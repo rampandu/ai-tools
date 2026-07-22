@@ -74,6 +74,13 @@ export default function HowPasswordManagersWork() {
           name="keywords"
           content="how password managers work, zero knowledge encryption, PBKDF2, Argon2, AES-256 vault, password manager security, autofill phishing protection, master password"
         />
+        <meta property="og:title" content="How Password Managers Work — Under the Hood" />
+        <meta
+          property="og:description"
+          content="Master password → KDF (PBKDF2/Argon2) → AES-256 encrypted vault. Zero-knowledge architecture, sync and breach implications, and why autofill blocks phishing."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-password-managers-work" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-password-managers-work" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function MachineLearningProjectsForBeginnersIndia() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Machine Learning Projects for Beginners in India — With Learning Paths',
+    headline: '5 Machine Learning Projects for Beginners in India',
     description:
-      'Concrete beginner machine learning project ideas — house price prediction, spam classifier, movie recommendation — with tech stack and a step-by-step learning path for each.',
+      '5 beginner ML projects — from house price prediction to digit recognition — each with dataset, tech stack, and a step-by-step learning path to follow.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/machine-learning-projects-for-beginners-india',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function MachineLearningProjectsForBeginnersIndia() {
   return (
     <>
       <Head>
-        <title>Machine Learning Projects for Beginners in India — With Learning Paths | Dev Brains AI</title>
+        <title>5 Machine Learning Projects for Beginners in India | Dev Brains AI</title>
         <meta
           name="description"
-          content="Concrete beginner ML project ideas — house price prediction, spam classifier, movie recommendation — with tech stack and learning path for each."
+          content="5 beginner ML projects — from house price prediction to digit recognition — each with dataset, tech stack, and a step-by-step learning path to follow."
         />
         <meta
           name="keywords"
-          content="machine learning projects for beginners, ml projects india, machine learning project ideas, beginner ml projects python, house price prediction project, spam classifier project"
+          content="machine learning projects for beginners, ml projects india, machine learning project ideas, beginner ml projects python, house price prediction project, spam classifier project, churn prediction project"
         />
+        <meta property="og:title" content="5 Machine Learning Projects for Beginners in India" />
+        <meta property="og:description" content="5 beginner ML projects — from house price prediction to digit recognition — each with dataset, tech stack, and a step-by-step learning path to follow." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/machine-learning-projects-for-beginners-india" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/machine-learning-projects-for-beginners-india" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

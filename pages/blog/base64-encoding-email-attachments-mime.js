@@ -21,14 +21,14 @@ export default function Base64EmailMime() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How Base64 Encodes Email Attachments in MIME',
+    headline: 'How Base64 Encodes Email Attachments (MIME Explained)',
     description:
-      'Explains how Base64 is used inside MIME to encode email attachments so binary files survive text-only email transport, with a simplified example of a raw MIME multipart message.',
+      'See the raw MIME structure behind an email attachment: why Base64 is required, how Content-Transfer-Encoding works, and why attachments end up 33% larger.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-encoding-email-attachments-mime',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function Base64EmailMime() {
   return (
     <>
       <Head>
-        <title>How Base64 Encodes Email Attachments in MIME | Dev Brains AI</title>
+        <title>How Base64 Encodes Email Attachments (MIME Explained) | Dev Brains AI</title>
         <meta
           name="description"
-          content="How Base64 is used inside MIME to encode email attachments so binary files survive text-only email transport, with a simplified raw MIME message example."
+          content="See the raw MIME structure behind an email attachment: why Base64 is required, how Content-Transfer-Encoding works, and why attachments end up 33% larger."
         />
         <meta
           name="keywords"
           content="base64 email attachment, mime base64, content-transfer-encoding base64, how email attachments work, mime multipart example"
         />
+        <meta property="og:title" content="How Base64 Encodes Email Attachments (MIME Explained)" />
+        <meta
+          property="og:description"
+          content="See the raw MIME structure behind an email attachment: why Base64 is required, how Content-Transfer-Encoding works, and why attachments end up 33% larger."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/base64-encoding-email-attachments-mime" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-encoding-email-attachments-mime" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

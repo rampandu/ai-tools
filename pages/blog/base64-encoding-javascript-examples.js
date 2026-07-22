@@ -21,9 +21,9 @@ export default function Base64EncodingJavaScript() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Base64 Encoding in JavaScript — Complete Guide with Examples',
+    headline: 'Base64 Encoding in JavaScript: btoa, atob, Unicode Fix',
     description:
-      'Learn how Base64 encoding works in JavaScript. Covers btoa, atob, TextEncoder for Unicode, Node.js Buffer, URL-safe Base64, and common use cases with code examples.',
+      'btoa and atob explained, the Unicode bug that breaks btoa() and how to fix it, plus Node.js Buffer, URL-safe Base64, and real use cases with working code.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-encoding-javascript-examples',
@@ -32,11 +32,18 @@ export default function Base64EncodingJavaScript() {
   return (
     <>
       <Head>
-        <title>Base64 Encoding in JavaScript — Complete Guide with Examples | Dev Brains AI</title>
+        <title>Base64 Encoding in JavaScript: btoa, atob, Unicode Fix | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how Base64 encoding works in JavaScript. Covers btoa, atob, Unicode support with TextEncoder, Node.js Buffer, URL-safe Base64, and real-world use cases."
+          content="btoa and atob explained, the Unicode bug that breaks btoa() and how to fix it, plus Node.js Buffer, URL-safe Base64, and real use cases with working code."
         />
+        <meta property="og:title" content="Base64 Encoding in JavaScript: btoa, atob, Unicode Fix" />
+        <meta
+          property="og:description"
+          content="btoa and atob explained, the Unicode bug that breaks btoa() and how to fix it, plus Node.js Buffer, URL-safe Base64, and real use cases with working code."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/base64-encoding-javascript-examples" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-encoding-javascript-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -4,12 +4,17 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>SQL Join Interview Questions With Examples</title>
+        <title>SQL JOIN Interview Questions: INNER, LEFT, RIGHT, FULL | Dev Brains AI</title>
 
         <meta
           name="description"
-          content="Top SQL Join interview questions with examples for freshers in India. Learn INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN with real interview queries."
+          content="Practice real INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN interview questions with sample tables and queries asked at TCS, Infosys, Wipro, and Accenture."
         />
+
+        <meta property="og:title" content="SQL JOIN Interview Questions: INNER, LEFT, RIGHT, FULL" />
+        <meta property="og:description" content="Practice real INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN interview questions with sample tables and queries asked at TCS, Infosys, Wipro, and Accenture." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-join-interview-questions-with-examples" />
+        <meta property="og:type" content="article" />
 
         <script
           type="application/ld+json"
@@ -17,7 +22,7 @@ export default function Blog() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "SQL Join Interview Questions With Examples",
+              headline: "SQL JOIN Interview Questions: INNER, LEFT, RIGHT, FULL",
               author: { "@type": "Organization", name: "Dev-Brains-AI" },
               publisher: { "@type": "Organization", name: "Dev-Brains-AI" }
             })

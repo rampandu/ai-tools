@@ -20,14 +20,14 @@ export default function Top50UsefulRegexPatternsForDevelopers() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Top 50 Useful Regex Patterns for Developers',
+    headline: '50 Ready-to-Use Regex Patterns for Developers',
     description:
-      '50 practical, ready-to-use regex patterns for validation, parsing, and search — covering email, URL, phone, date, IP, password, hex color, and more.',
+      '50 copy-paste regex patterns for email, URL, phone, IP, password, and date validation — organized by category with real examples, not abstract syntax.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/top-50-useful-regex-patterns-for-developers',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function Top50UsefulRegexPatternsForDevelopers() {
   return (
     <>
       <Head>
-        <title>Top 50 Useful Regex Patterns for Developers | Dev Brains AI</title>
+        <title>50 Ready-to-Use Regex Patterns for Developers | Dev Brains AI</title>
         <meta
           name="description"
-          content="50 practical, ready-to-use regex patterns for validation, parsing, and search — covering email, URL, phone, date, IP, password, hex color, and more."
+          content="50 copy-paste regex patterns for email, URL, phone, IP, password, and date validation — organized by category with real examples, not abstract syntax."
         />
         <meta
           name="keywords"
-          content="top regex patterns, useful regex patterns for developers, regex cheat sheet, common regex examples, regex patterns list"
+          content="50 regex patterns, regex patterns for developers, regex cheat sheet, copy paste regex examples, email regex, ip regex, password regex"
         />
+        <meta property="og:title" content="50 Ready-to-Use Regex Patterns for Developers" />
+        <meta property="og:description" content="50 copy-paste regex patterns for email, URL, phone, IP, password, and date validation — organized by category with real examples, not abstract syntax." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/top-50-useful-regex-patterns-for-developers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/top-50-useful-regex-patterns-for-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

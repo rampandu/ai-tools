@@ -21,14 +21,14 @@ export default function SqlInterviewQuestionsForFreshers() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Interview Questions for Freshers with Answers',
+    headline: 'SQL Interview Questions for Freshers, Fully Explained',
     description:
-      'A practical set of beginner-level SQL interview questions and answers covering SELECT basics, JOIN types, keys, normalization, and DELETE vs TRUNCATE vs DROP.',
+      "A fresher-level SQL interview cheat sheet: SELECT vs HAVING, all four JOIN types, primary vs foreign keys, 1NF-3NF, and DELETE vs TRUNCATE vs DROP.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-interview-questions-for-freshers-with-answers',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlInterviewQuestionsForFreshers() {
   return (
     <>
       <Head>
-        <title>SQL Interview Questions for Freshers with Answers | Dev Brains AI</title>
+        <title>SQL Interview Questions for Freshers, Fully Explained | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical set of beginner-level SQL interview questions and answers covering SELECT basics, JOIN types, keys, normalization, and DELETE vs TRUNCATE vs DROP."
+          content="A fresher-level SQL interview cheat sheet: SELECT vs HAVING, all four JOIN types, primary vs foreign keys, 1NF-3NF, and DELETE vs TRUNCATE vs DROP."
         />
         <meta
           name="keywords"
           content="sql interview questions for freshers, sql interview questions with answers, basic sql interview questions, sql questions for beginners, sql interview prep, entry level sql interview questions"
         />
+        <meta property="og:title" content="SQL Interview Questions for Freshers, Fully Explained" />
+        <meta property="og:description" content="A fresher-level SQL interview cheat sheet: SELECT vs HAVING, all four JOIN types, primary vs foreign keys, 1NF-3NF, and DELETE vs TRUNCATE vs DROP." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-interview-questions-for-freshers-with-answers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-interview-questions-for-freshers-with-answers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -4,7 +4,18 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>50 SQL Queries for Freshers in India</title>
+        <title>50 SQL Interview Queries for Freshers in India | Dev Brains AI</title>
+        <meta
+          name="description"
+          content="50 ready-to-run SQL queries for fresher interviews at TCS, Infosys, Wipro, and Accenture, covering joins, GROUP BY, subqueries, and CREATE TABLE examples."
+        />
+        <meta property="og:title" content="50 SQL Interview Queries for Freshers in India" />
+        <meta
+          property="og:description"
+          content="50 ready-to-run SQL queries for fresher interviews at TCS, Infosys, Wipro, and Accenture, covering joins, GROUP BY, subqueries, and CREATE TABLE examples."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/50-sql-queries-for-freshers-in-india" />
+        <meta property="og:type" content="article" />
 
         <script
           type="application/ld+json"
@@ -12,7 +23,7 @@ export default function Blog() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "50 SQL Queries for Freshers in India",
+              headline: "50 SQL Interview Queries for Freshers in India",
               author: { "@type": "Organization", name: "Dev-Brains-AI" },
               publisher: { "@type": "Organization", name: "Dev-Brains-AI" },
             }),

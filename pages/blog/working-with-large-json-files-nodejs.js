@@ -21,14 +21,14 @@ export default function WorkingWithLargeJsonFilesNodejs() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Working with Large JSON Files in Node.js Without Running Out of Memory',
+    headline: "Large JSON Files in Node.js: Avoid Heap Out of Memory",
     description:
-      'How to process large JSON files in Node.js without loading everything into memory — streaming JSON parsers, chunked processing, and practical code examples.',
+      "How to process large JSON files in Node.js without crashing with 'heap out of memory' — streaming parsers, NDJSON, and working code examples.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/working-with-large-json-files-nodejs',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function WorkingWithLargeJsonFilesNodejs() {
   return (
     <>
       <Head>
-        <title>Working with Large JSON Files in Node.js | Dev Brains AI</title>
+        <title>Large JSON Files in Node.js: Avoid Heap Out of Memory | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to process large JSON files in Node.js without loading everything into memory — streaming JSON parsers, chunked processing, and practical code examples."
+          content="How to process large JSON files in Node.js without crashing with 'heap out of memory' — streaming parsers, NDJSON, and working code examples."
         />
         <meta
           name="keywords"
           content="large json file nodejs, stream json nodejs, json heap out of memory, streaming json parser, process large json file, node js json memory limit"
         />
+        <meta property="og:title" content="Large JSON Files in Node.js: Avoid Heap Out of Memory" />
+        <meta property="og:description" content="How to process large JSON files in Node.js without crashing with 'heap out of memory' — streaming parsers, NDJSON, and working code examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/working-with-large-json-files-nodejs" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/working-with-large-json-files-nodejs" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

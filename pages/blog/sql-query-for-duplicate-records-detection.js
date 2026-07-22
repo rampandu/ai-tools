@@ -22,12 +22,12 @@ export default function SqlQueryForDuplicateRecordsDetection() {
     '@type': 'BlogPosting',
     headline: 'SQL Query to Find and Remove Duplicate Records',
     description:
-      'Step-by-step SQL techniques to detect, count, and delete duplicate rows in MySQL and PostgreSQL, using GROUP BY, window functions, and safe DELETE patterns.',
+      'Detect duplicate rows with GROUP BY and HAVING, then safely delete them using ROW_NUMBER() and PARTITION BY, plus a UNIQUE constraint to block repeats.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-query-for-duplicate-records-detection',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -67,12 +67,16 @@ export default function SqlQueryForDuplicateRecordsDetection() {
         <title>SQL Query to Find and Remove Duplicate Records | Dev Brains AI</title>
         <meta
           name="description"
-          content="Step-by-step SQL techniques to detect, count, and delete duplicate rows in MySQL and PostgreSQL, with safe DELETE patterns using window functions."
+          content="Detect duplicate rows with GROUP BY and HAVING, then safely delete them using ROW_NUMBER() and PARTITION BY, plus a UNIQUE constraint to block repeats."
         />
         <meta
           name="keywords"
           content="sql find duplicate records, sql remove duplicate rows, delete duplicate rows sql, group by having duplicates, row_number delete duplicates, sql duplicate detection"
         />
+        <meta property="og:title" content="SQL Query to Find and Remove Duplicate Records" />
+        <meta property="og:description" content="Detect duplicate rows with GROUP BY and HAVING, then safely delete them using ROW_NUMBER() and PARTITION BY, plus a UNIQUE constraint to block repeats." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-for-duplicate-records-detection" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-for-duplicate-records-detection" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

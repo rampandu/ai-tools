@@ -21,14 +21,14 @@ export default function HowToTestRestApisWithPostman() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Test REST APIs with Postman — Collections, Env Vars, and Automation',
+    headline: 'Test REST APIs with Postman: Collections to CI',
     description:
-      'A practical guide to testing REST APIs with Postman — organizing collections, using environment variables, writing test assertions, and automating with Newman.',
+      'Organize Postman collections, use environment variables across environments, write pm.test() assertions, and automate everything in CI/CD with Newman.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-test-rest-apis-with-postman',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToTestRestApisWithPostman() {
   return (
     <>
       <Head>
-        <title>How to Test REST APIs with Postman — Collections, Env Vars, and Automation | Dev Brains AI</title>
+        <title>Test REST APIs with Postman: Collections to CI | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical guide to testing REST APIs with Postman — organizing collections, using environment variables, writing test assertions, and automating with Newman."
+          content="Organize Postman collections, use environment variables across environments, write pm.test() assertions, and automate everything in CI/CD with Newman."
         />
         <meta
           name="keywords"
           content="postman api testing, postman collections, postman environment variables, postman test assertions, newman cli, automate api tests"
         />
+        <meta property="og:title" content="Test REST APIs with Postman: Collections to CI" />
+        <meta property="og:description" content="Organize Postman collections, use environment variables across environments, write pm.test() assertions, and automate everything in CI/CD with Newman." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-test-rest-apis-with-postman" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-test-rest-apis-with-postman" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

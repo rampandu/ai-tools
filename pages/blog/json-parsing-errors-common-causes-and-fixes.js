@@ -21,14 +21,14 @@ export default function JsonParsingErrorsCommonCausesAndFixes() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Parsing Errors — Common Causes and Fixes',
+    headline: 'JSON Parsing Errors: 6 Common Causes and Fixes',
     description:
-      'The most common JSON parsing errors in JavaScript — trailing commas, single quotes, unquoted keys, undefined values — explained with fixes and working examples.',
+      "Fix JSON.parse 'Unexpected token' errors fast — 6 common causes including trailing commas, single quotes, and unquoted keys, each with a working fix.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-parsing-errors-common-causes-and-fixes',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonParsingErrorsCommonCausesAndFixes() {
   return (
     <>
       <Head>
-        <title>JSON Parsing Errors — Common Causes and Fixes | Dev Brains AI</title>
+        <title>JSON Parsing Errors: 6 Common Causes and Fixes | Dev Brains AI</title>
         <meta
           name="description"
-          content="The most common JSON parsing errors in JavaScript — trailing commas, single quotes, unquoted keys, undefined values — explained with fixes and examples."
+          content="Fix JSON.parse 'Unexpected token' errors fast — 6 common causes including trailing commas, single quotes, and unquoted keys, each with a working fix."
         />
         <meta
           name="keywords"
           content="json parsing error, json.parse unexpected token, fix json syntax error, trailing comma json, single quotes json error, unquoted keys json, json syntaxerror javascript"
         />
+        <meta property="og:title" content="JSON Parsing Errors: 6 Common Causes and Fixes" />
+        <meta property="og:description" content="Fix JSON.parse 'Unexpected token' errors fast — 6 common causes including trailing commas, single quotes, and unquoted keys, each with a working fix." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-parsing-errors-common-causes-and-fixes" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-parsing-errors-common-causes-and-fixes" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function JsonSchemaValidationNodejsExample() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Schema Validation in Node.js with Ajv — Full Working Example',
+    headline: 'JSON Schema Validation in Node.js with Ajv: Full Example',
     description:
-      'A hands-on tutorial on validating JSON data against a JSON Schema in Node.js using the ajv library, with a complete working example and error handling.',
+      'A complete, working Ajv walkthrough: define a schema, compile the validator, read structured error messages, and wire it up as Express middleware.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-schema-validation-nodejs-example',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonSchemaValidationNodejsExample() {
   return (
     <>
       <Head>
-        <title>JSON Schema Validation in Node.js with Ajv | Dev Brains AI</title>
+        <title>JSON Schema Validation in Node.js with Ajv: Full Example | Dev Brains AI</title>
         <meta
           name="description"
-          content="A hands-on tutorial on validating JSON data against a JSON Schema in Node.js using the ajv library, with a complete working example and error handling."
+          content="A complete, working Ajv walkthrough: define a schema, compile the validator, read structured error messages, and wire it up as Express middleware."
         />
         <meta
           name="keywords"
           content="json schema validation nodejs, ajv tutorial, validate json against schema, ajv json schema validator, nodejs json schema example, ajv errors"
         />
+        <meta property="og:title" content="JSON Schema Validation in Node.js with Ajv: Full Example" />
+        <meta property="og:description" content="A complete, working Ajv walkthrough: define a schema, compile the validator, read structured error messages, and wire it up as Express middleware." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-schema-validation-nodejs-example" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-schema-validation-nodejs-example" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

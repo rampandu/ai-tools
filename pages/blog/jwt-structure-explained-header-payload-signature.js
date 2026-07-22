@@ -74,6 +74,10 @@ export default function JwtStructureExplained() {
           name="keywords"
           content="jwt structure, jwt header payload signature, jwt claims, registered claims, jwt alg, jwt kid, hs256 vs rs256, jwt anatomy, json web token structure"
         />
+        <meta property="og:title" content="JWT Structure Explained: Header, Payload, Signature" />
+        <meta property="og:description" content="Deep dive into JWT anatomy: header fields (alg, typ, kid), registered vs public vs private claims, HS256 vs RS256 signing, with a real token decoded field by field." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/jwt-structure-explained-header-payload-signature" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/jwt-structure-explained-header-payload-signature" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,9 +21,9 @@ export default function CronJobsGithubActions() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Jobs in GitHub Actions: Complete Tutorial',
+    headline: 'GitHub Actions Cron Jobs: Syntax and Gotchas',
     description:
-      'Learn how to schedule automated workflows in GitHub Actions using cron expressions. Includes syntax, real examples, debugging tips, and common pitfalls.',
+      'Schedule GitHub Actions workflows with cron: working YAML examples, the 5-minute minimum interval, UTC-only timing, and inactive-repo run skips.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-jobs-github-actions-tutorial',
@@ -32,11 +32,15 @@ export default function CronJobsGithubActions() {
   return (
     <>
       <Head>
-        <title>Cron Jobs in GitHub Actions: Complete Tutorial | Dev Brains AI</title>
+        <title>GitHub Actions Cron Jobs: Syntax and Gotchas | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to schedule GitHub Actions workflows with cron expressions. Includes real YAML examples, debugging tips, timezone handling, and common mistakes to avoid."
+          content="Schedule GitHub Actions workflows with cron: working YAML examples, the 5-minute minimum interval, UTC-only timing, and inactive-repo run skips."
         />
+        <meta property="og:title" content="GitHub Actions Cron Jobs: Syntax and Gotchas" />
+        <meta property="og:description" content="Schedule GitHub Actions workflows with cron: working YAML examples, the 5-minute minimum interval, UTC-only timing, and inactive-repo run skips." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-jobs-github-actions-tutorial" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-jobs-github-actions-tutorial" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

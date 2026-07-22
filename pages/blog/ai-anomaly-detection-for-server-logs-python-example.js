@@ -4,7 +4,18 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>AI Anomaly Detection for Server Logs Python Example</title>
+        <title>AI Anomaly Detection for Server Logs: Python Example | Dev Brains AI</title>
+        <meta
+          name="description"
+          content="Detect anomalies in server logs with Python's Isolation Forest algorithm, a working FastAPI microservice example, and real use cases from Indian startups."
+        />
+        <meta property="og:title" content="AI Anomaly Detection for Server Logs: Python Example" />
+        <meta
+          property="og:description"
+          content="Detect anomalies in server logs with Python's Isolation Forest algorithm, a working FastAPI microservice example, and real use cases from Indian startups."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-anomaly-detection-for-server-logs-python-example" />
+        <meta property="og:type" content="article" />
 
         <script
           type="application/ld+json"
@@ -12,7 +23,7 @@ export default function Blog() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "AI Anomaly Detection for Server Logs Python Example",
+              headline: "AI Anomaly Detection for Server Logs: Python Example",
               author: { "@type": "Organization", name: "Dev-Brains-AI" },
               publisher: { "@type": "Organization", name: "Dev-Brains-AI" }
             })

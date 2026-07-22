@@ -20,14 +20,14 @@ export default function TopSqlInterviewQuestionsTcsInfosysWipro() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Top SQL Interview Questions: TCS, Infosys, Wipro',
+    headline: 'SQL Interview Questions for TCS, Infosys & Wipro',
     description:
-      'SQL interview preparation for IT services companies like TCS, Infosys, and Wipro — common questions, expected answers, and query walkthroughs.',
+      'SQL interview prep for TCS, Infosys, and Wipro: the exact DELETE vs TRUNCATE vs DROP, second-highest-salary, and JOIN questions asked, with worked answers.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/top-sql-interview-questions-tcs-infosys-wipro',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function TopSqlInterviewQuestionsTcsInfosysWipro() {
   return (
     <>
       <Head>
-        <title>Top SQL Interview Questions: TCS, Infosys, Wipro | Dev Brains AI</title>
+        <title>SQL Interview Questions for TCS, Infosys &amp; Wipro | Dev Brains AI</title>
         <meta
           name="description"
-          content="SQL interview preparation for IT services companies: TCS, Infosys, and Wipro. Common questions, expected answers, and query walkthroughs."
+          content="SQL interview prep for TCS, Infosys, and Wipro: the exact DELETE vs TRUNCATE vs DROP, second-highest-salary, and JOIN questions asked, with worked answers."
         />
         <meta
           name="keywords"
-          content="sql interview questions tcs, sql interview questions infosys, sql interview questions wipro, sql interview for freshers, it services sql interview"
+          content="sql interview questions tcs, sql interview questions infosys, sql interview questions wipro, second highest salary query, sql joins interview questions, it services sql interview"
         />
+        <meta property="og:title" content="SQL Interview Questions for TCS, Infosys & Wipro" />
+        <meta property="og:description" content="SQL interview prep for TCS, Infosys, and Wipro: the exact DELETE vs TRUNCATE vs DROP, second-highest-salary, and JOIN questions asked, with worked answers." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/top-sql-interview-questions-tcs-infosys-wipro" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/top-sql-interview-questions-tcs-infosys-wipro" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -74,6 +74,10 @@ export default function CommonJwtErrors() {
           name="keywords"
           content="jwt malformed, invalid signature jwt, jwt expired error, invalid token jsonwebtoken, jsonwebtoken error fix, jwt verify error nodejs, TokenExpiredError, JsonWebTokenError"
         />
+        <meta property="og:title" content="4 Common JWT Errors and How to Fix Them (Node.js)" />
+        <meta property="og:description" content="Fix jwt malformed, invalid signature, jwt expired, and invalid token errors in Node.js jsonwebtoken. Get the exact cause and a working code fix for each error." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/common-jwt-errors-and-how-to-fix-them" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-jwt-errors-and-how-to-fix-them" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

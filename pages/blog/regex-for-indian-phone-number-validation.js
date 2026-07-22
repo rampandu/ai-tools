@@ -73,6 +73,10 @@ export default function RegexForIndianPhoneNumberValidation() {
           name="keywords"
           content="regex for indian phone number validation, indian mobile number regex, validate phone number javascript, +91 regex, 10 digit mobile number regex"
         />
+        <meta property="og:title" content="Regex for Indian Phone Number Validation — +91, 91, and 10-Digit Formats" />
+        <meta property="og:description" content="Validate Indian mobile numbers with regex, covering +91, 91, and plain 10-digit formats. JavaScript and Python examples plus common formatting pitfalls." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-indian-phone-number-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-indian-phone-number-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -20,14 +20,14 @@ export default function JsonSchemaGeneratorTutorialWithExamples() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Schema Generator Tutorial with Examples',
+    headline: 'JSON Schema Generator Tutorial: From Example to Ajv',
     description:
-      'Generate a JSON Schema from example JSON and use it for API validation, documentation, and automated testing — with a full worked example.',
+      'Turn a real API response into a working JSON Schema step by step, then refine it with patterns and enums, and validate incoming data with Ajv in Node.js.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-schema-generator-tutorial-with-examples',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function JsonSchemaGeneratorTutorialWithExamples() {
   return (
     <>
       <Head>
-        <title>JSON Schema Generator Tutorial with Examples | Dev Brains AI</title>
+        <title>JSON Schema Generator Tutorial: From Example to Ajv | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate a JSON Schema from example JSON and use it for API validation, documentation, and automated testing, with a full worked example."
+          content="Turn a real API response into a working JSON Schema step by step, then refine it with patterns and enums, and validate incoming data with Ajv in Node.js."
         />
         <meta
           name="keywords"
           content="json schema generator, generate json schema from json, json schema tutorial, json schema example, json schema validation, ajv json schema"
         />
+        <meta property="og:title" content="JSON Schema Generator Tutorial: From Example to Ajv" />
+        <meta property="og:description" content="Turn a real API response into a working JSON Schema step by step, then refine it with patterns and enums, and validate incoming data with Ajv in Node.js." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-schema-generator-tutorial-with-examples" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-schema-generator-tutorial-with-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

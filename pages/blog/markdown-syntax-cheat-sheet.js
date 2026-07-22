@@ -74,6 +74,10 @@ export default function MarkdownSyntaxCheatSheet() {
           name="keywords"
           content="markdown cheat sheet, markdown syntax, markdown guide, markdown examples, markdown headings, markdown code block, markdown lists, markdown links"
         />
+        <meta property="og:title" content="Markdown Syntax Cheat Sheet — Every Element with Examples" />
+        <meta property="og:description" content="Complete markdown cheat sheet: headings, bold, italic, lists, links, images, inline and fenced code, blockquotes, horizontal rules, and escaping — with examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/markdown-syntax-cheat-sheet" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/markdown-syntax-cheat-sheet" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

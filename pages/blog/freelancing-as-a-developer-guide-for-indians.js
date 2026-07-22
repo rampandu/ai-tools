@@ -21,14 +21,14 @@ export default function FreelancingAsADeveloperGuideForIndians() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Freelancing as a Developer — A Practical Guide for Indians',
+    headline: 'Freelance Developer in India: Rates, Taxes, Contracts',
     description:
-      'A practical guide to freelancing as a developer in India — platforms, pricing in INR/USD, contracts, taxation basics, and building a portfolio that gets clients.',
+      'Real USD/INR freelance rates by experience level, GST and Section 44ADA tax rules, milestone payment contracts, and how to build a portfolio that lands clients.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/freelancing-as-a-developer-guide-for-indians',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function FreelancingAsADeveloperGuideForIndians() {
   return (
     <>
       <Head>
-        <title>Freelancing as a Developer — A Practical Guide for Indians | Dev Brains AI</title>
+        <title>Freelance Developer in India: Rates, Taxes, Contracts | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical guide to freelancing as a developer in India — platforms, pricing in INR/USD, contracts, taxation basics, and building a portfolio."
+          content="Real USD/INR freelance rates by experience level, GST and Section 44ADA tax rules, milestone payment contracts, and how to build a portfolio that lands clients."
         />
         <meta
           name="keywords"
           content="freelancing as a developer india, freelance developer guide india, upwork for indian developers, freelance developer taxation india, how to start freelancing programming"
         />
+        <meta property="og:title" content="Freelance Developer in India: Rates, Taxes, Contracts" />
+        <meta
+          property="og:description"
+          content="Real USD/INR freelance rates by experience level, GST and Section 44ADA tax rules, milestone payment contracts, and how to build a portfolio that lands clients."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/freelancing-as-a-developer-guide-for-indians" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/freelancing-as-a-developer-guide-for-indians" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -74,6 +74,10 @@ export default function JsonWebTokenVsSessionAuthentication() {
           name="keywords"
           content="jwt vs session, json web token vs session authentication, jwt authentication, session based authentication, stateless authentication, jwt vs cookies"
         />
+        <meta property="og:title" content="JWT vs Session Authentication — Which Should You Use?" />
+        <meta property="og:description" content="Compare JSON Web Tokens (JWT) with traditional server-side session authentication — statelessness, scalability, revocation, and security trade-offs explained." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-web-token-vs-session-authentication" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-web-token-vs-session-authentication" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

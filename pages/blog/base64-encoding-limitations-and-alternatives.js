@@ -21,14 +21,14 @@ export default function Base64LimitationsAlternatives() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Base64 Encoding Limitations and Alternatives',
+    headline: 'Base64 Encoding Limitations: When to Use Base85 Instead',
     description:
-      'Base64 has real limitations: ~33% size overhead, CPU cost, and no compression. Learn when those limitations matter and what alternatives — Base85/Ascii85, binary transmission, multipart — solve them better.',
+      "Base64's real costs: 33% size overhead, CPU time, and worse gzip compression, plus when Base85, multipart/form-data, or raw binary are the better choice.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-encoding-limitations-and-alternatives',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function Base64LimitationsAlternatives() {
   return (
     <>
       <Head>
-        <title>Base64 Encoding Limitations and Alternatives | Dev Brains AI</title>
+        <title>Base64 Encoding Limitations: When to Use Base85 Instead | Dev Brains AI</title>
         <meta
           name="description"
-          content="Base64 has real limitations: ~33% size overhead and no compression. Learn when those limitations matter and what alternatives solve them better."
+          content="Base64's real costs: 33% size overhead, CPU time, and worse gzip compression, plus when Base85, multipart/form-data, or raw binary are the better choice."
         />
         <meta
           name="keywords"
           content="base64 limitations, base64 alternatives, base85 vs base64, ascii85, base64 overhead, binary vs base64 transmission"
         />
+        <meta property="og:title" content="Base64 Encoding Limitations: When to Use Base85 Instead" />
+        <meta
+          property="og:description"
+          content="Base64's real costs: 33% size overhead, CPU time, and worse gzip compression, plus when Base85, multipart/form-data, or raw binary are the better choice."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/base64-encoding-limitations-and-alternatives" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-encoding-limitations-and-alternatives" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

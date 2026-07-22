@@ -21,14 +21,14 @@ export default function WhenToUseYamlJsonTomlConfig() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'YAML vs JSON vs TOML — Choosing the Right Config Format for Your Project',
+    headline: 'YAML vs JSON vs TOML: Which Config Format to Use?',
     description:
-      'A practical decision guide for config formats: when YAML wins (human-edited, Kubernetes, CI), when JSON wins (machine-generated, APIs), when TOML wins (Cargo, pyproject.toml), and when a simple .env file is enough — plus migration notes.',
+      'When to use YAML (Kubernetes, CI), JSON (APIs, lock files), TOML (Cargo, pyproject.toml), or plain .env files — decision criteria and migration notes.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/when-to-use-yaml-json-toml-config',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function WhenToUseYamlJsonTomlConfig() {
   return (
     <>
       <Head>
-        <title>YAML vs JSON vs TOML — Choosing the Right Config Format | Dev Brains AI</title>
+        <title>YAML vs JSON vs TOML: Which Config Format to Use? | Dev Brains AI</title>
         <meta
           name="description"
-          content="When to use YAML (Kubernetes, CI), JSON (machine-generated, APIs), TOML (Cargo, pyproject), or plain .env files — decision criteria, examples, and migration notes."
+          content="When to use YAML (Kubernetes, CI), JSON (APIs, lock files), TOML (Cargo, pyproject.toml), or plain .env files — decision criteria and migration notes."
         />
         <meta
           name="keywords"
           content="yaml vs json vs toml, config file formats compared, toml vs yaml, when to use toml, pyproject.toml format, .env vs config file, best config format, configuration file comparison"
         />
+        <meta property="og:title" content="YAML vs JSON vs TOML: Which Config Format to Use?" />
+        <meta property="og:description" content="When to use YAML (Kubernetes, CI), JSON (APIs, lock files), TOML (Cargo, pyproject.toml), or plain .env files — decision criteria and migration notes." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/when-to-use-yaml-json-toml-config" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/when-to-use-yaml-json-toml-config" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

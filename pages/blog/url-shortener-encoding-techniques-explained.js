@@ -21,14 +21,14 @@ export default function UrlShortenerEncodingTechniques() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How URL Shorteners Generate Short Codes — Encoding Techniques Explained',
+    headline: 'How URL Shorteners Generate Short Codes (Base62 Explained)',
     description:
-      'Learn how URL shorteners like bit.ly generate short codes using base62 encoding of auto-increment IDs and hashing approaches, with a working example in JavaScript.',
+      'How URL shorteners like bit.ly generate short codes: base62 encoding of auto-increment IDs, hash-based alternatives, and working JavaScript examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-shortener-encoding-techniques-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UrlShortenerEncodingTechniques() {
   return (
     <>
       <Head>
-        <title>How URL Shorteners Generate Short Codes — Encoding Techniques Explained | Dev Brains AI</title>
+        <title>How URL Shorteners Generate Short Codes (Base62 Explained) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how URL shorteners like bit.ly generate short codes using base62 encoding of auto-increment IDs and hashing approaches, with a working JS example."
+          content="How URL shorteners like bit.ly generate short codes: base62 encoding of auto-increment IDs, hash-based alternatives, and working JavaScript examples."
         />
         <meta
           name="keywords"
           content="url shortener algorithm, base62 encoding, how bit.ly works, generate short url code, url shortener design"
         />
+        <meta property="og:title" content="How URL Shorteners Generate Short Codes (Base62 Explained)" />
+        <meta property="og:description" content="How URL shorteners like bit.ly generate short codes: base62 encoding of auto-increment IDs, hash-based alternatives, and working JavaScript examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/url-shortener-encoding-techniques-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-shortener-encoding-techniques-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

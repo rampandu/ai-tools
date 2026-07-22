@@ -74,6 +74,10 @@ export default function RegexForDateFormatValidation() {
           name="keywords"
           content="regex date validation, dd/mm/yyyy regex, iso 8601 regex, date format regex javascript, validate date string regex"
         />
+        <meta property="og:title" content="Regex for Date Format Validation — DD/MM/YYYY, ISO 8601" />
+        <meta property="og:description" content="Regex patterns for validating DD/MM/YYYY, MM-DD-YYYY, and ISO 8601 (YYYY-MM-DD) dates, plus why regex alone cannot catch impossible dates like Feb 30." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-date-format-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-date-format-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

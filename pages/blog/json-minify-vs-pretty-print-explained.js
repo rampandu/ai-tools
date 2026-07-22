@@ -21,14 +21,14 @@ export default function JsonMinifyVsPrettyPrintExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Minify vs Pretty Print — Explained with Examples',
+    headline: 'JSON Minify vs Pretty Print: Save ~28% with Examples',
     description:
-      'JSON minification vs pretty-printing explained — when to use each, how they affect payload size and readability, with before and after examples.',
+      'JSON minify vs pretty-print explained with real before/after code — when to use each, plus a worked example showing a 28% payload size reduction.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-minify-vs-pretty-print-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonMinifyVsPrettyPrintExplained() {
   return (
     <>
       <Head>
-        <title>JSON Minify vs Pretty Print — Explained | Dev Brains AI</title>
+        <title>JSON Minify vs Pretty Print: Save ~28% with Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="JSON minification vs pretty-printing explained — when to use each, how they affect payload size and readability, with before and after examples."
+          content="JSON minify vs pretty-print explained with real before/after code — when to use each, plus a worked example showing a 28% payload size reduction."
         />
         <meta
           name="keywords"
           content="json minify vs pretty print, minify json, json pretty print, json beautify vs minify, compress json, json whitespace"
         />
+        <meta property="og:title" content="JSON Minify vs Pretty Print: Save ~28% with Examples" />
+        <meta property="og:description" content="JSON minify vs pretty-print explained with real before/after code — when to use each, plus a worked example showing a 28% payload size reduction." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-minify-vs-pretty-print-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-minify-vs-pretty-print-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

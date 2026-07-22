@@ -74,6 +74,13 @@ export default function DecodeBase64Python() {
           name="keywords"
           content="decode base64 python, python base64 decode, b64decode, base64 padding error python, base64 to string python"
         />
+        <meta property="og:title" content="How to Decode Base64 in Python — Step by Step" />
+        <meta
+          property="og:description"
+          content="A step-by-step tutorial on decoding Base64 strings in Python, handling padding errors, and choosing between decoding to bytes or UTF-8 text."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-decode-base64-in-python" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-decode-base64-in-python" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

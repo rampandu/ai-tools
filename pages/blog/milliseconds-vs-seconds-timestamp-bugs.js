@@ -74,6 +74,10 @@ export default function MillisecondsVsSecondsTimestampBugs() {
           name="keywords"
           content="milliseconds vs seconds timestamp, unix timestamp 1970 bug, javascript date 1970, timestamp 13 digits vs 10 digits, jwt exp milliseconds, year 2038 problem, epoch converter, timestamp bug"
         />
+        <meta property="og:title" content="Milliseconds vs Seconds: Fix the 1000x Bug" />
+        <meta property="og:description" content="Dates showing 1970 or year 56789? Learn to spot the milliseconds vs seconds bug in seconds, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a ready-to-use normalization function." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/milliseconds-vs-seconds-timestamp-bugs" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/milliseconds-vs-seconds-timestamp-bugs" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

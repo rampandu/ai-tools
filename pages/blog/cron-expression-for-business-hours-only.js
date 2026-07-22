@@ -21,14 +21,14 @@ export default function CronExpressionForBusinessHoursOnly() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Expressions for Business Hours Only',
+    headline: 'Cron Expressions for Business Hours (9-to-5)',
     description:
-      'Cron expressions to run jobs only during business hours and weekdays, covering the day-of-week and hour-range syntax, split shifts, and common mistakes.',
+      'Cron patterns to run jobs only on weekdays 9-to-5, plus split-shift schedules, lunch-hour exclusions, and the top mistakes that break business-hours cron.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expression-for-business-hours-only',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronExpressionForBusinessHoursOnly() {
   return (
     <>
       <Head>
-        <title>Cron Expressions for Business Hours Only | Dev Brains AI</title>
+        <title>Cron Expressions for Business Hours (9-to-5) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Cron expressions to run jobs only during business hours and weekdays, covering day-of-week and hour-range syntax, split shifts, and common mistakes."
+          content="Cron patterns to run jobs only on weekdays 9-to-5, plus split-shift schedules, lunch-hour exclusions, and the top mistakes that break business-hours cron."
         />
         <meta
           name="keywords"
           content="cron business hours, cron weekdays only, cron expression 9 to 5, cron working hours, cron monday to friday, cron office hours"
         />
+        <meta property="og:title" content="Cron Expressions for Business Hours (9-to-5)" />
+        <meta property="og:description" content="Cron patterns to run jobs only on weekdays 9-to-5, plus split-shift schedules, lunch-hour exclusions, and the top mistakes that break business-hours cron." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-expression-for-business-hours-only" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-expression-for-business-hours-only" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

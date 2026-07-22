@@ -21,14 +21,14 @@ export default function CronJobMonitoringAndAlertingGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Job Monitoring and Alerting Guide',
+    headline: "Cron Job Monitoring: Dead Man's Switch Guide",
     description:
-      'How to monitor cron jobs and get alerted on failures — the dead man\'s switch pattern, healthcheck pings, exit-code alerting, and shipping logs to a central place.',
+      "Monitor cron jobs with exit-code alerts, the dead man's switch healthcheck-ping pattern, and centralized logging that catches jobs that silently stop running.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-job-monitoring-and-alerting-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronJobMonitoringAndAlertingGuide() {
   return (
     <>
       <Head>
-        <title>Cron Job Monitoring and Alerting Guide | Dev Brains AI</title>
+        <title>Cron Job Monitoring: Dead Man's Switch Guide | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to monitor cron jobs and get alerted on failures: the dead man's switch pattern, healthcheck pings, exit-code alerting, and centralized logging."
+          content="Monitor cron jobs with exit-code alerts, the dead man's switch healthcheck-ping pattern, and centralized logging that catches jobs that silently stop running."
         />
         <meta
           name="keywords"
           content="cron job monitoring, cron job alerting, dead man's switch cron, healthcheck ping cron, cron failure alert, monitor cron jobs"
         />
+        <meta property="og:title" content="Cron Job Monitoring: Dead Man's Switch Guide" />
+        <meta property="og:description" content="Monitor cron jobs with exit-code alerts, the dead man's switch healthcheck-ping pattern, and centralized logging that catches jobs that silently stop running." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-job-monitoring-and-alerting-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-job-monitoring-and-alerting-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

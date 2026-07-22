@@ -37,6 +37,10 @@ export default function DecodeJwtBase64() {
           name="description"
           content="Decode any JWT header and payload with plain JavaScript Base64Url decoding — no library needed. Includes ready-to-run browser and Node.js code examples."
         />
+        <meta property="og:title" content="Decode a JWT in JavaScript in 3 Lines (No Library)" />
+        <meta property="og:description" content="Decode any JWT header and payload with plain JavaScript Base64Url decoding — no library needed. Includes ready-to-run browser and Node.js code examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/decode-jwt-tokens-base64-javascript" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/decode-jwt-tokens-base64-javascript" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -20,14 +20,14 @@ export default function AiMicroservicesTutorialForBackendDevelopers() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'AI Microservices Tutorial for Backend Developers',
+    headline: 'Build an AI Microservice for Your Backend (FastAPI)',
     description:
-      'How to design and integrate an AI-powered microservice into an existing backend architecture using Python, FastAPI, and REST APIs.',
+      'A working FastAPI example for wrapping an AI model as its own microservice, plus how to call it from Node.js, handle timeouts, and deploy it independently.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/ai-microservices-tutorial-for-backend-developers',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,22 @@ export default function AiMicroservicesTutorialForBackendDevelopers() {
   return (
     <>
       <Head>
-        <title>AI Microservices Tutorial for Backend Developers | Dev Brains AI</title>
+        <title>Build an AI Microservice for Your Backend (FastAPI) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to design and integrate an AI-powered microservice into an existing backend using Python, FastAPI, and REST APIs, with a working example."
+          content="A working FastAPI example for wrapping an AI model as its own microservice, plus how to call it from Node.js, handle timeouts, and deploy it independently."
         />
         <meta
           name="keywords"
-          content="ai microservices tutorial, python microservices, fastapi ai service, integrate ai into backend, microservices architecture ai, ai rest api python"
+          content="build ai microservice, fastapi ai microservice tutorial, python microservices, integrate ai into backend, ai rest api python, microservices architecture ai"
         />
+        <meta property="og:title" content="Build an AI Microservice for Your Backend (FastAPI)" />
+        <meta
+          property="og:description"
+          content="A working FastAPI example for wrapping an AI model as its own microservice, plus how to call it from Node.js, handle timeouts, and deploy it independently."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-microservices-tutorial-for-backend-developers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/ai-microservices-tutorial-for-backend-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

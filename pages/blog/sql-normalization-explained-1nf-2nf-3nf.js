@@ -21,14 +21,14 @@ export default function SqlNormalizationExplained1nf2nf3nf() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Normalization Explained — 1NF, 2NF, 3NF with a Before/After Example',
+    headline: 'SQL Normalization Explained: 1NF, 2NF, 3NF in One Example',
     description:
-      'Learn database normalization with a concrete before/after example: how an unnormalized table gets split into 1NF, 2NF, and 3NF to remove redundancy and anomalies.',
+      'See one messy table split step by step into 1NF, 2NF, and 3NF, with the exact SQL needed to remove redundancy and prevent update, insert, and delete anomalies.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-normalization-explained-1nf-2nf-3nf',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlNormalizationExplained1nf2nf3nf() {
   return (
     <>
       <Head>
-        <title>SQL Normalization Explained — 1NF, 2NF, 3NF with a Before/After Example | Dev Brains AI</title>
+        <title>SQL Normalization Explained: 1NF, 2NF, 3NF in One Example | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn database normalization with a concrete before/after example: how an unnormalized table gets split into 1NF, 2NF, and 3NF step by step."
+          content="See one messy table split step by step into 1NF, 2NF, and 3NF, with the exact SQL needed to remove redundancy and prevent update, insert, and delete anomalies."
         />
         <meta
           name="keywords"
           content="sql normalization, 1nf 2nf 3nf, database normalization, normal forms sql, first normal form, second normal form, third normal form"
         />
+        <meta property="og:title" content="SQL Normalization Explained: 1NF, 2NF, 3NF in One Example" />
+        <meta property="og:description" content="See one messy table split step by step into 1NF, 2NF, and 3NF, with the exact SQL needed to remove redundancy and prevent update, insert, and delete anomalies." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-normalization-explained-1nf-2nf-3nf" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-normalization-explained-1nf-2nf-3nf" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -20,14 +20,14 @@ export default function MysqlVsPostgresqlPerformanceComparison() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'MySQL vs PostgreSQL: Performance Comparison',
+    headline: 'MySQL vs PostgreSQL: Which Wins for Your Workload?',
     description:
-      'A practical comparison of MySQL and PostgreSQL query performance, indexing behavior, concurrency model, and feature set — with guidance on when to choose each.',
+      'MySQL vs PostgreSQL on real workloads: InnoDB reads vs MVCC writes, JSONB indexing, EXPLAIN ANALYZE, and a 4-point rule of thumb for picking the right one.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/mysql-vs-postgresql-performance-comparison',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function MysqlVsPostgresqlPerformanceComparison() {
   return (
     <>
       <Head>
-        <title>MySQL vs PostgreSQL: Performance Comparison | Dev Brains AI</title>
+        <title>MySQL vs PostgreSQL: Which Wins for Your Workload? | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical comparison of MySQL and PostgreSQL query performance, indexing, concurrency, and feature set — with guidance on when to choose each."
+          content="MySQL vs PostgreSQL on real workloads: InnoDB reads vs MVCC writes, JSONB indexing, EXPLAIN ANALYZE, and a 4-point rule of thumb for picking the right one."
         />
         <meta
           name="keywords"
-          content="mysql vs postgresql, mysql vs postgresql performance, which database is faster, postgresql vs mysql comparison, choosing a database"
+          content="mysql vs postgresql, mysql vs postgresql performance, which database is faster, postgresql vs mysql comparison, postgresql jsonb vs mysql json, choosing a database"
         />
+        <meta property="og:title" content="MySQL vs PostgreSQL: Which Wins for Your Workload?" />
+        <meta property="og:description" content="MySQL vs PostgreSQL on real workloads: InnoDB reads vs MVCC writes, JSONB indexing, EXPLAIN ANALYZE, and a 4-point rule of thumb for picking the right one." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/mysql-vs-postgresql-performance-comparison" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/mysql-vs-postgresql-performance-comparison" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function HowToReadAStackTrace() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Read a Stack Trace — A Practical Guide for JavaScript and Python',
+    headline: 'How to Read a Stack Trace: JS Top-Down, Python Bottom-Up',
     description:
-      'Learn how to read and debug from a stack trace in JavaScript/Node.js and Python. Worked examples, frame-by-frame breakdowns, and tips to find the real error fast.',
+      'Why JavaScript stack traces read top-down but Python tracebacks read bottom-up — annotated real examples plus 5 common mistakes that waste debugging time.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-read-a-stack-trace',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToReadAStackTrace() {
   return (
     <>
       <Head>
-        <title>How to Read a Stack Trace (JavaScript and Python) | Dev Brains AI</title>
+        <title>How to Read a Stack Trace: JS Top-Down, Python Bottom-Up | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to read a stack trace in JavaScript, Node.js, and Python with annotated real-world examples. Find the actual error origin fast, not just the first line."
+          content="Why JavaScript stack traces read top-down but Python tracebacks read bottom-up — annotated real examples plus 5 common mistakes that waste debugging time."
         />
         <meta
           name="keywords"
           content="how to read a stack trace, javascript stack trace, python traceback, node.js error debugging, stack trace analyzer, debugging errors, typeerror stack trace, keyerror traceback"
         />
+        <meta property="og:title" content="How to Read a Stack Trace: JS Top-Down, Python Bottom-Up" />
+        <meta property="og:description" content="Why JavaScript stack traces read top-down but Python tracebacks read bottom-up — annotated real examples plus 5 common mistakes that waste debugging time." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-read-a-stack-trace" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-read-a-stack-trace" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

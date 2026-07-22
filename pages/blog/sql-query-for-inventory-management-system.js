@@ -21,14 +21,14 @@ export default function SqlQueryForInventoryManagementSystem() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Queries for an Inventory Management System — Stock Levels, Alerts, and Reports',
+    headline: 'SQL Queries for Inventory Management Systems',
     description:
-      'Practical SQL queries for an inventory management system: current stock levels, low-stock alerts, reorder reports, and stock movement history, with a realistic schema.',
+      'Track current stock levels, trigger low-stock alerts, generate reorder reports, and audit movement history with a real products-and-stock-movements SQL schema.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-query-for-inventory-management-system',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlQueryForInventoryManagementSystem() {
   return (
     <>
       <Head>
-        <title>SQL Queries for an Inventory Management System | Dev Brains AI</title>
+        <title>SQL Queries for Inventory Management Systems | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical SQL queries for an inventory management system: current stock levels, low-stock alerts, reorder reports, and stock movement history, with a schema."
+          content="Track current stock levels, trigger low-stock alerts, generate reorder reports, and audit movement history with a real products-and-stock-movements SQL schema."
         />
         <meta
           name="keywords"
           content="sql inventory management, inventory management system sql queries, low stock alert sql, stock movement history sql, reorder report sql, sql inventory schema"
         />
+        <meta property="og:title" content="SQL Queries for Inventory Management Systems" />
+        <meta property="og:description" content="Track current stock levels, trigger low-stock alerts, generate reorder reports, and audit movement history with a real products-and-stock-movements SQL schema." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-for-inventory-management-system" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-for-inventory-management-system" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

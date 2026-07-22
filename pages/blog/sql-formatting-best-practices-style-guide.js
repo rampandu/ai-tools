@@ -21,14 +21,14 @@ export default function SqlFormattingBestPractices() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Formatting Best Practices — A Practical Style Guide with Examples',
+    headline: 'SQL Formatting Style Guide: Before & After Examples',
     description:
-      'A practical SQL style guide covering keyword casing, clause layout, JOIN indentation, alias conventions, leading vs trailing commas, and CTE formatting with before/after examples.',
+      'Keyword casing, JOIN indentation, alias rules, and the leading-vs-trailing-comma debate — with before/after SQL examples your whole team can agree on.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-formatting-best-practices-style-guide',
     datePublished: '2026-07-14',
-    dateModified: '2026-07-14',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlFormattingBestPractices() {
   return (
     <>
       <Head>
-        <title>SQL Formatting Best Practices — A Practical Style Guide | Dev Brains AI</title>
+        <title>SQL Formatting Style Guide: Before & After Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical SQL style guide: keyword casing, one clause per line, JOIN indentation, alias rules, leading vs trailing commas, and CTE formatting with examples."
+          content="Keyword casing, JOIN indentation, alias rules, and the leading-vs-trailing-comma debate — with before/after SQL examples your whole team can agree on."
         />
         <meta
           name="keywords"
-          content="sql formatting best practices, sql style guide, format sql query, sql indentation, sql coding standards, sql formatter, leading vs trailing commas sql, cte formatting"
+          content="sql formatting best practices, sql style guide, format sql query, sql indentation, sql coding standards, sql formatter, leading vs trailing commas sql, cte formatting, sql before after examples"
         />
+        <meta property="og:title" content="SQL Formatting Style Guide: Before & After Examples" />
+        <meta property="og:description" content="Keyword casing, JOIN indentation, alias rules, and the leading-vs-trailing-comma debate — with before/after SQL examples your whole team can agree on." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-formatting-best-practices-style-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-formatting-best-practices-style-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

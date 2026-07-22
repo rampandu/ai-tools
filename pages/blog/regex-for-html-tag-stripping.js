@@ -74,6 +74,10 @@ export default function RegexForHtmlTagStripping() {
           name="keywords"
           content="regex strip html tags, remove html tags regex javascript, strip tags xss risk, html sanitization vs regex, regex html parser"
         />
+        <meta property="og:title" content="Regex for HTML Tag Stripping — and Its Security Risks" />
+        <meta property="og:description" content="How to strip HTML tags with regex for plain-text previews, and why a proper HTML parser is required instead for untrusted, security-sensitive input." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-html-tag-stripping" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-html-tag-stripping" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

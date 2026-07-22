@@ -21,14 +21,14 @@ export default function JsDocVsPythonDocstringsGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSDoc vs Python Docstrings — How to Document Functions Properly',
+    headline: 'JSDoc vs Python Docstrings: 3 Styles Compared',
     description:
-      'A comparison guide to JSDoc and Python docstrings, with worked examples of @param/@returns tags and Google-style Args/Returns, and tips for writing documentation that is actually useful.',
+      "JSDoc's @param/@returns tags vs Python's Google, NumPy, and reST docstring styles — worked examples for both plus rules for when detail is worth adding.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/jsdoc-vs-python-docstrings-guide',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsDocVsPythonDocstringsGuide() {
   return (
     <>
       <Head>
-        <title>JSDoc vs Python Docstrings — How to Document Functions Properly | Dev Brains AI</title>
+        <title>JSDoc vs Python Docstrings: 3 Styles Compared | Dev Brains AI</title>
         <meta
           name="description"
-          content="A comparison guide to JSDoc and Python docstrings, with worked @param/@returns and Google-style Args/Returns examples, plus tips for writing useful documentation."
+          content="JSDoc's @param/@returns tags vs Python's Google, NumPy, and reST docstring styles — worked examples for both plus rules for when detail is worth adding."
         />
         <meta
           name="keywords"
           content="jsdoc vs docstring, python docstring guide, jsdoc tutorial, google style docstring, how to document functions, jsdoc @param @returns, python docstring examples"
         />
+        <meta property="og:title" content="JSDoc vs Python Docstrings: 3 Styles Compared" />
+        <meta property="og:description" content="JSDoc's @param/@returns tags vs Python's Google, NumPy, and reST docstring styles — worked examples for both plus rules for when detail is worth adding." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/jsdoc-vs-python-docstrings-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/jsdoc-vs-python-docstrings-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -74,6 +74,13 @@ export default function HandlingTimezonesInWebApplications() {
           name="keywords"
           content="timezone handling web applications, store utc convert local, iana timezone names, javascript intl timezone, ist utc offset, ssr timezone hydration, daylight saving time bugs"
         />
+        <meta property="og:title" content="Handling Timezones in Web Applications — A Practical Guide" />
+        <meta
+          property="og:description"
+          content="Store UTC, convert at display. A practical guide to timezone handling in web apps: IANA names vs offsets, JS Intl API, SSR pitfalls, scheduling, and testing tips."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/handling-timezones-in-web-applications" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/handling-timezones-in-web-applications" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

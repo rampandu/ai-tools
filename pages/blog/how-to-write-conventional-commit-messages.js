@@ -21,14 +21,14 @@ export default function ConventionalCommitMessagesGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Write Conventional Commit Messages — A Practical Guide',
+    headline: 'Conventional Commits: The 8 Types + Breaking Changes',
     description:
-      'A practical guide to the Conventional Commits format: the exact spec, the 8 standard types, imperative mood, breaking change syntax, and how tools like semantic-release use it.',
+      'The Conventional Commits spec explained: all 8 commit types, imperative mood rules, breaking change syntax, and how semantic-release picks your next version.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-write-conventional-commit-messages',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ConventionalCommitMessagesGuide() {
   return (
     <>
       <Head>
-        <title>How to Write Conventional Commit Messages — A Practical Guide | Dev Brains AI</title>
+        <title>Conventional Commits: The 8 Types + Breaking Changes | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical guide to Conventional Commits: the exact spec, the 8 standard types, imperative mood, breaking change syntax, and how semantic-release uses it."
+          content="The Conventional Commits spec explained: all 8 commit types, imperative mood rules, breaking change syntax, and how semantic-release picks your next version."
         />
         <meta
           name="keywords"
           content="conventional commits, git commit message format, commit message convention, semantic-release, feat fix chore, breaking change commit, git commit best practices"
         />
+        <meta property="og:title" content="Conventional Commits: The 8 Types + Breaking Changes" />
+        <meta property="og:description" content="The Conventional Commits spec explained: all 8 commit types, imperative mood rules, breaking change syntax, and how semantic-release picks your next version." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-write-conventional-commit-messages" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-write-conventional-commit-messages" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

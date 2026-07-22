@@ -21,14 +21,14 @@ export default function CssColorsGuideForDevelopers() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'CSS Colors Guide for Developers — Every Way to Write Color, Plus Dark Mode',
+    headline: 'CSS Colors: Every Syntax Plus Dark Mode Tokens',
     description:
-      'Every CSS color syntax (keywords, hex, rgb, hsl, currentColor, transparent), custom properties for palettes, opacity vs alpha, gradients, and a worked dark-mode token setup.',
+      'Every CSS color syntax — hex, rgb, hsl, currentColor — plus custom-property palettes, opacity vs alpha explained, gradient tips, and a dark-mode token setup.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/css-colors-guide-for-developers',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CssColorsGuideForDevelopers() {
   return (
     <>
       <Head>
-        <title>CSS Colors Guide for Developers | Dev Brains AI</title>
+        <title>CSS Colors: Every Syntax Plus Dark Mode Tokens | Dev Brains AI</title>
         <meta
           name="description"
-          content="Every way to write color in CSS — keywords, hex, rgb, hsl, currentColor — plus custom properties for palettes, opacity vs alpha, gradients, and dark mode tokens."
+          content="Every CSS color syntax — hex, rgb, hsl, currentColor — plus custom-property palettes, opacity vs alpha explained, gradient tips, and a dark-mode token setup."
         />
         <meta
           name="keywords"
           content="css colors, css color syntax, css custom properties colors, currentColor, css dark mode, prefers-color-scheme, css gradients, rgba vs opacity"
         />
+        <meta property="og:title" content="CSS Colors: Every Syntax Plus Dark Mode Tokens" />
+        <meta property="og:description" content="Every CSS color syntax — hex, rgb, hsl, currentColor — plus custom-property palettes, opacity vs alpha explained, gradient tips, and a dark-mode token setup." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/css-colors-guide-for-developers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/css-colors-guide-for-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

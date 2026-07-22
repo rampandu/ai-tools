@@ -73,6 +73,10 @@ export default function RegexForEmailValidationJavascriptExample() {
           name="keywords"
           content="regex for email validation javascript, email validation regex, javascript email regex example, validate email javascript, email regex pattern"
         />
+        <meta property="og:title" content="Regex for Email Validation in JavaScript — Practical Patterns and Edge Cases" />
+        <meta property="og:description" content="How to validate email addresses using regex in JavaScript, with a practical pattern, edge case handling, and why full RFC 5322 compliance is not worth chasing." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-email-validation-javascript-example" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-email-validation-javascript-example" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

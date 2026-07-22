@@ -21,14 +21,14 @@ export default function JsonSerializationPythonGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Serialization in Python — Complete Guide',
+    headline: 'Python JSON Serialization: Fix the Not-Serializable Error',
     description:
-      'How to serialize and deserialize JSON in Python using the json module — handling datetime objects, writing custom encoders, and fixing the common TypeError: Object of type X is not JSON serializable.',
+      "Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime, Decimal, and object_hook examples you can copy.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-serialization-python-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonSerializationPythonGuide() {
   return (
     <>
       <Head>
-        <title>JSON Serialization in Python — Complete Guide | Dev Brains AI</title>
+        <title>Python JSON Serialization: Fix the Not-Serializable Error | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to serialize and deserialize JSON in Python using the json module — handling datetime objects, custom encoders, and the common TypeError: not JSON serializable fix."
+          content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime, Decimal, and object_hook examples you can copy."
         />
         <meta
           name="keywords"
-          content="json serialization python, python json module, object of type is not json serializable, python json custom encoder, serialize datetime json python, json.dumps python"
+          content="json serialization python, python not json serializable error, python json custom encoder, json.dumps typeerror fix, serialize datetime json python, python object_hook json"
         />
+        <meta property="og:title" content="Python JSON Serialization: Fix the Not-Serializable Error" />
+        <meta property="og:description" content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime, Decimal, and object_hook examples you can copy." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-serialization-python-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-serialization-python-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

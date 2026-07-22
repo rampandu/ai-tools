@@ -31,11 +31,18 @@ export default function AISqlPractical() {
   return (
     <>
       <Head>
-        <title>How AI Can Speed Up SQL Writing: Practical Examples & Prompts | Dev Brains AI</title>
+        <title>Write SQL Faster with AI: Prompts That Actually Work | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how AI can help you write SQL faster with practical prompt examples and patterns for common queries."
+          content="Copy-paste AI prompts that generate working SQL for top-N rankings, time-series reports, and multi-table joins, plus tips for getting reliable output every time."
         />
+        <meta property="og:title" content="Write SQL Faster with AI: Prompts That Actually Work" />
+        <meta
+          property="og:description"
+          content="Copy-paste AI prompts that generate working SQL for top-N rankings, time-series reports, and multi-table joins, plus tips for getting reliable output every time."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-sql-practical" />
+        <meta property="og:type" content="article" />
         <link
           rel="canonical"
           href="https://dev-brains-ai.com/blog/ai-sql-practical"

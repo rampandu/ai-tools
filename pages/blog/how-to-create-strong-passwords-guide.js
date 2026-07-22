@@ -74,6 +74,13 @@ export default function HowToCreateStrongPasswordsGuide() {
           name="keywords"
           content="how to create strong passwords, strong password guide, password length vs complexity, unique passwords per site, password generator, passphrase, MFA, password security"
         />
+        <meta property="og:title" content="How to Create Strong Passwords — A Practical Guide" />
+        <meta
+          property="og:description"
+          content="What actually makes a password strong: length over complexity tricks, why P@ssw0rd1 fails, unique-per-site as rule #1, generated vs passphrase, and MFA."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-create-strong-passwords-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-create-strong-passwords-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

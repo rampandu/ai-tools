@@ -21,14 +21,14 @@ export default function JwtAuthExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JWT Authentication Explained for Beginners',
+    headline: 'JWT Authentication Explained: How It Works + 4 Mistakes',
     description:
-      'A beginner-friendly explanation of JWT structure (header.payload.signature), how Base64url encoding is used, and how the full JWT authentication flow works end to end.',
+      "A beginner's walkthrough of JWT auth: the header.payload.signature format, why Base64url is used, the full login flow, and 4 mistakes that break token security.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/jwt-authentication-explained-for-beginners',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JwtAuthExplained() {
   return (
     <>
       <Head>
-        <title>JWT Authentication Explained for Beginners | Dev Brains AI</title>
+        <title>JWT Authentication Explained: How It Works + 4 Mistakes | Dev Brains AI</title>
         <meta
           name="description"
-          content="A beginner-friendly explanation of JWT structure, how Base64url encoding is used inside a token, and how the full JWT authentication flow works end to end."
+          content="A beginner's walkthrough of JWT auth: the header.payload.signature format, why Base64url is used, the full login flow, and 4 mistakes that break token security."
         />
         <meta
           name="keywords"
-          content="jwt authentication explained, how does jwt work, jwt structure, jwt for beginners, base64url jwt, json web token tutorial"
+          content="jwt authentication explained, how does jwt work, jwt structure, jwt for beginners, base64url jwt, jwt authentication flow, common jwt mistakes"
         />
+        <meta property="og:title" content="JWT Authentication Explained: How It Works + 4 Mistakes" />
+        <meta property="og:description" content="A beginner's walkthrough of JWT auth: the header.payload.signature format, why Base64url is used, the full login flow, and 4 mistakes that break token security." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/jwt-authentication-explained-for-beginners" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/jwt-authentication-explained-for-beginners" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

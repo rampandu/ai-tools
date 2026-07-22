@@ -21,14 +21,14 @@ export default function HowToUseChatgptForCodingInterviewPrep() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Use ChatGPT for Coding Interview Prep — Without Cheating Yourself',
+    headline: 'ChatGPT for Coding Interview Prep: 4 Smart Strategies',
     description:
-      'Practical strategies for using ChatGPT and AI to prepare for coding interviews — generating practice problems, explaining solutions, mock interviews, and pitfalls to avoid.',
+      '4 practical ways to use ChatGPT for coding interview prep — generate targeted problems, mock interviews, and the one mistake that sabotages candidates.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-use-chatgpt-for-coding-interview-prep',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToUseChatgptForCodingInterviewPrep() {
   return (
     <>
       <Head>
-        <title>How to Use ChatGPT for Coding Interview Prep — Without Cheating Yourself | Dev Brains AI</title>
+        <title>ChatGPT for Coding Interview Prep: 4 Smart Strategies | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical strategies for using ChatGPT/AI to prepare for coding interviews — generating practice problems, mock interviews, and pitfalls to avoid."
+          content="4 practical ways to use ChatGPT for coding interview prep — generate targeted problems, mock interviews, and the one mistake that sabotages candidates."
         />
         <meta
           name="keywords"
           content="chatgpt for coding interview prep, ai interview preparation, chatgpt dsa practice, mock interview ai, coding interview ai tool, chatgpt leetcode practice"
         />
+        <meta property="og:title" content="ChatGPT for Coding Interview Prep: 4 Smart Strategies" />
+        <meta property="og:description" content="4 practical ways to use ChatGPT for coding interview prep — generate targeted problems, mock interviews, and the one mistake that sabotages candidates." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-use-chatgpt-for-coding-interview-prep" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-use-chatgpt-for-coding-interview-prep" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

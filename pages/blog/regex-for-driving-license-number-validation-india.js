@@ -21,14 +21,14 @@ export default function RegexForDrivingLicenseNumberValidationIndia() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Driving License Number Validation in India',
+    headline: 'Regex for Indian Driving License Numbers (State + RTO + Year)',
     description:
-      'A regex pattern for validating Indian driving license numbers (state code + RTO + year + unique number), and why the exact format varies by state.',
+      'A regex pattern for validating Indian driving license numbers — 2-letter state code, RTO code, year, and 7-digit serial — plus why the format varies by state.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-driving-license-number-validation-india',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexForDrivingLicenseNumberValidationIndia() {
   return (
     <>
       <Head>
-        <title>Regex for Driving License Number Validation in India | Dev Brains AI</title>
+        <title>Regex for Indian Driving License Numbers (State + RTO + Year) | Dev Brains AI</title>
         <meta
           name="description"
-          content="A regex pattern for validating Indian driving license numbers (state code + RTO + year + unique number), and why the format varies by state."
+          content="A regex pattern for validating Indian driving license numbers — 2-letter state code, RTO code, year, and 7-digit serial — plus why the format varies by state."
         />
         <meta
           name="keywords"
-          content="driving license number regex india, dl number validation regex, indian driving license regex, rto license number format"
+          content="regex for indian driving license, driving license number regex india, dl number validation regex, indian driving license regex, rto license number format"
         />
+        <meta property="og:title" content="Regex for Indian Driving License Numbers (State + RTO + Year)" />
+        <meta property="og:description" content="A regex pattern for validating Indian driving license numbers — 2-letter state code, RTO code, year, and 7-digit serial — plus why the format varies by state." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-driving-license-number-validation-india" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-driving-license-number-validation-india" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

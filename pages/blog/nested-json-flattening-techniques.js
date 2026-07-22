@@ -21,14 +21,14 @@ export default function NestedJsonFlatteningTechniques() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Nested JSON Flattening Techniques — Turn Deep Objects into Flat Key-Value Pairs',
+    headline: 'Flatten Nested JSON in JavaScript: A Recursive Function',
     description:
-      'Learn how to flatten deeply nested JSON objects into flat key-value structures for CSV export or analytics, with a working recursive JavaScript function.',
+      'Copy a recursive JavaScript function that flattens nested JSON into dot-notation keys (customer.address.city) — plus how to handle arrays and 4 common pitfalls.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/nested-json-flattening-techniques',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function NestedJsonFlatteningTechniques() {
   return (
     <>
       <Head>
-        <title>Nested JSON Flattening Techniques | Dev Brains AI</title>
+        <title>Flatten Nested JSON in JavaScript: A Recursive Function | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to flatten deeply nested JSON objects into flat key-value structures for CSV export or analytics, with a working recursive JavaScript function."
+          content="Copy a recursive JavaScript function that flattens nested JSON into dot-notation keys (customer.address.city) — plus how to handle arrays and 4 common pitfalls."
         />
         <meta
           name="keywords"
           content="flatten json, flatten nested json javascript, json to flat key value, flatten json for csv, nested json to flat object, recursive json flatten function"
         />
+        <meta property="og:title" content="Flatten Nested JSON in JavaScript: A Recursive Function" />
+        <meta property="og:description" content="Copy a recursive JavaScript function that flattens nested JSON into dot-notation keys (customer.address.city) — plus how to handle arrays and 4 common pitfalls." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/nested-json-flattening-techniques" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/nested-json-flattening-techniques" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

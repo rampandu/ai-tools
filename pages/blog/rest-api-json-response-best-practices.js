@@ -21,14 +21,14 @@ export default function RestApiJsonResponseBestPractices() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'REST API JSON Response Best Practices',
+    headline: 'REST API JSON Response Best Practices (With Examples)',
     description:
-      'Best practices for structuring JSON API responses — consistent envelope format, error objects, pagination metadata, and naming conventions like camelCase vs snake_case.',
+      'A consistent envelope format, structured error objects, pagination metadata, and camelCase vs snake_case rules — with real JSON examples you can copy.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/rest-api-json-response-best-practices',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RestApiJsonResponseBestPractices() {
   return (
     <>
       <Head>
-        <title>REST API JSON Response Best Practices | Dev Brains AI</title>
+        <title>REST API JSON Response Best Practices (With Examples) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Best practices for structuring JSON API responses — consistent envelope format, error objects, pagination metadata, and naming conventions like camelCase vs snake_case."
+          content="A consistent envelope format, structured error objects, pagination metadata, and camelCase vs snake_case rules — with real JSON examples you can copy."
         />
         <meta
           name="keywords"
-          content="rest api json response best practices, json api response format, api error response format, json pagination, camelcase vs snake_case api, api envelope format"
+          content="rest api json response best practices, json api response format, api error response format, json pagination, camelcase vs snake_case api, api envelope format, json error object example"
         />
+        <meta property="og:title" content="REST API JSON Response Best Practices (With Examples)" />
+        <meta property="og:description" content="A consistent envelope format, structured error objects, pagination metadata, and camelCase vs snake_case rules — with real JSON examples you can copy." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/rest-api-json-response-best-practices" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/rest-api-json-response-best-practices" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -73,6 +73,10 @@ export default function RegexForAadhaarCardValidation() {
           name="keywords"
           content="regex for aadhaar card validation, aadhaar number regex, validate aadhaar javascript, aadhaar regex python, 12 digit aadhaar format"
         />
+        <meta property="og:title" content="Regex for Aadhaar Card Validation — 12-Digit Format and Edge Cases" />
+        <meta property="og:description" content="Validate Aadhaar card numbers with regex. Covers the 12-digit format, spaced input handling, JavaScript and Python examples, and Verhoeff checksum limits." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-aadhaar-card-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-aadhaar-card-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

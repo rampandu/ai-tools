@@ -21,14 +21,14 @@ export default function NaturalLanguageToSql() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Natural Language to SQL — How AI SQL Generators Work and When to Use Them',
+    headline: 'Text-to-SQL: How AI SQL Generators Work (+4 Prompt Tips)',
     description:
-      'Learn how natural language to SQL conversion works, how to get the best results from an AI SQL query builder, and when it saves time versus writing SQL manually.',
+      'See how AI turns plain English into SQL, 4 prompting tips for better queries, and which patterns (JOINs, GROUP BY) it handles well vs needs manual fixes.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/natural-language-to-sql-guide',
     datePublished: '2026-06-01',
-    dateModified: '2026-06-01',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function NaturalLanguageToSql() {
   return (
     <>
       <Head>
-        <title>Natural Language to SQL — How AI SQL Generators Work | Dev Brains AI</title>
+        <title>Text-to-SQL: How AI SQL Generators Work (+4 Prompt Tips) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how natural language to SQL conversion works, how to prompt an AI SQL generator for best results, and when it saves time vs writing SQL manually."
+          content="See how AI turns plain English into SQL, 4 prompting tips for better queries, and which patterns (JOINs, GROUP BY) it handles well vs needs manual fixes."
         />
         <meta
           name="keywords"
-          content="natural language to sql, ai sql query builder, sql generator, ai sql generator, text to sql, plain english to sql, sql query builder ai, convert english to sql"
+          content="natural language to sql, ai sql query builder, sql generator, text to sql, ai sql prompting tips, plain english to sql, sql query builder ai"
         />
+        <meta property="og:title" content="Text-to-SQL: How AI SQL Generators Work (+4 Prompt Tips)" />
+        <meta property="og:description" content="See how AI turns plain English into SQL, 4 prompting tips for better queries, and which patterns (JOINs, GROUP BY) it handles well vs needs manual fixes." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/natural-language-to-sql-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/natural-language-to-sql-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

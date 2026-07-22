@@ -74,6 +74,10 @@ export default function Md5VsSha256() {
           name="keywords"
           content="md5 vs sha256, md5 vs sha-256, is md5 secure, sha256 vs md5 speed, md5 collision attack, which hash algorithm to use, sha-256 security, md5 checksum"
         />
+        <meta property="og:title" content="MD5 vs SHA-256 — Which Hash Should You Use?" />
+        <meta property="og:description" content="MD5 vs SHA-256 compared: speed vs security, the collision attacks that broke MD5 and SHA-1, when MD5 is still OK for checksums, and why passwords need bcrypt or Argon2." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/md5-vs-sha256-which-hash-should-you-use" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/md5-vs-sha256-which-hash-should-you-use" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

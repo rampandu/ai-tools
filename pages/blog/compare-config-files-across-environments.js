@@ -21,14 +21,14 @@ export default function CompareConfigFilesAcrossEnvironments() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Compare Config Files Across Environments: Finding Drift Between Dev, Staging, and Prod',
+    headline: 'Find Config Drift Across Environments: A 3-Step Guide',
     description:
-      'How to find configuration drift between dev, staging, and production: redact secrets before diffing, sort keys in JSON and YAML configs, automate drift detection in CI, plus a worked example with two .env files.',
+      'Find configuration drift between dev, staging, and prod in 3 steps — redact secrets, sort keys before diffing, and automate detection in CI — plus a worked example.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/compare-config-files-across-environments',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CompareConfigFilesAcrossEnvironments() {
   return (
     <>
       <Head>
-        <title>Compare Config Files Across Environments: Find Drift | Dev Brains AI</title>
+        <title>Find Config Drift Across Environments: A 3-Step Guide | Dev Brains AI</title>
         <meta
           name="description"
-          content="Find config drift between dev, staging, and prod: redact secrets before diffing, sort keys for JSON/YAML, automate drift detection in CI, with a worked .env example."
+          content="Find configuration drift between dev, staging, and prod in 3 steps — redact secrets, sort keys before diffing, and automate detection in CI — plus a worked example."
         />
         <meta
           name="keywords"
-          content="compare config files, configuration drift, diff env files, compare environment variables, json config diff, yaml diff sorted keys, drift detection ci, dev staging prod config"
+          content="compare config files, configuration drift detection, diff env files safely, redact secrets before diff, sort json yaml keys diff, drift detection ci pipeline"
         />
+        <meta property="og:title" content="Find Config Drift Across Environments: A 3-Step Guide" />
+        <meta property="og:description" content="Find configuration drift between dev, staging, and prod in 3 steps — redact secrets, sort keys before diffing, and automate detection in CI — plus a worked example." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/compare-config-files-across-environments" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/compare-config-files-across-environments" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -4,12 +4,17 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>Regex Cheat Sheet for Backend Developers</title>
+        <title>Regex Cheat Sheet for Backend Developers (Node & Python) | Dev Brains AI</title>
 
         <meta
           name="description"
-          content="Complete regex cheat sheet for backend developers in India with examples for Node.js, Python, SQL and validation use cases."
+          content="A regex cheat sheet for backend developers: symbols, character classes, and patterns for email, phone, PAN, GST, and PIN validation in Node.js and Python."
         />
+
+        <meta property="og:title" content="Regex Cheat Sheet for Backend Developers (Node & Python)" />
+        <meta property="og:description" content="A regex cheat sheet for backend developers: symbols, character classes, and patterns for email, phone, PAN, GST, and PIN validation in Node.js and Python." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-cheat-sheet-for-backend-developers" />
+        <meta property="og:type" content="article" />
 
         <script
           type="application/ld+json"
@@ -17,7 +22,7 @@ export default function Blog() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "Regex Cheat Sheet for Backend Developers",
+              headline: "Regex Cheat Sheet for Backend Developers (Node & Python)",
               author: { "@type": "Organization", name: "Dev-Brains-AI" },
               publisher: { "@type": "Organization", name: "Dev-Brains-AI" }
             })

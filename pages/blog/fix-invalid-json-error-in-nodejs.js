@@ -20,14 +20,14 @@ export default function FixInvalidJsonErrorInNodejs() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Fix Invalid JSON Errors in Node.js',
+    headline: 'Fix "Unexpected Token in JSON" Errors in Node.js',
     description:
-      'Common causes of SyntaxError: Unexpected token in JSON in Node.js, how to diagnose them, and how to fix broken JSON before it reaches JSON.parse.',
+      'See what triggers "SyntaxError: Unexpected token in JSON" in Node.js — 3 real causes (trailing commas, single quotes, empty input) and the try/catch fix.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/fix-invalid-json-error-in-nodejs',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,22 @@ export default function FixInvalidJsonErrorInNodejs() {
   return (
     <>
       <Head>
-        <title>Fix Invalid JSON Errors in Node.js | Dev Brains AI</title>
+        <title>Fix &quot;Unexpected Token in JSON&quot; Errors in Node.js | Dev Brains AI</title>
         <meta
           name="description"
-          content="Common causes of SyntaxError: Unexpected token in JSON in Node.js and how to fix them, with try/catch patterns and Express middleware examples."
+          content="See what triggers &quot;SyntaxError: Unexpected token in JSON&quot; in Node.js — 3 real causes (trailing commas, single quotes, empty input) and the try/catch fix."
         />
         <meta
           name="keywords"
           content="fix invalid json node.js, syntaxerror unexpected token json, json.parse error node, express json parsing error, node.js json syntax error"
         />
+        <meta property="og:title" content="Fix &quot;Unexpected Token in JSON&quot; Errors in Node.js" />
+        <meta
+          property="og:description"
+          content="See what triggers &quot;SyntaxError: Unexpected token in JSON&quot; in Node.js — 3 real causes (trailing commas, single quotes, empty input) and the try/catch fix."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/fix-invalid-json-error-in-nodejs" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/fix-invalid-json-error-in-nodejs" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

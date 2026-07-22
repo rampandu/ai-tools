@@ -21,14 +21,14 @@ export default function SqlDateFunctionsCheatSheet() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Date Functions Cheat Sheet — MySQL vs PostgreSQL Syntax',
+    headline: 'SQL Date Functions Cheat Sheet: MySQL vs PostgreSQL',
     description:
-      'A side-by-side cheat sheet of common SQL date functions in MySQL and PostgreSQL: current date/time, adding dates, date differences, formatting, and extracting parts.',
+      'NOW(), DATE_ADD, DATEDIFF, and DATE_FORMAT side-by-side in MySQL and PostgreSQL syntax — plus the index-friendly way to filter by date range in both.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-date-functions-cheat-sheet',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlDateFunctionsCheatSheet() {
   return (
     <>
       <Head>
-        <title>SQL Date Functions Cheat Sheet — MySQL vs PostgreSQL | Dev Brains AI</title>
+        <title>SQL Date Functions Cheat Sheet: MySQL vs PostgreSQL | Dev Brains AI</title>
         <meta
           name="description"
-          content="A side-by-side cheat sheet of common SQL date functions in MySQL and PostgreSQL: current date/time, adding dates, date differences, formatting, and extracting parts."
+          content="NOW(), DATE_ADD, DATEDIFF, and DATE_FORMAT side-by-side in MySQL and PostgreSQL syntax — plus the index-friendly way to filter by date range in both."
         />
         <meta
           name="keywords"
-          content="sql date functions, mysql date functions, postgresql date functions, date_add sql, datediff sql, date_format sql, extract sql, current_date sql"
+          content="sql date functions, mysql date functions, postgresql date functions, date_add sql, datediff sql, date_format sql, extract sql, current_date sql, mysql vs postgresql dates"
         />
+        <meta property="og:title" content="SQL Date Functions Cheat Sheet: MySQL vs PostgreSQL" />
+        <meta property="og:description" content="NOW(), DATE_ADD, DATEDIFF, and DATE_FORMAT side-by-side in MySQL and PostgreSQL syntax — plus the index-friendly way to filter by date range in both." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-date-functions-cheat-sheet" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-date-functions-cheat-sheet" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

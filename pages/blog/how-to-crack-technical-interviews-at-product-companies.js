@@ -21,14 +21,14 @@ export default function HowToCrackTechnicalInterviewsAtProductCompanies() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Crack Technical Interviews at Product-Based Companies',
+    headline: 'How to Crack Technical Interviews at Product Companies',
     description:
-      'Practical prep advice for cracking technical interviews at product-based companies vs service companies — DSA focus, system design, and behavioral rounds.',
+      'What Amazon, Flipkart, and Google test: 200-300 DSA problems by pattern, system design basics, STAR-framework behavioral rounds, and a realistic prep timeline.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-crack-technical-interviews-at-product-companies',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function HowToCrackTechnicalInterviewsAtProductCompanies() {
   return (
     <>
       <Head>
-        <title>How to Crack Technical Interviews at Product-Based Companies | Dev Brains AI</title>
+        <title>How to Crack Technical Interviews at Product Companies | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical prep advice for cracking technical interviews at product-based companies vs service companies — DSA focus, system design, behavioral rounds."
+          content="What Amazon, Flipkart, and Google test: 200-300 DSA problems by pattern, system design basics, STAR-framework behavioral rounds, and a realistic prep timeline."
         />
         <meta
           name="keywords"
           content="how to crack product company interviews, product based company interview prep, dsa interview preparation, system design interview india, technical interview tips india"
         />
+        <meta property="og:title" content="How to Crack Technical Interviews at Product Companies" />
+        <meta
+          property="og:description"
+          content="What Amazon, Flipkart, and Google test: 200-300 DSA problems by pattern, system design basics, STAR-framework behavioral rounds, and a realistic prep timeline."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-crack-technical-interviews-at-product-companies" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-crack-technical-interviews-at-product-companies" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function HowToFormatLongSqlQueries() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Format Long SQL Queries for Readability',
+    headline: 'Format Long SQL Queries: 3-Step Refactor Example',
     description:
-      'Practical techniques for taming 100+ line SQL queries: break logic into CTEs, put one JOIN per line, extract subqueries, add comment headers, and use vertical whitespace — with a full worked refactor.',
+      'Turn a 150-line SQL nightmare into readable code: CTEs, one JOIN per line, comment headers, and a real 3-step before/after refactor of a messy query.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-format-long-sql-queries-for-readability',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToFormatLongSqlQueries() {
   return (
     <>
       <Head>
-        <title>How to Format Long SQL Queries for Readability | Dev Brains AI</title>
+        <title>Format Long SQL Queries: 3-Step Refactor Example | Dev Brains AI</title>
         <meta
           name="description"
-          content="Tame 100+ line SQL queries: break logic into CTEs, one JOIN per line, extract subqueries, comment headers, vertical whitespace — with a worked refactor example."
+          content="Turn a 150-line SQL nightmare into readable code: CTEs, one JOIN per line, comment headers, and a real 3-step before/after refactor of a messy query."
         />
         <meta
           name="keywords"
           content="format long sql queries, sql readability, refactor sql query, sql cte formatting, break up complex sql, sql indentation, readable sql, sql formatter online"
         />
+        <meta property="og:title" content="Format Long SQL Queries: 3-Step Refactor Example" />
+        <meta property="og:description" content="Turn a 150-line SQL nightmare into readable code: CTEs, one JOIN per line, comment headers, and a real 3-step before/after refactor of a messy query." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-format-long-sql-queries-for-readability" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-format-long-sql-queries-for-readability" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

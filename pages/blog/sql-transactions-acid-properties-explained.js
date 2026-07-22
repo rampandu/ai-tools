@@ -21,14 +21,14 @@ export default function SqlTransactionsAcidPropertiesExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Transactions and ACID Properties Explained (With a Bank Transfer Example)',
+    headline: 'SQL Transactions & ACID Properties (Bank Example)',
     description:
-      'Learn SQL transactions — BEGIN, COMMIT, ROLLBACK — and the four ACID properties (Atomicity, Consistency, Isolation, Durability) using a real bank-transfer example.',
+      'Learn BEGIN, COMMIT, and ROLLBACK plus the four ACID properties using a real bank-transfer example that shows exactly what breaks without transactions.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-transactions-acid-properties-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlTransactionsAcidPropertiesExplained() {
   return (
     <>
       <Head>
-        <title>SQL Transactions and ACID Properties Explained | Dev Brains AI</title>
+        <title>SQL Transactions & ACID Properties (Bank Example) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn SQL transactions — BEGIN, COMMIT, ROLLBACK — and the four ACID properties (Atomicity, Consistency, Isolation, Durability) with a bank-transfer example."
+          content="Learn BEGIN, COMMIT, and ROLLBACK plus the four ACID properties using a real bank-transfer example that shows exactly what breaks without transactions."
         />
         <meta
           name="keywords"
           content="sql transactions, acid properties sql, begin commit rollback, sql transaction example, atomicity consistency isolation durability, sql start transaction"
         />
+        <meta property="og:title" content="SQL Transactions & ACID Properties (Bank Example)" />
+        <meta property="og:description" content="Learn BEGIN, COMMIT, and ROLLBACK plus the four ACID properties using a real bank-transfer example that shows exactly what breaks without transactions." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-transactions-acid-properties-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-transactions-acid-properties-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

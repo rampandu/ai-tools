@@ -31,11 +31,15 @@ export default function TopRegexPatterns() {
   return (
     <>
       <Head>
-        <title>Top 10 Regex Patterns Every Developer Should Know | Dev Brains AI</title>
+        <title>10 Copy-Paste Regex Patterns Every Developer Needs | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn the top 10 regular expression patterns every developer should know, with practical examples and how to use them."
+          content="10 ready-to-use regex patterns for emails, URLs, phone numbers, hex colors, and more — each with a working example you can paste straight into your code."
         />
+        <meta property="og:title" content="10 Copy-Paste Regex Patterns Every Developer Needs" />
+        <meta property="og:description" content="10 ready-to-use regex patterns for emails, URLs, phone numbers, hex colors, and more — each with a working example you can paste straight into your code." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-top-patterns" />
+        <meta property="og:type" content="article" />
         <link
           rel="canonical"
           href="https://dev-brains-ai.com/blog/regex-top-patterns"

@@ -21,14 +21,14 @@ export default function MarkdownVsHtmlWhenToUseWhich() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Markdown vs HTML — When to Use Which (A Practical Guide)',
+    headline: 'Markdown vs HTML: The 80/20 Rule for When to Use Each',
     description:
       'Markdown covers 80% of writing needs with 20% of the effort, while HTML gives full control. Learn when each one wins, how inline HTML in Markdown works, and a simple rule of thumb.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/markdown-vs-html-when-to-use-which',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function MarkdownVsHtmlWhenToUseWhich() {
   return (
     <>
       <Head>
-        <title>Markdown vs HTML — When to Use Which | Dev Brains AI</title>
+        <title>Markdown vs HTML: The 80/20 Rule for When to Use Each | Dev Brains AI</title>
         <meta
           name="description"
           content="Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. Learn when each wins, how inline HTML in Markdown works, and a simple rule of thumb."
         />
         <meta
           name="keywords"
-          content="markdown vs html, difference between markdown and html, when to use markdown, html in markdown, markdown limitations, markdown or html, markdown renderer differences"
+          content="markdown vs html, markdown 80/20 rule, difference between markdown and html, when to use markdown, html in markdown, markdown limitations, markdown renderer differences"
         />
+        <meta property="og:title" content="Markdown vs HTML: The 80/20 Rule for When to Use Each" />
+        <meta property="og:description" content="Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. Learn when each wins, how inline HTML in Markdown works, and a simple rule of thumb." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/markdown-vs-html-when-to-use-which" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/markdown-vs-html-when-to-use-which" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

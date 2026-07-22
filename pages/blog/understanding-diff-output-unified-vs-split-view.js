@@ -21,14 +21,14 @@ export default function UnderstandingDiffOutputUnifiedVsSplit() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Understanding Diff Output: Unified vs Split View',
+    headline: 'Unified vs Split Diff View — How to Read Any Diff',
     description:
-      'Learn to read diff output like a pro: the anatomy of unified format (---/+++ headers, @@ hunks, +/- prefixes), how split view works, when each shines, reading GitHub PR diffs, and dealing with whitespace-only noise.',
+      'Learn to read unified diff hunks (@@ headers, +/- lines) and split view side by side, when to use each in code review, and how to silence whitespace-only diff noise.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/understanding-diff-output-unified-vs-split-view',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UnderstandingDiffOutputUnifiedVsSplit() {
   return (
     <>
       <Head>
-        <title>Understanding Diff Output: Unified vs Split View | Dev Brains AI</title>
+        <title>Unified vs Split Diff View — How to Read Any Diff | Dev Brains AI</title>
         <meta
           name="description"
-          content="Read diffs like a pro: unified format anatomy (---/+++ headers, @@ hunks, +/- prefixes), split view, when each shines, GitHub PR diffs, and ignoring whitespace noise."
+          content="Learn to read unified diff hunks (@@ headers, +/- lines) and split view side by side, when to use each in code review, and how to silence whitespace-only diff noise."
         />
         <meta
           name="keywords"
           content="unified diff format, split view diff, side by side diff, how to read a diff, diff hunk header, @@ in diff, github pr diff, ignore whitespace diff, diff output explained"
         />
+        <meta property="og:title" content="Unified vs Split Diff View — How to Read Any Diff" />
+        <meta property="og:description" content="Learn to read unified diff hunks (@@ headers, +/- lines) and split view side by side, when to use each in code review, and how to silence whitespace-only diff noise." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/understanding-diff-output-unified-vs-split-view" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/understanding-diff-output-unified-vs-split-view" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

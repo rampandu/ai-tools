@@ -74,6 +74,13 @@ export default function HowToDecodeAJwtTokenSafely() {
           name="keywords"
           content="decode jwt token, jwt decoder, decode jwt javascript, decode jwt python, base64url decode, jwt payload, decode jwt online, jwt decode without verify"
         />
+        <meta property="og:title" content="How to Decode a JWT Token Safely (JavaScript, Python, and Online)" />
+        <meta
+          property="og:description"
+          content="Decode a JWT token safely in JavaScript, Python, or your browser. Understand the three base64url parts, why decoding is not verifying, and how to protect live tokens."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-decode-a-jwt-token-safely" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-decode-a-jwt-token-safely" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

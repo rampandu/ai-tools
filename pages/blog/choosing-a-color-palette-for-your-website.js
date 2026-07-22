@@ -21,14 +21,14 @@ export default function ChoosingAColorPaletteForYourWebsite() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Choosing a Color Palette for Your Website — A Developer-Friendly Method',
+    headline: 'How to Choose a Website Color Palette: A 6-Step Method',
     description:
-      'A step-by-step method for building a website color palette: start from one brand hue, apply the 60-30-10 rule, build hue-biased neutrals, separate semantic colors, check contrast early, and derive dark-mode variants.',
+      'A repeatable 6-step method for a website color palette — one brand hue, the 60-30-10 rule, contrast checks, and dark mode — with a complete hex code example.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/choosing-a-color-palette-for-your-website',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ChoosingAColorPaletteForYourWebsite() {
   return (
     <>
       <Head>
-        <title>Choosing a Color Palette for Your Website | Dev Brains AI</title>
+        <title>How to Choose a Website Color Palette: A 6-Step Method | Dev Brains AI</title>
         <meta
           name="description"
-          content="Build a website palette step by step: one brand hue, the 60-30-10 rule, hue-biased neutrals, semantic colors, early contrast checks, and dark-mode variants."
+          content="A repeatable 6-step method for a website color palette — one brand hue, the 60-30-10 rule, contrast checks, and dark mode — with a complete hex code example."
         />
         <meta
           name="keywords"
-          content="website color palette, choosing colors for website, 60-30-10 rule, brand color, neutral gray palette, semantic colors, dark mode palette, color scheme generator"
+          content="how to choose a color palette, website color palette method, 60-30-10 rule, brand hue neutrals, dark mode color palette, semantic colors ui, color palette generator"
         />
+        <meta property="og:title" content="How to Choose a Website Color Palette: A 6-Step Method" />
+        <meta property="og:description" content="A repeatable 6-step method for a website color palette — one brand hue, the 60-30-10 rule, contrast checks, and dark mode — with a complete hex code example." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/choosing-a-color-palette-for-your-website" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/choosing-a-color-palette-for-your-website" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

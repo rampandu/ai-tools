@@ -21,14 +21,14 @@ export default function JwtSecurityBestPractices() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JWT Security Best Practices for Developers — A Practical Checklist',
+    headline: '6 JWT Security Best Practices Every Developer Needs',
     description:
-      'Secure your JWT implementation: strong signing keys, defending against alg confusion attacks, short expiry with refresh tokens, safe storage, aud/iss validation, and revocation strategies with Node.js examples.',
+      'A 6-point JWT security checklist covering strong keys, alg confusion defenses, refresh tokens, safe storage, aud/iss checks, and revocation — with Node.js code.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/jwt-security-best-practices-for-developers',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JwtSecurityBestPractices() {
   return (
     <>
       <Head>
-        <title>JWT Security Best Practices for Developers | Dev Brains AI</title>
+        <title>6 JWT Security Best Practices Every Developer Needs | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical JWT security checklist: strong keys, preventing alg confusion attacks, short expiry with refresh tokens, cookie vs localStorage storage, aud/iss validation, and revocation. With Node.js code."
+          content="A 6-point JWT security checklist covering strong keys, alg confusion defenses, refresh tokens, safe storage, aud/iss checks, and revocation — with Node.js code."
         />
         <meta
           name="keywords"
           content="jwt security best practices, jwt algorithm confusion, jwt none algorithm attack, jwt storage localstorage vs cookie, jwt refresh token, jwt revocation, secure jwt nodejs, jsonwebtoken security"
         />
+        <meta property="og:title" content="6 JWT Security Best Practices Every Developer Needs" />
+        <meta property="og:description" content="A 6-point JWT security checklist covering strong keys, alg confusion defenses, refresh tokens, safe storage, aud/iss checks, and revocation — with Node.js code." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/jwt-security-best-practices-for-developers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/jwt-security-best-practices-for-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

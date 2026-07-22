@@ -21,14 +21,14 @@ export default function CommonPasswordAttacksExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Common Password Attacks Explained — and the Defence Against Each One',
+    headline: '7 Common Password Attacks Explained (and How to Stop Them)',
     description:
-      'Brute force, dictionary attacks, credential stuffing, phishing, keyloggers, rainbow tables, and breached-password lists — how each attack works and the specific defence that stops it.',
+      'Brute force, credential stuffing, phishing, rainbow tables, and 3 more password attacks explained — how each works and the exact defence that stops it.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-password-attacks-explained',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CommonPasswordAttacksExplained() {
   return (
     <>
       <Head>
-        <title>Common Password Attacks Explained | Dev Brains AI</title>
+        <title>7 Common Password Attacks Explained (and How to Stop Them) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Brute force, dictionary, credential stuffing, phishing, keyloggers, rainbow tables, and breach lists — how each password attack works and what stops it."
+          content="Brute force, credential stuffing, phishing, rainbow tables, and 3 more password attacks explained — how each works and the exact defence that stops it."
         />
         <meta
           name="keywords"
-          content="password attacks, credential stuffing, brute force attack, dictionary attack, rainbow table, phishing, keylogger, have i been pwned, password security"
+          content="common password attacks, credential stuffing explained, brute force attack defence, dictionary attack, rainbow table attack, phishing password theft, have i been pwned"
         />
+        <meta property="og:title" content="7 Common Password Attacks Explained (and How to Stop Them)" />
+        <meta property="og:description" content="Brute force, credential stuffing, phishing, rainbow tables, and 3 more password attacks explained — how each works and the exact defence that stops it." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/common-password-attacks-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-password-attacks-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

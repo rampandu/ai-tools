@@ -20,14 +20,14 @@ export default function SqlQueryForSalesReportDashboard() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Queries for Sales Report Dashboards',
+    headline: 'SQL Queries for Sales Dashboards: Revenue & Growth',
     description:
-      'Ready-to-use SQL queries for building sales report dashboards: revenue by month, revenue by region, top-selling products, and month-over-month growth.',
+      'Copy-paste SQL for revenue by month, revenue by region, top-selling products, and month-over-month growth using LAG(), built on a typical e-commerce schema.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-query-for-sales-report-dashboard',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function SqlQueryForSalesReportDashboard() {
   return (
     <>
       <Head>
-        <title>SQL Queries for Sales Report Dashboards | Dev Brains AI</title>
+        <title>SQL Queries for Sales Dashboards: Revenue & Growth | Dev Brains AI</title>
         <meta
           name="description"
-          content="Ready-to-use SQL queries for building sales report dashboards: revenue by month, by region, top products, and month-over-month growth calculations."
+          content="Copy-paste SQL for revenue by month, revenue by region, top-selling products, and month-over-month growth using LAG(), built on a typical e-commerce schema."
         />
         <meta
           name="keywords"
           content="sql sales report query, revenue by month sql, top selling products sql, sales dashboard sql, sql query for sales analysis, month over month growth sql"
         />
+        <meta property="og:title" content="SQL Queries for Sales Dashboards: Revenue & Growth" />
+        <meta property="og:description" content="Copy-paste SQL for revenue by month, revenue by region, top-selling products, and month-over-month growth using LAG(), built on a typical e-commerce schema." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-for-sales-report-dashboard" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-for-sales-report-dashboard" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

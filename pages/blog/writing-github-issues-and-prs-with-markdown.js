@@ -21,14 +21,14 @@ export default function WritingGithubIssuesAndPrsWithMarkdown() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Writing GitHub Issues and PRs with Markdown — A Practical Guide',
+    headline: 'Write GitHub Issues and PRs That Get Fixed Faster',
     description:
-      'Write GitHub issues and pull requests that get fixed faster: minimal repros in fenced code blocks, task-list acceptance criteria, collapsible logs, environment tables, and issue templates.',
+      'Write GitHub issues and PRs that get fixed faster: minimal repros in code blocks, task-list checklists, collapsible logs, and environment tables.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/writing-github-issues-and-prs-with-markdown',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function WritingGithubIssuesAndPrsWithMarkdown() {
   return (
     <>
       <Head>
-        <title>Writing GitHub Issues and PRs with Markdown | Dev Brains AI</title>
+        <title>Write GitHub Issues &amp; PRs That Get Fixed Faster | Dev Brains AI</title>
         <meta
           name="description"
-          content="Write GitHub issues and PRs that get fixed faster: minimal repros in fenced code blocks, task-list acceptance criteria, collapsible logs, environment tables, and templates."
+          content="Write GitHub issues and PRs that get fixed faster: minimal repros in code blocks, task-list checklists, collapsible logs, and environment tables."
         />
         <meta
           name="keywords"
           content="github issue markdown, writing good github issues, pull request description template, github task list, collapsible section github, issue template github, bug report format, github pr best practices"
         />
+        <meta property="og:title" content="Write GitHub Issues & PRs That Get Fixed Faster" />
+        <meta property="og:description" content="Write GitHub issues and PRs that get fixed faster: minimal repros in code blocks, task-list checklists, collapsible logs, and environment tables." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/writing-github-issues-and-prs-with-markdown" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/writing-github-issues-and-prs-with-markdown" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

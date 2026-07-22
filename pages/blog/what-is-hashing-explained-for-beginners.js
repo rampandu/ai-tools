@@ -21,14 +21,14 @@ export default function WhatIsHashingForBeginners() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'What Is Hashing? Explained for Beginners with Real Examples',
+    headline: 'What Is Hashing? 4 Properties Explained Simply',
     description:
-      'Hashing explained simply: one-way functions, determinism, the avalanche effect, and fixed-size output. How hashing differs from encryption and encoding, and where it powers everyday tech like Git and hash tables.',
+      'Hashing explained simply: the 4 core properties, how it differs from encryption and encoding, and real uses from Git commits to password storage.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/what-is-hashing-explained-for-beginners',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function WhatIsHashingForBeginners() {
   return (
     <>
       <Head>
-        <title>What Is Hashing? Explained for Beginners | Dev Brains AI</title>
+        <title>What Is Hashing? 4 Properties Explained Simply | Dev Brains AI</title>
         <meta
           name="description"
-          content="Hashing explained simply: one-way functions, determinism, the avalanche effect, fixed-size output, hashing vs encryption vs encoding, and everyday uses from Git to hash tables."
+          content="Hashing explained simply: the 4 core properties, how it differs from encryption and encoding, and real uses from Git commits to password storage."
         />
         <meta
           name="keywords"
           content="what is hashing, hashing explained, hash function for beginners, hashing vs encryption, hashing vs encoding, one way function, avalanche effect, hash digest, sha256 explained"
         />
+        <meta property="og:title" content="What Is Hashing? 4 Properties Explained Simply" />
+        <meta property="og:description" content="Hashing explained simply: the 4 core properties, how it differs from encryption and encoding, and real uses from Git commits to password storage." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/what-is-hashing-explained-for-beginners" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/what-is-hashing-explained-for-beginners" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

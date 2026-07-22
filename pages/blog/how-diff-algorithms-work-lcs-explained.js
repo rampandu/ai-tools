@@ -74,6 +74,13 @@ export default function HowDiffAlgorithmsWorkLcsExplained() {
           name="keywords"
           content="how diff algorithms work, longest common subsequence, lcs algorithm explained, myers diff algorithm, diff algorithm tutorial, how git diff works internally, edit distance, text comparison algorithm"
         />
+        <meta property="og:title" content="How Diff Algorithms Work: LCS Explained" />
+        <meta
+          property="og:description"
+          content="The algorithm behind diff tools: longest common subsequence intuition with a worked matrix, the Myers algorithm, why moved blocks show as delete+add, and performance notes."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-diff-algorithms-work-lcs-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-diff-algorithms-work-lcs-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

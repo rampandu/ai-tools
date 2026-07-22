@@ -74,6 +74,10 @@ export default function RegexForIpv4AddressValidation() {
           name="keywords"
           content="ipv4 regex, ip address validation regex, regex ip address javascript, valid ip regex, octet range regex"
         />
+        <meta property="og:title" content="Regex for IPv4 Address Validation (Correct Octet Range)" />
+        <meta property="og:description" content="A correct regex for validating IPv4 addresses, explaining the common mistake of allowing octets above 255 and how to fix it properly." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-ipv4-address-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-ipv4-address-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

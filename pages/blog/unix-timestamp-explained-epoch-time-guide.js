@@ -21,14 +21,14 @@ export default function UnixTimestampExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Unix Timestamp Explained — A Complete Guide to Epoch Time',
+    headline: 'Unix Timestamp Explained: What Epoch Time Really Means',
     description:
-      'What a unix timestamp is, why epoch time starts at 1970-01-01 UTC, seconds vs milliseconds across languages, negative timestamps, leap seconds, and conversion code in JavaScript, Python, and SQL.',
+      'What a unix timestamp is, why epoch time starts 1970-01-01 UTC, the seconds-vs-milliseconds bug, and ready-to-use conversion code for JS, Python, and SQL.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/unix-timestamp-explained-epoch-time-guide',
     datePublished: '2026-07-14',
-    dateModified: '2026-07-14',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UnixTimestampExplained() {
   return (
     <>
       <Head>
-        <title>Unix Timestamp Explained — A Complete Guide to Epoch Time | Dev Brains AI</title>
+        <title>Unix Timestamp Explained: What Epoch Time Really Means | Dev Brains AI</title>
         <meta
           name="description"
-          content="What a unix timestamp is, why epoch time starts at 1970-01-01 UTC, seconds vs milliseconds in JS and Python, negative timestamps, and conversion code for JS, Python, and SQL."
+          content="What a unix timestamp is, why epoch time starts 1970-01-01 UTC, the seconds-vs-milliseconds bug, and ready-to-use conversion code for JS, Python, and SQL."
         />
         <meta
           name="keywords"
           content="unix timestamp, epoch time, unix time explained, seconds since 1970, epoch converter, unix timestamp to date, timestamp seconds vs milliseconds, what is epoch time"
         />
+        <meta property="og:title" content="Unix Timestamp Explained: What Epoch Time Really Means" />
+        <meta property="og:description" content="What a unix timestamp is, why epoch time starts 1970-01-01 UTC, the seconds-vs-milliseconds bug, and ready-to-use conversion code for JS, Python, and SQL." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/unix-timestamp-explained-epoch-time-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/unix-timestamp-explained-epoch-time-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

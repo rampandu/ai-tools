@@ -21,14 +21,14 @@ export default function Base64FileUploadGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Base64 File Upload Encoding — A Practical Guide',
+    headline: 'Base64 File Uploads: JSON APIs vs multipart/form-data',
     description:
-      'How Base64 is used to encode files like images and PDFs for upload in web forms and JSON APIs, the ~33% size overhead it adds, and when multipart/form-data is the better choice.',
+      'Working code for Base64-encoding a file upload into a JSON API, the 33% size overhead it adds, and when multipart/form-data is the faster choice instead.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-file-upload-encoding-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function Base64FileUploadGuide() {
   return (
     <>
       <Head>
-        <title>Base64 File Upload Encoding — A Practical Guide | Dev Brains AI</title>
+        <title>Base64 File Uploads: JSON APIs vs multipart/form-data | Dev Brains AI</title>
         <meta
           name="description"
-          content="How Base64 is used to encode files like images and PDFs for upload in web forms and JSON APIs, the size overhead it adds, and when to use multipart/form-data instead."
+          content="Working code for Base64-encoding a file upload into a JSON API, the 33% size overhead it adds, and when multipart/form-data is the faster choice instead."
         />
         <meta
           name="keywords"
           content="base64 file upload, base64 encode image upload, base64 vs multipart form data, base64 size overhead, upload pdf base64 api"
         />
+        <meta property="og:title" content="Base64 File Uploads: JSON APIs vs multipart/form-data" />
+        <meta
+          property="og:description"
+          content="Working code for Base64-encoding a file upload into a JSON API, the 33% size overhead it adds, and when multipart/form-data is the faster choice instead."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/base64-file-upload-encoding-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-file-upload-encoding-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

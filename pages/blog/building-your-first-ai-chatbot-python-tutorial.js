@@ -21,14 +21,14 @@ export default function BuildingYourFirstAiChatbotPythonTutorial() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Building Your First AI Chatbot — A Python Tutorial for Beginners',
+    headline: 'Build an AI Chatbot in Python: 3 Approaches (With Code)',
     description:
-      'A step-by-step beginner tutorial for building a simple rule-based and API-based chatbot in Python, with real working code you can run today.',
+      'Build a Python chatbot 3 ways — rule-based, ML classifier, and LLM-powered — with full runnable code for each, no machine learning degree required.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/building-your-first-ai-chatbot-python-tutorial',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function BuildingYourFirstAiChatbotPythonTutorial() {
   return (
     <>
       <Head>
-        <title>Building Your First AI Chatbot — A Python Tutorial for Beginners | Dev Brains AI</title>
+        <title>Build an AI Chatbot in Python: 3 Approaches (With Code) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Step-by-step beginner tutorial building a simple rule-based or API-based chatbot in Python, with real working code you can run today."
+          content="Build a Python chatbot 3 ways — rule-based, ML classifier, and LLM-powered — with full runnable code for each, no machine learning degree required."
         />
         <meta
           name="keywords"
-          content="build a chatbot in python, python chatbot tutorial, ai chatbot tutorial beginners, rule based chatbot python, simple chatbot python code"
+          content="build a chatbot in python, python chatbot tutorial, rule based chatbot python, llm chatbot python, ai chatbot tutorial beginners, simple chatbot python code"
         />
+        <meta property="og:title" content="Build an AI Chatbot in Python: 3 Approaches (With Code)" />
+        <meta property="og:description" content="Build a Python chatbot 3 ways — rule-based, ML classifier, and LLM-powered — with full runnable code for each, no machine learning degree required." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/building-your-first-ai-chatbot-python-tutorial" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/building-your-first-ai-chatbot-python-tutorial" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

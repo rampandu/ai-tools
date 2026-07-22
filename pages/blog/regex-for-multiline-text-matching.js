@@ -21,14 +21,14 @@ export default function RegexForMultilineTextMatching() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Multiline Text Matching — The m and s Flags Explained',
+    headline: 'Regex Multiline Matching in JS: m vs s Flags Explained',
     description:
-      'How to use the m (multiline) and s (dotall) regex flags to match across multiple lines in JavaScript, with practical log-parsing and text-processing examples.',
+      "See exactly how JavaScript's m and s regex flags change ^, $, and . behavior, with copy-paste examples for parsing multi-line logs and YAML frontmatter.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-multiline-text-matching',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexForMultilineTextMatching() {
   return (
     <>
       <Head>
-        <title>Regex for Multiline Text Matching — m and s Flags Explained | Dev Brains AI</title>
+        <title>Regex Multiline Matching in JS: m vs s Flags Explained | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to use the m (multiline) and s (dotall) regex flags to match across multiple lines in JavaScript, with practical log-parsing examples."
+          content="See exactly how JavaScript's m and s regex flags change ^, $, and . behavior, with copy-paste examples for parsing multi-line logs and YAML frontmatter."
         />
         <meta
           name="keywords"
-          content="regex multiline flag, regex dotall flag, javascript regex m flag, regex s flag example, multiline regex matching javascript"
+          content="regex multiline flag, regex dotall flag, javascript regex m flag, regex s flag example, multiline regex matching javascript, regex log parsing"
         />
+        <meta property="og:title" content="Regex Multiline Matching in JS: m vs s Flags Explained" />
+        <meta property="og:description" content="See exactly how JavaScript's m and s regex flags change ^, $, and . behavior, with copy-paste examples for parsing multi-line logs and YAML frontmatter." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-multiline-text-matching" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-multiline-text-matching" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

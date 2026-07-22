@@ -21,9 +21,9 @@ export default function CronAwsEventBridge() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Expressions for AWS EventBridge and Lambda',
+    headline: 'AWS EventBridge Cron: 6-Field Syntax for Lambda',
     description:
-      'Learn how to write cron expressions for AWS EventBridge Scheduler to trigger Lambda functions on a schedule. Includes syntax differences from standard cron, examples, and tips.',
+      'AWS EventBridge cron uses 6 fields, not 5 — learn the day-of-week offset, the ? wildcard rule, rate expressions, and a working Terraform example for Lambda.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expressions-aws-eventbridge-lambda',
@@ -32,11 +32,15 @@ export default function CronAwsEventBridge() {
   return (
     <>
       <Head>
-        <title>Cron Expressions for AWS EventBridge and Lambda | Dev Brains AI</title>
+        <title>AWS EventBridge Cron: 6-Field Syntax for Lambda | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to schedule AWS Lambda functions with cron expressions in EventBridge. Covers AWS cron syntax differences, rate expressions, practical examples, and common mistakes."
+          content="AWS EventBridge cron uses 6 fields, not 5 — learn the day-of-week offset, the ? wildcard rule, rate expressions, and a working Terraform example for Lambda."
         />
+        <meta property="og:title" content="AWS EventBridge Cron: 6-Field Syntax for Lambda" />
+        <meta property="og:description" content="AWS EventBridge cron uses 6 fields, not 5 — learn the day-of-week offset, the ? wildcard rule, rate expressions, and a working Terraform example for Lambda." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-expressions-aws-eventbridge-lambda" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-expressions-aws-eventbridge-lambda" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

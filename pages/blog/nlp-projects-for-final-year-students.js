@@ -21,14 +21,14 @@ export default function NlpProjectsForFinalYearStudents() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'NLP Projects for Final Year Students — With Implementation Approach',
+    headline: '4 NLP Projects for Final Year Students (with Code)',
     description:
-      'Final-year NLP project ideas — sentiment analysis, text summarization, chatbot, resume parser — with implementation approach and required libraries.',
+      '4 final-year NLP projects — sentiment analysis, summarization, a domain chatbot, and a resume parser — each with approach, libraries, and working code.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/nlp-projects-for-final-year-students',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function NlpProjectsForFinalYearStudents() {
   return (
     <>
       <Head>
-        <title>NLP Projects for Final Year Students — With Implementation Approach | Dev Brains AI</title>
+        <title>4 NLP Projects for Final Year Students (with Code) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Final-year NLP project ideas — sentiment analysis, text summarization, chatbot, resume parser — with implementation approach and required libraries."
+          content="4 final-year NLP projects — sentiment analysis, summarization, a domain chatbot, and a resume parser — each with approach, libraries, and working code."
         />
         <meta
           name="keywords"
           content="nlp projects for final year students, nlp project ideas, sentiment analysis project, text summarization project, resume parser nlp, chatbot final year project"
         />
+        <meta property="og:title" content="4 NLP Projects for Final Year Students (with Code)" />
+        <meta property="og:description" content="4 final-year NLP projects — sentiment analysis, summarization, a domain chatbot, and a resume parser — each with approach, libraries, and working code." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/nlp-projects-for-final-year-students" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/nlp-projects-for-final-year-students" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

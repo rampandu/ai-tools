@@ -20,14 +20,14 @@ export default function PythonAiProjectsForEngineeringStudentsIndia() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Python AI Projects for Engineering Students in India',
+    headline: '12 Python AI Project Ideas for Engineering Students (India)',
     description:
-      'Practical Python and AI project ideas for Indian engineering students, ranging from beginner to final-year level, with the libraries and resources to build each.',
+      '12 Python and AI project ideas for Indian engineering students, from beginner-friendly to final-year level, with the libraries and datasets needed for each.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/python-ai-projects-for-engineering-students-india',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function PythonAiProjectsForEngineeringStudentsIndia() {
   return (
     <>
       <Head>
-        <title>Python AI Projects for Engineering Students in India | Dev Brains AI</title>
+        <title>12 Python AI Project Ideas for Engineering Students (India) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical Python and AI project ideas for Indian engineering students, from beginner to final-year level, with libraries, datasets, and resources."
+          content="12 Python and AI project ideas for Indian engineering students, from beginner-friendly to final-year level, with the libraries and datasets needed for each."
         />
         <meta
           name="keywords"
-          content="python ai projects india, engineering student ai projects, machine learning projects python, final year ai project ideas, python projects for students"
+          content="python ai projects india, 12 ai project ideas for students, engineering student ai projects, machine learning projects python, final year ai project ideas"
         />
+        <meta property="og:title" content="12 Python AI Project Ideas for Engineering Students (India)" />
+        <meta property="og:description" content="12 Python and AI project ideas for Indian engineering students, from beginner-friendly to final-year level, with the libraries and datasets needed for each." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/python-ai-projects-for-engineering-students-india" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/python-ai-projects-for-engineering-students-india" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

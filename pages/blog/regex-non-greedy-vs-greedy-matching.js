@@ -21,14 +21,14 @@ export default function RegexNonGreedyVsGreedyMatching() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex Non-Greedy vs Greedy Matching — Side-by-Side Examples',
+    headline: 'Greedy vs Non-Greedy Regex: Side-by-Side Match Results',
     description:
-      'The difference between greedy (.*) and lazy/non-greedy (.*?) quantifiers in regex, with side-by-side examples showing exactly how the matched results differ.',
+      'See exactly what .* and .*? match differently on the same HTML string, plus when a negated character class beats a lazy quantifier for safe extraction.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-non-greedy-vs-greedy-matching',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexNonGreedyVsGreedyMatching() {
   return (
     <>
       <Head>
-        <title>Regex Non-Greedy vs Greedy Matching (Side-by-Side Examples) | Dev Brains AI</title>
+        <title>Greedy vs Non-Greedy Regex: Side-by-Side Match Results | Dev Brains AI</title>
         <meta
           name="description"
-          content="The difference between greedy (.*) and lazy/non-greedy (.*?) quantifiers in regex, with side-by-side examples showing how matched results differ."
+          content="See exactly what .* and .*? match differently on the same HTML string, plus when a negated character class beats a lazy quantifier for safe extraction."
         />
         <meta
           name="keywords"
-          content="regex greedy vs non-greedy, lazy quantifier regex, regex .*? explained, greedy quantifier examples, non-greedy matching javascript"
+          content="regex greedy vs non-greedy, lazy quantifier regex, regex .*? explained, greedy quantifier examples, non-greedy matching javascript, negated character class regex"
         />
+        <meta property="og:title" content="Greedy vs Non-Greedy Regex: Side-by-Side Match Results" />
+        <meta property="og:description" content="See exactly what .* and .*? match differently on the same HTML string, plus when a negated character class beats a lazy quantifier for safe extraction." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-non-greedy-vs-greedy-matching" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-non-greedy-vs-greedy-matching" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

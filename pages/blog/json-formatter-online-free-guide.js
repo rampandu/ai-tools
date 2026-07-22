@@ -21,14 +21,14 @@ export default function JsonFormatterOnlineFreeGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Free Online JSON Formatter — Complete Guide to Pretty-Printing and Validating JSON',
+    headline: 'Free Online JSON Formatter: Pretty-Print, Validate, Minify',
     description:
-      'What a free online JSON formatter does — pretty-print, validate, and minify — and why it is one of the fastest ways to debug messy API responses and config files.',
+      'What a free online JSON formatter actually does — pretty-print, validate, and minify — plus 5 real situations where it beats writing a one-off script.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-formatter-online-free-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonFormatterOnlineFreeGuide() {
   return (
     <>
       <Head>
-        <title>Free Online JSON Formatter — Complete Guide | Dev Brains AI</title>
+        <title>Free Online JSON Formatter: Pretty-Print, Validate, Minify | Dev Brains AI</title>
         <meta
           name="description"
-          content="What a free online JSON formatter does — pretty-print, validate, and minify — and why it is one of the fastest ways to debug messy API responses and config files."
+          content="What a free online JSON formatter actually does — pretty-print, validate, and minify — plus 5 real situations where it beats writing a one-off script."
         />
         <meta
           name="keywords"
           content="json formatter online, free json formatter, json beautifier, json pretty print online, format json online, json validator online"
         />
+        <meta property="og:title" content="Free Online JSON Formatter: Pretty-Print, Validate, Minify" />
+        <meta property="og:description" content="What a free online JSON formatter actually does — pretty-print, validate, and minify — plus 5 real situations where it beats writing a one-off script." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-formatter-online-free-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-formatter-online-free-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

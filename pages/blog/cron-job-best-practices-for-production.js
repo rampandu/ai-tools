@@ -21,14 +21,14 @@ export default function CronJobBestPracticesForProduction() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Job Best Practices for Production Systems',
+    headline: '6 Cron Job Best Practices for Production',
     description:
-      'Best practices for running cron jobs reliably in production — logging, failure alerting, idempotency, locking to avoid overlapping runs, and graceful error handling.',
+      '6 practices for reliable production cron jobs: idempotency, flock locking, structured logging, failure alerts, timeouts, and secrets handling.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-job-best-practices-for-production',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronJobBestPracticesForProduction() {
   return (
     <>
       <Head>
-        <title>Cron Job Best Practices for Production Systems | Dev Brains AI</title>
+        <title>6 Cron Job Best Practices for Production | Dev Brains AI</title>
         <meta
           name="description"
-          content="Best practices for running cron jobs reliably in production: logging, alerting on failure, idempotency, locking to avoid overlapping runs, and error handling."
+          content="6 practices for reliable production cron jobs: idempotency, flock locking, structured logging, failure alerts, timeouts, and secrets handling."
         />
         <meta
           name="keywords"
           content="cron job best practices, production cron jobs, cron job locking, idempotent cron jobs, cron job logging, cron job alerting, avoid overlapping cron jobs"
         />
+        <meta property="og:title" content="6 Cron Job Best Practices for Production" />
+        <meta property="og:description" content="6 practices for reliable production cron jobs: idempotency, flock locking, structured logging, failure alerts, timeouts, and secrets handling." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-job-best-practices-for-production" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-job-best-practices-for-production" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

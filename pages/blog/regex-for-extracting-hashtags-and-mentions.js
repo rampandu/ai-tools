@@ -74,6 +74,10 @@ export default function RegexForExtractingHashtagsAndMentions() {
           name="keywords"
           content="regex extract hashtags, regex extract mentions, javascript hashtag regex, matchall regex example, extract @mentions javascript"
         />
+        <meta property="og:title" content="Regex for Extracting Hashtags and Mentions (JS Examples)" />
+        <meta property="og:description" content="How to extract #hashtags and @mentions from text using JavaScript regex with match and matchAll, including Unicode-friendly patterns." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-extracting-hashtags-and-mentions" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-extracting-hashtags-and-mentions" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

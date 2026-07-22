@@ -74,6 +74,10 @@ export default function RegexExplainerGuide() {
           name="keywords"
           content="regex explainer, how to read regex, regex tutorial, understand regex pattern, regex breakdown, regex symbols reference, regex lookahead lookbehind, decode regex"
         />
+        <meta property="og:title" content="How to Read Any Regex Pattern — A Step-by-Step Explainer Guide" />
+        <meta property="og:description" content="Learn a systematic method for reading any regex pattern, with a token-by-token breakdown of a real email validation regex and a symbol reference table." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-explainer-guide-how-it-works" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-explainer-guide-how-it-works" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

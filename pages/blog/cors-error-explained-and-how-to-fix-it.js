@@ -74,6 +74,10 @@ export default function CorsErrorExplainedAndHowToFixIt() {
           name="keywords"
           content="cors error, access-control-allow-origin, fix cors error, cors express js, cors preflight request, cors error nodejs"
         />
+        <meta property="og:title" content="CORS Error Explained — And How to Fix It on Express.js" />
+        <meta property="og:description" content='What causes the classic "No Access-Control-Allow-Origin header" CORS error, how CORS headers work, and how to fix it on an Express.js backend.' />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cors-error-explained-and-how-to-fix-it" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cors-error-explained-and-how-to-fix-it" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

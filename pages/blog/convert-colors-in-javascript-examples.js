@@ -21,14 +21,14 @@ export default function ConvertColorsInJavascriptExamples() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Convert Colors in JavaScript — HEX, RGB, and HSL with Working Code',
+    headline: 'Convert Colors in JavaScript: HEX, RGB & HSL (Code)',
     description:
-      'A cookbook of color conversions in JavaScript: hex to RGB with parseInt, RGB to hex with toString(16), full RGB↔HSL functions, getComputedStyle quirks, canvas pixel reads, and a copy-paste utility module.',
+      'A copy-paste JavaScript cookbook for color conversion — hex to RGB, RGB to HSL, getComputedStyle, and canvas pixel reads — with a reusable utility module.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/convert-colors-in-javascript-examples',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ConvertColorsInJavascriptExamples() {
   return (
     <>
       <Head>
-        <title>Convert Colors in JavaScript — Working Examples | Dev Brains AI</title>
+        <title>Convert Colors in JavaScript: HEX, RGB & HSL (Code) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Cookbook: hex→RGB with parseInt, RGB→hex with toString(16), full RGB↔HSL functions, getComputedStyle quirks, canvas pixel reads, and a utility module."
+          content="A copy-paste JavaScript cookbook for color conversion — hex to RGB, RGB to HSL, getComputedStyle, and canvas pixel reads — with a reusable utility module."
         />
         <meta
           name="keywords"
-          content="convert hex to rgb javascript, rgb to hex javascript, rgb to hsl javascript, hsl to rgb, getComputedStyle color, canvas getImageData pixel color, javascript color conversion"
+          content="convert hex to rgb javascript, rgb to hsl javascript, hsl to rgb javascript, getComputedStyle rgb to hex, canvas getImageData pixel color, javascript color conversion cookbook"
         />
+        <meta property="og:title" content="Convert Colors in JavaScript: HEX, RGB & HSL (Code)" />
+        <meta property="og:description" content="A copy-paste JavaScript cookbook for color conversion — hex to RGB, RGB to HSL, getComputedStyle, and canvas pixel reads — with a reusable utility module." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/convert-colors-in-javascript-examples" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/convert-colors-in-javascript-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

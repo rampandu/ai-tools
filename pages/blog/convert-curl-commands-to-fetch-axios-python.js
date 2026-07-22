@@ -21,14 +21,14 @@ export default function ConvertCurlCommandsToFetchAxiosPython() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Convert cURL Commands to fetch, axios, and Python requests',
+    headline: 'Convert cURL to fetch, axios & Python Requests (Example)',
     description:
-      'Learn how to read curl flags and convert curl commands into working JavaScript fetch, axios, and Python requests code, with a full side-by-side worked example.',
+      'Turn any curl command into fetch, axios, or Python requests code — flag mappings plus one full POST request converted to all three, side by side.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/convert-curl-commands-to-fetch-axios-python',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ConvertCurlCommandsToFetchAxiosPython() {
   return (
     <>
       <Head>
-        <title>Convert cURL Commands to fetch, axios, and Python requests | Dev Brains AI</title>
+        <title>Convert cURL to fetch, axios & Python Requests (Example) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to read curl flags and convert curl commands into working JavaScript fetch, axios, and Python requests code, with a full side-by-side example."
+          content="Turn any curl command into fetch, axios, or Python requests code — flag mappings plus one full POST request converted to all three, side by side."
         />
         <meta
           name="keywords"
-          content="curl to fetch, curl to axios, curl to python requests, convert curl command, curl converter, curl to code, curl command to javascript"
+          content="curl to fetch, curl to axios, curl to python requests, convert curl command to code, curl flags explained, curl converter online"
         />
+        <meta property="og:title" content="Convert cURL to fetch, axios & Python Requests (Example)" />
+        <meta property="og:description" content="Turn any curl command into fetch, axios, or Python requests code — flag mappings plus one full POST request converted to all three, side by side." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/convert-curl-commands-to-fetch-axios-python" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/convert-curl-commands-to-fetch-axios-python" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

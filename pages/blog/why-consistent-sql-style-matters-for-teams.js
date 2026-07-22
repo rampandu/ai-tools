@@ -21,14 +21,14 @@ export default function WhyConsistentSqlStyleMatters() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Why Consistent SQL Style Matters for Teams',
+    headline: 'Why Consistent SQL Style Speeds Up Code Review',
     description:
-      'How a shared SQL style speeds up code reviews, reduces diff noise, shortens onboarding, and helps reviewers spot bugs. Plus a practical plan to adopt one.',
+      "A shared SQL style speeds up code reviews, cuts diff noise, and exposes hidden bugs. Here's how to adopt one on your team with sqlfluff, CI, and a formatter.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/why-consistent-sql-style-matters-for-teams',
     datePublished: '2026-07-14',
-    dateModified: '2026-07-14',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function WhyConsistentSqlStyleMatters() {
   return (
     <>
       <Head>
-        <title>Why Consistent SQL Style Matters for Teams | Dev Brains AI</title>
+        <title>Why Consistent SQL Style Speeds Up Code Review | Dev Brains AI</title>
         <meta
           name="description"
-          content="A shared SQL style speeds up code reviews, cuts diff noise, shortens onboarding, and exposes bugs. Here is how to adopt one with sqlfluff, CI, and a formatter."
+          content="A shared SQL style speeds up code reviews, cuts diff noise, and exposes hidden bugs. Here's how to adopt one on your team with sqlfluff, CI, and a formatter."
         />
         <meta
           name="keywords"
           content="sql style guide, consistent sql formatting, sql code review, sqlfluff, sql linter, sql formatter for teams, sql best practices, sql team conventions"
         />
+        <meta property="og:title" content="Why Consistent SQL Style Speeds Up Code Review" />
+        <meta property="og:description" content="A shared SQL style speeds up code reviews, cuts diff noise, and exposes hidden bugs. Here's how to adopt one on your team with sqlfluff, CI, and a formatter." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/why-consistent-sql-style-matters-for-teams" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/why-consistent-sql-style-matters-for-teams" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

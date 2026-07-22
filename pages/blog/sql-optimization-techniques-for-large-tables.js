@@ -4,12 +4,17 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>SQL Optimization Techniques for Large Tables</title>
+        <title>7 SQL Optimization Techniques for Large Tables | Dev Brains AI</title>
 
         <meta
           name="description"
-          content="Learn SQL optimization techniques for large tables with indexing, query tuning, partitioning and real-world examples for Indian developers."
+          content="Speed up slow queries on multi-million row tables with indexing, avoiding SELECT *, smarter WHERE clauses, JOIN tuning, partitioning, and reading EXPLAIN output."
         />
+
+        <meta property="og:title" content="7 SQL Optimization Techniques for Large Tables" />
+        <meta property="og:description" content="Speed up slow queries on multi-million row tables with indexing, avoiding SELECT *, smarter WHERE clauses, JOIN tuning, partitioning, and reading EXPLAIN output." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-optimization-techniques-for-large-tables" />
+        <meta property="og:type" content="article" />
 
         <script
           type="application/ld+json"
@@ -17,7 +22,7 @@ export default function Blog() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "SQL Optimization Techniques for Large Tables",
+              headline: "7 SQL Optimization Techniques for Large Tables",
               author: { "@type": "Organization", name: "Dev-Brains-AI" },
               publisher: { "@type": "Organization", name: "Dev-Brains-AI" }
             })

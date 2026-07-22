@@ -21,14 +21,14 @@ export default function UrlEncodingCommonMistakes() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Common URL Encoding Mistakes Developers Make',
+    headline: '4 Common URL Encoding Mistakes (And How to Fix Them)',
     description:
-      'The most common URL-encoding bugs developers run into: double-encoding, encoding a whole URL instead of just the parameters, and mixing up + and %20 for spaces — with fixes for each.',
+      'The 4 URL-encoding bugs that quietly break production: double-encoding, encoding a whole URL, unescaped redirects, and confusing + with %20 — with fixes.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-common-mistakes-developers-make',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UrlEncodingCommonMistakes() {
   return (
     <>
       <Head>
-        <title>Common URL Encoding Mistakes Developers Make | Dev Brains AI</title>
+        <title>4 Common URL Encoding Mistakes (And How to Fix Them) | Dev Brains AI</title>
         <meta
           name="description"
-          content="The most common URL-encoding bugs developers run into: double-encoding, encoding a whole URL instead of just parameters, and mixing up + and %20 for spaces."
+          content="The 4 URL-encoding bugs that quietly break production: double-encoding, encoding a whole URL, unescaped redirects, and confusing + with %20 — with fixes."
         />
         <meta
           name="keywords"
           content="url encoding mistakes, double encoding bug, encodeURI vs encodeURIComponent mistake, url encoding plus vs space, common encoding errors"
         />
+        <meta property="og:title" content="4 Common URL Encoding Mistakes (And How to Fix Them)" />
+        <meta property="og:description" content="The 4 URL-encoding bugs that quietly break production: double-encoding, encoding a whole URL, unescaped redirects, and confusing + with %20 — with fixes." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/url-encoding-common-mistakes-developers-make" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-encoding-common-mistakes-developers-make" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

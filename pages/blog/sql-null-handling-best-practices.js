@@ -21,14 +21,14 @@ export default function SqlNullHandlingBestPractices() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL NULL Handling Best Practices — COALESCE, IS NULL, and Three-Valued Logic',
+    headline: 'SQL NULL Handling Best Practices (COALESCE, IS NULL)',
     description:
-      'Understand SQL NULL semantics, three-valued logic, COALESCE and IFNULL/ISNULL functions, and why "= NULL" never matches a row in SQL.',
+      "Why 'WHERE column = NULL' always returns zero rows, how three-valued logic works, and how to use COALESCE, IFNULL, and IS NOT DISTINCT FROM correctly.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-null-handling-best-practices',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlNullHandlingBestPractices() {
   return (
     <>
       <Head>
-        <title>SQL NULL Handling Best Practices — COALESCE, IS NULL, Three-Valued Logic | Dev Brains AI</title>
+        <title>SQL NULL Handling Best Practices (COALESCE, IS NULL) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Understand SQL NULL semantics, three-valued logic, COALESCE and IFNULL/ISNULL functions, and why '= NULL' never matches a row in SQL."
+          content="Why 'WHERE column = NULL' always returns zero rows, how three-valued logic works, and how to use COALESCE, IFNULL, and IS NOT DISTINCT FROM correctly."
         />
         <meta
           name="keywords"
           content="sql null handling, sql is null, coalesce sql, ifnull vs isnull, sql three valued logic, sql null vs empty string, sql is not null, null comparison sql"
         />
+        <meta property="og:title" content="SQL NULL Handling Best Practices (COALESCE, IS NULL)" />
+        <meta property="og:description" content="Why 'WHERE column = NULL' always returns zero rows, how three-valued logic works, and how to use COALESCE, IFNULL, and IS NOT DISTINCT FROM correctly." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-null-handling-best-practices" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-null-handling-best-practices" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

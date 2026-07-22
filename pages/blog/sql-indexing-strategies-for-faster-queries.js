@@ -21,14 +21,14 @@ export default function SqlIndexingStrategiesForFasterQueries() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Indexing Strategies for Faster Queries — B-Tree, Composite Indexes, and EXPLAIN',
+    headline: 'SQL Indexing Strategies: B-Tree, Composite Keys, EXPLAIN',
     description:
-      'Learn how SQL B-tree indexes work, how composite index column order matters, when indexes hurt write performance, and how to read a query plan with EXPLAIN.',
+      'Learn how B-tree indexes turn full table scans into fast lookups, why composite index column order matters, and how to confirm it with EXPLAIN before shipping.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-indexing-strategies-for-faster-queries',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlIndexingStrategiesForFasterQueries() {
   return (
     <>
       <Head>
-        <title>SQL Indexing Strategies for Faster Queries — B-Tree, Composite Indexes, EXPLAIN | Dev Brains AI</title>
+        <title>SQL Indexing Strategies: B-Tree, Composite Keys, EXPLAIN | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how SQL B-tree indexes work, how composite index column order matters, when indexes hurt write performance, and how to read EXPLAIN output."
+          content="Learn how B-tree indexes turn full table scans into fast lookups, why composite index column order matters, and how to confirm it with EXPLAIN before shipping."
         />
         <meta
           name="keywords"
           content="sql indexing, sql index strategies, composite index, b-tree index, explain sql, query plan, sql index performance, database indexing"
         />
+        <meta property="og:title" content="SQL Indexing Strategies: B-Tree, Composite Keys, EXPLAIN" />
+        <meta property="og:description" content="Learn how B-tree indexes turn full table scans into fast lookups, why composite index column order matters, and how to confirm it with EXPLAIN before shipping." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-indexing-strategies-for-faster-queries" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-indexing-strategies-for-faster-queries" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

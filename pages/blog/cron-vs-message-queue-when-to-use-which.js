@@ -21,14 +21,14 @@ export default function CronVsMessageQueueWhenToUseWhich() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron vs Message Queue — When to Use Which for Background Work',
+    headline: 'Cron vs Message Queue: A Decision Checklist',
     description:
-      'Decision criteria for choosing cron-based scheduling versus event-driven message queues like SQS or RabbitMQ for background work, with concrete examples of each.',
+      'Decide between cron and a queue like SQS or RabbitMQ with a 4-point checklist, real examples for each, and the hybrid pattern of cron feeding a queue.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-vs-message-queue-when-to-use-which',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronVsMessageQueueWhenToUseWhich() {
   return (
     <>
       <Head>
-        <title>Cron vs Message Queue — When to Use Which | Dev Brains AI</title>
+        <title>Cron vs Message Queue: A Decision Checklist | Dev Brains AI</title>
         <meta
           name="description"
-          content="Decision criteria for choosing cron-based scheduling versus event-driven message queues like SQS or RabbitMQ for background work, with concrete examples."
+          content="Decide between cron and a queue like SQS or RabbitMQ with a 4-point checklist, real examples for each, and the hybrid pattern of cron feeding a queue."
         />
         <meta
           name="keywords"
           content="cron vs message queue, cron vs sqs, cron vs rabbitmq, background job scheduling, event driven vs cron, when to use cron"
         />
+        <meta property="og:title" content="Cron vs Message Queue: A Decision Checklist" />
+        <meta property="og:description" content="Decide between cron and a queue like SQS or RabbitMQ with a 4-point checklist, real examples for each, and the hybrid pattern of cron feeding a queue." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-vs-message-queue-when-to-use-which" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-vs-message-queue-when-to-use-which" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

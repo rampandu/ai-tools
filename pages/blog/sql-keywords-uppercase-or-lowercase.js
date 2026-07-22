@@ -21,14 +21,14 @@ export default function SqlKeywordsUppercaseOrLowercase() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Keywords: Uppercase or Lowercase? The Casing Debate Settled',
+    headline: "SQL Keywords: Uppercase or Lowercase? Here's the Answer",
     description:
-      'Should you write SELECT or select? Explore the history of SQL keyword casing, arguments on both sides, what popular style guides recommend, and why consistency matters more than the choice itself.',
+      "SELECT or select? The real history behind SQL keyword casing, arguments for each style, what GitLab and Celko's style guides recommend, and why consistency wins.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-keywords-uppercase-or-lowercase',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlKeywordsUppercaseOrLowercase() {
   return (
     <>
       <Head>
-        <title>SQL Keywords: Uppercase or Lowercase? The Casing Debate | Dev Brains AI</title>
+        <title>SQL Keywords: Uppercase or Lowercase? Here&apos;s the Answer | Dev Brains AI</title>
         <meta
           name="description"
-          content="SELECT or select? The history of SQL keyword casing, arguments for both styles, what popular style guides choose, and why consistency beats either option."
+          content="SELECT or select? The real history behind SQL keyword casing, arguments for each style, what GitLab and Celko's style guides recommend, and why consistency wins."
         />
         <meta
           name="keywords"
           content="sql keywords uppercase or lowercase, sql capitalization, sql keyword casing, sql style guide, should sql be uppercase, sql formatting conventions, sql best practices"
         />
+        <meta property="og:title" content="SQL Keywords: Uppercase or Lowercase? Here's the Answer" />
+        <meta property="og:description" content="SELECT or select? The real history behind SQL keyword casing, arguments for each style, what GitLab and Celko's style guides recommend, and why consistency wins." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-keywords-uppercase-or-lowercase" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-keywords-uppercase-or-lowercase" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

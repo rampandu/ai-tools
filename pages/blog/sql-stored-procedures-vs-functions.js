@@ -21,14 +21,14 @@ export default function SqlStoredProceduresVsFunctions() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Stored Procedures vs Functions — Key Differences with Examples',
+    headline: 'SQL Stored Procedures vs Functions: Key Differences',
     description:
-      'Understand the difference between stored procedures and user-defined functions in SQL, with MySQL syntax examples, PostgreSQL notes, and guidance on when to use each.',
+      'See exactly when to use a stored procedure vs a function in SQL, with runnable MySQL CREATE PROCEDURE and CREATE FUNCTION examples plus PostgreSQL differences.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-stored-procedures-vs-functions',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlStoredProceduresVsFunctions() {
   return (
     <>
       <Head>
-        <title>SQL Stored Procedures vs Functions — Key Differences with Examples | Dev Brains AI</title>
+        <title>SQL Stored Procedures vs Functions: Key Differences | Dev Brains AI</title>
         <meta
           name="description"
-          content="Understand the difference between stored procedures and user-defined functions in SQL, with MySQL syntax examples, PostgreSQL notes, and when to use each."
+          content="See exactly when to use a stored procedure vs a function in SQL, with runnable MySQL CREATE PROCEDURE and CREATE FUNCTION examples plus PostgreSQL differences."
         />
         <meta
           name="keywords"
           content="stored procedure vs function sql, create procedure sql, create function sql, sql user defined function, mysql stored procedure example, sql procedure vs function differences"
         />
+        <meta property="og:title" content="SQL Stored Procedures vs Functions: Key Differences" />
+        <meta property="og:description" content="See exactly when to use a stored procedure vs a function in SQL, with runnable MySQL CREATE PROCEDURE and CREATE FUNCTION examples plus PostgreSQL differences." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-stored-procedures-vs-functions" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-stored-procedures-vs-functions" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

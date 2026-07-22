@@ -21,14 +21,14 @@ export default function JsonToCsvConversionGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON to CSV Conversion Guide — Manual Code and Libraries',
+    headline: 'JSON to CSV in JavaScript: Working Code and 4 Libraries',
     description:
-      'How to convert a JSON array of objects into CSV format, with a manual JavaScript implementation and a rundown of the most common Node.js and Python libraries.',
+      'Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus json2csv, papaparse, pandas, and csv-writer — and 5 pitfalls to avoid.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-to-csv-conversion-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonToCsvConversionGuide() {
   return (
     <>
       <Head>
-        <title>JSON to CSV Conversion Guide | Dev Brains AI</title>
+        <title>JSON to CSV in JavaScript: Working Code + 4 Libraries | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to convert a JSON array of objects into CSV format, with a manual JavaScript implementation and a rundown of the most common Node.js and Python libraries."
+          content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus json2csv, papaparse, pandas, and csv-writer — and 5 pitfalls to avoid."
         />
         <meta
           name="keywords"
-          content="json to csv, convert json to csv javascript, json array to csv, json to csv nodejs, json to csv python, export json as csv"
+          content="json to csv, convert json to csv javascript, json to csv nodejs, json to csv python, json2csv vs papaparse, csv escaping rfc 4180, export json as csv"
         />
+        <meta property="og:title" content="JSON to CSV in JavaScript: Working Code + 4 Libraries" />
+        <meta property="og:description" content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus json2csv, papaparse, pandas, and csv-writer — and 5 pitfalls to avoid." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-to-csv-conversion-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-to-csv-conversion-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

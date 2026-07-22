@@ -21,14 +21,14 @@ export default function CommonYamlErrorsInKubernetesAndCi() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Common YAML Errors in Kubernetes and CI Pipelines (and How to Fix Them)',
+    headline: '4 Common YAML Errors in Kubernetes & CI (and Fixes)',
     description:
-      'Debug YAML errors in Kubernetes, GitHub Actions, and docker-compose: indentation mistakes, tab characters, unquoted strings misparsed as floats and booleans, multi-document separators, and validation with yamllint and kubectl --dry-run.',
+      'Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators — with validation tools.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-yaml-errors-in-kubernetes-and-ci',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CommonYamlErrorsInKubernetesAndCi() {
   return (
     <>
       <Head>
-        <title>Common YAML Errors in Kubernetes and CI Pipelines | Dev Brains AI</title>
+        <title>4 Common YAML Errors in Kubernetes & CI (and Fixes) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Fix the YAML errors that break Kubernetes, GitHub Actions, and docker-compose: indentation, tabs, unquoted 3.10 becoming 3.1, on/off becoming booleans, --- separators, yamllint and kubectl --dry-run."
+          content="Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators — with validation tools."
         />
         <meta
           name="keywords"
-          content="yaml errors kubernetes, github actions yaml error, docker compose yaml error, yaml indentation error, yaml tab error, yamllint, kubectl dry-run validate, yaml boolean on off, error converting yaml to json"
+          content="common yaml errors, yaml indentation error kubernetes, yaml tab character error, github actions yaml quote value, yaml multi-document separator, yamllint kubectl dry-run"
         />
+        <meta property="og:title" content="4 Common YAML Errors in Kubernetes & CI (and Fixes)" />
+        <meta property="og:description" content="Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators — with validation tools." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/common-yaml-errors-in-kubernetes-and-ci" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-yaml-errors-in-kubernetes-and-ci" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

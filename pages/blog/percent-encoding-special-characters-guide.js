@@ -21,14 +21,14 @@ export default function PercentEncodingSpecialChars() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Percent-Encoding Special Characters — A Reference Guide',
+    headline: 'Percent-Encoding Cheat Sheet: 12 Characters + JS Examples',
     description:
-      'A quick-reference table for percent-encoding common special characters — space, &, =, ?, #, and more — with JavaScript encodeURIComponent examples for each.',
+      'A quick-reference table for percent-encoding 12 common special characters — space, &, =, ?, # and more — each with a working encodeURIComponent example.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/percent-encoding-special-characters-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function PercentEncodingSpecialChars() {
   return (
     <>
       <Head>
-        <title>Percent-Encoding Special Characters — A Reference Guide | Dev Brains AI</title>
+        <title>Percent-Encoding Cheat Sheet: 12 Characters + JS Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="A quick-reference table for percent-encoding common special characters like space, &, =, ?, # and more, with JavaScript encodeURIComponent examples."
+          content="A quick-reference table for percent-encoding 12 common special characters — space, &, =, ?, # and more — each with a working encodeURIComponent example."
         />
         <meta
           name="keywords"
-          content="percent encoding table, url encode special characters, encodeURIComponent examples, url encode space, url encode ampersand"
+          content="percent encoding cheat sheet, percent encoding table, url encode special characters, encodeURIComponent examples, url encode space, url encode ampersand"
         />
+        <meta property="og:title" content="Percent-Encoding Cheat Sheet: 12 Characters + JS Examples" />
+        <meta property="og:description" content="A quick-reference table for percent-encoding 12 common special characters — space, &, =, ?, # and more — each with a working encodeURIComponent example." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/percent-encoding-special-characters-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/percent-encoding-special-characters-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

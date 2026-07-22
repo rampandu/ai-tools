@@ -21,14 +21,14 @@ export default function SqlUnionVsUnionAllExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL UNION vs UNION ALL Explained — Differences, Examples, and Performance',
+    headline: 'SQL UNION vs UNION ALL: Differences & Performance',
     description:
-      'Learn the difference between SQL UNION and UNION ALL, when each removes duplicates, and why UNION ALL is faster because it skips the deduplication step.',
+      "See why UNION ALL is faster than UNION, when UNION's deduplication step can silently drop real rows, and a quick decision guide for picking the right one.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-union-vs-union-all-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlUnionVsUnionAllExplained() {
   return (
     <>
       <Head>
-        <title>SQL UNION vs UNION ALL Explained | Dev Brains AI</title>
+        <title>SQL UNION vs UNION ALL: Differences & Performance | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn the difference between SQL UNION and UNION ALL, when each removes duplicates, and why UNION ALL is faster because it skips deduplication."
+          content="See why UNION ALL is faster than UNION, when UNION's deduplication step can silently drop real rows, and a quick decision guide for picking the right one."
         />
         <meta
           name="keywords"
           content="sql union vs union all, sql union all, sql union example, union all performance sql, combine select statements sql, sql union duplicates"
         />
+        <meta property="og:title" content="SQL UNION vs UNION ALL: Differences & Performance" />
+        <meta property="og:description" content="See why UNION ALL is faster than UNION, when UNION's deduplication step can silently drop real rows, and a quick decision guide for picking the right one." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-union-vs-union-all-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-union-vs-union-all-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function HowAiCodeGeneratorsWorkExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How AI Code Generators Work, Explained',
+    headline: 'How AI Code Generators Work (And Why They Hallucinate)',
     description:
-      'A conceptual explanation of how AI code generation tools work — training on code corpora, tokenization, autoregressive generation, and why output needs review.',
+      'How tools like Copilot turn a prompt into code: training data, tokenization, and token-by-token generation — plus why they invent APIs that do not exist.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-ai-code-generators-work-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function HowAiCodeGeneratorsWorkExplained() {
   return (
     <>
       <Head>
-        <title>How AI Code Generators Work, Explained | Dev Brains AI</title>
+        <title>How AI Code Generators Work (And Why They Hallucinate) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Conceptual explanation of how AI code generation tools work — training on code corpora, tokenization, autoregressive generation, why output needs review."
+          content="How tools like Copilot turn a prompt into code: training data, tokenization, and token-by-token generation — plus why they invent APIs that do not exist."
         />
         <meta
           name="keywords"
           content="how ai code generators work, how does copilot work, llm code generation explained, ai code generation tokenization, autoregressive code generation"
         />
+        <meta property="og:title" content="How AI Code Generators Work (And Why They Hallucinate)" />
+        <meta
+          property="og:description"
+          content="How tools like Copilot turn a prompt into code: training data, tokenization, and token-by-token generation — plus why they invent APIs that do not exist."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-ai-code-generators-work-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-ai-code-generators-work-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

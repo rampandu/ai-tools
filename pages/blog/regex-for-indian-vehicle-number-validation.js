@@ -74,6 +74,10 @@ export default function RegexForIndianVehicleNumberValidation() {
           name="keywords"
           content="indian vehicle number regex, rto number validation regex, vehicle registration number regex, bh series regex, number plate validation javascript"
         />
+        <meta property="og:title" content="Regex for Indian Vehicle Number Validation (RTO + BH Series)" />
+        <meta property="og:description" content="A complete regex pattern for validating Indian vehicle registration numbers (state code, RTO code, series, number), including the BH series format." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-indian-vehicle-number-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-indian-vehicle-number-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

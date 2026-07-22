@@ -21,14 +21,14 @@ export default function SqlCodeReviewChecklist() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Code Review Checklist: Correctness, Performance, Safety, and Style',
+    headline: 'SQL Code Review Checklist: 4 Things to Check First',
     description:
-      'An actionable SQL code review checklist covering correctness (JOIN types, NULL handling, GROUP BY), performance (SELECT *, missing WHERE, indexes, implicit casts), safety (SQL injection, UPDATE/DELETE without WHERE), and style — with examples.',
+      'A repeatable 4-step SQL review order — correctness, performance, safety, style — with real before/after query fixes for JOINs, indexes, and SQL injection.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-code-review-checklist',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlCodeReviewChecklist() {
   return (
     <>
       <Head>
-        <title>SQL Code Review Checklist: Correctness, Performance, Safety | Dev Brains AI</title>
+        <title>SQL Code Review Checklist: 4 Things to Check First | Dev Brains AI</title>
         <meta
           name="description"
-          content="Actionable SQL code review checklist: JOIN types, NULL handling, GROUP BY completeness, SELECT *, missing WHERE, index use, implicit casts, SQL injection, and style."
+          content="A repeatable 4-step SQL review order — correctness, performance, safety, style — with real before/after query fixes for JOINs, indexes, and SQL injection."
         />
         <meta
           name="keywords"
-          content="sql code review checklist, sql review best practices, sql injection review, update without where, sql performance review, group by mistakes, null handling sql, reviewing sql queries"
+          content="sql code review checklist, sql review best practices, sql injection review, update without where, sql performance review, group by mistakes, null handling sql, reviewing sql queries, sql review order"
         />
+        <meta property="og:title" content="SQL Code Review Checklist: 4 Things to Check First" />
+        <meta property="og:description" content="A repeatable 4-step SQL review order — correctness, performance, safety, style — with real before/after query fixes for JOINs, indexes, and SQL injection." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-code-review-checklist" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-code-review-checklist" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

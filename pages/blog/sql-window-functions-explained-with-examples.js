@@ -21,14 +21,14 @@ export default function SqlWindowFunctionsExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Window Functions Explained with Examples — ROW_NUMBER, RANK, LAG, LEAD',
+    headline: 'SQL Window Functions: ROW_NUMBER, RANK, LAG, LEAD',
     description:
-      'Learn SQL window functions with clear examples: ROW_NUMBER, RANK, DENSE_RANK, LAG, and LEAD using OVER (PARTITION BY ... ORDER BY ...) syntax.',
+      'Learn ROW_NUMBER, RANK, DENSE_RANK, LAG, and LEAD with runnable OVER (PARTITION BY ... ORDER BY ...) examples, including running totals and moving averages.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-window-functions-explained-with-examples',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlWindowFunctionsExplained() {
   return (
     <>
       <Head>
-        <title>SQL Window Functions Explained with Examples | Dev Brains AI</title>
+        <title>SQL Window Functions: ROW_NUMBER, RANK, LAG, LEAD | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn SQL window functions with clear examples: ROW_NUMBER, RANK, DENSE_RANK, LAG, and LEAD using OVER (PARTITION BY ... ORDER BY ...) syntax."
+          content="Learn ROW_NUMBER, RANK, DENSE_RANK, LAG, and LEAD with runnable OVER (PARTITION BY ... ORDER BY ...) examples, including running totals and moving averages."
         />
         <meta
           name="keywords"
           content="sql window functions, row_number sql, rank sql, dense_rank sql, lag lead sql, partition by sql, over clause sql, sql window functions examples"
         />
+        <meta property="og:title" content="SQL Window Functions: ROW_NUMBER, RANK, LAG, LEAD" />
+        <meta property="og:description" content="Learn ROW_NUMBER, RANK, DENSE_RANK, LAG, and LEAD with runnable OVER (PARTITION BY ... ORDER BY ...) examples, including running totals and moving averages." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-window-functions-explained-with-examples" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-window-functions-explained-with-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

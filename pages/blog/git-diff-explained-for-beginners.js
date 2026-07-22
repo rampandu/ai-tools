@@ -74,6 +74,13 @@ export default function GitDiffExplainedForBeginners() {
           name="keywords"
           content="git diff explained, git diff staged, git diff between branches, git diff two commits, git diff single file, git diff stat, git word diff, git diff tutorial for beginners"
         />
+        <meta property="og:title" content="Git Diff Explained for Beginners: Every Variant You Need" />
+        <meta
+          property="og:description"
+          content="Beginner-friendly git diff guide: working tree vs --staged, comparing commits and branches, single files, --stat, --word-diff, -w, and reading unified output."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/git-diff-explained-for-beginners" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/git-diff-explained-for-beginners" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

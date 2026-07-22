@@ -21,14 +21,14 @@ export default function RegexForSplittingCsvStrings() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Splitting CSV Strings — Handling Quoted Fields Correctly',
+    headline: 'Split CSV Strings with Regex (Quoted Commas Fixed)',
     description:
-      'Regex to split CSV lines correctly, including handling quoted fields that contain commas, and why a real CSV parser is safer for production use.',
+      "Why str.split(',') breaks on quoted CSV fields, the lookahead regex that fixes it, and when to reach for a real parser like PapaParse or csv-parse instead.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-splitting-csv-strings',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexForSplittingCsvStrings() {
   return (
     <>
       <Head>
-        <title>Regex for Splitting CSV Strings (Handling Quoted Commas) | Dev Brains AI</title>
+        <title>Split CSV Strings with Regex (Quoted Commas Fixed) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Regex to split CSV lines correctly, including handling quoted fields that contain commas, and why a real CSV parser is safer for production."
+          content="Why str.split(',') breaks on quoted CSV fields, the lookahead regex that fixes it, and when to reach for a real parser like PapaParse or csv-parse."
         />
         <meta
           name="keywords"
-          content="regex split csv, csv regex javascript, split csv with quoted commas, csv parsing regex, javascript csv parser regex"
+          content="regex split csv, csv regex javascript, split csv with quoted commas, csv parsing regex, javascript csv parser regex, csv lookahead regex"
         />
+        <meta property="og:title" content="Split CSV Strings with Regex (Quoted Commas Fixed)" />
+        <meta property="og:description" content="Why str.split(',') breaks on quoted CSV fields, the lookahead regex that fixes it, and when to reach for a real parser like PapaParse or csv-parse." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-splitting-csv-strings" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-splitting-csv-strings" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

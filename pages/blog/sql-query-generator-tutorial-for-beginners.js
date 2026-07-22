@@ -20,14 +20,14 @@ export default function SqlQueryGeneratorTutorialForBeginners() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Query Generator Tutorial for Beginners',
+    headline: "SQL Query Generator Tutorial: A Beginner's Guide",
     description:
-      'Learn how to use an AI SQL generator to write SELECT, JOIN, GROUP BY, and WHERE queries without remembering exact syntax — a step-by-step guide for beginners.',
+      'Learn to turn plain English into SELECT, JOIN, and GROUP BY queries with an AI SQL generator, with real beginner examples and a review-before-running checklist.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-query-generator-tutorial-for-beginners',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function SqlQueryGeneratorTutorialForBeginners() {
   return (
     <>
       <Head>
-        <title>SQL Query Generator Tutorial for Beginners | Dev Brains AI</title>
+        <title>SQL Query Generator Tutorial: A Beginner&apos;s Guide | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to use an AI SQL generator to write SELECT, JOIN, GROUP BY, and WHERE queries without remembering syntax. A step-by-step beginner tutorial."
+          content="Learn to turn plain English into SELECT, JOIN, and GROUP BY queries with an AI SQL generator, with real beginner examples and a review-before-running checklist."
         />
         <meta
           name="keywords"
           content="sql query generator, sql generator for beginners, ai sql generator, sql tutorial, how to write sql queries, sql query builder, learn sql with ai"
         />
+        <meta property="og:title" content="SQL Query Generator Tutorial: A Beginner's Guide" />
+        <meta property="og:description" content="Learn to turn plain English into SELECT, JOIN, and GROUP BY queries with an AI SQL generator, with real beginner examples and a review-before-running checklist." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-generator-tutorial-for-beginners" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-generator-tutorial-for-beginners" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

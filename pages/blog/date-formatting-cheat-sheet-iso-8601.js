@@ -21,14 +21,14 @@ export default function DateFormattingCheatSheetIso8601() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Date Formatting Cheat Sheet — ISO 8601, RFC 3339, and Format Tokens Across Languages',
+    headline: 'ISO 8601 & RFC 3339 Date Formatting Cheat Sheet',
     description:
-      'A practical cheat sheet for date formatting: ISO 8601 anatomy, RFC 3339, why ISO dates sort correctly as strings, locale display vs storage formats, and format tokens in JavaScript, Python, and SQL.',
+      'ISO 8601 anatomy, RFC 3339 differences, why ISO dates sort correctly as strings, and a format-token comparison across JavaScript, Python, and SQL.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/date-formatting-cheat-sheet-iso-8601',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function DateFormattingCheatSheetIso8601() {
   return (
     <>
       <Head>
-        <title>Date Formatting Cheat Sheet — ISO 8601, RFC 3339, and Format Tokens | Dev Brains AI</title>
+        <title>ISO 8601 & RFC 3339 Date Formatting Cheat Sheet | Dev Brains AI</title>
         <meta
           name="description"
-          content="ISO 8601 anatomy, RFC 3339, lexicographic sorting, locale display vs storage, and format token comparison across JavaScript, Python strftime, and SQL in one cheat sheet."
+          content="ISO 8601 anatomy, RFC 3339 differences, why ISO dates sort correctly as strings, and a format-token comparison across JavaScript, Python, and SQL."
         />
         <meta
           name="keywords"
           content="iso 8601 format, date formatting cheat sheet, rfc 3339 vs iso 8601, yyyy-mm-dd format, strftime cheat sheet, date_format mysql, to_char postgresql, intl datetimeformat, date format tokens"
         />
+        <meta property="og:title" content="ISO 8601 & RFC 3339 Date Formatting Cheat Sheet" />
+        <meta property="og:description" content="ISO 8601 anatomy, RFC 3339 differences, why ISO dates sort correctly as strings, and a format-token comparison across JavaScript, Python, and SQL." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/date-formatting-cheat-sheet-iso-8601" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/date-formatting-cheat-sheet-iso-8601" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

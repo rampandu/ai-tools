@@ -4,12 +4,17 @@ export default function Blog() {
   return (
     <>
       <Head>
-        <title>AI Projects for Engineering Students India</title>
+        <title>20 AI Projects for Final Year B.Tech Students in India | Dev Brains AI</title>
 
         <meta
           name="description"
-          content="Best AI projects for engineering students in India with Python examples, final year ideas, and real-world problem statements."
+          content="20 AI project ideas for B.Tech finals — beginner to advanced, real Python code, FastAPI deployment, and India-specific problems like crop disease detection."
         />
+
+        <meta property="og:title" content="20 AI Projects for Final Year B.Tech Students in India" />
+        <meta property="og:description" content="20 AI project ideas for B.Tech finals — beginner to advanced, real Python code, FastAPI deployment, and India-specific problems like crop disease detection." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/best-ai-projects-for-final-year-btech" />
+        <meta property="og:type" content="article" />
 
         <script
           type="application/ld+json"
@@ -17,7 +22,7 @@ export default function Blog() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "BlogPosting",
-              headline: "AI Projects for Engineering Students India",
+              headline: "20 AI Projects for Final Year B.Tech Students in India",
               author: { "@type": "Organization", name: "Dev-Brains-AI" },
               publisher: { "@type": "Organization", name: "Dev-Brains-AI" }
             })

@@ -21,9 +21,9 @@ export default function UrlEncodingGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'URL Encoding Guide for Web Developers',
+    headline: 'URL Encoding Guide: encodeURI vs encodeURIComponent',
     description:
-      'A complete guide to URL encoding (percent-encoding) for web developers. Covers encodeURIComponent vs encodeURI, common mistakes, API query params, and Node.js examples.',
+      'Learn URL encoding the right way: encodeURIComponent vs encodeURI, building query strings with URLSearchParams, and the most common encoding bugs to avoid.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-guide-for-web-developers',
@@ -32,11 +32,15 @@ export default function UrlEncodingGuide() {
   return (
     <>
       <Head>
-        <title>URL Encoding Guide for Web Developers | Dev Brains AI</title>
+        <title>URL Encoding Guide: encodeURI vs encodeURIComponent | Dev Brains AI</title>
         <meta
           name="description"
-          content="A complete guide to URL encoding (percent-encoding) for web developers. Covers encodeURIComponent vs encodeURI, common bugs, query string building, and Node.js examples."
+          content="Learn URL encoding the right way: encodeURIComponent vs encodeURI, building query strings with URLSearchParams, and the most common encoding bugs to avoid."
         />
+        <meta property="og:title" content="URL Encoding Guide: encodeURI vs encodeURIComponent" />
+        <meta property="og:description" content="Learn URL encoding the right way: encodeURIComponent vs encodeURI, building query strings with URLSearchParams, and the most common encoding bugs to avoid." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/url-encoding-guide-for-web-developers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-encoding-guide-for-web-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -28,7 +28,7 @@ export default function PasswordEntropyExplained() {
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/password-entropy-explained-length-vs-complexity',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,7 +65,7 @@ export default function PasswordEntropyExplained() {
   return (
     <>
       <Head>
-        <title>Password Entropy Explained — Length vs Complexity | Dev Brains AI</title>
+        <title>Password Entropy Explained: Why Length Beats Complexity | Dev Brains AI</title>
         <meta
           name="description"
           content="Password entropy with real math: bits = length × log2(pool), worked examples, GPU cracking-time tables, and why human patterns destroy theoretical entropy."
@@ -74,6 +74,10 @@ export default function PasswordEntropyExplained() {
           name="keywords"
           content="password entropy, password entropy calculator, bits of entropy, length vs complexity, password cracking time, diceware entropy, log2 pool size, password strength math"
         />
+        <meta property="og:title" content="Password Entropy Explained: Why Length Beats Complexity" />
+        <meta property="og:description" content="Password entropy with real math: bits = length × log2(pool), worked examples, GPU cracking-time tables, and why human patterns destroy theoretical entropy." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/password-entropy-explained-length-vs-complexity" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/password-entropy-explained-length-vs-complexity" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

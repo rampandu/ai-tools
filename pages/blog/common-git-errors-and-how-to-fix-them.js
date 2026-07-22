@@ -74,6 +74,10 @@ export default function CommonGitErrorsAndHowToFixThem() {
           name="keywords"
           content="git errors, git merge conflict fix, detached head git, refusing to merge unrelated histories, failed to push git, git error fixes"
         />
+        <meta property="og:title" content="7 Common Git Errors and How to Fix Them Fast" />
+        <meta property="og:description" content="Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push, with real commands you can copy." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/common-git-errors-and-how-to-fix-them" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-git-errors-and-how-to-fix-them" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

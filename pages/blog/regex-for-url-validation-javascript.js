@@ -21,14 +21,14 @@ export default function RegexForUrlValidationJavascript() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for URL Validation in JavaScript — Patterns and When to Use the URL API Instead',
+    headline: 'JavaScript URL Validation: Regex vs the URL Constructor',
     description:
-      'Regex patterns to validate URLs in JavaScript — protocol, domain, port, path, and query string — plus when the built-in URL constructor is the safer choice.',
+      'A working regex for validating URLs in JavaScript, plus why the built-in URL constructor catches edge cases regex misses — with code for both approaches.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-url-validation-javascript',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexForUrlValidationJavascript() {
   return (
     <>
       <Head>
-        <title>Regex for URL Validation in JavaScript (+ URL API Alternative) | Dev Brains AI</title>
+        <title>JavaScript URL Validation: Regex vs the URL Constructor | Dev Brains AI</title>
         <meta
           name="description"
-          content="Regex patterns to validate URLs in JavaScript — protocol, domain, port, path, query string — plus when the built-in URL constructor is the safer choice."
+          content="A working regex for validating URLs in JavaScript, plus why the built-in URL constructor catches edge cases regex misses — with code for both."
         />
         <meta
           name="keywords"
-          content="regex url validation javascript, url regex pattern, validate url javascript, url constructor vs regex, javascript url validation regex"
+          content="regex url validation javascript, url regex pattern, validate url javascript, url constructor vs regex, javascript url validation regex, new url() javascript"
         />
+        <meta property="og:title" content="JavaScript URL Validation: Regex vs the URL Constructor" />
+        <meta property="og:description" content="A working regex for validating URLs in JavaScript, plus why the built-in URL constructor catches edge cases regex misses — with code for both." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-url-validation-javascript" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-url-validation-javascript" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

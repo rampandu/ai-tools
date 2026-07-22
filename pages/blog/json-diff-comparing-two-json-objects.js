@@ -21,14 +21,14 @@ export default function JsonDiffComparingTwoJsonObjects() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Diff — How to Compare Two JSON Objects for Differences',
+    headline: 'JSON Diff: How to Compare Two JSON Objects (With Code)',
     description:
-      'How to compare two JSON objects for differences — deep equality checks, key-by-key diffing, and using JSON diffing for API response regression testing.',
+      'Why JSON.stringify comparison fails, a working deepEqual function, a diffJson() that lists exactly what changed, and 5 libraries that do it for you.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-diff-comparing-two-json-objects',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function JsonDiffComparingTwoJsonObjects() {
   return (
     <>
       <Head>
-        <title>JSON Diff — How to Compare Two JSON Objects | Dev Brains AI</title>
+        <title>JSON Diff: How to Compare Two JSON Objects (With Code) | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to compare two JSON objects for differences — deep equality checks, key-by-key diffing, and using JSON diffing for API response regression testing."
+          content="Why JSON.stringify comparison fails, a working deepEqual function, a diffJson() that lists exactly what changed, and 5 libraries that do it for you."
         />
         <meta
           name="keywords"
           content="json diff, compare two json objects, json deep equal, json diff tool, compare json objects javascript, json regression testing, json object comparison"
         />
+        <meta property="og:title" content="JSON Diff: How to Compare Two JSON Objects (With Code)" />
+        <meta property="og:description" content="Why JSON.stringify comparison fails, a working deepEqual function, a diffJson() that lists exactly what changed, and 5 libraries that do it for you." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-diff-comparing-two-json-objects" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-diff-comparing-two-json-objects" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

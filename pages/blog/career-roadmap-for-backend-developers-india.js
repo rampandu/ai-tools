@@ -21,14 +21,14 @@ export default function CareerRoadmapForBackendDevelopersIndia() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Career Roadmap for Backend Developers in India — Fresher to Senior',
+    headline: 'Backend Developer Roadmap in India: Fresher to Senior',
     description:
-      'A concrete skill roadmap for backend developers in India — from fresher to senior — languages, databases, system design, and DevOps basics, with milestones.',
+      'A 4-stage backend developer roadmap for India — fresher, SDE-1, SDE-2, senior — with exact skills, tools, and milestones expected at each career level.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/career-roadmap-for-backend-developers-india',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CareerRoadmapForBackendDevelopersIndia() {
   return (
     <>
       <Head>
-        <title>Career Roadmap for Backend Developers in India — Fresher to Senior | Dev Brains AI</title>
+        <title>Backend Developer Roadmap in India: Fresher to Senior | Dev Brains AI</title>
         <meta
           name="description"
-          content="A concrete skill roadmap for backend developers in India — from fresher to senior — languages, databases, system design, DevOps basics, with milestones."
+          content="A 4-stage backend developer roadmap for India — fresher, SDE-1, SDE-2, senior — with exact skills, tools, and milestones expected at each career level."
         />
         <meta
           name="keywords"
-          content="backend developer roadmap india, backend developer career path, sde roadmap india, backend developer skills, system design roadmap, backend engineer career growth"
+          content="backend developer roadmap india, backend developer career path, sde roadmap india, fresher to senior backend developer, backend engineer skills by level, system design roadmap"
         />
+        <meta property="og:title" content="Backend Developer Roadmap in India: Fresher to Senior" />
+        <meta property="og:description" content="A 4-stage backend developer roadmap for India — fresher, SDE-1, SDE-2, senior — with exact skills, tools, and milestones expected at each career level." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/career-roadmap-for-backend-developers-india" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/career-roadmap-for-backend-developers-india" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function ConvertTimestampToDateCookbook() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Convert a Timestamp to a Date in JavaScript, Python, and SQL',
+    headline: 'Convert a Unix Timestamp to a Date: JS, Python & SQL',
     description:
-      'A conversion cookbook for Unix timestamps: JavaScript Date and Intl.DateTimeFormat, Python datetime.fromtimestamp, MySQL FROM_UNIXTIME, and PostgreSQL to_timestamp — with runnable snippets and the seconds vs milliseconds gotcha.',
+      'Convert Unix timestamps to dates in JavaScript, Python, MySQL, and PostgreSQL — copy-paste snippets both ways, plus the seconds-vs-milliseconds bug to avoid.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/convert-timestamp-to-date-javascript-python-sql',
     datePublished: '2026-07-14',
-    dateModified: '2026-07-14',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ConvertTimestampToDateCookbook() {
   return (
     <>
       <Head>
-        <title>How to Convert a Timestamp to a Date in JavaScript, Python, and SQL | Dev Brains AI</title>
+        <title>Convert a Unix Timestamp to a Date: JS, Python & SQL | Dev Brains AI</title>
         <meta
           name="description"
-          content="Convert Unix timestamps to human-readable dates in JavaScript, Python, MySQL, and PostgreSQL. Copy-paste snippets, both directions, plus the seconds vs milliseconds trap."
+          content="Convert Unix timestamps to dates in JavaScript, Python, MySQL, and PostgreSQL — copy-paste snippets both ways, plus the seconds-vs-milliseconds bug to avoid."
         />
         <meta
           name="keywords"
-          content="convert timestamp to date, unix timestamp to date javascript, python fromtimestamp, from_unixtime mysql, to_timestamp postgresql, epoch to date, timestamp converter, unix time conversion"
+          content="convert timestamp to date, unix timestamp to date javascript, python fromtimestamp timezone, from_unixtime mysql, to_timestamp postgresql, seconds vs milliseconds bug"
         />
+        <meta property="og:title" content="Convert a Unix Timestamp to a Date: JS, Python & SQL" />
+        <meta property="og:description" content="Convert Unix timestamps to dates in JavaScript, Python, MySQL, and PostgreSQL — copy-paste snippets both ways, plus the seconds-vs-milliseconds bug to avoid." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/convert-timestamp-to-date-javascript-python-sql" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/convert-timestamp-to-date-javascript-python-sql" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

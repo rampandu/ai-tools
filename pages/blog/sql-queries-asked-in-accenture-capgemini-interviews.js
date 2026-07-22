@@ -20,14 +20,14 @@ export default function SqlQueriesAskedInAccentureCapgeminiInterviews() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL Queries Asked in Accenture & Capgemini Interviews',
+    headline: 'SQL Interview Questions Asked at Accenture & Capgemini',
     description:
-      'Frequently asked SQL questions in Accenture, Capgemini, and similar service company interviews, with worked query examples and explanations.',
+      'Real SQL questions from Accenture and Capgemini interviews: WHERE vs HAVING, the Nth highest salary query with DENSE_RANK, and practical date-filtering examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-queries-asked-in-accenture-capgemini-interviews',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function SqlQueriesAskedInAccentureCapgeminiInterviews() {
   return (
     <>
       <Head>
-        <title>SQL Queries Asked in Accenture & Capgemini Interviews | Dev Brains AI</title>
+        <title>SQL Interview Questions Asked at Accenture & Capgemini | Dev Brains AI</title>
         <meta
           name="description"
-          content="Frequently asked SQL questions in Accenture, Capgemini, and similar service company interviews, with worked query examples and explanations."
+          content="Real SQL questions from Accenture and Capgemini interviews: WHERE vs HAVING, the Nth highest salary query with DENSE_RANK, and practical date-filtering examples."
         />
         <meta
           name="keywords"
           content="sql interview questions accenture, sql interview questions capgemini, accenture sql interview, capgemini technical interview sql, service company sql interview"
         />
+        <meta property="og:title" content="SQL Interview Questions Asked at Accenture & Capgemini" />
+        <meta property="og:description" content="Real SQL questions from Accenture and Capgemini interviews: WHERE vs HAVING, the Nth highest salary query with DENSE_RANK, and practical date-filtering examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-queries-asked-in-accenture-capgemini-interviews" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-queries-asked-in-accenture-capgemini-interviews" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

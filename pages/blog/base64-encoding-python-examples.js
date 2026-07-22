@@ -21,14 +21,14 @@ export default function Base64EncodingPython() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Base64 Encoding in Python — Complete Guide with Examples',
+    headline: 'Base64 Encoding in Python: b64encode, Errors and Fixes',
     description:
-      'Learn how to encode and decode Base64 in Python using the base64 module. Covers strings, bytes, files, URL-safe Base64, and common errors with practical examples.',
+      'Working Python code for base64.b64encode and b64decode on strings and files, plus fixes for the Incorrect padding and bytes-vs-str errors everyone hits.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-encoding-python-examples',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function Base64EncodingPython() {
   return (
     <>
       <Head>
-        <title>Base64 Encoding in Python — Complete Guide with Examples | Dev Brains AI</title>
+        <title>Base64 Encoding in Python: b64encode, Errors and Fixes | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to encode and decode Base64 in Python using the base64 module. Covers strings, bytes, files, URL-safe Base64, and common errors with examples."
+          content="Working Python code for base64.b64encode and b64decode on strings and files, plus fixes for the Incorrect padding and bytes-vs-str errors everyone hits."
         />
         <meta
           name="keywords"
           content="base64 python, python base64 encode, python base64 decode, base64 module python, encode string python, b64encode, b64decode"
         />
+        <meta property="og:title" content="Base64 Encoding in Python: b64encode, Errors and Fixes" />
+        <meta
+          property="og:description"
+          content="Working Python code for base64.b64encode and b64decode on strings and files, plus fixes for the Incorrect padding and bytes-vs-str errors everyone hits."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/base64-encoding-python-examples" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-encoding-python-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

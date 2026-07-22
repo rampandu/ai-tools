@@ -21,14 +21,14 @@ export default function ColorContrastAccessibilityWcagGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Color Contrast and Accessibility — A Practical WCAG Guide for Developers',
+    headline: 'WCAG Color Contrast Ratios Explained: 4.5:1 vs 3:1',
     description:
-      'WCAG contrast ratios explained (4.5:1 normal text, 3:1 large text and UI), how the ratio is computed from relative luminance, common failures like gray placeholders, and how to fix contrast without a redesign.',
+      'WCAG contrast ratios explained — 4.5:1 for text, 3:1 for large text and UI — how the math works, common failures like gray placeholders, and easy fixes.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/color-contrast-accessibility-wcag-guide',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ColorContrastAccessibilityWcagGuide() {
   return (
     <>
       <Head>
-        <title>Color Contrast and Accessibility — A WCAG Guide | Dev Brains AI</title>
+        <title>WCAG Color Contrast Ratios Explained: 4.5:1 vs 3:1 | Dev Brains AI</title>
         <meta
           name="description"
-          content="WCAG ratios (4.5:1 normal, 3:1 large/UI), how relative luminance works, common failures like gray placeholders, checking tools, and fixes without redesign."
+          content="WCAG contrast ratios explained — 4.5:1 for text, 3:1 for large text and UI — how the math works, common failures like gray placeholders, and easy fixes."
         />
         <meta
           name="keywords"
-          content="wcag color contrast, contrast ratio 4.5:1, relative luminance, accessible colors, aa vs aaa contrast, color accessibility, contrast checker, a11y colors"
+          content="wcag contrast ratio, 4.5:1 vs 3:1 contrast, relative luminance formula, accessible color contrast, contrast checker tool, aa vs aaa wcag, fix contrast without redesign"
         />
+        <meta property="og:title" content="WCAG Color Contrast Ratios Explained: 4.5:1 vs 3:1" />
+        <meta property="og:description" content="WCAG contrast ratios explained — 4.5:1 for text, 3:1 for large text and UI — how the math works, common failures like gray placeholders, and easy fixes." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/color-contrast-accessibility-wcag-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/color-contrast-accessibility-wcag-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

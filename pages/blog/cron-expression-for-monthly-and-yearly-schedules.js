@@ -21,14 +21,14 @@ export default function CronExpressionForMonthlyAndYearlySchedules() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Expressions for Monthly and Yearly Schedules',
+    headline: 'Cron for Monthly & Yearly Jobs (Last-Day Trick)',
     description:
-      'How to write cron expressions for monthly and yearly recurring jobs, including the first-of-month, last-day-of-month, and specific-date patterns, plus workarounds for cron\'s lack of a native "last day" field.',
+      "Cron patterns for monthly, quarterly, and yearly schedules, plus the workaround for cron's missing last-day-of-month field — no native L flag needed.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expression-for-monthly-and-yearly-schedules',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronExpressionForMonthlyAndYearlySchedules() {
   return (
     <>
       <Head>
-        <title>Cron Expressions for Monthly and Yearly Schedules | Dev Brains AI</title>
+        <title>Cron for Monthly & Yearly Jobs (Last-Day Trick) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Cron expressions for monthly and yearly recurring schedules, including first-of-month, last-day-of-month, and specific-date patterns with workarounds."
+          content="Cron patterns for monthly, quarterly, and yearly schedules, plus the workaround for cron's missing last-day-of-month field — no native L flag needed."
         />
         <meta
           name="keywords"
           content="cron monthly schedule, cron yearly schedule, cron last day of month, cron first day of month, cron expression once a month, cron expression once a year"
         />
+        <meta property="og:title" content="Cron for Monthly & Yearly Jobs (Last-Day Trick)" />
+        <meta property="og:description" content="Cron patterns for monthly, quarterly, and yearly schedules, plus the workaround for cron's missing last-day-of-month field — no native L flag needed." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-expression-for-monthly-and-yearly-schedules" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-expression-for-monthly-and-yearly-schedules" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

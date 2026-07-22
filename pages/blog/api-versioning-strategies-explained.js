@@ -21,14 +21,14 @@ export default function ApiVersioningStrategiesExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'API Versioning Strategies Explained — URL, Header, and Query Param',
+    headline: 'API Versioning: URL vs Header vs Query Param Compared',
     description:
-      'Compare the three main API versioning strategies — URL path versioning, header versioning, and query parameter versioning — with the trade-offs of each.',
+      'URL path, header, and query param API versioning compared side by side, with code examples and a practical recommendation for public-facing APIs.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/api-versioning-strategies-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function ApiVersioningStrategiesExplained() {
   return (
     <>
       <Head>
-        <title>API Versioning Strategies Explained — URL, Header, and Query Param | Dev Brains AI</title>
+        <title>API Versioning: URL vs Header vs Query Param Compared | Dev Brains AI</title>
         <meta
           name="description"
-          content="Compare the three main API versioning strategies — URL path versioning, header versioning, and query parameter versioning — with the trade-offs of each."
+          content="URL path, header, and query param API versioning compared side by side, with code examples and a practical recommendation for public-facing APIs."
         />
         <meta
           name="keywords"
-          content="api versioning strategies, url path versioning, header versioning api, api version query parameter, rest api versioning best practices"
+          content="api versioning strategies, url path versioning, header versioning api, query parameter versioning, rest api versioning best practices"
         />
+        <meta property="og:title" content="API Versioning: URL vs Header vs Query Param Compared" />
+        <meta
+          property="og:description"
+          content="URL path, header, and query param API versioning compared side by side, with code examples and a practical recommendation for public-facing APIs."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/api-versioning-strategies-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/api-versioning-strategies-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

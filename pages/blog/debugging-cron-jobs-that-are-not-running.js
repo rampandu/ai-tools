@@ -74,6 +74,10 @@ export default function DebuggingCronJobsThatAreNotRunning() {
           name="keywords"
           content="cron job not running, cron not working, debug cron job, cron job troubleshooting, crontab not executing, cron silent failure"
         />
+        <meta property="og:title" content="Cron Job Not Running? 5 Fixes That Actually Work" />
+        <meta property="og:description" content="Cron job silently not firing? Walk through the 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with commands to fix each one fast." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/debugging-cron-jobs-that-are-not-running" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/debugging-cron-jobs-that-are-not-running" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

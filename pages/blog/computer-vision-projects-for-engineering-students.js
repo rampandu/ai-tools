@@ -21,14 +21,14 @@ export default function ComputerVisionProjectsForEngineeringStudents() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Computer Vision Projects for Engineering Students — Tools and Approach',
+    headline: '4 Computer Vision Projects for Engineering Students',
     description:
-      'Computer vision project ideas — face mask detection, license plate recognition, handwriting recognition — with tools like OpenCV and TensorFlow and implementation approach.',
+      '4 computer vision projects for engineering students — face mask detection, plate recognition, handwriting OCR, object detection — with code and tools for each.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/computer-vision-projects-for-engineering-students',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function ComputerVisionProjectsForEngineeringStudents() {
   return (
     <>
       <Head>
-        <title>Computer Vision Projects for Engineering Students — Tools and Approach | Dev Brains AI</title>
+        <title>4 Computer Vision Projects for Engineering Students | Dev Brains AI</title>
         <meta
           name="description"
-          content="Computer vision project ideas — face mask detection, license plate recognition, handwriting recognition — with tools (OpenCV, TensorFlow) and approach."
+          content="4 computer vision projects for engineering students — face mask detection, plate recognition, handwriting OCR, object detection — with code and tools for each."
         />
         <meta
           name="keywords"
-          content="computer vision projects for engineering students, opencv projects, cv project ideas, face mask detection project, license plate recognition python, handwriting recognition project"
+          content="computer vision projects for engineering students, opencv project ideas, face mask detection code, license plate recognition python, handwriting ocr project, yolov8 object detection project"
         />
+        <meta property="og:title" content="4 Computer Vision Projects for Engineering Students" />
+        <meta property="og:description" content="4 computer vision projects for engineering students — face mask detection, plate recognition, handwriting OCR, object detection — with code and tools for each." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/computer-vision-projects-for-engineering-students" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/computer-vision-projects-for-engineering-students" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

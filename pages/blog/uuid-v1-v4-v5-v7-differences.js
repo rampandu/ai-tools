@@ -21,14 +21,14 @@ export default function UuidV1V4V5V7Differences() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'UUID v1 vs v4 vs v5 vs v7 — Differences Explained (and Which to Pick)',
+    headline: 'UUID v1 vs v4 vs v5 vs v7: Which One Should You Use?',
     description:
-      'A tour of UUID versions: v1 timestamp+MAC and its privacy leak, v4 pure random, v5 deterministic name-based hashing, and v7 time-ordered UUIDs that databases love. Comparison table included.',
+      "UUID versions compared: v1's MAC privacy leak, v4 pure randomness, v5 deterministic hashing, and v7's time-ordered IDs — with a full comparison table.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/uuid-v1-v4-v5-v7-differences',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UuidV1V4V5V7Differences() {
   return (
     <>
       <Head>
-        <title>UUID v1 vs v4 vs v5 vs v7 — Differences Explained | Dev Brains AI</title>
+        <title>UUID v1 vs v4 vs v5 vs v7: Which One Should You Use? | Dev Brains AI</title>
         <meta
           name="description"
-          content="UUID versions compared: v1 timestamp+MAC and its privacy leak, v4 pure random, v5 deterministic name-based, and v7 time-ordered UUIDs databases love. With a comparison table."
+          content="UUID versions compared: v1's MAC privacy leak, v4 pure randomness, v5 deterministic hashing, and v7's time-ordered IDs — with a full comparison table."
         />
         <meta
           name="keywords"
           content="uuid v4 vs v7, uuid versions explained, uuid v1 vs v4, uuid v5 namespace, time ordered uuid, uuidv7 database, which uuid version to use, uuid version comparison"
         />
+        <meta property="og:title" content="UUID v1 vs v4 vs v5 vs v7: Which One Should You Use?" />
+        <meta property="og:description" content="UUID versions compared: v1's MAC privacy leak, v4 pure randomness, v5 deterministic hashing, and v7's time-ordered IDs — with a full comparison table." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/uuid-v1-v4-v5-v7-differences" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/uuid-v1-v4-v5-v7-differences" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

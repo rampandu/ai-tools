@@ -21,14 +21,14 @@ export default function RegexForIndianPassportNumberValidation() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Indian Passport Number Validation',
+    headline: 'Regex for Indian Passport Numbers (1 Letter + 7 Digits)',
     description:
-      'A regex pattern for validating the Indian passport number format — one letter followed by seven digits — with JavaScript examples and edge cases to watch for.',
+      'A regex pattern for validating Indian passport numbers — one uppercase letter followed by seven digits — with JavaScript examples and real KYC-form edge cases.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-indian-passport-number-validation',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexForIndianPassportNumberValidation() {
   return (
     <>
       <Head>
-        <title>Regex for Indian Passport Number Validation | Dev Brains AI</title>
+        <title>Regex for Indian Passport Numbers (1 Letter + 7 Digits) | Dev Brains AI</title>
         <meta
           name="description"
-          content="A regex pattern for validating the Indian passport number format — one letter followed by seven digits — with JavaScript examples and edge cases."
+          content="A regex pattern for validating Indian passport numbers — one uppercase letter followed by seven digits — with JavaScript examples and real KYC-form edge cases."
         />
         <meta
           name="keywords"
-          content="indian passport number regex, passport number validation regex, regex passport india, validate passport number javascript"
+          content="indian passport number regex, passport number format india, regex passport validation, validate passport number javascript, kyc passport regex"
         />
+        <meta property="og:title" content="Regex for Indian Passport Numbers (1 Letter + 7 Digits)" />
+        <meta property="og:description" content="A regex pattern for validating Indian passport numbers — one uppercase letter followed by seven digits — with JavaScript examples and real KYC-form edge cases." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-indian-passport-number-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-indian-passport-number-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

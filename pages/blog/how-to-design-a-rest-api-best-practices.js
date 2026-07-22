@@ -74,6 +74,13 @@ export default function HowToDesignARestApiBestPractices() {
           name="keywords"
           content="rest api design best practices, api design guide, rest api naming conventions, api versioning, api pagination, api error response format"
         />
+        <meta property="og:title" content="How to Design a REST API — Best Practices That Actually Matter" />
+        <meta
+          property="og:description"
+          content="A practical guide to REST API design — resource naming, HTTP verbs and status codes, versioning, pagination, and a consistent error response format."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-design-a-rest-api-best-practices" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-design-a-rest-api-best-practices" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

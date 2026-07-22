@@ -21,14 +21,14 @@ export default function SqlCteCommonTableExpressionsGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL CTE (Common Table Expressions) Guide — The WITH Clause Explained',
+    headline: 'SQL CTE Guide: WITH Clause, Chaining & Recursion',
     description:
-      'Learn SQL Common Table Expressions (CTEs) with the WITH clause: why they beat nested subqueries for readability, multiple CTEs, and a simple recursive CTE example.',
+      'Learn SQL CTEs with the WITH clause — why they beat nested subqueries for readability, how to chain multiple CTEs, and a simple recursive CTE example.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-cte-common-table-expressions-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlCteCommonTableExpressionsGuide() {
   return (
     <>
       <Head>
-        <title>SQL CTE (Common Table Expressions) Guide — The WITH Clause Explained | Dev Brains AI</title>
+        <title>SQL CTE Guide: WITH Clause, Chaining & Recursion | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn SQL Common Table Expressions (CTEs) with the WITH clause: why they beat nested subqueries for readability, multiple CTEs, and a recursive CTE example."
+          content="Learn SQL CTEs with the WITH clause — why they beat nested subqueries for readability, how to chain multiple CTEs, and a simple recursive CTE example."
         />
         <meta
           name="keywords"
-          content="sql cte, common table expressions, sql with clause, recursive cte, sql cte example, cte vs subquery, mysql cte, postgresql cte"
+          content="sql cte, common table expressions, sql with clause, recursive cte, sql cte example, cte vs subquery, mysql cte, postgresql cte, cte vs subquery readability"
         />
+        <meta property="og:title" content="SQL CTE Guide: WITH Clause, Chaining & Recursion" />
+        <meta property="og:description" content="Learn SQL CTEs with the WITH clause — why they beat nested subqueries for readability, how to chain multiple CTEs, and a simple recursive CTE example." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-cte-common-table-expressions-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-cte-common-table-expressions-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

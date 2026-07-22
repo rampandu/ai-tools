@@ -43,9 +43,9 @@ export default function Top10CronPatterns() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Top 10 Cron Schedule Patterns Every Developer Should Know',
+    headline: '10 Cron Expressions Every Developer Should Know',
     description:
-      'The 10 most useful cron expressions with explanations, real use cases, and variations. From every-minute polling to monthly reports — a practical cron cheat sheet.',
+      '10 ready-to-use cron expressions with real use cases — from every-minute polling to yearly cleanup jobs — plus a field-by-field syntax reference.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/top-10-cron-schedule-patterns-developers',
@@ -117,11 +117,15 @@ export default function Top10CronPatterns() {
   return (
     <>
       <Head>
-        <title>Top 10 Cron Schedule Patterns Every Developer Should Know | Dev Brains AI</title>
+        <title>10 Cron Expressions Every Developer Should Know | Dev Brains AI</title>
         <meta
           name="description"
-          content="The 10 most useful cron expressions with explanations and real use cases. From every-minute polling to monthly billing runs — a practical cron cheat sheet for developers."
+          content="10 ready-to-use cron expressions with real use cases — from every-minute polling to yearly cleanup jobs — plus a field-by-field syntax reference."
         />
+        <meta property="og:title" content="10 Cron Expressions Every Developer Should Know" />
+        <meta property="og:description" content="10 ready-to-use cron expressions with real use cases — from every-minute polling to yearly cleanup jobs — plus a field-by-field syntax reference." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/top-10-cron-schedule-patterns-developers" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/top-10-cron-schedule-patterns-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />

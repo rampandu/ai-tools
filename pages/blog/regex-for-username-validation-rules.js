@@ -21,14 +21,14 @@ export default function RegexForUsernameValidationRules() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Username Validation Rules — Length, Characters, and Common Patterns',
+    headline: 'Username Validation Regex: Length, Characters & Edge Cases',
     description:
-      'Common username validation rules — length limits, allowed characters, no leading digits, no consecutive special characters — with working regex examples.',
+      'Copy-paste regex for username rules — 3-20 characters, no leading digits, no double dots — plus GitHub- and Instagram-style patterns for social platforms.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-username-validation-rules',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexForUsernameValidationRules() {
   return (
     <>
       <Head>
-        <title>Regex for Username Validation Rules (Length, Characters) | Dev Brains AI</title>
+        <title>Username Validation Regex: Length, Characters & Edge Cases | Dev Brains AI</title>
         <meta
           name="description"
-          content="Common username validation rules — length limits, allowed characters, no leading digits, no consecutive special characters — with regex examples."
+          content="Copy-paste regex for username rules — 3-20 characters, no leading digits, no double dots — plus GitHub- and Instagram-style social patterns."
         />
         <meta
           name="keywords"
-          content="username regex, username validation regex, regex for username javascript, valid username pattern, username rules regex"
+          content="username regex, username validation regex, regex for username javascript, valid username pattern, username rules regex, github username regex"
         />
+        <meta property="og:title" content="Username Validation Regex: Length, Characters & Edge Cases" />
+        <meta property="og:description" content="Copy-paste regex for username rules — 3-20 characters, no leading digits, no double dots — plus GitHub- and Instagram-style social patterns." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-username-validation-rules" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-username-validation-rules" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function YamlSyntaxGuideForBeginners() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'YAML Syntax Guide for Beginners — Complete Walkthrough with Examples',
+    headline: 'YAML Syntax Guide for Beginners (Indentation, Lists, More)',
     description:
-      'Learn YAML from scratch: key-value pairs, indentation rules (spaces only), lists, inline flow style, multi-line strings, quoting rules, comments, and anchors — with a full worked config example.',
+      'Learn YAML step by step: key-value pairs, spaces-only indentation, lists, multi-line strings, quoting, and anchors — with a full worked config example.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/yaml-syntax-guide-for-beginners',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function YamlSyntaxGuideForBeginners() {
   return (
     <>
       <Head>
-        <title>YAML Syntax Guide for Beginners — Complete Walkthrough | Dev Brains AI</title>
+        <title>YAML Syntax Guide for Beginners (Indentation, Lists, More) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn YAML step by step: key-value pairs, indentation (spaces, never tabs), lists, flow style, multi-line strings, quoting rules, comments, and anchors with a full config example."
+          content="Learn YAML step by step: key-value pairs, spaces-only indentation, lists, multi-line strings, quoting, and anchors — with a full worked config example."
         />
         <meta
           name="keywords"
           content="yaml syntax guide, yaml tutorial for beginners, yaml indentation rules, yaml multiline string, yaml literal vs folded, yaml lists, yaml quoting rules, yaml anchors, learn yaml"
         />
+        <meta property="og:title" content="YAML Syntax Guide for Beginners (Indentation, Lists, More)" />
+        <meta property="og:description" content="Learn YAML step by step: key-value pairs, spaces-only indentation, lists, multi-line strings, quoting, and anchors — with a full worked config example." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/yaml-syntax-guide-for-beginners" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/yaml-syntax-guide-for-beginners" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

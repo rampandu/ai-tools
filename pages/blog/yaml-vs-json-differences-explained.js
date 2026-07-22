@@ -21,14 +21,14 @@ export default function YamlVsJsonDifferencesExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'YAML vs JSON — Key Differences Explained with Examples',
+    headline: 'YAML vs JSON: Key Differences (Plus the Norway Problem)',
     description:
-      'YAML vs JSON compared side by side: readability, comments, implicit typing surprises like the Norway problem, anchors and references, the superset relationship, and when to use each format.',
+      'YAML vs JSON side by side: comments, the Norway problem (no/yes/on/off as booleans), anchors, the JSON-superset relationship, and when each format wins.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/yaml-vs-json-differences-explained',
     datePublished: '2026-07-16',
-    dateModified: '2026-07-16',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function YamlVsJsonDifferencesExplained() {
   return (
     <>
       <Head>
-        <title>YAML vs JSON — Key Differences Explained with Examples | Dev Brains AI</title>
+        <title>YAML vs JSON: Key Differences (Plus the Norway Problem) | Dev Brains AI</title>
         <meta
           name="description"
-          content="YAML vs JSON side by side: readability, comments, the Norway problem, anchors, the superset relationship, and when each format wins. With real examples."
+          content="YAML vs JSON side by side: comments, the Norway problem (no/yes/on/off as booleans), anchors, the JSON-superset relationship, and when each format wins."
         />
         <meta
           name="keywords"
           content="yaml vs json, difference between yaml and json, yaml norway problem, yaml anchors, yaml superset of json, yaml comments, json vs yaml config, yaml to json converter"
         />
+        <meta property="og:title" content="YAML vs JSON: Key Differences (Plus the Norway Problem)" />
+        <meta property="og:description" content="YAML vs JSON side by side: comments, the Norway problem (no/yes/on/off as booleans), anchors, the JSON-superset relationship, and when each format wins." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/yaml-vs-json-differences-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/yaml-vs-json-differences-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

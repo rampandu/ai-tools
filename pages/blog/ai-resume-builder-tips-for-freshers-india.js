@@ -21,14 +21,14 @@ export default function AiResumeBuilderTipsForFreshersIndia() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'AI Resume Builder Tips for Freshers in India',
+    headline: 'AI Resume Builder Tips for Indian Freshers (ATS Guide)',
     description:
-      'How to use AI resume tools effectively for Indian fresher job applications — ATS optimization, what to keep human-reviewed, and common mistakes to avoid.',
+      'How Indian freshers can use AI resume tools without sounding like a robot: ATS formatting rules, what to keep human-written, and mistakes that get resumes rejected.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/ai-resume-builder-tips-for-freshers-india',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function AiResumeBuilderTipsForFreshersIndia() {
   return (
     <>
       <Head>
-        <title>AI Resume Builder Tips for Freshers in India | Dev Brains AI</title>
+        <title>AI Resume Builder Tips for Indian Freshers (ATS Guide) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Tips for using AI resume tools effectively for Indian fresher job applications — ATS optimization, what to keep human-reviewed, common mistakes."
+          content="How Indian freshers can use AI resume tools without sounding like a robot: ATS formatting rules, what to keep human-written, and mistakes that get resumes rejected."
         />
         <meta
           name="keywords"
-          content="ai resume builder india, resume tips for freshers, ats resume optimization, ai resume tool, fresher resume mistakes, resume builder for engineering students"
+          content="ai resume builder india, ats resume optimization, resume tips for freshers, fresher resume mistakes, ai resume tool, resume builder for engineering students"
         />
+        <meta property="og:title" content="AI Resume Builder Tips for Indian Freshers (ATS Guide)" />
+        <meta
+          property="og:description"
+          content="How Indian freshers can use AI resume tools without sounding like a robot: ATS formatting rules, what to keep human-written, and mistakes that get resumes rejected."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-resume-builder-tips-for-freshers-india" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/ai-resume-builder-tips-for-freshers-india" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

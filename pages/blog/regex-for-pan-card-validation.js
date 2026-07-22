@@ -20,14 +20,14 @@ export default function RegexForPanCardValidation() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for PAN Card Validation in JavaScript and Python',
+    headline: 'PAN Card Regex Validation: JavaScript & Python Examples',
     description:
-      'Validate Indian PAN card numbers with a reliable regex pattern. Includes JavaScript and Python examples, format breakdown, and common validation mistakes.',
+      'Validate Indian PAN card numbers with one 10-character regex — copy-paste JavaScript and Python code, format breakdown, and the mistakes that break it.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-pan-card-validation',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function RegexForPanCardValidation() {
   return (
     <>
       <Head>
-        <title>Regex for PAN Card Validation in JavaScript and Python | Dev Brains AI</title>
+        <title>PAN Card Regex Validation: JavaScript & Python Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="Validate Indian PAN card numbers with a reliable regex pattern. Includes JavaScript and Python examples, format breakdown, and common mistakes to avoid."
+          content="Validate Indian PAN card numbers with one 10-character regex — copy-paste JavaScript and Python code, format breakdown, and the mistakes that break it."
         />
         <meta
           name="keywords"
-          content="regex for pan card validation, pan card regex, validate pan number javascript, pan number regex python, indian pan card format regex"
+          content="regex for pan card validation, pan card regex, validate pan number javascript, pan number regex python, indian pan card format regex, pan validation mistakes"
         />
+        <meta property="og:title" content="PAN Card Regex Validation: JavaScript & Python Examples" />
+        <meta property="og:description" content="Validate Indian PAN card numbers with one 10-character regex — copy-paste JavaScript and Python code, format breakdown, and the mistakes that break it." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-pan-card-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-pan-card-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

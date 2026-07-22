@@ -74,6 +74,10 @@ export default function RegexForExtractingNumbersFromString() {
           name="keywords"
           content="regex extract numbers, extract numbers from string javascript, regex match decimal numbers, regex negative numbers, extract digits regex"
         />
+        <meta property="og:title" content="Regex for Extracting Numbers from a String (JS Examples)" />
+        <meta property="og:description" content="How to extract integers, decimals, and negative numbers from mixed text using JavaScript regex, with working code for common real-world formats." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-extracting-numbers-from-string" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-extracting-numbers-from-string" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

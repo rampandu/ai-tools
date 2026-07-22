@@ -21,14 +21,14 @@ export default function AiRegexGeneratorGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'AI Regex Generator — How to Use Automatic Regex Generation',
+    headline: 'AI Regex Generator Guide: Prompts, Examples, Testing',
     description:
-      'Learn how an AI regex generator works, how to prompt it effectively, and how to test and use the output in JavaScript, Python, and other languages.',
+      'Turn plain English into working regex, with prompting tips, ready-made patterns for email, phone, GST, and PAN, plus how to test the output in JS and Python.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/ai-regex-generator-guide',
     datePublished: '2026-06-01',
-    dateModified: '2026-06-01',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function AiRegexGeneratorGuide() {
   return (
     <>
       <Head>
-        <title>AI Regex Generator — How to Use Automatic Regex Generation | Dev Brains AI</title>
+        <title>AI Regex Generator Guide: Prompts, Examples, Testing | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how an AI regex generator converts plain English into regex patterns. Includes prompting tips, examples for email, phone, and date patterns, and how to test the output."
+          content="Turn plain English into working regex, with prompting tips, ready-made patterns for email, phone, GST, and PAN, plus how to test the output in JS and Python."
         />
         <meta
           name="keywords"
-          content="ai regex generator, regex ai generator, automatic regex generator, ai regex, regex generator ai, generate regex with ai, regex builder ai, natural language regex"
+          content="ai regex generator, natural language regex, regex ai generator, automatic regex generator, generate regex with ai, regex builder ai"
         />
+        <meta property="og:title" content="AI Regex Generator Guide: Prompts, Examples, Testing" />
+        <meta
+          property="og:description"
+          content="Turn plain English into working regex, with prompting tips, ready-made patterns for email, phone, GST, and PAN, plus how to test the output in JS and Python."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-regex-generator-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/ai-regex-generator-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

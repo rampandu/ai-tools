@@ -73,6 +73,10 @@ export default function RegexForGstNumberValidation() {
           name="keywords"
           content="regex for gst number validation, gstin regex, validate gst number javascript, gst number format india, gstin validation pattern"
         />
+        <meta property="og:title" content="Regex for GST Number Validation in India — GSTIN Format Explained" />
+        <meta property="og:description" content="Validate Indian GST Identification Numbers (GSTIN) with a precise regex pattern. Covers the 15-character format, JavaScript examples, and validation limits." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-gst-number-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-gst-number-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

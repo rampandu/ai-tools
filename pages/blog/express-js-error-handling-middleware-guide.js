@@ -21,14 +21,14 @@ export default function ExpressJsErrorHandlingMiddlewareGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Express.js Error Handling Middleware — A Complete Guide',
+    headline: 'Express.js Error Handling Middleware: A Working Example',
     description:
-      'How to write centralized error-handling middleware in Express.js, with a working code example covering custom error classes, async errors, and 404 handling.',
+      'Build centralized Express.js error-handling middleware: a custom error class, async route errors, a 404 handler, and the fix for ERR_HTTP_HEADERS_SENT.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/express-js-error-handling-middleware-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function ExpressJsErrorHandlingMiddlewareGuide() {
   return (
     <>
       <Head>
-        <title>Express.js Error Handling Middleware — A Complete Guide | Dev Brains AI</title>
+        <title>Express.js Error Handling Middleware: A Working Example | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to write centralized error-handling middleware in Express.js, with a working code example covering custom error classes, async errors, and 404 handling."
+          content="Build centralized Express.js error-handling middleware: a custom error class, async route errors, a 404 handler, and the fix for ERR_HTTP_HEADERS_SENT."
         />
         <meta
           name="keywords"
           content="express error handling middleware, express.js error handling, custom error class nodejs, express next(err), express 404 handler"
         />
+        <meta property="og:title" content="Express.js Error Handling Middleware: A Working Example" />
+        <meta
+          property="og:description"
+          content="Build centralized Express.js error-handling middleware: a custom error class, async route errors, a 404 handler, and the fix for ERR_HTTP_HEADERS_SENT."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/express-js-error-handling-middleware-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/express-js-error-handling-middleware-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function UrlVsUriEncoding() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: "URL Encoding vs URI Encoding — What's the Real Difference?",
+    headline: "URL vs URI Encoding: What's the Real Difference?",
     description:
-      'URL encoding and URI encoding both mean percent-encoding — but the terms come from different specs. Learn the nuance, reserved characters, and which term to use where.',
+      'URL encoding and URI encoding both mean percent-encoding, but the terms come from different specs — learn the nuance and which term to use where.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-vs-uri-encoding-difference',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function UrlVsUriEncoding() {
   return (
     <>
       <Head>
-        <title>URL Encoding vs URI Encoding — What's the Real Difference? | Dev Brains AI</title>
+        <title>URL vs URI Encoding: What's the Real Difference? | Dev Brains AI</title>
         <meta
           name="description"
-          content="URL encoding and URI encoding both mean percent-encoding, but the terms come from different specs. Learn the nuance, reserved characters, and correct usage."
+          content="URL encoding and URI encoding both mean percent-encoding, but the terms come from different specs — learn the nuance and which term to use where."
         />
         <meta
           name="keywords"
           content="url encoding vs uri encoding, uri encoding, url encoding difference, percent encoding, reserved characters uri, rfc 3986"
         />
+        <meta property="og:title" content="URL vs URI Encoding: What's the Real Difference?" />
+        <meta property="og:description" content="URL encoding and URI encoding both mean percent-encoding, but the terms come from different specs — learn the nuance and which term to use where." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/url-encoding-vs-uri-encoding-difference" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-encoding-vs-uri-encoding-difference" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

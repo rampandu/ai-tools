@@ -21,14 +21,14 @@ export default function CronJobsDockerContainerTutorial() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Running Cron Jobs Inside Docker Containers — A Tutorial',
+    headline: 'Cron Jobs in Docker: 3 Approaches Compared',
     description:
-      'Three approaches to running cron jobs with Docker — a cron daemon inside the container, host-level cron calling docker exec, and a dedicated sidecar container — with a working Dockerfile example.',
+      'Three ways to run cron in Docker: an in-container daemon, host cron with docker exec, or a sidecar container — with working Dockerfile and CronJob examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-jobs-docker-container-tutorial',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function CronJobsDockerContainerTutorial() {
   return (
     <>
       <Head>
-        <title>Running Cron Jobs Inside Docker Containers — A Tutorial | Dev Brains AI</title>
+        <title>Cron Jobs in Docker: 3 Approaches Compared | Dev Brains AI</title>
         <meta
           name="description"
-          content="Approaches for running cron jobs with Docker: cron daemon in-container, host cron with docker exec, and a sidecar container, with a working Dockerfile example."
+          content="Three ways to run cron in Docker: an in-container daemon, host cron with docker exec, or a sidecar container — with working Dockerfile and CronJob examples."
         />
         <meta
           name="keywords"
           content="docker cron job, cron in docker container, dockerfile cron, docker compose cron, kubernetes cronjob sidecar, cron container tutorial"
         />
+        <meta property="og:title" content="Cron Jobs in Docker: 3 Approaches Compared" />
+        <meta property="og:description" content="Three ways to run cron in Docker: an in-container daemon, host cron with docker exec, or a sidecar container — with working Dockerfile and CronJob examples." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-jobs-docker-container-tutorial" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-jobs-docker-container-tutorial" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

@@ -21,14 +21,14 @@ export default function SqlGroupByHavingClauseExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'SQL GROUP BY and HAVING Clause Explained with Examples',
+    headline: 'SQL GROUP BY vs HAVING: 5 Aggregate Function Examples',
     description:
-      'Learn SQL GROUP BY and HAVING with SUM, COUNT, AVG, MIN, and MAX examples. Understand exactly why HAVING filters groups while WHERE filters rows.',
+      'Why HAVING COUNT(*) >= 5 works but WHERE COUNT(*) >= 5 fails — with SUM, AVG, MIN, and MAX examples showing exactly when to use GROUP BY vs HAVING.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/sql-group-by-having-clause-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function SqlGroupByHavingClauseExplained() {
   return (
     <>
       <Head>
-        <title>SQL GROUP BY and HAVING Clause Explained with Examples | Dev Brains AI</title>
+        <title>SQL GROUP BY vs HAVING: 5 Aggregate Function Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn SQL GROUP BY and HAVING with SUM, COUNT, AVG, MIN, and MAX examples, and why HAVING filters groups while WHERE filters individual rows."
+          content="Why HAVING COUNT(*) &gt;= 5 works but WHERE COUNT(*) &gt;= 5 fails — with SUM, AVG, MIN, and MAX examples showing when to use GROUP BY vs HAVING."
         />
         <meta
           name="keywords"
-          content="sql group by, sql having clause, group by having, sql aggregate functions, where vs having, sql count group by, sql sum group by"
+          content="sql group by, sql having clause, group by having, sql aggregate functions, where vs having, sql count group by, sql sum group by, having vs where sql"
         />
+        <meta property="og:title" content="SQL GROUP BY vs HAVING: 5 Aggregate Function Examples" />
+        <meta property="og:description" content="Why HAVING COUNT(*) &gt;= 5 works but WHERE COUNT(*) &gt;= 5 fails — with SUM, AVG, MIN, and MAX examples showing when to use GROUP BY vs HAVING." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-group-by-having-clause-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-group-by-having-clause-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

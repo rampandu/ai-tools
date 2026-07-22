@@ -74,6 +74,10 @@ export default function EncodeDecodeQueryStringsNodejs() {
           name="keywords"
           content="node.js query string, URLSearchParams node, querystring module, build query string javascript, parse query params node"
         />
+        <meta property="og:title" content="Node.js Query Strings: Encode & Decode the Right Way" />
+        <meta property="og:description" content="Stop hand-rolling URL encoding. Learn to build and parse Node.js query strings correctly with URLSearchParams, including arrays, special characters, and common pitfalls." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/encode-decode-query-strings-nodejs" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/encode-decode-query-strings-nodejs" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

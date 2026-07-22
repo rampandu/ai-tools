@@ -21,9 +21,9 @@ export default function CronExpressionCompleteGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Expression Complete Guide for Developers',
+    headline: 'Cron Expression Syntax Explained (10 Examples)',
     description:
-      'Learn cron expression syntax from scratch — fields, special characters, practical examples for Linux, GitHub Actions, and AWS EventBridge.',
+      'All 5 cron fields explained, 10 ready-to-use example expressions, common mistakes to avoid, and how GitHub Actions, AWS EventBridge, and Linux syntax differ.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expression-complete-guide',
@@ -32,11 +32,15 @@ export default function CronExpressionCompleteGuide() {
   return (
     <>
       <Head>
-        <title>Cron Expression Complete Guide for Developers | Dev Brains AI</title>
+        <title>Cron Expression Syntax Explained (10 Examples) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn cron expression syntax from scratch — all 5 fields, special characters like * / - ,, and practical examples for Linux crontab, GitHub Actions, and AWS EventBridge."
+          content="All 5 cron fields explained, 10 ready-to-use example expressions, common mistakes to avoid, and how GitHub Actions, AWS EventBridge, and Linux syntax differ."
         />
+        <meta property="og:title" content="Cron Expression Syntax Explained (10 Examples)" />
+        <meta property="og:description" content="All 5 cron fields explained, 10 ready-to-use example expressions, common mistakes to avoid, and how GitHub Actions, AWS EventBridge, and Linux syntax differ." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-expression-complete-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-expression-complete-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

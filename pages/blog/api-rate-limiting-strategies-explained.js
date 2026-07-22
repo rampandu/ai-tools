@@ -21,14 +21,14 @@ export default function ApiRateLimitingStrategiesExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'API Rate Limiting Strategies Explained (With Node.js Examples)',
+    headline: 'API Rate Limiting: Fixed Window vs Sliding vs Token Bucket',
     description:
-      'Understand fixed window, sliding window, and token bucket rate limiting algorithms, with a working Node.js/Express middleware example for each.',
+      'Fixed window, sliding window, and token bucket rate limiting explained with working Express.js middleware code you can drop straight into your API.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/api-rate-limiting-strategies-explained',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function ApiRateLimitingStrategiesExplained() {
   return (
     <>
       <Head>
-        <title>API Rate Limiting Strategies Explained (With Node.js Examples) | Dev Brains AI</title>
+        <title>API Rate Limiting: Fixed Window vs Sliding vs Token Bucket | Dev Brains AI</title>
         <meta
           name="description"
-          content="Understand fixed window, sliding window, and token bucket rate limiting algorithms, with a working Node.js/Express middleware example for each."
+          content="Fixed window, sliding window, and token bucket rate limiting explained with working Express.js middleware code you can drop straight into your API."
         />
         <meta
           name="keywords"
-          content="api rate limiting, rate limiting algorithms, token bucket, sliding window rate limit, express rate limit middleware, nodejs rate limiting"
+          content="api rate limiting algorithms, token bucket rate limiting, sliding window rate limit, fixed window rate limit, express rate limit middleware, nodejs rate limiting"
         />
+        <meta property="og:title" content="API Rate Limiting: Fixed Window vs Sliding vs Token Bucket" />
+        <meta
+          property="og:description"
+          content="Fixed window, sliding window, and token bucket rate limiting explained with working Express.js middleware code you can drop straight into your API."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/api-rate-limiting-strategies-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/api-rate-limiting-strategies-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

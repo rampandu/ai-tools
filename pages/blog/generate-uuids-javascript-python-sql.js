@@ -74,6 +74,13 @@ export default function GenerateUuidsJavascriptPythonSql() {
           name="keywords"
           content="generate uuid javascript, crypto.randomUUID, python uuid module, uuid4 python, mysql uuid_to_bin, postgresql gen_random_uuid, store uuid binary 16, node crypto uuid, uuid sql"
         />
+        <meta property="og:title" content="How to Generate UUIDs in JavaScript, Python, and SQL" />
+        <meta
+          property="og:description"
+          content="Copy-paste UUID recipes: crypto.randomUUID() in JS and Node, Python uuid4/uuid5 namespaces, MySQL UUID() and UUID_TO_BIN, PostgreSQL gen_random_uuid(), and efficient BINARY(16) storage."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/generate-uuids-javascript-python-sql" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/generate-uuids-javascript-python-sql" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

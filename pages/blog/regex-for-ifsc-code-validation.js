@@ -73,6 +73,10 @@ export default function RegexForIfscCodeValidation() {
           name="keywords"
           content="regex for ifsc code validation, ifsc code regex, validate ifsc javascript, ifsc regex python, indian bank ifsc format"
         />
+        <meta property="og:title" content="Regex for IFSC Code Validation — Indian Bank Codes Explained" />
+        <meta property="og:description" content="Validate Indian bank IFSC codes with a precise regex pattern. Covers the 11-character format, JavaScript and Python examples, and common pitfalls." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-ifsc-code-validation" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-ifsc-code-validation" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

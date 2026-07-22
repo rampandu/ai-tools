@@ -21,14 +21,14 @@ export default function RegexPerformanceAndCatastrophicBacktracking() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex Performance and Catastrophic Backtracking — Causes and Fixes',
+    headline: 'Catastrophic Backtracking: Why (a+)+ Freezes Your Regex',
     description:
-      'How catastrophic backtracking happens with nested quantifiers like (a+)+, why it can freeze your app (ReDoS), and how to write safer, more efficient regex patterns.',
+      'How a nested quantifier like (a+)+ can hang your Node.js server for minutes (ReDoS), with the exact fix and tools to catch dangerous patterns before shipping.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-performance-and-catastrophic-backtracking',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexPerformanceAndCatastrophicBacktracking() {
   return (
     <>
       <Head>
-        <title>Regex Performance and Catastrophic Backtracking (ReDoS) | Dev Brains AI</title>
+        <title>Catastrophic Backtracking: Why (a+)+ Freezes Your Regex | Dev Brains AI</title>
         <meta
           name="description"
-          content="How catastrophic backtracking happens with nested quantifiers like (a+)+, why it causes ReDoS, and how to write safer, more efficient regex patterns."
+          content="How a nested quantifier like (a+)+ can hang your Node.js server for minutes (ReDoS), with the exact fix and tools to catch dangerous patterns."
         />
         <meta
           name="keywords"
-          content="catastrophic backtracking regex, redos, regex performance, nested quantifiers regex, regex denial of service, safe regex patterns"
+          content="catastrophic backtracking regex, redos, regex performance, nested quantifiers regex, regex denial of service, safe regex patterns, safe-regex eslint"
         />
+        <meta property="og:title" content="Catastrophic Backtracking: Why (a+)+ Freezes Your Regex" />
+        <meta property="og:description" content="How a nested quantifier like (a+)+ can hang your Node.js server for minutes (ReDoS), with the exact fix and tools to catch dangerous patterns." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-performance-and-catastrophic-backtracking" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-performance-and-catastrophic-backtracking" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

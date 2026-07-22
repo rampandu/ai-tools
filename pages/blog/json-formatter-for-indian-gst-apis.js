@@ -20,14 +20,14 @@ export default function JsonFormatterForIndianGstApis() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JSON Formatter for Indian GST APIs',
+    headline: 'JSON Formatter for Indian GST APIs: GSTIN & IRN Fields',
     description:
-      'Format and validate GST API JSON responses in India — common GSTIN, invoice, and e-invoice field references with formatting and debugging tips.',
+      "Decode India's GST e-invoice (IRP) JSON responses field by field — Irn, AckNo, GSTIN, HSN codes — plus formatting and debugging tips for failed e-invoices.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-formatter-for-indian-gst-apis',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function JsonFormatterForIndianGstApis() {
   return (
     <>
       <Head>
-        <title>JSON Formatter for Indian GST APIs | Dev Brains AI</title>
+        <title>JSON Formatter for Indian GST APIs: GSTIN & IRN Fields | Dev Brains AI</title>
         <meta
           name="description"
-          content="Format and validate GST API JSON responses in India — common GSTIN, invoice, and e-invoice field references with formatting and debugging tips."
+          content="Decode India's GST e-invoice (IRP) JSON responses field by field — Irn, AckNo, GSTIN, HSN codes — plus formatting and debugging tips for failed e-invoices."
         />
         <meta
           name="keywords"
           content="json formatter gst api, gst e-invoice json, gstin json fields, format gst json response, india gst api json, e-invoice irp json"
         />
+        <meta property="og:title" content="JSON Formatter for Indian GST APIs: GSTIN & IRN Fields" />
+        <meta property="og:description" content="Decode India's GST e-invoice (IRP) JSON responses field by field — Irn, AckNo, GSTIN, HSN codes — plus formatting and debugging tips for failed e-invoices." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/json-formatter-for-indian-gst-apis" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-formatter-for-indian-gst-apis" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

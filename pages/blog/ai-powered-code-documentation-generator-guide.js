@@ -21,14 +21,14 @@ export default function AiPoweredCodeDocumentationGeneratorGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'AI-Powered Code Documentation Generators — A Practical Guide',
+    headline: 'AI Code Documentation Generators: Before and After',
     description:
-      'How AI tools generate code documentation — docstrings, README sections, and API references — from source code, with a real before/after example.',
+      'See a real before/after example of AI-generated Python docstrings, how documentation generators actually work, and where they still need a human review pass.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/ai-powered-code-documentation-generator-guide',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,22 @@ export default function AiPoweredCodeDocumentationGeneratorGuide() {
   return (
     <>
       <Head>
-        <title>AI-Powered Code Documentation Generators — A Practical Guide | Dev Brains AI</title>
+        <title>AI Code Documentation Generators: Before and After | Dev Brains AI</title>
         <meta
           name="description"
-          content="How AI tools generate code documentation like docstrings and README sections from source code, with a real before/after example and best practices."
+          content="See a real before/after example of AI-generated Python docstrings, how documentation generators actually work, and where they still need a human review pass."
         />
         <meta
           name="keywords"
-          content="ai code documentation generator, ai docstring generator, generate readme with ai, ai documentation tool, jsdoc ai generator, python docstring generator ai"
+          content="ai code documentation generator, ai docstring generator, python docstring generator ai, generate readme with ai, ai documentation tool, jsdoc ai generator"
         />
+        <meta property="og:title" content="AI Code Documentation Generators: Before and After" />
+        <meta
+          property="og:description"
+          content="See a real before/after example of AI-generated Python docstrings, how documentation generators actually work, and where they still need a human review pass."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-powered-code-documentation-generator-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/ai-powered-code-documentation-generator-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

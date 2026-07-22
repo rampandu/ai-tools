@@ -21,14 +21,14 @@ export default function HowToDocumentARestApiEndpoint() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Document a REST API Endpoint (With a Worked Example)',
+    headline: 'REST API Endpoint Documentation: 7-Point Checklist',
     description:
-      'Learn what to include when documenting a REST API endpoint, walk through a full worked example, and understand when you need Markdown docs versus an OpenAPI spec.',
+      'See exactly what to include when documenting a REST endpoint — a 7-item checklist, a full worked POST /api/orders example, and when Markdown beats OpenAPI.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-document-a-rest-api-endpoint',
     datePublished: '2026-07-12',
-    dateModified: '2026-07-12',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function HowToDocumentARestApiEndpoint() {
   return (
     <>
       <Head>
-        <title>How to Document a REST API Endpoint (With a Worked Example) | Dev Brains AI</title>
+        <title>REST API Endpoint Documentation: 7-Point Checklist | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn what to include when documenting a REST API endpoint, see a full worked example, and understand when you need Markdown docs vs an OpenAPI spec."
+          content="See exactly what to include when documenting a REST endpoint — a 7-item checklist, a full worked POST /api/orders example, and when Markdown beats OpenAPI."
         />
         <meta
           name="keywords"
-          content="how to document a rest api, api documentation guide, document api endpoint, openapi vs markdown docs, rest api documentation example, api docs generator"
+          content="rest api endpoint documentation checklist, how to document a rest api, document api endpoint, openapi vs markdown docs, rest api documentation example, api docs generator"
         />
+        <meta property="og:title" content="REST API Endpoint Documentation: 7-Point Checklist" />
+        <meta property="og:description" content="See exactly what to include when documenting a REST endpoint — a 7-item checklist, a full worked POST /api/orders example, and when Markdown beats OpenAPI." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-document-a-rest-api-endpoint" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-document-a-rest-api-endpoint" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

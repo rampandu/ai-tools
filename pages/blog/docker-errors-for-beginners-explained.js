@@ -74,6 +74,10 @@ export default function DockerErrorsForBeginnersExplained() {
           name="keywords"
           content="docker errors, docker port already in use, cannot connect to docker daemon, docker no space left on device, docker image not found, docker beginner errors"
         />
+        <meta property="og:title" content="5 Common Docker Errors and How to Fix Them Fast" />
+        <meta property="og:description" content="Stuck on a Docker error? Get fast fixes for the 5 most common beginner issues — port already in use, daemon not connecting, no space left, and image not found." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/docker-errors-for-beginners-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/docker-errors-for-beginners-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

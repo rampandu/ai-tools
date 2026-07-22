@@ -20,14 +20,14 @@ export default function RegexForPasswordValidationRules() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Password Validation Rules — Strength Checks That Work',
+    headline: 'Password Validation Regex: 4 Rules, One Line (JS & Python)',
     description:
-      'Build strong password validation with regex: minimum length, uppercase, lowercase, digits, and special characters. JavaScript and Python examples included.',
+      'Enforce password strength — length, case, digits, symbols — with a single regex lookahead pattern. Includes ready-to-use JavaScript and Python code.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-password-validation-rules',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,19 @@ export default function RegexForPasswordValidationRules() {
   return (
     <>
       <Head>
-        <title>Regex for Password Validation Rules — Strength Checks That Work | Dev Brains AI</title>
+        <title>Password Validation Regex: 4 Rules, One Line (JS & Python) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Build strong password validation with regex: minimum length, uppercase, lowercase, digits, and special characters. JavaScript and Python examples included."
+          content="Enforce password strength — length, case, digits, symbols — with a single regex lookahead pattern. Includes ready-to-use JavaScript and Python code."
         />
         <meta
           name="keywords"
-          content="regex for password validation, password strength regex, strong password regex javascript, password validation rules, regex lookahead password"
+          content="regex for password validation, password strength regex, strong password regex javascript, password validation rules, regex lookahead password, password regex python"
         />
+        <meta property="og:title" content="Password Validation Regex: 4 Rules, One Line (JS & Python)" />
+        <meta property="og:description" content="Enforce password strength — length, case, digits, symbols — with a single regex lookahead pattern. Includes ready-to-use JavaScript and Python code." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-password-validation-rules" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-for-password-validation-rules" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

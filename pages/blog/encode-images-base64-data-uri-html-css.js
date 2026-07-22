@@ -37,6 +37,13 @@ export default function EncodeImagesBase64() {
           name="description"
           content="Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples."
         />
+        <meta property="og:title" content="Base64 Image Encoding in HTML/CSS: When It Helps" />
+        <meta
+          property="og:description"
+          content="Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

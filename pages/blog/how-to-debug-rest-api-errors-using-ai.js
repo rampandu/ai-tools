@@ -20,14 +20,14 @@ export default function HowToDebugRestApiErrorsUsingAi() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Debug REST API Errors Using AI',
+    headline: 'How to Debug REST API Errors Using AI: A 4-Step Workflow',
     description:
-      'A practical workflow for using AI tools to diagnose REST API errors faster — reading error messages, tracing requests, and getting to a fix quickly.',
+      'A repeatable 4-step workflow for debugging REST API errors with AI: capture the full error, include the exact request, trace it through your code, verify the fix.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/how-to-debug-rest-api-errors-using-ai',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -64,15 +64,22 @@ export default function HowToDebugRestApiErrorsUsingAi() {
   return (
     <>
       <Head>
-        <title>How to Debug REST API Errors Using AI | Dev Brains AI</title>
+        <title>How to Debug REST API Errors Using AI: A 4-Step Workflow | Dev Brains AI</title>
         <meta
           name="description"
-          content="A step-by-step workflow for using AI tools to diagnose REST API errors faster: reading responses, tracing requests, and fixing issues efficiently."
+          content="A repeatable 4-step workflow for debugging REST API errors with AI: capture the full error, include the exact request, trace it through your code, verify the fix."
         />
         <meta
           name="keywords"
           content="debug rest api errors, ai debugging api, rest api troubleshooting, api error explainer, debug api with ai, trace api requests, fix api errors fast"
         />
+        <meta property="og:title" content="How to Debug REST API Errors Using AI: A 4-Step Workflow" />
+        <meta
+          property="og:description"
+          content="A repeatable 4-step workflow for debugging REST API errors with AI: capture the full error, include the exact request, trace it through your code, verify the fix."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-debug-rest-api-errors-using-ai" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/how-to-debug-rest-api-errors-using-ai" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />

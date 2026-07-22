@@ -21,14 +21,14 @@ export default function RegexVsStringMethodsWhenToUseWhich() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex vs String Methods — When to Use Which',
+    headline: 'Regex vs String Methods: A Quick Decision Guide',
     description:
-      'A practical decision guide for when to use regex versus plain string methods like includes, split, indexOf, and startsWith for common JavaScript string tasks.',
+      'A task-by-task cheat sheet for when includes(), startsWith(), and split() beat regex — and when regex is the only tool that can express the pattern you need.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-vs-string-methods-when-to-use-which',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -65,15 +65,19 @@ export default function RegexVsStringMethodsWhenToUseWhich() {
   return (
     <>
       <Head>
-        <title>Regex vs String Methods — When to Use Which | Dev Brains AI</title>
+        <title>Regex vs String Methods: A Quick Decision Guide | Dev Brains AI</title>
         <meta
           name="description"
-          content="A practical decision guide for when to use regex versus plain string methods like includes, split, indexOf, and startsWith for common tasks."
+          content="A task-by-task cheat sheet for when includes(), startsWith(), and split() beat regex — and when regex is the only tool that expresses the pattern you need."
         />
         <meta
           name="keywords"
-          content="regex vs string methods, javascript includes vs regex, when to use regex, string methods vs regex performance, indexof vs regex"
+          content="regex vs string methods, javascript includes vs regex, when to use regex, string methods vs regex performance, indexof vs regex, javascript string methods cheat sheet"
         />
+        <meta property="og:title" content="Regex vs String Methods: A Quick Decision Guide" />
+        <meta property="og:description" content="A task-by-task cheat sheet for when includes(), startsWith(), and split() beat regex — and when regex is the only tool that expresses the pattern you need." />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-vs-string-methods-when-to-use-which" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-vs-string-methods-when-to-use-which" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
