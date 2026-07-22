@@ -21,14 +21,14 @@ export default function JwtExpiryClaimsExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'JWT Expiry Claims Explained: exp, iat, and nbf (With Node.js Examples)',
+    headline: 'JWT exp, iat & nbf Explained — Avoid the Silent Token Expiry Bugs',
     description:
-      'Understand JWT time claims — exp, iat, and nbf — in unix seconds, handle clock skew with leeway, avoid the ms-vs-seconds bug, and design token lifetimes.',
+      'JWT time claims explained in plain English: why exp, iat, and nbf are unix seconds not milliseconds, how clock skew silently rejects valid tokens, and how to pick a safe token lifetime — with Node.js examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/jwt-expiry-claims-exp-iat-nbf-explained',
     datePublished: '2026-07-14',
-    dateModified: '2026-07-14',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -59,21 +59,44 @@ export default function JwtExpiryClaimsExplained() {
           text: 'Most production systems use short-lived access tokens of 5 to 15 minutes, paired with a longer-lived refresh token. Short expiry limits the damage window if a token leaks, while refresh tokens keep the user logged in.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What happens if a JWT is used before its nbf time?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The token is rejected with a "not before" or "jwt not active" error, the same way an expired token is rejected — just for the opposite reason. This is easy to miss because nbf is optional and silent: if you forget it exists, an unexpectedly-rejected fresh token looks like a bug rather than the not-yet-valid claim working as intended.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can I trust the exp claim from a JWT decoded on the client?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Decoding a JWT with base64 only reveals its claims — it does not check the signature. Anyone can edit an unsigned decode of the payload, including exp, before sending it back. The server must always call the library verify function with the secret or public key; client-side decoding is for display purposes only, never for authorization decisions.',
+        },
+      },
     ],
   };
 
   return (
     <>
       <Head>
-        <title>JWT Expiry Claims Explained: exp, iat, and nbf | Dev Brains AI</title>
+        <title>JWT exp, iat &amp; nbf Explained — Avoid the Silent Expiry Bugs | Dev Brains AI</title>
         <meta
           name="description"
-          content="Understand JWT time claims — exp, iat, and nbf — in unix seconds, handle clock skew with leeway, avoid the ms-vs-seconds bug, and design token lifetimes."
+          content="JWT exp, iat, and nbf explained in plain English: why they're unix seconds not milliseconds, how clock skew silently rejects valid tokens, and how to pick a safe token lifetime — with Node.js examples."
         />
         <meta
           name="keywords"
           content="jwt exp claim, jwt iat, jwt nbf, jwt expiry, jwt expiration time, jwt clock skew, jwt leeway, jwt seconds or milliseconds, jsonwebtoken expiresIn, refresh token rotation"
         />
+        <meta property="og:title" content="JWT exp, iat &amp; nbf Explained — Avoid the Silent Expiry Bugs" />
+        <meta
+          property="og:description"
+          content="Why JWT time claims are unix seconds not milliseconds, how clock skew silently rejects valid tokens, and how to design safe access and refresh token lifetimes — with Node.js examples."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/jwt-expiry-claims-exp-iat-nbf-explained" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/jwt-expiry-claims-exp-iat-nbf-explained" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
@@ -107,6 +130,39 @@ export default function JwtExpiryClaimsExplained() {
             jsonwebtoken library, and covers the millisecond-versus-second trap that catches
             almost every developer at least once.
           </p>
+
+          <svg
+            viewBox="0 0 640 200"
+            style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }}
+            role="img"
+            aria-label="Timeline diagram showing nbf, iat, now, and exp positioned along a JWT token's validity window"
+          >
+            <rect x="0" y="0" width="640" height="200" rx="10" fill="#0f172a" />
+            <text x="320" y="28" textAnchor="middle" fill="#94a3b8" fontSize="13" fontFamily="ui-monospace, monospace">Where nbf, iat, now, and exp sit on the timeline</text>
+
+            <rect x="160" y="85" width="400" height="30" rx="4" fill="#0d3b34" stroke="#14b8a6" />
+            <text x="360" y="104" textAnchor="middle" fill="#5eead4" fontSize="11" fontFamily="ui-monospace, monospace">token is valid in this window</text>
+
+            <line x1="40" y1="100" x2="600" y2="100" stroke="#334155" strokeWidth="2" />
+
+            <circle cx="100" cy="100" r="6" fill="#94a3b8" />
+            <text x="100" y="132" textAnchor="middle" fill="#e2e8f0" fontSize="12" fontFamily="ui-monospace, monospace">iat</text>
+            <text x="100" y="148" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">issued</text>
+
+            <circle cx="160" cy="100" r="6" fill="#34d399" />
+            <text x="160" y="132" textAnchor="middle" fill="#e2e8f0" fontSize="12" fontFamily="ui-monospace, monospace">nbf</text>
+            <text x="160" y="148" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">valid from</text>
+
+            <circle cx="340" cy="100" r="6" fill="#fbbf24" />
+            <text x="340" y="74" textAnchor="middle" fill="#fde68a" fontSize="12" fontFamily="ui-monospace, monospace">now</text>
+            <text x="340" y="148" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">verification time</text>
+
+            <circle cx="560" cy="100" r="6" fill="#f87171" />
+            <text x="560" y="132" textAnchor="middle" fill="#e2e8f0" fontSize="12" fontFamily="ui-monospace, monospace">exp</text>
+            <text x="560" y="148" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">expires</text>
+
+            <text x="320" y="178" textAnchor="middle" fill="#64748b" fontSize="11" fontFamily="ui-monospace, monospace">Valid only when nbf &lt;= now &lt; exp — outside that window, verification fails</text>
+          </svg>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             The Three Time Claims: exp, iat, and nbf
@@ -209,6 +265,56 @@ if (payload.exp * 1000 < Date.now()) logout();`}
           </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            Practical Example: Decoding a Token and Computing Time Remaining
+          </h2>
+          <p className="small" style={{ marginBottom: 12 }}>
+            Decoding a token is only half the job — reading its claims does not verify the
+            signature, so treat a client-side decode as display information only, never as an
+            authorization check. See <Link href="/blog/how-to-decode-a-jwt-token-safely">How to
+            Decode a JWT Token Safely</Link> for the full distinction between decoding and
+            verifying. With that caveat in mind, here is a self-contained decoder plus a
+            human-readable &quot;time remaining&quot; calculation, the kind you would use to show
+            a &quot;session expires in 4m 12s&quot; banner in a UI:
+          </p>
+          <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`// Decode the payload only — this does NOT verify the signature.
+function decodePayload(token) {
+  const base64Url = token.split('.')[1];
+  const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+  const json = decodeURIComponent(
+    atob(base64)
+      .split('')
+      .map((c) => '%' + c.charCodeAt(0).toString(16).padStart(2, '0'))
+      .join('')
+  );
+  return JSON.parse(json);
+}
+
+const payload = decodePayload(token);
+const nowInSeconds = Math.floor(Date.now() / 1000);
+
+// nbf check first — a token can be decodable but not yet active
+if (payload.nbf && nowInSeconds < payload.nbf) {
+  console.log('Token not active yet, valid in', payload.nbf - nowInSeconds, 'seconds');
+} else {
+  const secondsLeft = payload.exp - nowInSeconds;
+  if (secondsLeft <= 0) {
+    console.log('Token already expired', -secondsLeft, 'seconds ago');
+  } else {
+    const minutes = Math.floor(secondsLeft / 60);
+    const seconds = secondsLeft % 60;
+    console.log(\`Token expires in \${minutes}m \${seconds}s\`);
+  }
+}`}
+          </pre>
+          <p className="small" style={{ marginBottom: 14 }}>
+            You can try this decoding step interactively with the free{' '}
+            <Link href="/jwt-decoder">JWT Decoder</Link> — paste a token and it shows exp, iat,
+            and nbf as both raw unix seconds and human-readable dates, all decoded locally in
+            your browser without ever sending the token anywhere.
+          </p>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             Clock Skew and Leeway
           </h2>
           <p className="small" style={{ marginBottom: 12 }}>
@@ -253,7 +359,10 @@ const payload = jwt.verify(token, process.env.JWT_SECRET, {
             token is used, the server issues a brand-new refresh token and invalidates the old one.
             If an attacker steals a refresh token and uses it, the legitimate user&apos;s next
             refresh attempt fails — and that reuse of an already-rotated token is a strong signal
-            of theft, at which point the server revokes the whole session family.
+            of theft, at which point the server revokes the whole session family. For a broader
+            checklist beyond time claims — storage, transport, and signature algorithm choices —
+            see <Link href="/blog/jwt-security-best-practices-for-developers">JWT Security Best
+            Practices for Developers</Link>.
           </p>
           <ul className="small" style={{ marginBottom: 14 }}>
             <li>Internal admin dashboard: access token 5m, refresh 8h (one working day).</li>
@@ -262,8 +371,14 @@ const payload = jwt.verify(token, process.env.JWT_SECRET, {
           </ul>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
-            Frequently Asked Questions
+            Common Mistakes with exp, iat, and nbf
           </h2>
+          <ul className="small" style={{ marginBottom: 14 }}>
+            <li><strong>Confusing seconds and milliseconds.</strong> exp, iat, and nbf are unix seconds; Date.now() is unix milliseconds. Compare the two without converting and every check is wrong by a factor of 1000, in either direction.</li>
+            <li><strong>Trusting a client-decoded exp instead of validating server-side.</strong> Decoding a token reveals its claims but does not verify the signature — an attacker can hand-edit an unsigned decode of the payload, including exp, before sending it back. Authorization decisions must always go through the library&apos;s verify function with the real secret or public key.</li>
+            <li><strong>Ignoring clock skew.</strong> Auth and API servers rarely share a perfectly synced clock. Without a small clockTolerance, valid tokens near their exp — or freshly issued tokens near their nbf — get rejected simply because one machine&apos;s clock drifted by a few seconds.</li>
+            <li><strong>Forgetting that nbf silently rejects &quot;not yet valid&quot; tokens.</strong> nbf is optional and rarely used, so it is easy to forget it exists. When a token is verified before its nbf time, the request fails with the same kind of error as an expired token, which can look like an unrelated bug if you are not expecting it.</li>
+          </ul>
           <div style={{ marginBottom: 10 }}>
             <strong>Is JWT exp in seconds or milliseconds?</strong>
             <p className="small" style={{ marginTop: 6 }}>
@@ -286,6 +401,26 @@ const payload = jwt.verify(token, process.env.JWT_SECRET, {
               Most production systems use short-lived access tokens of 5 to 15 minutes, paired with
               a longer-lived refresh token. Short expiry limits the damage window if a token leaks,
               while refresh tokens keep the user logged in.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What happens if a JWT is used before its nbf time?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              The token is rejected with a &quot;not before&quot; or &quot;jwt not active&quot;
+              error, the same way an expired token is rejected — just for the opposite reason. This
+              is easy to miss because nbf is optional and silent: if you forget it exists, an
+              unexpectedly-rejected fresh token looks like a bug rather than the not-yet-valid
+              claim working as intended.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Can I trust the exp claim from a JWT decoded on the client?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              No. Decoding a JWT with base64 only reveals its claims — it does not check the
+              signature. Anyone can edit an unsigned decode of the payload, including exp, before
+              sending it back. The server must always call the library verify function with the
+              secret or public key; client-side decoding is for display purposes only, never for
+              authorization decisions.
             </p>
           </div>
 

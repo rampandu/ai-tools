@@ -21,9 +21,9 @@ export default function CommonGitErrorsAndHowToFixThem() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Common Git Errors and How to Fix Them',
+    headline: '7 Common Git Errors and How to Fix Them Fast',
     description:
-      'Fixes for the most common Git errors: merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push — with real commands.',
+      'Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push, with real commands you can copy.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-git-errors-and-how-to-fix-them',
@@ -65,10 +65,10 @@ export default function CommonGitErrorsAndHowToFixThem() {
   return (
     <>
       <Head>
-        <title>Common Git Errors and How to Fix Them | Dev Brains AI</title>
+        <title>7 Common Git Errors and How to Fix Them Fast | Dev Brains AI</title>
         <meta
           name="description"
-          content="Fixes for the most common Git errors: merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push — with real commands."
+          content="Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push, with real commands you can copy."
         />
         <meta
           name="keywords"

@@ -21,14 +21,14 @@ export default function CronExpressionExamplesEvery5Minutes() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Cron Expression Examples for Every 5, 10, 15, 30 Minutes and More',
+    headline: 'Cron Every 5 Minutes: Expression + Examples',
     description:
-      'Practical cron expression examples for common intervals — every 5, 10, 15, 30 minutes, every hour, and every N hours — with a field-by-field explanation of the syntax.',
+      'The cron expression for every 5 minutes is */5 * * * *. See ready-to-use patterns for every 10, 15, 30 minutes and every N hours, explained field by field.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expression-examples-every-5-minutes',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -59,21 +59,44 @@ export default function CronExpressionExamplesEvery5Minutes() {
           text: '*/5 means every 5 minutes starting from 0 (0, 5, 10...55). A plain 5 means the job runs once, only at minute 5 of every hour. They are not interchangeable.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is the cron expression for every 10 minutes?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The cron expression for every 10 minutes is */10 * * * *. That fires at minute 0, 10, 20, 30, 40, and 50 of every hour — six runs per hour, evenly spaced.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: "Why doesn't my every-5-minutes cron job run exactly every 5 minutes?",
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Two common causes: the scheduler queues or delays runs under load (GitHub Actions explicitly warns about this at its 5-minute minimum), or the previous run is still executing when the next one is due and your platform skips or queues the overlap. Add a lock file or an in-process flag so overlapping runs are skipped instead of silently piling up.',
+        },
+      },
     ],
   };
 
   return (
     <>
       <Head>
-        <title>Cron Expression Examples for Every 5, 10, 15, 30 Minutes | Dev Brains AI</title>
+        <title>Cron Every 5 Minutes: Expression + Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="Practical cron expression examples for every 5, 10, 15, 30 minutes, every hour, and every N hours, with a clear explanation of how the step syntax works."
+          content="The cron expression for every 5 minutes is */5 * * * *. See ready-to-use patterns for every 10, 15, 30 minutes and every N hours, explained field by field."
         />
         <meta
           name="keywords"
           content="cron every 5 minutes, cron expression every 15 minutes, cron every 30 minutes, cron every hour, cron step values, cron expression examples"
         />
+        <meta property="og:title" content="Cron Every 5 Minutes: Expression + Examples" />
+        <meta
+          property="og:description"
+          content="The cron expression for every 5 minutes is */5 * * * *. See ready-to-use patterns for every 10, 15, 30 minutes and every N hours, explained field by field."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-expression-examples-every-5-minutes" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-expression-examples-every-5-minutes" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
@@ -102,8 +125,40 @@ export default function CronExpressionExamplesEvery5Minutes() {
             polling an API, refreshing a cache, checking a queue, or syncing data. It is also the
             one developers get wrong most often, usually by confusing a step value with a fixed
             value. This guide walks through every common minute-based and hour-based interval with
-            copy-paste-ready expressions.
+            copy-paste-ready expressions. For the full field-by-field syntax reference, see our{' '}
+            <Link href="/blog/cron-expression-complete-guide">cron expression complete guide</Link>.
           </p>
+
+          <svg viewBox="0 0 640 210" style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }} role="img" aria-label="Diagram of the five cron fields, with the minute field highlighted showing a step value of 5">
+            <text x="320" y="20" textAnchor="middle" fill="#94a3b8" fontSize="12" fontFamily="ui-monospace, monospace">A cron expression always has exactly 5 fields, left to right</text>
+
+            <rect x="16" y="36" width="112" height="104" rx="8" fill="#0d3b34" stroke="#14b8a6" />
+            <text x="72" y="70" textAnchor="middle" fill="#5eead4" fontSize="22" fontFamily="ui-monospace, monospace">*/5</text>
+            <text x="72" y="98" textAnchor="middle" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">MINUTE</text>
+            <text x="72" y="120" textAnchor="middle" fill="#94a3b8" fontSize="10" fontFamily="ui-monospace, monospace">0–59, step 5</text>
+
+            <rect x="136" y="36" width="112" height="104" rx="8" fill="#1e293b" stroke="#334155" />
+            <text x="192" y="70" textAnchor="middle" fill="#e2e8f0" fontSize="20" fontFamily="ui-monospace, monospace">*</text>
+            <text x="192" y="98" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="ui-monospace, monospace">HOUR</text>
+            <text x="192" y="120" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">0–23</text>
+
+            <rect x="256" y="36" width="112" height="104" rx="8" fill="#1e293b" stroke="#334155" />
+            <text x="312" y="70" textAnchor="middle" fill="#e2e8f0" fontSize="20" fontFamily="ui-monospace, monospace">*</text>
+            <text x="312" y="98" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="ui-monospace, monospace">DAY (month)</text>
+            <text x="312" y="120" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">1–31</text>
+
+            <rect x="376" y="36" width="112" height="104" rx="8" fill="#1e293b" stroke="#334155" />
+            <text x="432" y="70" textAnchor="middle" fill="#e2e8f0" fontSize="20" fontFamily="ui-monospace, monospace">*</text>
+            <text x="432" y="98" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="ui-monospace, monospace">MONTH</text>
+            <text x="432" y="120" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">1–12</text>
+
+            <rect x="496" y="36" width="112" height="104" rx="8" fill="#1e293b" stroke="#334155" />
+            <text x="552" y="70" textAnchor="middle" fill="#e2e8f0" fontSize="20" fontFamily="ui-monospace, monospace">*</text>
+            <text x="552" y="98" textAnchor="middle" fill="#94a3b8" fontSize="11" fontFamily="ui-monospace, monospace">DAY (week)</text>
+            <text x="552" y="120" textAnchor="middle" fill="#64748b" fontSize="10" fontFamily="ui-monospace, monospace">0–6</text>
+
+            <text x="320" y="190" textAnchor="middle" fill="#34d399" fontSize="13" fontFamily="ui-monospace, monospace">*/5 * * * *  →  fires at :00, :05, :10 ... :55, every hour, every day</text>
+          </svg>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             How the step syntax (<code>/</code>) works
@@ -168,16 +223,61 @@ export default function CronExpressionExamplesEvery5Minutes() {
 */5 0-5 * * *       → every 5 minutes, only between midnight and 5:59 AM
 */15 8-20 * * *      → every 15 minutes, 8 AM to 8:45 PM`}
           </pre>
+          <p className="small" style={{ marginBottom: 14 }}>
+            Remember that every time in these expressions is evaluated against whatever clock the
+            scheduler uses — a <code>9-17</code> business-hours restriction means something
+            different on a server set to UTC than one set to IST. If the wall-clock time actually
+            matters, read <Link href="/blog/cron-expression-timezone-handling-guide">how cron handles timezones</Link>{' '}
+            before you rely on it.
+          </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
-            Things that trip people up
+            Common Mistakes with Every-N-Minute Schedules
           </h2>
           <ul className="small" style={{ marginBottom: 14, paddingLeft: 18 }}>
             <li><strong>Steps don't need to divide evenly.</strong> <code>*/7</code> runs at 0, 7, 14, 21 ... 56 — the last gap before wraparound is shorter than 7 minutes. Prefer divisors of 60 (5, 10, 15, 20, 30) for clean, evenly spaced runs.</li>
             <li><strong>node-cron and Quartz add a seconds field.</strong> If your library shows six fields, <code>*/5 * * * * *</code> means every 5 seconds, not minutes — always check the library's docs before assuming standard 5-field cron.</li>
             <li><strong>GitHub Actions caps frequency at 5 minutes</strong> and even that is a soft minimum — busy periods can delay runs. Don't rely on exact timing for sub-5-minute jobs there.</li>
             <li><strong>High-frequency jobs risk overlap.</strong> If a job scheduled every 5 minutes sometimes takes longer than 5 minutes to finish, add a lock file or a mutex so a new run never starts while the previous one is still going.</li>
+            <li><strong>Assuming */5 respects a custom starting offset.</strong> The step always starts counting from 0 within the field's range, so <code>*/5</code> is always 0, 5, 10 ... 55 — you cannot make it start at :02. For an offset schedule like "2, 7, 12 ... 57," write the explicit list instead of a step.</li>
+            <li><strong>Forgetting which timezone "every 5 minutes" runs in.</strong> The interval itself never changes, but the clock it's measured against can — a misconfigured server timezone shifts every run by the same amount. See <Link href="/blog/cron-expression-timezone-handling-guide">how cron handles timezones</Link> before relying on business-hours restrictions like the example above.</li>
           </ul>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            Putting It Together: A Real Health-Check Job Every 5 Minutes
+          </h2>
+          <p className="small" style={{ marginBottom: 12 }}>
+            Here's a more realistic version of an "every 5 minutes" job — a health check that
+            pings an API only during business hours, and guards against overlapping runs if a
+            check ever hangs past its own 5-minute window:
+          </p>
+          <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`# crontab -e
+*/5 9-18 * * 1-5 /opt/scripts/health-check.sh >> /var/log/health-check.log 2>&1`}
+          </pre>
+          <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`#!/bin/bash
+# health-check.sh — skip this run if the previous one is still active
+LOCK=/tmp/health-check.lock
+if [ -e "$LOCK" ]; then
+  echo "$(date): previous run still active, skipping" >> /var/log/health-check.log
+  exit 0
+fi
+touch "$LOCK"
+trap 'rm -f "$LOCK"' EXIT
+
+curl -sf --max-time 240 https://api.example.com/health || \\
+  echo "$(date): health check failed" >> /var/log/health-check.log`}
+          </pre>
+          <p className="small" style={{ marginBottom: 14 }}>
+            The lock file plus a <code>trap</code> on exit is the same overlap protection listed
+            above, just implemented in shell instead of application code. If you'd rather run this
+            check from inside a running Node.js or Python service instead of the system crontab,
+            compare the trade-offs in <Link href="/blog/cron-vs-setinterval-nodejs">cron vs setInterval in Node.js</Link>{' '}
+            or see <Link href="/blog/cron-jobs-python-schedule-library-guide">cron jobs with Python&apos;s schedule library and APScheduler</Link>.
+            Either way, the free <Link href="/cron-generator">Cron Expression Generator</Link> turns
+            a plain-English description straight into the expression above.
+          </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             Frequently Asked Questions
@@ -204,6 +304,23 @@ export default function CronExpressionExamplesEvery5Minutes() {
               <code>*/5</code> means every 5 minutes starting from 0 (0, 5, 10...55). A plain{' '}
               <code>5</code> means the job runs once, only at minute 5 of every hour. They are not
               interchangeable.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What is the cron expression for every 10 minutes?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              The cron expression for every 10 minutes is <code>*/10 * * * *</code>. That fires at
+              minute 0, 10, 20, 30, 40, and 50 of every hour — six runs per hour, evenly spaced.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Why doesn&apos;t my every-5-minutes cron job run exactly every 5 minutes?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Two common causes: the scheduler queues or delays runs under load (GitHub Actions
+              explicitly warns about this at its 5-minute minimum), or the previous run is still
+              executing when the next one is due and your platform skips or queues the overlap.
+              Add a lock file or an in-process flag so overlapping runs are skipped instead of
+              silently piling up.
             </p>
           </div>
 

@@ -21,9 +21,9 @@ export default function EncodeImagesBase64() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Encode Images as Base64 Data URIs in HTML and CSS',
+    headline: 'Base64 Image Encoding in HTML/CSS: When It Actually Helps',
     description:
-      'Learn how to embed images directly in HTML and CSS using Base64 data URIs. Covers when to use inline images, browser support, performance trade-offs, and code examples.',
+      'Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css',
@@ -32,10 +32,10 @@ export default function EncodeImagesBase64() {
   return (
     <>
       <Head>
-        <title>How to Encode Images as Base64 Data URIs in HTML and CSS | Dev Brains AI</title>
+        <title>Base64 Image Encoding in HTML/CSS: When It Helps | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how to embed images in HTML and CSS using Base64 data URIs. Covers when to use inline images, the trade-offs vs external URLs, and JavaScript/Node.js encoding examples."
+          content="Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples."
         />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />

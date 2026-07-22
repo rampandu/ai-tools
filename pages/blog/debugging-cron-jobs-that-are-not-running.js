@@ -21,9 +21,9 @@ export default function DebuggingCronJobsThatAreNotRunning() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Debugging Cron Jobs That Are Not Running',
+    headline: 'Cron Job Not Running? 5 Fixes That Actually Work',
     description:
-      'A troubleshooting guide for cron jobs that silently fail to run — covering PATH issues, permissions, syntax errors, a disabled cron service, and how to debug each systematically.',
+      'Cron job silently not firing? Walk through the 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with commands to fix each one fast.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/debugging-cron-jobs-that-are-not-running',
@@ -65,10 +65,10 @@ export default function DebuggingCronJobsThatAreNotRunning() {
   return (
     <>
       <Head>
-        <title>Debugging Cron Jobs That Are Not Running | Dev Brains AI</title>
+        <title>Cron Job Not Running? 5 Fixes That Actually Work | Dev Brains AI</title>
         <meta
           name="description"
-          content="Troubleshooting guide for cron jobs that silently fail to run: PATH issues, permissions, syntax errors, a disabled cron service, and how to debug each."
+          content="Cron job silently not firing? Walk through the 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with commands to fix each one fast."
         />
         <meta
           name="keywords"

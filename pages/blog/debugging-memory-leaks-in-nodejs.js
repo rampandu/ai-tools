@@ -21,9 +21,9 @@ export default function DebuggingMemoryLeaksInNodejs() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Debugging Memory Leaks in Node.js — A Practical Walkthrough',
+    headline: 'How to Find a Node.js Memory Leak: Step-by-Step',
     description:
-      'How to detect and debug memory leaks in a Node.js application using heap snapshots and --inspect, plus the most common leak sources: closures and event listeners.',
+      'Node.js process memory keeps climbing and never drops? Learn to catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js memory leaks.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/debugging-memory-leaks-in-nodejs',
@@ -65,10 +65,10 @@ export default function DebuggingMemoryLeaksInNodejs() {
   return (
     <>
       <Head>
-        <title>Debugging Memory Leaks in Node.js — A Practical Walkthrough | Dev Brains AI</title>
+        <title>How to Find a Node.js Memory Leak: Step-by-Step | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to detect and debug memory leaks in a Node.js application using heap snapshots and --inspect, plus the most common leak sources: closures and event listeners."
+          content="Node.js process memory keeps climbing and never drops? Learn to catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js memory leaks."
         />
         <meta
           name="keywords"

@@ -31,6 +31,18 @@ const FAQ = [
   {
     q: 'Can I use these SQL queries for commercial projects?',
     a: 'Yes, you can use the generated SQL in your work or commercial projects, but you are responsible for validating correctness, performance, and security before deploying it in production.'
+  },
+  {
+    q: 'Is there a free SQL query generator online with no signup?',
+    a: 'Yes. This SQL query generator runs entirely in your browser, is free to use, and does not require creating an account, signing up, or entering payment details. You can generate unlimited SQL queries.'
+  },
+  {
+    q: 'What is an AI SQL query builder?',
+    a: 'An AI SQL query builder is a tool that reads a plain-English description of the data you want and writes the matching SQL statement for you — the SELECT columns, FROM table, and WHERE filters — so you do not have to recall exact syntax or click through a dropdown-based query builder UI.'
+  },
+  {
+    q: 'Can I generate MySQL, PostgreSQL, and SQLite queries?',
+    a: 'Yes. This generator produces standard SQL (SELECT and WHERE clauses, comparisons, BETWEEN, IN, and LIKE conditions) that runs on MySQL, PostgreSQL, SQLite, SQL Server, and MariaDB without modification for common queries. Highly dialect-specific syntax, such as vendor-only functions, may still need manual adjustment.'
   }
 ];
 
@@ -126,19 +138,19 @@ export default function SQLGenerator() {
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
-        <title>Free MySQL & SQL Query Generator — AI SQL Builder Online | Dev Brains AI</title>
+        <title>Free SQL Query Generator — AI SQL Query Builder Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Free AI SQL query generator that converts plain English to MySQL, PostgreSQL, SQL Server and SQLite queries instantly. No signup required. Try it now."
+          content="Free SQL query generator and AI SQL query builder. Turn plain English into MySQL, PostgreSQL, SQL Server, and SQLite queries instantly — no signup, no cost."
         />
         <meta
           name="keywords"
-          content="mysql query generator, sql query generator, AI sql generator, natural language to sql, free sql builder, online sql generator, sql query builder free, ai sql query builder"
+          content="sql query generator, sql generator, ai sql query builder, mysql query generator, AI sql generator, natural language to sql, free sql builder, online sql generator, sql query builder free"
         />
-        <meta property="og:title" content="Free MySQL & SQL Query Generator — AI SQL Builder Online" />
+        <meta property="og:title" content="Free SQL Query Generator — AI SQL Query Builder Online" />
         <meta
           property="og:description"
-          content="Convert plain English to MySQL, PostgreSQL, SQL Server and SQLite queries instantly. Free AI SQL generator — no signup needed."
+          content="Free AI SQL query builder that turns plain English into MySQL, PostgreSQL, SQL Server, and SQLite queries instantly. No signup needed."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/sql-generator" />
         <meta property="og:type" content="article" />
@@ -263,6 +275,20 @@ export default function SQLGenerator() {
           of remembering complex syntax, table names, and JOIN conditions, you can write what you
           want in English and let the AI suggest the query. This is especially useful for:
         </p>
+
+        <svg viewBox="0 0 640 190" style={{ width: '100%', height: 'auto', margin: '12px 0', borderRadius: 8, background: '#0f172a' }} role="img" aria-label="Diagram showing plain English converted into a SQL query">
+          <rect x="24" y="30" width="260" height="130" rx="10" fill="#1e293b" stroke="#334155" />
+          <text x="154" y="58" textAnchor="middle" fill="#94a3b8" fontSize="13" fontFamily="ui-monospace, monospace">Plain English</text>
+          <text x="154" y="90" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="ui-monospace, monospace">"users where age less</text>
+          <text x="154" y="108" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="ui-monospace, monospace">than 30 and country is India"</text>
+          <text x="316" y="102" textAnchor="middle" fill="#34d399" fontSize="22" fontFamily="ui-monospace, monospace">→</text>
+          <rect x="352" y="30" width="264" height="130" rx="10" fill="#0d3b34" stroke="#14b8a6" />
+          <text x="484" y="58" textAnchor="middle" fill="#5eead4" fontSize="13" fontFamily="ui-monospace, monospace">AI SQL query builder</text>
+          <text x="484" y="86" textAnchor="middle" fill="#d1fae5" fontSize="10.5" fontFamily="ui-monospace, monospace">SELECT * FROM users</text>
+          <text x="484" y="104" textAnchor="middle" fill="#d1fae5" fontSize="10.5" fontFamily="ui-monospace, monospace">WHERE age &lt; 30</text>
+          <text x="484" y="122" textAnchor="middle" fill="#d1fae5" fontSize="10.5" fontFamily="ui-monospace, monospace">AND country = 'India';</text>
+        </svg>
+
         <ul className="small">
           <li>Developers who write SQL occasionally and want to move faster.</li>
           <li>Data analysts who need to explore datasets without memorising every column.</li>
@@ -271,7 +297,9 @@ export default function SQLGenerator() {
         </ul>
         <p className="small">
           Dev Brains AI focuses on practical, developer-friendly tools. This SQL query generator is
-          designed to be fast, predictable, and easy to integrate into your daily workflow.
+          designed to be fast, predictable, and easy to integrate into your daily workflow. For a
+          closer look at how the plain-English-to-SQL conversion works, see our{' '}
+          <Link href="/blog/natural-language-to-sql-guide">natural language to SQL guide</Link>.
         </p>
       </div>
 
@@ -329,7 +357,12 @@ export default function SQLGenerator() {
         </ul>
         <p className="small">
           For advanced database-specific features (CTEs, window functions, stored procedures), you
-          can still use the generated SQL as a starting point and then extend it manually.
+          can still use the generated SQL as a starting point and then extend it manually. If you
+          specifically need MySQL syntax and MySQL-only functions, see our dedicated{' '}
+          <Link href="/blog/free-mysql-query-generator-online">free MySQL query generator guide</Link>.
+          And once a query works, most list views also need paging — see our guide to{' '}
+          <Link href="/blog/sql-query-for-pagination-limit-offset">SQL pagination with LIMIT and OFFSET</Link>{' '}
+          for the keyset pagination pattern that stays fast on large tables.
         </p>
       </div>
 
@@ -352,6 +385,35 @@ export default function SQLGenerator() {
           </li>
           <li>
             For sensitive data, ensure that only authorised users can run the final queries.
+          </li>
+        </ul>
+
+        <h3 style={{ marginTop: 16 }}>Common Mistakes to Avoid</h3>
+        <ul className="small">
+          <li>
+            <strong>Assuming the AI knows your schema.</strong> It only knows what you type — always
+            name real table and column names in your prompt to avoid guessed placeholders like
+            <code> my_table</code>.
+          </li>
+          <li>
+            <strong>Skipping the review step.</strong> Read every generated WHERE and JOIN condition
+            before running anything beyond a read-only <code>SELECT</code> against real data.
+          </li>
+          <li>
+            <strong>Not naming the SQL dialect.</strong> If your query depends on dialect-specific
+            syntax — date formatting, string concatenation, <code>LIMIT</code> vs <code>TOP</code> —
+            say which database you are targeting so you know what to adjust manually.
+          </li>
+          <li>
+            <strong>Pasting straight into a production console.</strong> Run new queries through a
+            tool that shows an execution plan or row count first, rather than executing directly
+            against a live database.
+          </li>
+          <li>
+            <strong>Forgetting a WHERE clause on UPDATE or DELETE.</strong> This generator only
+            produces read-only <code>SELECT</code> queries, but the same discipline applies to any
+            AI-assisted SQL — always double-check for a WHERE clause before running an UPDATE or
+            DELETE anywhere.
           </li>
         </ul>
         <p className="small">

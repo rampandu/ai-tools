@@ -21,9 +21,9 @@ export default function EncodeDecodeQueryStringsNodejs() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Encoding and Decoding Query Strings in Node.js',
+    headline: 'Node.js Query Strings: Encode & Decode the Right Way',
     description:
-      'How to build and parse URL query strings in Node.js using the built-in URLSearchParams and querystring modules, with correct encoding examples for arrays and special characters.',
+      'Stop hand-rolling URL encoding. Learn to build and parse Node.js query strings correctly with URLSearchParams, including arrays, special characters, and common pitfalls.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/encode-decode-query-strings-nodejs',
@@ -65,10 +65,10 @@ export default function EncodeDecodeQueryStringsNodejs() {
   return (
     <>
       <Head>
-        <title>Encoding and Decoding Query Strings in Node.js | Dev Brains AI</title>
+        <title>Node.js Query Strings: Encode & Decode the Right Way | Dev Brains AI</title>
         <meta
           name="description"
-          content="How to build and parse URL query strings in Node.js using URLSearchParams and the querystring module, with correct encoding examples for arrays and special characters."
+          content="Stop hand-rolling URL encoding. Learn to build and parse Node.js query strings correctly with URLSearchParams, including arrays, special characters, and common pitfalls."
         />
         <meta
           name="keywords"

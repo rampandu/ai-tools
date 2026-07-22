@@ -21,9 +21,9 @@ export default function CommonJwtErrors() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Common JWT Errors and How to Fix Them (Node.js jsonwebtoken)',
+    headline: '4 Common JWT Errors and How to Fix Them (Node.js)',
     description:
-      'Fix "jwt malformed", "invalid signature", "jwt expired", and "invalid token" errors in the Node.js jsonwebtoken library — the exact cause and the working fix for each, with code.',
+      'Fix "jwt malformed", "invalid signature", "jwt expired", and "invalid token" errors in Node.js jsonwebtoken. Get the exact cause and a working code fix for each error.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-jwt-errors-and-how-to-fix-them',
@@ -65,10 +65,10 @@ export default function CommonJwtErrors() {
   return (
     <>
       <Head>
-        <title>Common JWT Errors and How to Fix Them | Dev Brains AI</title>
+        <title>4 Common JWT Errors and How to Fix Them (Node.js) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Fix jwt malformed, invalid signature, jwt expired, and invalid token errors in Node.js jsonwebtoken. Exact cause plus working fix and code for each error."
+          content="Fix jwt malformed, invalid signature, jwt expired, and invalid token errors in Node.js jsonwebtoken. Get the exact cause and a working code fix for each error."
         />
         <meta
           name="keywords"

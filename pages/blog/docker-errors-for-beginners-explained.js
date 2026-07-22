@@ -21,9 +21,9 @@ export default function DockerErrorsForBeginnersExplained() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Docker Errors for Beginners Explained',
+    headline: '5 Common Docker Errors and How to Fix Them Fast',
     description:
-      'The most common Docker errors beginners hit — port already in use, cannot connect to daemon, no space left on device, image not found — explained with fixes.',
+      'Stuck on a Docker error? Get fast fixes for the 5 most common beginner issues — port already in use, daemon not connecting, no space left, and image not found.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/docker-errors-for-beginners-explained',
@@ -65,10 +65,10 @@ export default function DockerErrorsForBeginnersExplained() {
   return (
     <>
       <Head>
-        <title>Docker Errors for Beginners Explained | Dev Brains AI</title>
+        <title>5 Common Docker Errors and How to Fix Them Fast | Dev Brains AI</title>
         <meta
           name="description"
-          content="The most common Docker errors beginners hit — port already in use, cannot connect to daemon, no space left, image not found — explained with fixes."
+          content="Stuck on a Docker error? Get fast fixes for the 5 most common beginner issues — port already in use, daemon not connecting, no space left, and image not found."
         />
         <meta
           name="keywords"

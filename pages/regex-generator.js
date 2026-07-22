@@ -16,7 +16,11 @@ const EXAMPLES = [
 const FAQ = [
   { q: 'Is this regex generator free?', a: 'Yes — the basic regex generator is free and deterministic (rule-based).' },
   { q: 'Is the output always accurate?', a: 'The generator handles common patterns reliably. Always test and review the regex for edge cases before production use.' },
-  { q: 'Can I use the regex in my app?', a: 'Yes — use the Copy or Use in my app buttons to paste snippets into your code.' }
+  { q: 'Can I use the regex in my app?', a: 'Yes — use the Copy or Use in my app buttons to paste snippets into your code.' },
+  { q: 'Is there a free online regex builder?', a: 'Yes — this is a completely free online regex builder. Describe your pattern in plain English (for example "match a valid email address") and it generates a working regular expression instantly, with no signup, no account, and no daily limit.' },
+  { q: 'What is an AI regex generator?', a: 'An AI regex generator turns a plain-English description of what you want to match into a working regular expression automatically, so you do not have to memorise regex syntax or hand-write character classes and quantifiers yourself.' },
+  { q: 'Does this tool test my regex too?', a: 'Yes. Every pattern this generator produces is fed straight into the built-in Regex Tester below the results — paste sample text, set flags like i or g, and see a live match result and captured groups without leaving the page.' },
+  { q: "What's the difference between a regex builder and a regex tester?", a: 'A regex builder (or generator) creates a brand-new pattern from a description. A regex tester checks whether an existing pattern matches specific input text. This page includes both — use the builder to generate a pattern, then the tester below it to validate that pattern against your own sample data.' }
 ];
 
 export default function RegexGenerator() {
@@ -95,19 +99,19 @@ export default function RegexGenerator() {
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
-        <title>Free AI Regex Generator — Online Regex Builder &amp; Tester | Dev Brains AI</title>
+        <title>AI Regex Generator — Free Online Regex Builder &amp; Regular Expression Tester | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate regex patterns instantly with our free AI Regex Generator. Type your pattern in plain English — get accurate regex with explanations for JavaScript, Python, and more."
+          content="Free AI regex generator and online regex builder. Describe a pattern in plain English, get a working regular expression with a clear explanation, then test it live — no signup, no limits."
         />
         <meta
           name="keywords"
-          content="regex generator, ai regex, regex builder, regex ai generator, automatic regex generator, online regex builder, regular expression builder, regex pattern generator"
+          content="regex generator, ai regex, regex builder, online regex builder, online regex expression builder, regular expression generator, regex ai generator, automatic regex generator, regular expression builder, regex pattern generator, regex tester"
         />
-        <meta property="og:title" content="Free AI Regex Generator — Online Regex Builder &amp; Tester" />
+        <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder &amp; Regular Expression Tester" />
         <meta
           property="og:description"
-          content="Build regex patterns from plain English. Free AI regex generator with live tester — no manual writing needed. Works for JavaScript, Python, and all major languages."
+          content="Describe a pattern in plain English and get a working regular expression instantly — free AI regex generator with a built-in live tester. Works for JavaScript, Python, and all major languages."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/regex-generator" />
         <meta property="og:type" content="article" />
@@ -200,23 +204,74 @@ export default function RegexGenerator() {
         <h2>About this AI Regex Generator</h2>
         <p>
           Regular expressions (regex) are a compact and powerful way to match text patterns, but
-          they can be confusing and difficult to write correctly. This AI Regex Generator is built
-          to help you create accurate, production-ready patterns without memorising complex syntax.
+          they can be confusing and difficult to write correctly. This free <strong>AI regex
+          generator</strong> and <strong>online regex builder</strong> is built to help you create
+          accurate, production-ready patterns without memorising complex syntax — see the full{' '}
+          <Link href="/blog/ai-regex-generator-guide">guide to using an AI regex generator</Link>{' '}
+          for a step-by-step walkthrough.
         </p>
 
         <p>
           Simply describe your requirement in plain English — for example,
           <i> "match valid email addresses"</i> or <i>"extract phone numbers from text"</i> — and this tool
-          will instantly generate a clean and usable regex along with an explanation.
+          will instantly generate a clean, usable regular expression along with a plain-English
+          explanation. Once you have a pattern, the built-in <strong>Regex Tester</strong> above lets
+          you paste sample text and see live match results and captured groups, so this single page
+          works as both a regex builder and a regex tester.
         </p>
+
+        <svg
+          viewBox="0 0 640 210"
+          style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }}
+          role="img"
+          aria-label="Diagram labeling the anchor, group, character class, quantifier, and literal parts of a sample regex pattern"
+        >
+          <rect x="0" y="0" width="640" height="210" rx="10" fill="#0f172a" />
+          <text x="320" y="34" textAnchor="middle" fill="#94a3b8" fontSize="13" fontFamily="ui-monospace, monospace">Anatomy of a regex pattern (US phone number)</text>
+          <text x="320" y="78" textAnchor="middle" fontSize="22" fontFamily="ui-monospace, monospace">
+            <tspan fill="#34d399" fontWeight="700">^</tspan>
+            <tspan fill="#5eead4">(</tspan>
+            <tspan fill="#e2e8f0">\d</tspan>
+            <tspan fill="#fbbf24">{'{3}'}</tspan>
+            <tspan fill="#5eead4">)</tspan>
+            <tspan fill="#94a3b8">-</tspan>
+            <tspan fill="#5eead4">(</tspan>
+            <tspan fill="#e2e8f0">\d</tspan>
+            <tspan fill="#fbbf24">{'{3}'}</tspan>
+            <tspan fill="#5eead4">)</tspan>
+            <tspan fill="#94a3b8">-</tspan>
+            <tspan fill="#5eead4">(</tspan>
+            <tspan fill="#e2e8f0">\d</tspan>
+            <tspan fill="#fbbf24">{'{4}'}</tspan>
+            <tspan fill="#5eead4">)</tspan>
+            <tspan fill="#34d399" fontWeight="700">$</tspan>
+          </text>
+          <rect x="30" y="112" width="12" height="12" fill="#34d399" />
+          <text x="48" y="122" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Anchor — ^ start, $ end</text>
+          <rect x="230" y="112" width="12" height="12" fill="#5eead4" />
+          <text x="248" y="122" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Group — parentheses</text>
+          <rect x="420" y="112" width="12" height="12" fill="#e2e8f0" />
+          <text x="438" y="122" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Character class — \d</text>
+          <rect x="30" y="140" width="12" height="12" fill="#fbbf24" />
+          <text x="48" y="150" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Quantifier — {'{3}'} means exactly 3</text>
+          <rect x="300" y="140" width="12" height="12" fill="#94a3b8" />
+          <text x="318" y="150" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Literal character — the hyphen</text>
+          <text x="320" y="185" textAnchor="middle" fill="#64748b" fontSize="11" fontFamily="ui-monospace, monospace">^ and $ anchor the match to the full string, so partial matches inside longer text are rejected</text>
+        </svg>
 
         <h3>Why use an AI-powered regex generator?</h3>
         <ul>
-          <li>✅ Saves time by eliminating trial and error</li>
-          <li>✅ Reduces regex mistakes and syntax errors</li>
-          <li>✅ Provides readable explanations for learning</li>
-          <li>✅ Works for beginners and professionals alike</li>
+          <li>✅ Saves time by eliminating trial and error — no more tweaking a pattern character by character</li>
+          <li>✅ Reduces regex mistakes and syntax errors that are easy to miss by eye</li>
+          <li>✅ Provides readable explanations for learning, so you understand the pattern instead of just copying it</li>
+          <li>✅ Works for beginners and professionals alike, from a first email-validation regex to a complex log-parsing pattern</li>
+          <li>✅ Pairs generation with a live tester, so "build" and "verify" happen on the same page instead of switching tools</li>
         </ul>
+        <p>
+          Already have a pattern and just want to understand it? Use the free{' '}
+          <Link href="/regex-explainer">Regex Explainer</Link> — paste any regex and get a
+          plain-English, token-by-token breakdown instead of generating a new one.
+        </p>
 
         <h3>Common use cases</h3>
         <ul>
@@ -241,11 +296,28 @@ export default function RegexGenerator() {
 
         <h3>Tips &amp; best practices</h3>
         <ul>
-          <li>Use <code>^</code> and <code>$</code> for full string matches</li>
-          <li>Prefer specific classes like <code>\d</code> instead of <code>.</code></li>
-          <li>Avoid overly greedy patterns like <code>.*</code></li>
-          <li>Always test your regex before production use</li>
+          <li>Use <code>^</code> and <code>$</code> to anchor a pattern to the whole string instead of matching anywhere inside it</li>
+          <li>Prefer specific classes like <code>\d</code> or <code>[A-Za-z]</code> instead of the catch-all <code>.</code></li>
+          <li>Avoid overly greedy patterns like <code>.*</code> — a stray greedy quantifier can match far more text than you intended</li>
+          <li>Always test your regex — including edge cases like empty strings, extra whitespace, and unicode input — before production use</li>
+          <li>Add the <code>g</code> flag when you need every match in a string, not just the first one, and <code>m</code> when <code>^</code>/<code>$</code> should match per line rather than the whole string</li>
         </ul>
+
+        <h3>Common regex mistakes</h3>
+        <ul>
+          <li><strong>Unescaped special characters.</strong> Characters like <code>.</code>, <code>(</code>, <code>)</code>, <code>+</code>, and <code>?</code> mean something special in regex. To match them literally, escape them — <code>{'\\.'}</code> matches a literal dot, not "any character."</li>
+          <li><strong>Forgetting anchors.</strong> Without <code>^</code> and <code>$</code>, a pattern matches anywhere inside a string — <code>\d{'{3}'}</code> alone matches the digits inside "abc123def" even though the whole string is not numeric.</li>
+          <li><strong>Greedy vs lazy quantifiers.</strong> <code>.*</code> is greedy and grabs as much text as possible before backtracking; <code>.*?</code> is lazy and grabs as little as possible. Picking the wrong one is a common cause of matches spanning far more text than intended.</li>
+          <li><strong>Not testing edge cases.</strong> A pattern that works on one example can still fail on empty strings, leading or trailing whitespace, extra punctuation, or unicode characters — run a few edge cases through the tester below before shipping.</li>
+          <li><strong>Forgetting the global or multiline flag.</strong> Without <code>g</code>, methods like <code>replace()</code> only touch the first match; without <code>m</code>, <code>^</code> and <code>$</code> match the start and end of the whole string rather than each line.</li>
+        </ul>
+
+        <p>
+          For a curated list of patterns you can reuse directly, see{' '}
+          <Link href="/blog/regex-top-patterns">Top 10 Regex Patterns Every Developer Should Know</Link>{' '}
+          or the more backend-focused{' '}
+          <Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link>.
+        </p>
 
         <p>
           If you're new to regular expressions, this tool is a great way to learn by doing.
@@ -281,6 +353,8 @@ export default function RegexGenerator() {
       <div className="card small">
         <h4>Regex guides and tutorials</h4>
         <ul className="small">
+          <li><Link href="/blog/ai-regex-generator-guide">AI Regex Generator Guide — How to Use Automatic Regex Generation</Link></li>
+          <li><Link href="/regex-explainer">Regex Explainer — Understand Any Regex Pattern</Link></li>
           <li><Link href="/blog/regex-top-patterns">Top 10 Regex Patterns Every Developer Should Know</Link></li>
           <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>
           <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">Top 50 Useful Regex Patterns for Developers</Link></li>

@@ -21,9 +21,9 @@ export default function MillisecondsVsSecondsTimestampBugs() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Milliseconds vs Seconds — The 1000x Timestamp Bug Explained (and How to Fix It)',
+    headline: 'Milliseconds vs Seconds: Fix the 1000x Timestamp Bug',
     description:
-      'Why your dates show 1970 or the year 56789: the classic milliseconds vs seconds timestamp bug. Learn detection heuristics, JWT exp pitfalls, the year-2038 problem, and defensive normalization code.',
+      'Dates showing 1970 or year 56789? Learn to spot the milliseconds vs seconds bug in seconds, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a ready-to-use normalization function.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/milliseconds-vs-seconds-timestamp-bugs',
@@ -65,10 +65,10 @@ export default function MillisecondsVsSecondsTimestampBugs() {
   return (
     <>
       <Head>
-        <title>Milliseconds vs Seconds — The 1000x Timestamp Bug Explained | Dev Brains AI</title>
+        <title>Milliseconds vs Seconds: Fix the 1000x Bug | Dev Brains AI</title>
         <meta
           name="description"
-          content="Dates showing 1970 or year 56789? That is the milliseconds vs seconds bug. Learn detection heuristics, JWT exp pitfalls, the year-2038 problem, and normalization code."
+          content="Dates showing 1970 or year 56789? Learn to spot the milliseconds vs seconds bug in seconds, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a ready-to-use normalization function."
         />
         <meta
           name="keywords"

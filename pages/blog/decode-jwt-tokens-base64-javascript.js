@@ -21,9 +21,9 @@ export default function DecodeJwtBase64() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'How to Decode JWT Tokens Using Base64 in JavaScript',
+    headline: 'Decode a JWT in JavaScript in 3 Lines (No Library)',
     description:
-      'Learn how JWT tokens are structured and how to decode the header and payload using Base64Url decoding in JavaScript — browser and Node.js examples included.',
+      'Decode any JWT header and payload with plain JavaScript Base64Url decoding — no library needed. Includes ready-to-run browser and Node.js code examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/decode-jwt-tokens-base64-javascript',
@@ -32,10 +32,10 @@ export default function DecodeJwtBase64() {
   return (
     <>
       <Head>
-        <title>How to Decode JWT Tokens Using Base64 in JavaScript | Dev Brains AI</title>
+        <title>Decode a JWT in JavaScript in 3 Lines (No Library) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Learn how JWT tokens are structured and how to decode the header and payload sections using Base64Url decoding in JavaScript. Includes browser and Node.js examples."
+          content="Decode any JWT header and payload with plain JavaScript Base64Url decoding — no library needed. Includes ready-to-run browser and Node.js code examples."
         />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/decode-jwt-tokens-base64-javascript" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />

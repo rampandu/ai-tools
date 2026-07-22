@@ -12,7 +12,7 @@ export default function GithubFlavoredMarkdownGuide() {
       {
         '@type': 'ListItem',
         position: 3,
-        name: 'GitHub Flavored Markdown (GFM) — The Complete Guide',
+        name: 'GFM (GitHub Flavored Markdown) Guide',
         item: 'https://dev-brains-ai.com/blog/github-flavored-markdown-guide',
       },
     ],
@@ -21,14 +21,14 @@ export default function GithubFlavoredMarkdownGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'GitHub Flavored Markdown (GFM) — Tables, Task Lists, Alerts and More',
+    headline: 'GFM (GitHub Flavored Markdown) Guide — Tables, Alerts & Syntax',
     description:
-      'A complete guide to GitHub Flavored Markdown: tables with alignment, task lists, strikethrough, autolinks, mentions, syntax-highlighted code fences, footnotes, and alerts.',
+      'Full GitHub Flavored Markdown (GFM) reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/github-flavored-markdown-guide',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-15',
+    dateModified: '2026-07-22',
   };
 
   const faqJsonLd = {
@@ -59,21 +59,44 @@ export default function GithubFlavoredMarkdownGuide() {
           text: 'GFM renders in README files, issues, pull requests, discussions, wikis, gists, and comments on GitHub. Some features like task lists and mentions are interactive only in issues and pull requests.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What does GFM stand for?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GFM stands for GitHub Flavored Markdown — the specific Markdown dialect GitHub uses across the whole platform. It is a superset of CommonMark, meaning every standard Markdown document is also valid GFM.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is GFM different from regular Markdown?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Regular Markdown (CommonMark) covers headings, lists, links, and emphasis. GFM adds tables, task lists, strikethrough, autolinked issue references, syntax-highlighted code fences, footnotes, and alert boxes on top of that base.',
+        },
+      },
     ],
   };
 
   return (
     <>
       <Head>
-        <title>GitHub Flavored Markdown (GFM) — The Complete Guide | Dev Brains AI</title>
+        <title>GFM (GitHub Flavored Markdown) Guide — Tables &amp; Alerts | Dev Brains AI</title>
         <meta
           name="description"
-          content="Master GitHub Flavored Markdown: tables with alignment syntax, task lists, strikethrough, autolinks, mentions, code fences with syntax highlighting, footnotes, and alerts."
+          content="Full GFM (GitHub Flavored Markdown) reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs."
         />
         <meta
           name="keywords"
-          content="github flavored markdown, gfm, github markdown table, markdown task list, markdown alerts, github readme markdown, markdown syntax highlighting, gfm guide"
+          content="gfm, gfm github, github flavored markdown, github markdown table, markdown task list, markdown alerts, github readme markdown, markdown syntax highlighting, gfm guide, gfm cheat sheet"
         />
+        <meta property="og:title" content="GFM (GitHub Flavored Markdown) Guide — Tables &amp; Alerts" />
+        <meta
+          property="og:description"
+          content="Full GFM reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog/github-flavored-markdown-guide" />
+        <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/github-flavored-markdown-guide" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
@@ -94,17 +117,35 @@ export default function GithubFlavoredMarkdownGuide() {
           </nav>
 
           <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: 12 }}>
-            GitHub Flavored Markdown (GFM) — Tables, Task Lists, Alerts and More
+            GFM (GitHub Flavored Markdown) Guide — Tables, Alerts and Syntax
           </h1>
 
           <p className="small" style={{ marginBottom: 16 }}>
-            Standard Markdown covers headings, lists, links, and emphasis — but the moment you write
-            a README, open an issue, or review a pull request on GitHub, you are actually using
-            GitHub Flavored Markdown (GFM). GFM extends the CommonMark specification with tables,
-            task lists, strikethrough, autolinks, syntax-highlighted code fences, footnotes, and
-            alert boxes. This guide walks through every GFM extension with copy-paste examples, and
-            explains where each one works.
+            <strong>GFM</strong> is short for <strong>GitHub Flavored Markdown</strong> — the exact
+            Markdown dialect GitHub uses everywhere on the platform. Standard Markdown (CommonMark)
+            covers headings, lists, links, and emphasis, but the moment you write a README, open an
+            issue, or review a pull request on GitHub, you are using GFM's extensions on top of that
+            base: tables, task lists, strikethrough, autolinks, syntax-highlighted code fences,
+            footnotes, and alert boxes. This guide covers every GFM extension with copy-paste
+            examples, explains exactly where each one works, and lists the mistakes that trip people
+            up most.
           </p>
+
+          <svg viewBox="0 0 640 190" style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }} role="img" aria-label="Diagram showing GFM as CommonMark plus GitHub extensions">
+            <rect x="24" y="30" width="280" height="130" rx="10" fill="#1e293b" stroke="#334155" />
+            <text x="164" y="60" textAnchor="middle" fill="#94a3b8" fontSize="13" fontFamily="ui-monospace, monospace">CommonMark (base)</text>
+            <text x="164" y="88" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="ui-monospace, monospace"># Headings   *emphasis*</text>
+            <text x="164" y="108" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="ui-monospace, monospace">- lists      [links](url)</text>
+            <text x="164" y="128" textAnchor="middle" fill="#e2e8f0" fontSize="11" fontFamily="ui-monospace, monospace">`code`      &gt; blockquote</text>
+            <text x="330" y="100" textAnchor="middle" fill="#34d399" fontSize="22" fontFamily="ui-monospace, monospace">+</text>
+            <rect x="356" y="18" width="260" height="154" rx="10" fill="#0d3b34" stroke="#14b8a6" />
+            <text x="486" y="42" textAnchor="middle" fill="#5eead4" fontSize="13" fontFamily="ui-monospace, monospace">GFM extensions</text>
+            <text x="486" y="66" textAnchor="middle" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Tables · Task lists</text>
+            <text x="486" y="86" textAnchor="middle" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Strikethrough · Autolinks</text>
+            <text x="486" y="106" textAnchor="middle" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Syntax-highlighted fences</text>
+            <text x="486" y="126" textAnchor="middle" fill="#d1fae5" fontSize="11" fontFamily="ui-monospace, monospace">Footnotes · Alerts</text>
+            <text x="486" y="152" textAnchor="middle" fill="#5eead4" fontSize="11" fontFamily="ui-monospace, monospace">= GFM</text>
+          </svg>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             Tables and Alignment Syntax
@@ -221,11 +262,64 @@ const total = items.reduce((sum, item) => sum + item.price, 0);
           </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            Putting It Together: A Real PR Description
+          </h2>
+          <p className="small" style={{ marginBottom: 12 }}>
+            Here is what most of these extensions look like combined in a single, realistic pull
+            request description — the kind of GFM you would actually write day to day:
+          </p>
+          <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`## Summary
+Fixes #128 — checkout was failing when \`discountCode\` was empty.
+
+## Changes
+- [x] Guard against empty discount codes in \`applyDiscount()\`
+- [x] Add unit tests for the empty and null cases
+- [ ] Update the API docs (follow-up PR)
+
+## Before / after
+
+| Input          | Before        | After     |
+| :------------- | :-----------: | --------: |
+| \`""\`           | 500 error     | No-op     |
+| \`null\`         | 500 error     | No-op     |
+| \`"SAVE10"\`      | Applied       | Applied   |
+
+> [!WARNING]
+> This changes the return type of \`applyDiscount()\` from \`void\` to \`Result\`. cc @teammate
+
+\`\`\`diff
+- function applyDiscount(code) {
++ function applyDiscount(code) {
++   if (!code) return { applied: false };
+    ...
+\`\`\``}
+          </pre>
+          <p className="small" style={{ marginBottom: 14 }}>
+            Notice how little of this is prose — the task list gives reviewers a progress checklist,
+            the table replaces a paragraph of "before this bug, X happened," the alert calls out the
+            one thing a reviewer must not miss, and the diff fence shows the fix without linking out
+            to the full file.
+          </p>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            Common GFM Mistakes
+          </h2>
+          <ul className="small" style={{ marginBottom: 14 }}>
+            <li><strong>Missing blank line before a table.</strong> GFM tables must be preceded by a blank line, or GitHub renders the pipes as plain text instead of a table.</li>
+            <li><strong>No space inside task-list brackets.</strong> <code>-[x]</code> does not render as a checkbox — it must be <code>- [x]</code> with a space after the dash.</li>
+            <li><strong>Forgetting the code fence language.</strong> Triple backticks with no language tag (just <code>```</code>) still renders a code block, but without syntax highlighting — always add <code>js</code>, <code>python</code>, <code>diff</code>, etc.</li>
+            <li><strong>Using tabs instead of spaces for nested lists.</strong> GFM's parser is inconsistent with tab-indented nested lists across contexts; use spaces (typically 2 or 4) to avoid list items silently un-nesting.</li>
+            <li><strong>Expecting alerts to work outside GitHub.</strong> <code>{'> [!NOTE]'}</code> syntax is GitHub-specific — on GitLab, npm, or a static site it just renders as a plain blockquote starting with the literal text "[!NOTE]".</li>
+            <li><strong>Single tilde for strikethrough.</strong> GFM strikethrough needs double tildes — <code>~~text~~</code> — a single tilde does nothing.</li>
+          </ul>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             Where GFM Works (and Where It Does Not)
           </h2>
           <ul className="small" style={{ marginBottom: 14 }}>
-            <li><strong>README and docs files</strong> — tables, fences, footnotes, and alerts all render; task lists show as static checkboxes</li>
-            <li><strong>Issues and pull requests</strong> — everything works, and task lists plus mentions become interactive</li>
+            <li><strong>README and docs files</strong> — tables, fences, footnotes, and alerts all render; task lists show as static checkboxes. See our <Link href="/blog/how-to-write-a-great-readme">guide to writing a great README</Link> for how to structure one.</li>
+            <li><strong>Issues and pull requests</strong> — everything works, and task lists plus mentions become interactive. For a deeper walkthrough, see <Link href="/blog/writing-github-issues-and-prs-with-markdown">writing GitHub issues and PRs with Markdown</Link>.</li>
             <li><strong>Discussions, wikis, and gists</strong> — full GFM support</li>
             <li><strong>Commit messages</strong> — issue references link, but most formatting is not rendered in every view</li>
             <li><strong>Outside GitHub</strong> — GitLab and Bitbucket support most GFM; static site generators vary, so test tables and footnotes before publishing</li>
@@ -255,6 +349,18 @@ const total = items.reduce((sum, item) => sum + item.price, 0);
             <strong>Where does GitHub Flavored Markdown work?</strong>
             <p className="small" style={{ marginTop: 6 }}>
               GFM renders in README files, issues, pull requests, discussions, wikis, gists, and comments on GitHub. Some features like task lists and mentions are interactive only in issues and pull requests.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What does GFM stand for?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              GFM stands for GitHub Flavored Markdown — the specific Markdown dialect GitHub uses across the whole platform. It is a superset of CommonMark, meaning every standard Markdown document is also valid GFM.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Is GFM different from regular Markdown?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Yes. Regular Markdown (CommonMark) covers headings, lists, links, and emphasis. GFM adds tables, task lists, strikethrough, autolinked issue references, syntax-highlighted code fences, footnotes, and alert boxes on top of that base.
             </p>
           </div>
 
