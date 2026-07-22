@@ -7,6 +7,9 @@ const TOOL_SECTIONS = [
   {
     id: 'generate',
     heading: 'Generate',
+    icon: '⚡',
+    accent: '#0ea5a6',
+    accentSoft: '#f0fdfa',
     blurb: 'Turn a plain-English description into ready-to-use code, docs, or config.',
     tools: [
       { href: '/regex-generator', name: 'Regex Generator', desc: 'Convert plain English into regular expressions with readable explanations.' },
@@ -22,6 +25,9 @@ const TOOL_SECTIONS = [
   {
     id: 'explain',
     heading: 'Explain',
+    icon: '💡',
+    accent: '#7c3aed',
+    accentSoft: '#f5f3ff',
     blurb: 'Paste something confusing and get a clear, plain-English breakdown.',
     tools: [
       { href: '/regex-explainer', name: 'Regex Explainer', desc: 'Paste any regex and get a plain-English, token-by-token breakdown.' },
@@ -35,6 +41,9 @@ const TOOL_SECTIONS = [
   {
     id: 'convert',
     heading: 'Convert & Format',
+    icon: '🔄',
+    accent: '#2563eb',
+    accentSoft: '#eff6ff',
     blurb: 'Clean up, transform, or translate data between formats — all in your browser.',
     tools: [
       { href: '/json-formatter', name: 'JSON Formatter', desc: 'Pretty-print, validate, and minify JSON directly in your browser.' },
@@ -50,6 +59,9 @@ const TOOL_SECTIONS = [
   {
     id: 'utilities',
     heading: 'Utilities',
+    icon: '🛠️',
+    accent: '#d97706',
+    accentSoft: '#fffbeb',
     blurb: 'Everyday developer utilities — fast, private, and free.',
     tools: [
       { href: '/diff-checker', name: 'Diff Checker', desc: 'Compare two texts line by line and see additions and removals highlighted.' },
@@ -164,7 +176,25 @@ export default function Home() {
         {/* Tool sections, grouped to match the nav */}
         {TOOL_SECTIONS.map((section) => (
           <section className="card" style={{ marginTop: 18 }} key={section.id} id={section.id}>
-            <h2>{section.heading}</h2>
+            <h2 style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <span
+                aria-hidden="true"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: 34,
+                  height: 34,
+                  borderRadius: 10,
+                  background: section.accentSoft,
+                  fontSize: 17,
+                  flexShrink: 0,
+                }}
+              >
+                {section.icon}
+              </span>
+              {section.heading}
+            </h2>
             <p className="small">{section.blurb}</p>
 
             <div
@@ -176,10 +206,22 @@ export default function Home() {
               }}
             >
               {section.tools.map((tool) => (
-                <div className="card small" style={{ marginTop: 0 }} key={tool.href}>
+                <div
+                  className="card small"
+                  style={{
+                    marginTop: 0,
+                    borderTop: `3px solid ${section.accent}`,
+                    boxShadow: '0 2px 10px rgba(2,6,23,0.06)',
+                  }}
+                  key={tool.href}
+                >
                   <h3 style={{ marginBottom: 6, fontSize: '1rem' }}>{tool.name}</h3>
                   <p className="small">{tool.desc}</p>
-                  <Link href={tool.href} className="small" style={{ marginTop: 8, display: 'inline-block', fontWeight: 600 }}>
+                  <Link
+                    href={tool.href}
+                    className="small"
+                    style={{ marginTop: 8, display: 'inline-block', fontWeight: 700, color: section.accent }}
+                  >
                     Open {tool.name} →
                   </Link>
                 </div>
