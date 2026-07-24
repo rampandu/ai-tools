@@ -277,7 +277,7 @@ ORDER BY avg_rating DESC;`}
               <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers in India</Link></li>
               <li><Link href="/blog/sql-case-statement-examples">SQL CASE Statement Examples</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
-              <li><Link href="/blog/top-sql-interview-questions-tcs-infosys-wipro">Top SQL Interview Questions — TCS, Infosys, Wipro</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
             </ul>
           </div>
 

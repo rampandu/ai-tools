@@ -288,7 +288,7 @@ ORDER BY order_date;`}
             <ul className="small">
               <li><Link href="/blog/sql-cte-common-table-expressions-guide">SQL CTE (Common Table Expressions) Guide</Link></li>
               <li><Link href="/blog/sql-query-for-hierarchical-data-recursive-cte">SQL Query for Hierarchical Data with Recursive CTE</Link></li>
-              <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
             </ul>

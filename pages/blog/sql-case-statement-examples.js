@@ -287,7 +287,7 @@ ORDER BY
               <li><Link href="/blog/sql-null-handling-best-practices">SQL NULL Handling Best Practices</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
               <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers in India</Link></li>
-              <li><Link href="/blog/top-sql-interview-questions-tcs-infosys-wipro">Top SQL Interview Questions — TCS, Infosys, Wipro</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
             </ul>
           </div>
 

@@ -293,11 +293,10 @@ WHERE s.student_id = 101;`}
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
-              <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/sql-vs-nosql-when-to-choose-which">SQL vs NoSQL — When to Choose Which</Link></li>
               <li><Link href="/blog/sql-null-handling-best-practices">SQL NULL Handling Best Practices</Link></li>
               <li><Link href="/blog/sql-indexing-strategies-for-faster-queries">SQL Indexing Strategies for Faster Queries</Link></li>
-              <li><Link href="/blog/top-sql-interview-questions-tcs-infosys-wipro">Top SQL Interview Questions — TCS, Infosys, Wipro</Link></li>
             </ul>
           </div>
 

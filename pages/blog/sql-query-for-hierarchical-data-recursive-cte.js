@@ -331,7 +331,7 @@ SELECT * FROM org_chart;`}
               <li><Link href="/blog/sql-cte-common-table-expressions-guide">SQL CTE (Common Table Expressions) Guide</Link></li>
               <li><Link href="/blog/sql-window-functions-explained-with-examples">SQL Window Functions Explained with Examples</Link></li>
               <li><Link href="/blog/sql-subqueries-vs-joins-explained">SQL Subqueries vs Joins Explained</Link></li>
-              <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL Guide</Link></li>
             </ul>
           </div>

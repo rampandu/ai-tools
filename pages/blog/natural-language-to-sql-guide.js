@@ -271,7 +271,7 @@ WHERE country = 'India'
             <ul className="small">
               <li><Link href="/blog/free-mysql-query-generator-online">Free MySQL Query Generator Online</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
-              <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/ai-sql-practical">Practical AI SQL Use Cases for Developers</Link></li>
               <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>
             </ul>

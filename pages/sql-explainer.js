@@ -335,7 +335,7 @@ export default function SqlExplainer() {
         <h4>Related tools and guides</h4>
         <ul className="small">
           <li><Link href="/sql-generator">Need to write a query instead? Try the SQL Generator →</Link></li>
-          <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+          <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
           <li><Link href="/blog/sql-group-by-having-clause-explained">SQL GROUP BY and HAVING Clause Explained</Link></li>
           <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL: A Complete Guide</Link></li>
         </ul>
@@ -345,7 +345,7 @@ export default function SqlExplainer() {
         <h3>Guides and tutorials: SQL</h3>
         <ul className="small">
           <li><Link href="/blog/sql-explainer-guide-how-it-works">How to Read a SQL Query You Did Not Write — A Step-by-Step Guide</Link></li>
-          <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+          <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
           <li><Link href="/blog/sql-group-by-having-clause-explained">SQL GROUP BY and HAVING Clause Explained with Examples</Link></li>
           <li><Link href="/blog/sql-window-functions-explained-with-examples">SQL Window Functions Explained with Examples</Link></li>
         </ul>

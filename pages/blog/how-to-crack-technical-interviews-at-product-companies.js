@@ -211,7 +211,7 @@ export default function HowToCrackTechnicalInterviewsAtProductCompanies() {
               <li><Link href="/blog/how-to-use-chatgpt-for-coding-interview-prep">How to Use ChatGPT for Coding Interview Prep</Link></li>
               <li><Link href="/blog/career-roadmap-for-backend-developers-india">Career Roadmap for Backend Developers in India</Link></li>
               <li><Link href="/blog/ai-resume-builder-tips-for-freshers-india">AI Resume Builder Tips for Freshers in India</Link></li>
-              <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech</Link></li>
             </ul>
           </div>

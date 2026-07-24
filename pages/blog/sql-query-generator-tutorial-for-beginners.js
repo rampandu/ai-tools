@@ -227,8 +227,7 @@ ORDER BY avg_salary DESC;`}
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
               <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL — How AI SQL Generators Work</Link></li>
-              <li><Link href="/blog/sql-interview-questions-for-freshers-with-answers">SQL Interview Questions for Freshers with Answers</Link></li>
-              <li><Link href="/blog/sql-join-interview-questions-with-examples">SQL JOIN Interview Questions with Examples</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/free-mysql-query-generator-online">Free MySQL Query Generator Online</Link></li>
               <li><Link href="/blog/sql-query-for-duplicate-records-detection">SQL Query to Find and Remove Duplicate Records</Link></li>
             </ul>
