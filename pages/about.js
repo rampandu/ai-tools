@@ -11,7 +11,7 @@ export default function About() {
     url: 'https://dev-brains-ai.com/',
     logo: 'https://dev-brains-ai.com/logo.png',
     description:
-      'Dev Brains AI creates free AI-powered tools for developers, including regex and SQL generators.',
+      'Dev Brains AI builds 28 free browser-based developer tools — regex, SQL, JSON, cron, JWT, hashing, and encoding utilities — plus 150+ in-depth guides.',
   };
 
   const aboutPageJsonLd = {
@@ -24,7 +24,7 @@ export default function About() {
     url: 'https://dev-brains-ai.com/about',
     name: 'About Dev Brains AI',
     description:
-      'Learn about Dev Brains AI, a project focused on creating free AI developer tools such as regex and SQL generators.',
+      'Dev Brains AI is a free toolkit of 28 browser-based developer utilities and 150+ guides covering regex, SQL, JSON, cron, JWT, and encoding.',
     publisher: {
       '@id': 'https://dev-brains-ai.com/#organization',
     },
@@ -123,37 +123,51 @@ export default function About() {
           </h1>
 
           <p className="small" style={{ marginBottom: 16 }}>
-            <strong>Dev Brains AI</strong> is a free online toolkit built to help developers work
-            faster using artificial intelligence. Our goal is to make complex technical tasks — like
-            generating regular expressions or writing SQL queries — simple, accurate, and instant.
+            <strong>Dev Brains AI</strong> is a free toolkit of 28 browser-based utilities for
+            developers — regex, SQL, JSON, cron, JWT, hashing, encoding, and more — plus a library of
+            150+ in-depth guides covering how each format and pattern actually works, not just a
+            generator you paste output from without understanding it.
           </p>
 
           <p className="small" style={{ marginBottom: 16 }}>
-            We use open and intelligent AI models to bring practical, everyday tools for developers,
-            students, and data analysts. Each tool on this site is designed to save you time and let
-            you focus on solving real problems instead of memorizing syntax.
+            Every tool runs either entirely in your browser or through a stateless API call — nothing
+            you paste in is stored. There's no account, no signup, and no usage cap pushing you toward
+            a paid tier. See the <Link href="/privacy">Privacy Policy</Link> for the specifics of what
+            each tool does and doesn't send anywhere.
           </p>
 
           <p className="small" style={{ marginBottom: 16 }}>
-            Current tools include:
+            The toolkit is organized into four groups — browse them all on the{' '}
+            <Link href="/">homepage</Link>:
           </p>
 
           <ul className="small" style={{ paddingLeft: 20, marginBottom: 16 }}>
             <li>
-              <Link href="/regex-generator">AI Regex Generator</Link> – convert text into regex
-              patterns
+              <strong>Generate</strong> — <Link href="/regex-generator">Regex</Link>,{' '}
+              <Link href="/sql-generator">SQL</Link>, <Link href="/cron-generator">cron</Link>,{' '}
+              README, API docs, unit tests, commit messages, and docstrings from a plain-English
+              description.
             </li>
             <li>
-              <Link href="/sql-generator">AI SQL Generator</Link> – convert English into SQL queries
+              <strong>Explain</strong> — paste a regex, SQL query, code snippet, stack trace, or error
+              message and get a plain-English breakdown, including a <Link href="/jwt-decoder">JWT decoder</Link>.
             </li>
             <li>
-              <Link href="/blog">Developer Blog</Link> – tutorials and practical AI guides
+              <strong>Convert &amp; Format</strong> — JSON, Base64, URL encoding, cURL-to-code, SQL
+              formatting, YAML↔JSON, and live Markdown preview.
+            </li>
+            <li>
+              <strong>Utilities</strong> — diff checker, timestamp converter, UUID generator, password
+              generator, hash generator, and color converter.
             </li>
           </ul>
 
           <p className="small">
-            Dev Brains AI is continuously evolving. We plan to add more tools, tutorials, and
-            learning resources that make coding easier, faster, and more enjoyable for everyone.
+            The <Link href="/blog">blog</Link> is where the "why," not just the "how," lives —
+            explanations of the formats and syntax behind the tools, common mistakes, and worked
+            examples for real scenarios. Dev Brains AI adds new tools and guides on an ongoing basis;
+            if a tool you need doesn't exist yet, that's useful to know — reach out via the{' '}
+            <Link href="/contact">contact page</Link>.
           </p>
         </section>
       </main>
