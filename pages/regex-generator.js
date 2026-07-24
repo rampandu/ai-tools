@@ -359,10 +359,8 @@ export default function RegexGenerator() {
           <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>
           <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">Top 50 Useful Regex Patterns for Developers</Link></li>
           <li><Link href="/blog/regex-for-email-validation-javascript-example">Regex for Email Validation in JavaScript</Link></li>
-          <li><Link href="/blog/regex-for-indian-phone-number-validation">Regex for Indian Phone Number Validation</Link></li>
           <li><Link href="/blog/regex-for-password-validation-rules">Regex for Password Validation Rules</Link></li>
-          <li><Link href="/blog/regex-for-gst-number-validation">Regex for GST Number Validation</Link></li>
-          <li><Link href="/blog/regex-for-pan-card-validation">Regex for PAN Card Validation</Link></li>
+          <li><Link href="/blog/regex-for-indian-id-document-validation">Regex for Indian ID & Document Validation (Aadhaar, PAN, GST & More)</Link></li>
         </ul>
       </div>
     </div>

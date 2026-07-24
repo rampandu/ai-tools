@@ -236,10 +236,7 @@ isValidVehicleNumber('23 BH 5678 A');    // true`}
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
-              <li><Link href="/blog/regex-for-pan-card-validation">Regex for PAN Card Validation</Link></li>
-              <li><Link href="/blog/regex-for-indian-phone-number-validation">Regex for Indian Phone Number Validation</Link></li>
-              <li><Link href="/blog/regex-for-indian-passport-number-validation">Regex for Indian Passport Number Validation</Link></li>
-              <li><Link href="/blog/regex-for-driving-license-number-validation-india">Regex for Driving License Number Validation in India</Link></li>
+              <li><Link href="/blog/regex-for-indian-id-document-validation">Regex for Indian ID & Document Validation (Aadhaar, PAN, GST &amp; More)</Link></li>
               <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">Top 50 Useful Regex Patterns for Developers</Link></li>
             </ul>
           </div>
