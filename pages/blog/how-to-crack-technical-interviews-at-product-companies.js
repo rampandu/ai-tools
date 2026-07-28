@@ -212,7 +212,7 @@ export default function HowToCrackTechnicalInterviewsAtProductCompanies() {
               <li><Link href="/blog/career-roadmap-for-backend-developers-india">Career Roadmap for Backend Developers in India</Link></li>
               <li><Link href="/blog/ai-resume-builder-tips-for-freshers-india">AI Resume Builder Tips for Freshers in India</Link></li>
               <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
-              <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech</Link></li>
+              <li><Link href="/blog/ai-projects-for-engineering-students-india">AI Project Ideas for Engineering Students in India</Link></li>
             </ul>
           </div>
 

@@ -196,7 +196,6 @@ export default function BestFreeDeveloperToolsForIndianProgrammers() {
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
               <li><Link href="/blog/ai-projects-for-engineering-students-india">AI Projects for Engineering Students in India</Link></li>
-              <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech Students</Link></li>
               <li><Link href="/blog/machine-learning-projects-for-beginners-india">Machine Learning Projects for Beginners in India</Link></li>
               <li><Link href="/blog/python-ai-projects-for-engineering-students-india">Python AI Projects for Engineering Students in India</Link></li>
               <li><Link href="/blog/fix-nodejs-errors-beginners-india">Fix Common Node.js Errors — Guide for Beginners in India</Link></li>

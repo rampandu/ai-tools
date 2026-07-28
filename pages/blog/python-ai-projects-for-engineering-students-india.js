@@ -202,7 +202,6 @@ def predict():
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
               <li><Link href="/blog/ai-projects-for-engineering-students-india">AI Projects for Engineering Students in India</Link></li>
-              <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech Students</Link></li>
               <li><Link href="/blog/machine-learning-projects-for-beginners-india">Machine Learning Projects for Beginners in India</Link></li>
               <li><Link href="/blog/ai-anomaly-detection-for-server-logs-python-example">AI Anomaly Detection for Server Logs — Python Example</Link></li>
               <li><Link href="/blog/ai-microservices-tutorial-for-backend-developers">AI Microservices Tutorial for Backend Developers</Link></li>

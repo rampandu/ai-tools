@@ -226,7 +226,7 @@ def extract_resume_fields(text):
               <li><Link href="/blog/machine-learning-projects-for-beginners-india">Machine Learning Projects for Beginners in India</Link></li>
               <li><Link href="/blog/building-your-first-ai-chatbot-python-tutorial">Building Your First AI Chatbot — Python Tutorial</Link></li>
               <li><Link href="/blog/computer-vision-projects-for-engineering-students">Computer Vision Projects for Engineering Students</Link></li>
-              <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech</Link></li>
+              <li><Link href="/blog/ai-projects-for-engineering-students-india">AI Project Ideas for Engineering Students in India</Link></li>
               <li><Link href="/blog/python-ai-projects-for-engineering-students-india">Python AI Projects for Engineering Students India</Link></li>
             </ul>
           </div>

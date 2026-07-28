@@ -279,7 +279,6 @@ print(type(result["created_at"]))  # <class 'datetime.datetime'>`}
               <li><Link href="/blog/how-to-validate-json-in-python-and-javascript">How to Validate JSON in Python and JavaScript</Link></li>
               <li><Link href="/blog/json-to-csv-conversion-guide">JSON to CSV Conversion Guide</Link></li>
               <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
-              <li><Link href="/blog/fix-invalid-json-error-in-nodejs">Fix Invalid JSON Error in Node.js</Link></li>
               <li><Link href="/blog/working-with-large-json-files-nodejs">Working with Large JSON Files in Node.js</Link></li>
             </ul>
           </div>

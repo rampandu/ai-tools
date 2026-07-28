@@ -220,7 +220,6 @@ export default function JsonFormatterForIndianGstApis() {
               <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
               <li><Link href="/blog/rest-api-json-response-best-practices">REST API JSON Response Best Practices</Link></li>
               <li><Link href="/blog/json-vs-xml-comparison-for-apis">JSON vs XML for APIs — Which Should You Use?</Link></li>
-              <li><Link href="/blog/fix-invalid-json-error-in-nodejs">Fix Invalid JSON Errors in Node.js</Link></li>
               <li><Link href="/blog/json-schema-generator-tutorial-with-examples">JSON Schema Generator Tutorial with Examples</Link></li>
             </ul>
           </div>

@@ -264,7 +264,7 @@ rl.on('close', () => {
             <ul className="small">
               <li><Link href="/blog/nested-json-flattening-techniques">Nested JSON Flattening Techniques</Link></li>
               <li><Link href="/blog/json-to-csv-conversion-guide">JSON to CSV Conversion Guide</Link></li>
-              <li><Link href="/blog/fix-invalid-json-error-in-nodejs">Fix Invalid JSON Error in Node.js</Link></li>
+              <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
               <li><Link href="/blog/json-minify-vs-pretty-print-explained">JSON Minify vs Pretty Print Explained</Link></li>
               <li><Link href="/blog/how-to-validate-json-in-python-and-javascript">How to Validate JSON in Python and JavaScript</Link></li>
             </ul>

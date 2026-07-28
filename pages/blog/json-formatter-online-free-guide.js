@@ -220,10 +220,9 @@ console.log(formatted);`}
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
-              <li><Link href="/blog/fix-invalid-json-error-in-nodejs">Fix Invalid JSON Error in Node.js</Link></li>
+              <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
               <li><Link href="/blog/json-formatter-for-indian-gst-apis">JSON Formatter for Indian GST APIs</Link></li>
               <li><Link href="/blog/json-minify-vs-pretty-print-explained">JSON Minify vs Pretty Print Explained</Link></li>
-              <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
               <li><Link href="/blog/how-to-validate-json-in-python-and-javascript">How to Validate JSON in Python and JavaScript</Link></li>
             </ul>
           </div>

@@ -220,7 +220,6 @@ while True:
             <ul className="small">
               <li><Link href="/blog/machine-learning-projects-for-beginners-india">Machine Learning Projects for Beginners in India</Link></li>
               <li><Link href="/blog/nlp-projects-for-final-year-students">NLP Projects for Final Year Students</Link></li>
-              <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech</Link></li>
               <li><Link href="/blog/python-ai-projects-for-engineering-students-india">Python AI Projects for Engineering Students India</Link></li>
               <li><Link href="/blog/ai-projects-for-engineering-students-india">AI Projects for Engineering Students India</Link></li>
             </ul>

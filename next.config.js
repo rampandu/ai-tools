@@ -25,6 +25,17 @@ const nextConfig = {
       { source: '/blog/sql-join-interview-questions-with-examples', destination: '/blog/sql-interview-questions-complete-guide', permanent: true },
       { source: '/blog/sql-queries-asked-in-accenture-capgemini-interviews', destination: '/blog/sql-interview-questions-complete-guide', permanent: true },
       { source: '/blog/top-sql-interview-questions-tcs-infosys-wipro', destination: '/blog/sql-interview-questions-complete-guide', permanent: true },
+
+      // Consolidated into /blog/json-parsing-errors-common-causes-and-fixes (2026-07-28) —
+      // ~80% content overlap (trailing commas, single quotes, unquoted keys, undefined values
+      // covered in both). Google's own indexing system flagged this one as a Soft 404,
+      // independently confirming the duplicate-content diagnosis.
+      { source: '/blog/fix-invalid-json-error-in-nodejs', destination: '/blog/json-parsing-errors-common-causes-and-fixes', permanent: true },
+
+      // Consolidated into /blog/ai-projects-for-engineering-students-india (2026-07-28) —
+      // ~95% duplicate: same 20 project ideas with only cosmetic rewording, both from an
+      // earlier low-quality batch (raw <b> tags, plain-text URLs, no Link components).
+      { source: '/blog/best-ai-projects-for-final-year-btech', destination: '/blog/ai-projects-for-engineering-students-india', permanent: true },
     ];
   }
 };

@@ -278,7 +278,6 @@ app.post("/signup", validateBody(userSchema), (req, res) => {
               <li><Link href="/blog/how-to-validate-json-in-python-and-javascript">How to Validate JSON in Python and JavaScript</Link></li>
               <li><Link href="/blog/rest-api-json-response-best-practices">REST API JSON Response Best Practices</Link></li>
               <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
-              <li><Link href="/blog/fix-invalid-json-error-in-nodejs">Fix Invalid JSON Error in Node.js</Link></li>
             </ul>
           </div>
 

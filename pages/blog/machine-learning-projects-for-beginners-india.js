@@ -234,7 +234,6 @@ print(classification_report(y_test, model.predict(X_test_vec)))`}
               <li><Link href="/blog/python-ai-projects-for-engineering-students-india">Python AI Projects for Engineering Students India</Link></li>
               <li><Link href="/blog/nlp-projects-for-final-year-students">NLP Projects for Final Year Students</Link></li>
               <li><Link href="/blog/computer-vision-projects-for-engineering-students">Computer Vision Projects for Engineering Students</Link></li>
-              <li><Link href="/blog/best-ai-projects-for-final-year-btech">Best AI Projects for Final Year B.Tech</Link></li>
               <li><Link href="/blog/ai-projects-for-engineering-students-india">AI Projects for Engineering Students India</Link></li>
             </ul>
           </div>
