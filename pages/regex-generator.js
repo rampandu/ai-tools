@@ -101,7 +101,7 @@ export default function RegexGenerator() {
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
-        <title>AI Regex Generator — Free Online Regex Builder &amp; Regular Expression Tester | Dev Brains AI</title>
+        <title>AI Regex Generator — Free Online Regex Builder &amp; Tester | Dev Brains AI</title>
         <meta
           name="description"
           content="Free AI regex generator and online regex builder. Describe a pattern in plain English, get a working regular expression with a clear explanation, then test it live — no signup, no limits."
@@ -110,7 +110,7 @@ export default function RegexGenerator() {
           name="keywords"
           content="regex generator, ai regex, regex builder, online regex builder, online regex expression builder, regular expression generator, regex ai generator, automatic regex generator, regular expression builder, regex pattern generator, regex tester"
         />
-        <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder &amp; Regular Expression Tester" />
+        <meta property="og:title" content="AI Regex Generator — Free Online Regex Builder &amp; Tester" />
         <meta
           property="og:description"
           content="Describe a pattern in plain English and get a working regular expression instantly — free AI regex generator with a built-in live tester. Works for JavaScript, Python, and all major languages."

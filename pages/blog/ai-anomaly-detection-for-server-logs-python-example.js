@@ -16,6 +16,7 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/ai-anomaly-detection-for-server-logs-python-example" />
         <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://dev-brains-ai.com/blog/ai-anomaly-detection-for-server-logs-python-example" />
 
         <script
           type="application/ld+json"

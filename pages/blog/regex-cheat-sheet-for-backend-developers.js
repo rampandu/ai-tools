@@ -15,6 +15,7 @@ export default function Blog() {
         <meta property="og:description" content="A regex cheat sheet for backend developers: symbols, character classes, and patterns for email, phone, PAN, GST, and PIN validation in Node.js and Python." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-cheat-sheet-for-backend-developers" />
         <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://dev-brains-ai.com/blog/regex-cheat-sheet-for-backend-developers" />
 
         <script
           type="application/ld+json"

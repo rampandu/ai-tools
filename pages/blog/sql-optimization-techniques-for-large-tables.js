@@ -15,6 +15,7 @@ export default function Blog() {
         <meta property="og:description" content="Speed up slow queries on multi-million row tables with indexing, avoiding SELECT *, smarter WHERE clauses, JOIN tuning, partitioning, and reading EXPLAIN output." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-optimization-techniques-for-large-tables" />
         <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-optimization-techniques-for-large-tables" />
 
         <script
           type="application/ld+json"

@@ -12,7 +12,7 @@ export default function MarkdownForTechnicalDocumentationTips() {
       {
         '@type': 'ListItem',
         position: 3,
-        name: 'Markdown for Technical Documentation — 7 Tips That Keep Docs Readable',
+        name: 'Markdown for Technical Docs — 7 Tips for Readable Docs',
         item: 'https://dev-brains-ai.com/blog/markdown-for-technical-documentation-tips',
       },
     ],
@@ -21,7 +21,7 @@ export default function MarkdownForTechnicalDocumentationTips() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Markdown for Technical Documentation — 7 Tips That Keep Docs Readable',
+    headline: 'Markdown for Technical Docs — 7 Tips for Readable Docs',
     description:
       'Practical Markdown tips for technical documentation: heading hierarchy, code block language tags, relative links, alt text, tables vs lists, diff-friendly lines, and a docs-as-code workflow.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
@@ -65,7 +65,7 @@ export default function MarkdownForTechnicalDocumentationTips() {
   return (
     <>
       <Head>
-        <title>Markdown for Technical Documentation — 7 Tips That Keep Docs Readable | Dev Brains AI</title>
+        <title>Markdown for Technical Docs — 7 Tips for Readable Docs | Dev Brains AI</title>
         <meta
           name="description"
           content="Practical Markdown tips for technical docs: heading hierarchy discipline, code block language tags, relative links, alt text, tables vs lists, and a docs-as-code CI workflow."
@@ -74,7 +74,7 @@ export default function MarkdownForTechnicalDocumentationTips() {
           name="keywords"
           content="markdown technical documentation, docs as code, markdown best practices, markdown heading hierarchy, markdown relative links, documentation workflow, markdown docs tips"
         />
-        <meta property="og:title" content="Markdown for Technical Documentation — 7 Tips That Keep Docs Readable" />
+        <meta property="og:title" content="Markdown for Technical Docs — 7 Tips for Readable Docs" />
         <meta property="og:description" content="Practical Markdown tips for technical docs: heading hierarchy discipline, code block language tags, relative links, alt text, tables vs lists, and a docs-as-code CI workflow." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/markdown-for-technical-documentation-tips" />
         <meta property="og:type" content="article" />
@@ -98,7 +98,7 @@ export default function MarkdownForTechnicalDocumentationTips() {
           </nav>
 
           <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: 12 }}>
-            Markdown for Technical Documentation — 7 Tips That Keep Docs Readable
+            Markdown for Technical Docs — 7 Tips for Readable Docs
           </h1>
 
           <p className="small" style={{ marginBottom: 16 }}>

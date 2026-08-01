@@ -122,6 +122,8 @@ export default function Home() {
           content="Free developer tools: generate regex, SQL, and READMEs; explain errors, SQL, and code; format JSON and Base64. No signup, no cost."
         />
         <meta property="og:image" content={`${siteUrl}/logo.png`} />
+        <meta property="og:url" content={siteUrl} />
+        <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />

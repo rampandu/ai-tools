@@ -16,6 +16,7 @@ export default function Blog() {
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/50-sql-queries-for-freshers-in-india" />
         <meta property="og:type" content="article" />
+        <link rel="canonical" href="https://dev-brains-ai.com/blog/50-sql-queries-for-freshers-in-india" />
 
         <script
           type="application/ld+json"

@@ -33,6 +33,13 @@ export default function BlogIndex({ posts }) {
           content="Tutorials, cheat sheets, and practical guides on regular expressions, SQL queries, cron expressions, and AI tools for developers. Free, no signup."
         />
         <link rel="canonical" href="https://dev-brains-ai.com/blog" />
+        <meta property="og:title" content="Dev Brains AI Blog — Regex, SQL & AI Dev Tools Tutorials" />
+        <meta
+          property="og:description"
+          content="Tutorials, cheat sheets, and practical guides on regular expressions, SQL queries, cron expressions, and AI tools for developers. Free, no signup."
+        />
+        <meta property="og:url" content="https://dev-brains-ai.com/blog" />
+        <meta property="og:type" content="website" />
 
         <script
           type="application/ld+json"
@@ -99,7 +106,7 @@ const POST_META = {
   "regex-top-patterns": { title: "10 Copy-Paste Regex Patterns Every Developer Needs", description: "10 ready-to-use regex patterns for emails, URLs, phone numbers, hex colors, and more — each with a working example you can paste straight into your code." },
   "regex-cheat-sheet-for-backend-developers": { title: "Regex Cheat Sheet for Backend Developers (Node & Python)", description: "A regex cheat sheet for backend developers: symbols, character classes, and patterns for email, phone, PAN, GST, and PIN validation in Node.js and Python." },
   "top-50-useful-regex-patterns-for-developers": { title: "50 Ready-to-Use Regex Patterns for Developers", description: "50 copy-paste regex patterns for email, URL, phone, IP, password, and date validation — organized by category with real examples, not abstract syntax." },
-  "regex-for-email-validation-javascript-example": { title: "Regex for Email Validation in JavaScript — Practical Patterns and Edge Cases", description: "How to validate email addresses using regex in JavaScript, with a practical pattern, edge case handling, and why full RFC 5322 compliance is not worth chasing." },
+  "regex-for-email-validation-javascript-example": { title: "Regex for Email Validation in JS — Patterns & Edge Cases", description: "How to validate email addresses using regex in JavaScript, with a practical pattern, edge case handling, and why full RFC 5322 compliance is not worth chasing." },
   "regex-for-password-validation-rules": { title: "Password Validation Regex: 4 Rules, One Line (JS & Python)", description: "Enforce password strength — length, case, digits, symbols — with a single regex lookahead pattern. Includes ready-to-use JavaScript and Python code." },
   "regex-for-indian-id-document-validation": { title: "Regex for Indian ID & Document Validation — Aadhaar, PAN, GST", description: "Working regex patterns for every major Indian ID: Aadhaar, PAN, GSTIN, IFSC, passport, phone, PIN code, driving license — plus which ones regex can't fully validate." },
   "cron-vs-setinterval-nodejs": { title: "Cron vs setInterval in Node.js: Which One?", description: "Cron vs setInterval in Node.js compared: drift, timezone support, restarts, and overlapping runs. See working node-cron, cron package, and timer examples." },
@@ -268,7 +275,7 @@ const POST_META = {
   "when-to-use-yaml-json-toml-config": { title: "YAML vs JSON vs TOML: Which Config Format to Use?", description: "When to use YAML (Kubernetes, CI), JSON (APIs, lock files), TOML (Cargo, pyproject.toml), or plain .env files — decision criteria and migration notes." },
   "markdown-syntax-cheat-sheet": { title: "Markdown Syntax Cheat Sheet — Every Element with Examples", description: "Complete markdown cheat sheet: headings, bold, italic, lists, links, images, inline and fenced code, blockquotes, horizontal rules, and escaping — with examples." },
   "github-flavored-markdown-guide": { title: "GFM Cheat Sheet: GitHub Flavored Markdown Tables & Alerts", description: "The GFM (GitHub Flavored Markdown) cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark." },
-  "markdown-for-technical-documentation-tips": { title: "Markdown for Technical Documentation — 7 Tips That Keep Docs Readable", description: "Practical Markdown tips for technical docs: heading hierarchy discipline, code block language tags, relative links, alt text, tables vs lists, and a docs-as-code CI workflow." },
+  "markdown-for-technical-documentation-tips": { title: "Markdown for Technical Docs — 7 Tips for Readable Docs", description: "Practical Markdown tips for technical docs: heading hierarchy discipline, code block language tags, relative links, alt text, tables vs lists, and a docs-as-code CI workflow." },
   "markdown-vs-html-when-to-use-which": { title: "Markdown vs HTML: The 80/20 Rule for When to Use Each", description: "Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. Learn when each wins, how inline HTML in Markdown works, and a simple rule of thumb." },
   "writing-github-issues-and-prs-with-markdown": { title: "Write GitHub Issues & PRs That Get Fixed Faster", description: "Write GitHub issues and PRs that get fixed faster: minimal repros in code blocks, task-list checklists, collapsible logs, and environment tables." },
   "what-is-a-uuid-guid-explained": { title: "What Is a UUID? GUID vs UUID Explained (128-Bit IDs)", description: "A plain-English guide to UUIDs and GUIDs: the 128-bit structure, 8-4-4-4-12 hex format, version/variant bits, and why collisions are practically impossible." },

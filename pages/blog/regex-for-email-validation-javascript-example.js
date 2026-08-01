@@ -20,7 +20,7 @@ export default function RegexForEmailValidationJavascriptExample() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'Regex for Email Validation in JavaScript — Practical Patterns and Edge Cases',
+    headline: 'Regex for Email Validation in JS — Patterns & Edge Cases',
     description:
       'How to validate email addresses using regex in JavaScript, with a practical pattern, edge case handling, and why full RFC 5322 compliance is not worth chasing.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
@@ -64,7 +64,7 @@ export default function RegexForEmailValidationJavascriptExample() {
   return (
     <>
       <Head>
-        <title>Regex for Email Validation in JavaScript — Practical Patterns and Edge Cases | Dev Brains AI</title>
+        <title>Regex for Email Validation in JS — Patterns &amp; Edge Cases | Dev Brains AI</title>
         <meta
           name="description"
           content="How to validate email addresses using regex in JavaScript, with a practical pattern, edge case handling, and why full RFC 5322 compliance is not worth chasing."
@@ -73,7 +73,7 @@ export default function RegexForEmailValidationJavascriptExample() {
           name="keywords"
           content="regex for email validation javascript, email validation regex, javascript email regex example, validate email javascript, email regex pattern"
         />
-        <meta property="og:title" content="Regex for Email Validation in JavaScript — Practical Patterns and Edge Cases" />
+        <meta property="og:title" content="Regex for Email Validation in JS — Patterns &amp; Edge Cases" />
         <meta property="og:description" content="How to validate email addresses using regex in JavaScript, with a practical pattern, edge case handling, and why full RFC 5322 compliance is not worth chasing." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/regex-for-email-validation-javascript-example" />
         <meta property="og:type" content="article" />
@@ -97,7 +97,7 @@ export default function RegexForEmailValidationJavascriptExample() {
           </nav>
 
           <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: 12 }}>
-            Regex for Email Validation in JavaScript — Practical Patterns and Edge Cases
+            Regex for Email Validation in JS — Patterns &amp; Edge Cases
           </h1>
 
           <p className="small" style={{ marginBottom: 16 }}>
