@@ -21,6 +21,7 @@ const TOOL_GROUPS = [
     items: [
       { href: '/regex-explainer', label: 'Regex Explainer' },
       { href: '/sql-explainer', label: 'SQL Query Explainer' },
+      { href: '/sql-query-visualizer', label: 'SQL Query Visualizer' },
       { href: '/code-explainer', label: 'Code Explainer' },
       { href: '/stack-trace-analyzer', label: 'Stack Trace Analyzer' },
       { href: '/ai-error-explainer', label: 'Error Explainer' },

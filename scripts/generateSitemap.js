@@ -16,6 +16,7 @@ const routes = [
   "url-encoder",
   "regex-explainer",
   "sql-explainer",
+  "sql-query-visualizer",
   "commit-message-generator",
   "docstring-generator",
   "stack-trace-analyzer",

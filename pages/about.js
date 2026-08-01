@@ -11,7 +11,7 @@ export default function About() {
     url: 'https://dev-brains-ai.com/',
     logo: 'https://dev-brains-ai.com/logo.png',
     description:
-      'Dev Brains AI builds 28 free browser-based developer tools — regex, SQL, JSON, cron, JWT, hashing, and encoding utilities — plus 150+ in-depth guides.',
+      'Dev Brains AI builds 29 free browser-based developer tools — regex, SQL, JSON, cron, JWT, hashing, and encoding utilities — plus 150+ in-depth guides.',
   };
 
   const aboutPageJsonLd = {
