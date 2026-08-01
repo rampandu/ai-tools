@@ -45,6 +45,7 @@ const TOOL_GROUPS = [
     heading: 'Utilities',
     items: [
       { href: '/diff-checker', label: 'Diff Checker' },
+      { href: '/json-diff-viewer', label: 'JSON Diff Viewer' },
       { href: '/timestamp-converter', label: 'Timestamp Converter' },
       { href: '/uuid-generator', label: 'UUID Generator' },
       { href: '/password-generator', label: 'Password Generator' },

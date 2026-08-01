@@ -357,13 +357,14 @@ export default function DiffCheckerPage() {
           </li>
           <li>
             <strong>API responses</strong> — paste two JSON or XML responses to spot the field that
-            appeared, disappeared, or changed. (For structure-aware JSON comparison, see{' '}
+            appeared, disappeared, or changed. For JSON specifically, structure-aware comparison
+            catches more than a line diff can — reordered keys or different indentation won't show
+            as false differences. Use the <Link href="/json-diff-viewer">JSON Diff Viewer</Link>{' '}
+            instead, or read{' '}
             <Link href="/blog/json-diff-comparing-two-json-objects">
               comparing two JSON objects
             </Link>{' '}
-            — pretty-printing both sides with our{' '}
-            <Link href="/json-formatter">JSON Formatter</Link> first makes line diffs much more
-            useful.)
+            to see how it works under the hood.
           </li>
           <li>
             <strong>Documents and prose</strong> — compare two drafts of a README, policy, or
@@ -412,9 +413,9 @@ export default function DiffCheckerPage() {
       <div className="card small">
         <h4>More developer tools from Dev Brains AI</h4>
         <p className="small">
-          Comparing JSON? Pretty-print both sides first with the{' '}
-          <Link href="/json-formatter">JSON Formatter</Link> so the diff lines up. To go deeper,
-          read{' '}
+          Comparing JSON? Use the structure-aware{' '}
+          <Link href="/json-diff-viewer">JSON Diff Viewer</Link> instead, which ignores key order
+          and formatting. To go deeper, read{' '}
           <Link href="/blog/how-diff-algorithms-work-lcs-explained">
             How Diff Algorithms Work: LCS Explained
           </Link>

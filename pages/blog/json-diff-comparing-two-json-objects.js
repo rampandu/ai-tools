@@ -28,7 +28,7 @@ export default function JsonDiffComparingTwoJsonObjects() {
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-diff-comparing-two-json-objects',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-22',
+    dateModified: '2026-08-01',
   };
 
   const faqJsonLd = {
@@ -53,10 +53,10 @@ export default function JsonDiffComparingTwoJsonObjects() {
       },
       {
         '@type': 'Question',
-        name: 'Is there a free tool to format JSON before diffing it?',
+        name: 'Is there a free tool that diffs two JSON objects automatically?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Dev Brains AI offers a free JSON Formatter at dev-brains-ai.com/json-formatter that pretty-prints two JSON payloads with consistent indentation, making manual or side-by-side diffing far easier.',
+          text: 'Yes. Dev Brains AI offers a free JSON Diff Viewer at dev-brains-ai.com/json-diff-viewer that runs exactly this kind of structural comparison for you — paste two JSON payloads and it lists every added, removed, and changed key by path, ignoring key order and formatting.',
         },
       },
     ],
@@ -232,20 +232,24 @@ console.log(diffJson(before, after));
             </p>
           </div>
           <div style={{ marginBottom: 10 }}>
-            <strong>Is there a free tool to format JSON before diffing it?</strong>
+            <strong>Is there a free tool that diffs two JSON objects automatically?</strong>
             <p className="small" style={{ marginTop: 6 }}>
-              Yes. <Link href="/json-formatter">Dev Brains AI JSON Formatter</Link> pretty-prints two JSON payloads with consistent indentation, making manual or side-by-side diffing far easier.
+              Yes. The <Link href="/json-diff-viewer">Dev Brains AI JSON Diff Viewer</Link> runs
+              exactly this kind of structural comparison for you — paste two JSON payloads and it
+              lists every added, removed, and changed key by path, ignoring key order and
+              formatting.
             </p>
           </div>
 
           <div style={{ marginTop: 28, padding: 16, background: '#f0fdf4', borderRadius: 8, border: '1px solid #bbf7d0' }}>
-            <strong>Try the Free JSON Formatter</strong>
+            <strong>Try the Free JSON Diff Viewer</strong>
             <p className="small" style={{ marginTop: 8, marginBottom: 12 }}>
-              Pretty-print JSON payloads before comparing them side by side. No signup, no cost.
+              Paste two JSON objects and see exactly which keys were added, removed, or changed —
+              no code required. No signup, no cost.
             </p>
-            <Link href="/json-formatter">
+            <Link href="/json-diff-viewer">
               <button style={{ background: '#16a34a', color: 'white', border: 'none', padding: '10px 20px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>
-                Open JSON Formatter →
+                Open JSON Diff Viewer →
               </button>
             </Link>
           </div>

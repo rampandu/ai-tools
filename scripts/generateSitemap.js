@@ -28,6 +28,7 @@ const routes = [
   "jwt-decoder",
   "sql-formatter",
   "diff-checker",
+  "json-diff-viewer",
   "timestamp-converter",
   "hash-generator",
   "yaml-json-converter",

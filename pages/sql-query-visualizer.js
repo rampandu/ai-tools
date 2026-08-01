@@ -288,6 +288,7 @@ export default function SqlQueryVisualizer() {
       <div className="card small">
         <h4>SQL guides and tutorials</h4>
         <ul className="small">
+          <li><Link href="/blog/sql-query-visualizer-guide-how-it-works">SQL Query Visualizer Guide: How to Read the Diagram</Link></li>
           <li><Link href="/blog/sql-join-types-explained-with-diagrams">SQL JOIN Types Explained: INNER, LEFT, RIGHT, FULL (Diagrams)</Link></li>
           <li><Link href="/blog/sql-explainer-guide-how-it-works">How to Read Any SQL Query: Execution Order Explained</Link></li>
           <li><Link href="/blog/sql-subqueries-vs-joins-explained">SQL Subqueries vs JOINs: Which Should You Use?</Link></li>

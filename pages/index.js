@@ -66,6 +66,7 @@ const TOOL_SECTIONS = [
     blurb: 'Everyday developer utilities — fast, private, and free.',
     tools: [
       { href: '/diff-checker', name: 'Diff Checker', desc: 'Compare two texts line by line and see additions and removals highlighted.' },
+      { href: '/json-diff-viewer', name: 'JSON Diff Viewer', desc: 'Compare two JSON objects structurally — see exactly which keys were added, removed, or changed.' },
       { href: '/timestamp-converter', name: 'Timestamp Converter', desc: 'Convert unix timestamps to human dates and back, with a live epoch clock.' },
       { href: '/uuid-generator', name: 'UUID Generator', desc: 'Generate cryptographically random UUID v4 identifiers in bulk.' },
       { href: '/password-generator', name: 'Password Generator', desc: 'Generate strong random passwords locally, with a live entropy meter.' },
@@ -107,17 +108,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dev Brains AI — 29 Free Tools for Developers (Regex, SQL, JSON &amp; More)</title>
+        <title>Dev Brains AI — 30 Free Tools for Developers (Regex, SQL, JSON &amp; More)</title>
         <meta
           name="description"
-          content="29 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; format SQL and JSON; convert YAML, timestamps and colors. No signup."
+          content="30 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; format SQL and JSON; convert YAML, timestamps and colors."
         />
         <meta
           name="keywords"
           content="regex generator, sql generator, json formatter, jwt decoder, sql formatter, diff checker, timestamp converter, uuid generator, password generator, hash generator, yaml to json, markdown preview, color converter, developer tools, Dev Brains AI"
         />
         <link rel="canonical" href={siteUrl} />
-        <meta property="og:title" content="Dev Brains AI — 29 Free Tools for Developers" />
+        <meta property="og:title" content="Dev Brains AI — 30 Free Tools for Developers" />
         <meta
           property="og:description"
           content="Free developer tools: generate regex, SQL, and READMEs; explain errors, SQL, and code; format JSON and Base64. No signup, no cost."
