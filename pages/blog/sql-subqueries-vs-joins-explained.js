@@ -269,6 +269,7 @@ WHERE EXISTS (
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
+              <li><Link href="/blog/sql-join-types-explained-with-diagrams">SQL JOIN Types Explained: INNER, LEFT, RIGHT, FULL (Diagrams)</Link></li>
               <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/sql-cte-common-table-expressions-guide">SQL CTE (Common Table Expressions) Guide</Link></li>
               <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>

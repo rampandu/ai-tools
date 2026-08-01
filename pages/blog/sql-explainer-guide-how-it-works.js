@@ -268,6 +268,7 @@ ORDER BY total_spent DESC;`}
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
+              <li><Link href="/blog/sql-join-types-explained-with-diagrams">SQL JOIN Types Explained: INNER, LEFT, RIGHT, FULL (Diagrams)</Link></li>
               <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL Guide</Link></li>
               <li><Link href="/blog/sql-group-by-having-clause-explained">SQL GROUP BY and HAVING Clause Explained</Link></li>
