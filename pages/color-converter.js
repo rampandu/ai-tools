@@ -110,7 +110,7 @@ export default function ColorConverterPage() {
         <title>Free Color Converter — HEX ↔ RGB ↔ HSL Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Convert colors between HEX, RGB, and HSL instantly in your browser. Paste any CSS color, see a live swatch, copy each format, and fine-tune with a native color picker. 100% client-side."
+          content="Convert colors between HEX, RGB, and HSL instantly in your browser. Paste any CSS color, see a live swatch, and fine-tune with a native color picker."
         />
         <meta
           name="keywords"

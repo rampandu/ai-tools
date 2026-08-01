@@ -173,7 +173,7 @@ export default function PasswordGeneratorPage() {
         <title>Free Strong Password Generator — Secure &amp; Client-Side | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate strong random passwords in your browser with crypto.getRandomValues. Choose length (8-64), character sets, exclude ambiguous characters, and see the entropy in bits. 100% client-side — nothing is uploaded."
+          content="Generate strong random passwords in your browser with crypto.getRandomValues. Choose length, character sets, exclude ambiguous characters, see entropy in bits."
         />
         <meta
           name="keywords"

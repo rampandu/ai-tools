@@ -169,7 +169,7 @@ export default function TimestampConverterPage() {
         <title>Free Unix Timestamp Converter — Epoch to Date &amp; Back | Dev Brains AI</title>
         <meta
           name="description"
-          content="Convert unix timestamps to human-readable dates (local, UTC, ISO 8601, relative time) and dates back to epoch seconds or milliseconds. Auto-detects seconds vs milliseconds. Free, 100% in-browser."
+          content="Convert unix timestamps to human-readable dates (local, UTC, ISO 8601, relative time) and back to epoch. Auto-detects seconds vs milliseconds. 100% in-browser."
         />
         <meta
           name="keywords"

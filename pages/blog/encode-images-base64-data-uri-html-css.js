@@ -23,7 +23,7 @@ export default function EncodeImagesBase64() {
     '@type': 'BlogPosting',
     headline: 'Base64 Image Encoding in HTML/CSS: When It Actually Helps',
     description:
-      'Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples.',
+      'Embed images directly in HTML and CSS with Base64 data URIs and skip the HTTP request — when it helps, when it hurts performance, and code examples.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css',
@@ -35,12 +35,12 @@ export default function EncodeImagesBase64() {
         <title>Base64 Image Encoding in HTML/CSS: When It Helps | Dev Brains AI</title>
         <meta
           name="description"
-          content="Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples."
+          content="Embed images directly in HTML and CSS with Base64 data URIs and skip the HTTP request — when it helps, when it hurts performance, and code examples."
         />
         <meta property="og:title" content="Base64 Image Encoding in HTML/CSS: When It Helps" />
         <meta
           property="og:description"
-          content="Embed images directly in HTML and CSS with Base64 data URIs and skip the extra HTTP request. Covers when it helps, when it hurts performance, and working code examples."
+          content="Embed images directly in HTML and CSS with Base64 data URIs and skip the HTTP request — when it helps, when it hurts performance, and code examples."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css" />
         <meta property="og:type" content="article" />

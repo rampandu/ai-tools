@@ -68,7 +68,7 @@ export default function HowDiffAlgorithmsWorkLcsExplained() {
         <title>How Diff Algorithms Work: LCS Explained | Dev Brains AI</title>
         <meta
           name="description"
-          content="The algorithm behind diff tools: longest common subsequence intuition with a worked matrix, the Myers algorithm, why moved blocks show as delete+add, and performance notes."
+          content="The algorithm behind diff tools: longest common subsequence with a worked matrix, the Myers algorithm, and why moved blocks show as delete+add."
         />
         <meta
           name="keywords"
@@ -77,7 +77,7 @@ export default function HowDiffAlgorithmsWorkLcsExplained() {
         <meta property="og:title" content="How Diff Algorithms Work: LCS Explained" />
         <meta
           property="og:description"
-          content="The algorithm behind diff tools: longest common subsequence intuition with a worked matrix, the Myers algorithm, why moved blocks show as delete+add, and performance notes."
+          content="The algorithm behind diff tools: longest common subsequence with a worked matrix, the Myers algorithm, and why moved blocks show as delete+add."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/how-diff-algorithms-work-lcs-explained" />
         <meta property="og:type" content="article" />

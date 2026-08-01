@@ -23,7 +23,7 @@ export default function DebuggingCronJobsThatAreNotRunning() {
     '@type': 'BlogPosting',
     headline: 'Cron Job Not Running? 5 Fixes That Actually Work',
     description:
-      'Cron job silently not firing? Walk through the 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with commands to fix each one fast.',
+      'Cron job silently not firing? The 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with fixes for each.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/debugging-cron-jobs-that-are-not-running',
@@ -68,14 +68,14 @@ export default function DebuggingCronJobsThatAreNotRunning() {
         <title>Cron Job Not Running? 5 Fixes That Actually Work | Dev Brains AI</title>
         <meta
           name="description"
-          content="Cron job silently not firing? Walk through the 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with commands to fix each one fast."
+          content="Cron job silently not firing? The 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with fixes for each."
         />
         <meta
           name="keywords"
           content="cron job not running, cron not working, debug cron job, cron job troubleshooting, crontab not executing, cron silent failure"
         />
         <meta property="og:title" content="Cron Job Not Running? 5 Fixes That Actually Work" />
-        <meta property="og:description" content="Cron job silently not firing? Walk through the 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with commands to fix each one fast." />
+        <meta property="og:description" content="Cron job silently not firing? The 5 most common causes — dead service, bad syntax, missing permissions, and PATH issues — with fixes for each." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/debugging-cron-jobs-that-are-not-running" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/debugging-cron-jobs-that-are-not-running" />

@@ -165,7 +165,7 @@ export default function JwtDecoderPage() {
         <title>Free JWT Decoder — Inspect Header, Payload &amp; Claims | Dev Brains AI</title>
         <meta
           name="description"
-          content="Decode any JSON Web Token instantly in your browser. See the header, payload, standard claims (iss, sub, exp, iat), human-readable dates, and expiry status. 100% client-side — nothing is uploaded."
+          content="Decode any JSON Web Token instantly in your browser — header, payload, standard claims, human-readable dates, and expiry status. 100% client-side, nothing uploaded."
         />
         <meta
           name="keywords"

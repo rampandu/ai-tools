@@ -81,16 +81,16 @@ export default function FreeMysqlQueryGenerator() {
   return (
     <>
       <Head>
-        <title>Free MySQL Query Generator &amp; Builder Online — Instant, No Signup | Dev Brains AI</title>
+        <title>Free MySQL Query Generator &amp; Builder Online — No Signup | Dev Brains AI</title>
         <meta
           name="description"
-          content="Free MySQL query generator and query builder online. Describe what you need in plain English and get a working MySQL query instantly — no signup, no login, unlimited use."
+          content="Free MySQL query generator and builder online. Describe what you need in plain English and get a working MySQL query instantly — no signup, unlimited use."
         />
         <meta
           name="keywords"
           content="mysql query generator, mysql query builder, mysql generator, mysql query builder free, mysql query generator free, free mysql query generator, mysql query generator online, mysql sql generator, mysql builder online"
         />
-        <meta property="og:title" content="Free MySQL Query Generator &amp; Builder Online — Instant, No Signup" />
+        <meta property="og:title" content="Free MySQL Query Generator &amp; Builder Online — No Signup" />
         <meta
           property="og:description"
           content="Free MySQL query generator and query builder. Plain English in, working MySQL query out — instantly, no signup required."

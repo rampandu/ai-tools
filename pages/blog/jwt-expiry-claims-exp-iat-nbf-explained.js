@@ -84,7 +84,7 @@ export default function JwtExpiryClaimsExplained() {
         <title>JWT exp, iat &amp; nbf Explained — Avoid the Silent Expiry Bugs | Dev Brains AI</title>
         <meta
           name="description"
-          content="JWT exp, iat, and nbf explained in plain English: why they're unix seconds not milliseconds, how clock skew silently rejects valid tokens, and how to pick a safe token lifetime — with Node.js examples."
+          content="JWT exp, iat, and nbf explained: why they're unix seconds not milliseconds, how clock skew silently rejects valid tokens, and picking a safe token lifetime."
         />
         <meta
           name="keywords"

@@ -113,7 +113,7 @@ export default function SqlFormatterPage() {
         <title>Free SQL Formatter &amp; Beautifier — Format SQL Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Format messy SQL instantly in your browser: clause-per-line layout, UPPERCASE or lowercase keywords, and one-click minify. 100% client-side — nothing is uploaded. Free, no signup."
+          content="Format messy SQL instantly in your browser: clause-per-line layout, UPPERCASE or lowercase keywords, and one-click minify. 100% client-side, no signup."
         />
         <meta
           name="keywords"

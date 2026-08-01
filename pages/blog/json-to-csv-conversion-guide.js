@@ -23,7 +23,7 @@ export default function JsonToCsvConversionGuide() {
     '@type': 'BlogPosting',
     headline: 'JSON to CSV in JavaScript: Working Code and 4 Libraries',
     description:
-      'Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus json2csv, papaparse, pandas, and csv-writer — and 5 pitfalls to avoid.',
+      'Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus 4 popular libraries and 5 pitfalls to avoid.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-to-csv-conversion-guide',
@@ -68,14 +68,14 @@ export default function JsonToCsvConversionGuide() {
         <title>JSON to CSV in JavaScript: Working Code + 4 Libraries | Dev Brains AI</title>
         <meta
           name="description"
-          content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus json2csv, papaparse, pandas, and csv-writer — and 5 pitfalls to avoid."
+          content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus 4 popular libraries and 5 pitfalls to avoid."
         />
         <meta
           name="keywords"
           content="json to csv, convert json to csv javascript, json to csv nodejs, json to csv python, json2csv vs papaparse, csv escaping rfc 4180, export json as csv"
         />
         <meta property="og:title" content="JSON to CSV in JavaScript: Working Code + 4 Libraries" />
-        <meta property="og:description" content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus json2csv, papaparse, pandas, and csv-writer — and 5 pitfalls to avoid." />
+        <meta property="og:description" content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus 4 popular libraries and 5 pitfalls to avoid." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/json-to-csv-conversion-guide" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-to-csv-conversion-guide" />

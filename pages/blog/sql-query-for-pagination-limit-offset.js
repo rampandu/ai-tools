@@ -84,7 +84,7 @@ export default function SqlQueryForPaginationLimitOffset() {
         <title>SQL Pagination Guide — LIMIT/OFFSET vs Keyset (Copy-Paste SQL) | Dev Brains AI</title>
         <meta
           name="description"
-          content="SQL pagination explained: LIMIT/OFFSET syntax, why deep OFFSET pages get slow, and the keyset (cursor) pattern that keeps every page fast. Copy-paste MySQL and PostgreSQL examples."
+          content="SQL pagination explained: LIMIT/OFFSET syntax, why deep OFFSET pages get slow, and the keyset (cursor) pattern that keeps every page fast — with examples."
         />
         <meta
           name="keywords"

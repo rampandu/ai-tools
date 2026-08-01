@@ -23,7 +23,7 @@ export default function MillisecondsVsSecondsTimestampBugs() {
     '@type': 'BlogPosting',
     headline: 'Milliseconds vs Seconds: Fix the 1000x Timestamp Bug',
     description:
-      'Dates showing 1970 or year 56789? Learn to spot the milliseconds vs seconds bug in seconds, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a ready-to-use normalization function.',
+      'Dates showing 1970 or year 56789? Spot the milliseconds vs seconds bug, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a normalization function.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/milliseconds-vs-seconds-timestamp-bugs',
@@ -68,14 +68,14 @@ export default function MillisecondsVsSecondsTimestampBugs() {
         <title>Milliseconds vs Seconds: Fix the 1000x Bug | Dev Brains AI</title>
         <meta
           name="description"
-          content="Dates showing 1970 or year 56789? Learn to spot the milliseconds vs seconds bug in seconds, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a ready-to-use normalization function."
+          content="Dates showing 1970 or year 56789? Spot the milliseconds vs seconds bug, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a normalization function."
         />
         <meta
           name="keywords"
           content="milliseconds vs seconds timestamp, unix timestamp 1970 bug, javascript date 1970, timestamp 13 digits vs 10 digits, jwt exp milliseconds, year 2038 problem, epoch converter, timestamp bug"
         />
         <meta property="og:title" content="Milliseconds vs Seconds: Fix the 1000x Bug" />
-        <meta property="og:description" content="Dates showing 1970 or year 56789? Learn to spot the milliseconds vs seconds bug in seconds, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a ready-to-use normalization function." />
+        <meta property="og:description" content="Dates showing 1970 or year 56789? Spot the milliseconds vs seconds bug, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a normalization function." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/milliseconds-vs-seconds-timestamp-bugs" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/milliseconds-vs-seconds-timestamp-bugs" />

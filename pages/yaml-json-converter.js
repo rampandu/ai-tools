@@ -191,7 +191,7 @@ export default function YamlJsonConverterPage() {
         <title>Free YAML ↔ JSON Converter — Convert Both Ways Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Convert YAML to JSON and JSON to YAML instantly in your browser. Handles docker-compose files, Kubernetes manifests, and API responses with clear parse errors. 100% client-side — nothing is uploaded."
+          content="Convert YAML to JSON and JSON to YAML instantly in your browser. Handles docker-compose files, Kubernetes manifests, and API responses with clear parse errors."
         />
         <meta
           name="keywords"

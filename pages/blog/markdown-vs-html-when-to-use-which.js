@@ -68,14 +68,14 @@ export default function MarkdownVsHtmlWhenToUseWhich() {
         <title>Markdown vs HTML: The 80/20 Rule for When to Use Each | Dev Brains AI</title>
         <meta
           name="description"
-          content="Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. Learn when each wins, how inline HTML in Markdown works, and a simple rule of thumb."
+          content="Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. When each wins, how inline HTML in Markdown works, and a rule of thumb."
         />
         <meta
           name="keywords"
           content="markdown vs html, markdown 80/20 rule, difference between markdown and html, when to use markdown, html in markdown, markdown limitations, markdown renderer differences"
         />
         <meta property="og:title" content="Markdown vs HTML: The 80/20 Rule for When to Use Each" />
-        <meta property="og:description" content="Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. Learn when each wins, how inline HTML in Markdown works, and a simple rule of thumb." />
+        <meta property="og:description" content="Markdown covers 80% of writing needs with 20% of the effort; HTML gives full control. When each wins, how inline HTML in Markdown works, and a rule of thumb." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/markdown-vs-html-when-to-use-which" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/markdown-vs-html-when-to-use-which" />

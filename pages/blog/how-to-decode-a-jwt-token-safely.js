@@ -68,7 +68,7 @@ export default function HowToDecodeAJwtTokenSafely() {
         <title>How to Decode a JWT Token Safely | Dev Brains AI</title>
         <meta
           name="description"
-          content="Decode a JWT token safely in JavaScript, Python, or your browser. Understand the three base64url parts, why decoding is not verifying, and how to protect live tokens."
+          content="Decode a JWT token safely in JavaScript, Python, or your browser — the three base64url parts, why decoding isn't verifying, and protecting live tokens."
         />
         <meta
           name="keywords"
@@ -77,7 +77,7 @@ export default function HowToDecodeAJwtTokenSafely() {
         <meta property="og:title" content="How to Decode a JWT Token Safely (JavaScript, Python, and Online)" />
         <meta
           property="og:description"
-          content="Decode a JWT token safely in JavaScript, Python, or your browser. Understand the three base64url parts, why decoding is not verifying, and how to protect live tokens."
+          content="Decode a JWT token safely in JavaScript, Python, or your browser — the three base64url parts, why decoding isn't verifying, and protecting live tokens."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-decode-a-jwt-token-safely" />
         <meta property="og:type" content="article" />

@@ -23,7 +23,7 @@ export default function DebuggingMemoryLeaksInNodejs() {
     '@type': 'BlogPosting',
     headline: 'How to Find a Node.js Memory Leak: Step-by-Step',
     description:
-      'Node.js process memory keeps climbing and never drops? Learn to catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js memory leaks.',
+      'Node.js memory keeps climbing and never drops? Catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js leaks.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/debugging-memory-leaks-in-nodejs',
@@ -68,14 +68,14 @@ export default function DebuggingMemoryLeaksInNodejs() {
         <title>How to Find a Node.js Memory Leak: Step-by-Step | Dev Brains AI</title>
         <meta
           name="description"
-          content="Node.js process memory keeps climbing and never drops? Learn to catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js memory leaks."
+          content="Node.js memory keeps climbing and never drops? Catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js leaks."
         />
         <meta
           name="keywords"
           content="nodejs memory leak, debug memory leak nodejs, heap snapshot nodejs, node --inspect, event listener memory leak, nodejs performance"
         />
         <meta property="og:title" content="How to Find a Node.js Memory Leak: Step-by-Step" />
-        <meta property="og:description" content="Node.js process memory keeps climbing and never drops? Learn to catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js memory leaks." />
+        <meta property="og:description" content="Node.js memory keeps climbing and never drops? Catch the leak with heap snapshots and --inspect, plus the two culprits behind most Node.js leaks." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/debugging-memory-leaks-in-nodejs" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/debugging-memory-leaks-in-nodejs" />

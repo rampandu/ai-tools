@@ -23,7 +23,7 @@ export default function JsonSerializationPythonGuide() {
     '@type': 'BlogPosting',
     headline: 'Python JSON Serialization: Fix the Not-Serializable Error',
     description:
-      "Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime, Decimal, and object_hook examples you can copy.",
+      "Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime and Decimal examples.",
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/json-serialization-python-guide',
@@ -68,14 +68,14 @@ export default function JsonSerializationPythonGuide() {
         <title>Python JSON Serialization: Fix the Not-Serializable Error | Dev Brains AI</title>
         <meta
           name="description"
-          content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime, Decimal, and object_hook examples you can copy."
+          content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime and Decimal examples."
         />
         <meta
           name="keywords"
           content="json serialization python, python not json serializable error, python json custom encoder, json.dumps typeerror fix, serialize datetime json python, python object_hook json"
         />
         <meta property="og:title" content="Python JSON Serialization: Fix the Not-Serializable Error" />
-        <meta property="og:description" content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime, Decimal, and object_hook examples you can copy." />
+        <meta property="og:description" content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime and Decimal examples." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/json-serialization-python-guide" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/json-serialization-python-guide" />

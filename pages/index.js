@@ -108,10 +108,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dev Brains AI — 30 Free Tools for Developers (Regex, SQL, JSON &amp; More)</title>
+        <title>Dev Brains AI — 30 Free Tools for Developers</title>
         <meta
           name="description"
-          content="30 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; format SQL and JSON; convert YAML, timestamps and colors."
+          content="30 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; format code; convert YAML and timestamps."
         />
         <meta
           name="keywords"

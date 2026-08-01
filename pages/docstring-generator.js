@@ -89,7 +89,7 @@ export default function DocstringGenerator() {
         <title>Free Docstring &amp; JSDoc Generator | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate JSDoc comments and Python docstrings instantly from a function signature. Paste your function, get a documentation template with a guessed description — free, no signup."
+          content="Generate JSDoc comments and Python docstrings instantly from a function signature — paste your function, get a documentation template. Free, no signup."
         />
         <meta
           name="keywords"

@@ -75,7 +75,7 @@ export default function SqlInterviewQuestionsCompleteGuide() {
         <title>SQL Interview Questions: The Complete Guide | Dev Brains AI</title>
         <meta
           name="description"
-          content="Every SQL question TCS, Infosys, Wipro, Accenture, and Capgemini actually ask, organized by topic — JOINs, keys, normalization, Nth highest salary — with worked queries."
+          content="Every SQL question TCS, Infosys, Wipro, Accenture, and Capgemini actually ask, organized by topic — JOINs, keys, normalization, Nth highest salary."
         />
         <meta
           name="keywords"

@@ -115,7 +115,7 @@ export default function MarkdownPreviewPage() {
         <title>Free Markdown Previewer — Live GFM Preview Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Preview markdown as you type with full GitHub Flavored Markdown support: tables, task lists, code blocks, and blockquotes. Copy the generated HTML in one click. 100% client-side — nothing is uploaded."
+          content="Preview markdown as you type with full GitHub Flavored Markdown support: tables, task lists, code blocks, and blockquotes. 100% client-side, nothing uploaded."
         />
         <meta
           name="keywords"

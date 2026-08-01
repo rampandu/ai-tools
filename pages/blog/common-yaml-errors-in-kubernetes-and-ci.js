@@ -23,7 +23,7 @@ export default function CommonYamlErrorsInKubernetesAndCi() {
     '@type': 'BlogPosting',
     headline: '4 Common YAML Errors in Kubernetes & CI (and Fixes)',
     description:
-      'Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators — with validation tools.',
+      'Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-yaml-errors-in-kubernetes-and-ci',
@@ -68,14 +68,14 @@ export default function CommonYamlErrorsInKubernetesAndCi() {
         <title>4 Common YAML Errors in Kubernetes & CI (and Fixes) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators — with validation tools."
+          content="Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators."
         />
         <meta
           name="keywords"
           content="common yaml errors, yaml indentation error kubernetes, yaml tab character error, github actions yaml quote value, yaml multi-document separator, yamllint kubectl dry-run"
         />
         <meta property="og:title" content="4 Common YAML Errors in Kubernetes & CI (and Fixes)" />
-        <meta property="og:description" content="Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators — with validation tools." />
+        <meta property="og:description" content="Fix the 4 YAML mistakes that break Kubernetes and CI — bad indentation, tab characters, unquoted 3.10 becoming a float, and missing --- separators." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/common-yaml-errors-in-kubernetes-and-ci" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-yaml-errors-in-kubernetes-and-ci" />

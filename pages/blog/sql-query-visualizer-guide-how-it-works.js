@@ -68,14 +68,14 @@ export default function SqlQueryVisualizerGuide() {
         <title>SQL Query Visualizer Guide: How to Read the Diagram | Dev Brains AI</title>
         <meta
           name="description"
-          content="A worked example showing how the SQL Query Visualizer turns a 3-table query into a join diagram and execution-order list, plus what an unlabeled join edge warns you about."
+          content="A worked example showing how the SQL Query Visualizer turns a 3-table query into a join diagram and execution order, plus what an unlabeled join edge means."
         />
         <meta
           name="keywords"
           content="sql query visualizer guide, how to read sql join diagram, sql visualizer tutorial, sql join diagram explained, sql execution order tool"
         />
         <meta property="og:title" content="SQL Query Visualizer Guide: How to Read the Diagram" />
-        <meta property="og:description" content="A worked example showing how the SQL Query Visualizer turns a 3-table query into a join diagram and execution-order list, plus what an unlabeled join edge warns you about." />
+        <meta property="og:description" content="A worked example showing how the SQL Query Visualizer turns a 3-table query into a join diagram and execution order, plus what an unlabeled join edge means." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/sql-query-visualizer-guide-how-it-works" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/sql-query-visualizer-guide-how-it-works" />

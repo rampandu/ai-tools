@@ -158,7 +158,7 @@ export default function ReadmeGeneratorPage() {
         <title>Free README Generator — Create a README.md Instantly | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate a polished README.md instantly with our free README Generator. Fill in a simple form — project name, description, install steps, badges — and copy clean Markdown, entirely in your browser."
+          content="Generate a polished README.md instantly. Fill in a simple form — project name, description, install steps, badges — and copy clean Markdown. Free, no signup."
         />
         <meta
           name="keywords"

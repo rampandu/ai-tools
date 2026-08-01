@@ -68,7 +68,7 @@ export default function HowToCompareTwoTextFilesOnline() {
         <title>How to Compare Two Text Files Online (Safely) | Dev Brains AI</title>
         <meta
           name="description"
-          content="Compare two text files online: use cases, how line diffs work, privacy of online diff tools (prefer client-side), and CLI alternatives like diff, fc, and git diff --no-index."
+          content="Compare two text files online: use cases, how line diffs work, why client-side tools are safer for privacy, and CLI alternatives like diff and git diff."
         />
         <meta
           name="keywords"
@@ -77,7 +77,7 @@ export default function HowToCompareTwoTextFilesOnline() {
         <meta property="og:title" content="How to Compare Two Text Files Online (Safely)" />
         <meta
           property="og:description"
-          content="Compare two text files online: use cases, how line diffs work, privacy of online diff tools (prefer client-side), and CLI alternatives like diff, fc, and git diff --no-index."
+          content="Compare two text files online: use cases, how line diffs work, why client-side tools are safer for privacy, and CLI alternatives like diff and git diff."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/how-to-compare-two-text-files-online" />
         <meta property="og:type" content="article" />

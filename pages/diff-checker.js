@@ -120,7 +120,7 @@ export default function DiffCheckerPage() {
         <title>Free Text Diff Checker — Compare Two Texts Online | Dev Brains AI</title>
         <meta
           name="description"
-          content="Compare two versions of any text or code and see added and removed lines highlighted instantly. LCS line diff, 100% client-side — nothing is uploaded. Free, no signup."
+          content="Compare two versions of any text or code and see added and removed lines highlighted instantly. 100% client-side — nothing is uploaded. Free, no signup."
         />
         <meta
           name="keywords"

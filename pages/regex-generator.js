@@ -104,7 +104,7 @@ export default function RegexGenerator() {
         <title>AI Regex Generator — Free Online Regex Builder &amp; Tester | Dev Brains AI</title>
         <meta
           name="description"
-          content="Free AI regex generator and online regex builder. Describe a pattern in plain English, get a working regular expression with a clear explanation, then test it live — no signup, no limits."
+          content="Free AI regex generator and online regex builder. Describe a pattern in plain English, get a working regex with a clear explanation, then test it live."
         />
         <meta
           name="keywords"

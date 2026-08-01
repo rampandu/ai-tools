@@ -23,7 +23,7 @@ export default function EncodeDecodeQueryStringsNodejs() {
     '@type': 'BlogPosting',
     headline: 'Node.js Query Strings: Encode & Decode the Right Way',
     description:
-      'Stop hand-rolling URL encoding. Learn to build and parse Node.js query strings correctly with URLSearchParams, including arrays, special characters, and common pitfalls.',
+      'Stop hand-rolling URL encoding. Build and parse Node.js query strings correctly with URLSearchParams — arrays, special characters, and pitfalls.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/encode-decode-query-strings-nodejs',
@@ -68,14 +68,14 @@ export default function EncodeDecodeQueryStringsNodejs() {
         <title>Node.js Query Strings: Encode & Decode the Right Way | Dev Brains AI</title>
         <meta
           name="description"
-          content="Stop hand-rolling URL encoding. Learn to build and parse Node.js query strings correctly with URLSearchParams, including arrays, special characters, and common pitfalls."
+          content="Stop hand-rolling URL encoding. Build and parse Node.js query strings correctly with URLSearchParams — arrays, special characters, and pitfalls."
         />
         <meta
           name="keywords"
           content="node.js query string, URLSearchParams node, querystring module, build query string javascript, parse query params node"
         />
         <meta property="og:title" content="Node.js Query Strings: Encode & Decode the Right Way" />
-        <meta property="og:description" content="Stop hand-rolling URL encoding. Learn to build and parse Node.js query strings correctly with URLSearchParams, including arrays, special characters, and common pitfalls." />
+        <meta property="og:description" content="Stop hand-rolling URL encoding. Build and parse Node.js query strings correctly with URLSearchParams — arrays, special characters, and pitfalls." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/encode-decode-query-strings-nodejs" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/encode-decode-query-strings-nodejs" />

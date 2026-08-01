@@ -68,7 +68,7 @@ export default function HashCollisionsExplained() {
         <title>Hash Collisions Explained — Birthday Paradox &amp; Broken Hashes | Dev Brains AI</title>
         <meta
           name="description"
-          content="Hash collisions explained: the pigeonhole principle, the birthday paradox and the 2^(n/2) bound, how collisions broke MD5 and SHA-1 in the real world, and why SHA-256 is still collision-free."
+          content="Hash collisions explained: the pigeonhole principle, the birthday paradox, how collisions broke MD5 and SHA-1 in the real world, and why SHA-256 still holds."
         />
         <meta
           name="keywords"
@@ -77,7 +77,7 @@ export default function HashCollisionsExplained() {
         <meta property="og:title" content="Hash Collisions Explained — Birthday Paradox &amp; Broken Hashes" />
         <meta
           property="og:description"
-          content="Hash collisions explained: the pigeonhole principle, the birthday paradox and the 2^(n/2) bound, how collisions broke MD5 and SHA-1 in the real world, and why SHA-256 is still collision-free."
+          content="Hash collisions explained: the pigeonhole principle, the birthday paradox, how collisions broke MD5 and SHA-1 in the real world, and why SHA-256 still holds."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/hash-collisions-explained" />
         <meta property="og:type" content="article" />

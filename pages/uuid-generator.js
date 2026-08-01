@@ -133,7 +133,7 @@ export default function UuidGeneratorPage() {
         <title>Free UUID v4 Generator — Bulk Random UUIDs | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate 1-100 random UUID v4 identifiers instantly in your browser using the Web Crypto API. Uppercase and no-hyphens options, one-click copy. 100% client-side — nothing is uploaded."
+          content="Generate 1-100 random UUID v4 identifiers instantly using the Web Crypto API. Uppercase and no-hyphens options, one-click copy. 100% client-side, no upload."
         />
         <meta
           name="keywords"

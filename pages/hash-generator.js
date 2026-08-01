@@ -135,7 +135,7 @@ export default function HashGeneratorPage() {
         <title>Free Hash Generator — MD5, SHA-1, SHA-256, SHA-512 | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text instantly. All four digests computed in your browser with copy buttons and an uppercase toggle. 100% client-side — nothing is uploaded."
+          content="Generate MD5, SHA-1, SHA-256, and SHA-512 hashes from any text instantly, all computed in your browser with copy buttons. 100% client-side, nothing uploaded."
         />
         <meta
           name="keywords"

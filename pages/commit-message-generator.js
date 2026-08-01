@@ -116,7 +116,7 @@ export default function CommitMessageGenerator() {
         <title>Free AI Commit Message Generator — Conventional Commits | Dev Brains AI</title>
         <meta
           name="description"
-          content="Generate properly formatted Conventional Commits messages instantly. Describe what you changed in plain English and get a clean feat/fix/docs/refactor commit message — free, no signup."
+          content="Generate properly formatted Conventional Commits messages instantly. Describe what you changed in plain English and get a clean feat/fix/docs commit message."
         />
         <meta
           name="keywords"

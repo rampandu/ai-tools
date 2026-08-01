@@ -23,7 +23,7 @@ export default function CommonGitErrorsAndHowToFixThem() {
     '@type': 'BlogPosting',
     headline: '7 Common Git Errors and How to Fix Them Fast',
     description:
-      'Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push, with real commands you can copy.',
+      'Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, unrelated histories, and failed pushes, with commands you can copy.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/common-git-errors-and-how-to-fix-them',
@@ -68,14 +68,14 @@ export default function CommonGitErrorsAndHowToFixThem() {
         <title>7 Common Git Errors and How to Fix Them Fast | Dev Brains AI</title>
         <meta
           name="description"
-          content="Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push, with real commands you can copy."
+          content="Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, unrelated histories, and failed pushes, with commands you can copy."
         />
         <meta
           name="keywords"
           content="git errors, git merge conflict fix, detached head git, refusing to merge unrelated histories, failed to push git, git error fixes"
         />
         <meta property="og:title" content="7 Common Git Errors and How to Fix Them Fast" />
-        <meta property="og:description" content="Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, refusing to merge unrelated histories, and failed to push, with real commands you can copy." />
+        <meta property="og:description" content="Stuck on a Git error? Step-by-step fixes for merge conflicts, detached HEAD, unrelated histories, and failed pushes, with commands you can copy." />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/common-git-errors-and-how-to-fix-them" />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://dev-brains-ai.com/blog/common-git-errors-and-how-to-fix-them" />
