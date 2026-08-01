@@ -15,6 +15,7 @@ const routes = [
   "base64-tool",
   "url-encoder",
   "regex-explainer",
+  "cron-explainer",
   "sql-explainer",
   "sql-query-visualizer",
   "commit-message-generator",

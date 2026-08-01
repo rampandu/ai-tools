@@ -129,7 +129,9 @@ export default function CronJobsPythonScheduleLibraryGuide() {
             you'd rather stick with the system crontab and just need the expression syntax, see
             our <Link href="/blog/cron-expression-complete-guide">cron expression complete guide</Link>{' '}
             or generate one straight from plain English with the free{' '}
-            <Link href="/cron-generator">Cron Expression Generator</Link>.
+            <Link href="/cron-generator">Cron Expression Generator</Link>. Already have an
+            expression and just need to know what it means? Use the{' '}
+            <Link href="/cron-explainer">Cron Expression Explainer</Link> instead.
           </p>
 
           <svg viewBox="0 0 640 200" style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }} role="img" aria-label="Comparison of the schedule library and APScheduler execution models">

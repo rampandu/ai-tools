@@ -31,6 +31,7 @@ const TOOL_SECTIONS = [
     blurb: 'Paste something confusing and get a clear, plain-English breakdown.',
     tools: [
       { href: '/regex-explainer', name: 'Regex Explainer', desc: 'Paste any regex and get a plain-English, token-by-token breakdown.' },
+      { href: '/cron-explainer', name: 'Cron Expression Explainer', desc: 'Paste a cron expression and get a plain-English description plus its next 10 run times.' },
       { href: '/sql-explainer', name: 'SQL Query Explainer', desc: 'Paste a SQL query and get a clear explanation of what it does.' },
       { href: '/sql-query-visualizer', name: 'SQL Query Visualizer', desc: 'Diagram a query’s table JOINs and see its clauses in logical execution order.' },
       { href: '/code-explainer', name: 'Code Explainer', desc: 'Paste a code snippet and get a structural, plain-English walkthrough.' },
@@ -108,17 +109,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dev Brains AI — 30 Free Tools for Developers</title>
+        <title>Dev Brains AI — 31 Free Tools for Developers</title>
         <meta
           name="description"
-          content="30 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; format code; convert YAML and timestamps."
+          content="31 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; explain cron schedules; format code and dates."
         />
         <meta
           name="keywords"
           content="regex generator, sql generator, json formatter, jwt decoder, sql formatter, diff checker, timestamp converter, uuid generator, password generator, hash generator, yaml to json, markdown preview, color converter, developer tools, Dev Brains AI"
         />
         <link rel="canonical" href={siteUrl} />
-        <meta property="og:title" content="Dev Brains AI — 30 Free Tools for Developers" />
+        <meta property="og:title" content="Dev Brains AI — 31 Free Tools for Developers" />
         <meta
           property="og:description"
           content="Free developer tools: generate regex, SQL, and READMEs; explain errors, SQL, and code; format JSON and Base64. No signup, no cost."

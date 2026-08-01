@@ -403,7 +403,9 @@ export default function CronGenerator() {
       <div className="card small">
         <h4>More developer tools from Dev Brains AI</h4>
         <p className="small">
-          Try our <Link href="/regex-generator">AI Regex Generator</Link> to build regex patterns
+          Already have a cron expression and need the reverse — a plain-English explanation and
+          its next run times? Use the <Link href="/cron-explainer">Cron Expression Explainer</Link>.
+          Or try our <Link href="/regex-generator">AI Regex Generator</Link> to build regex patterns
           from plain English, or <Link href="/sql-generator">AI SQL Generator</Link> to convert
           natural language into SQL queries.
         </p>

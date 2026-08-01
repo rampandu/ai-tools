@@ -362,6 +362,7 @@ spec:
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
+              <li><Link href="/cron-explainer">Cron Expression Explainer — check what a schedule means in any timezone</Link></li>
               <li><Link href="/blog/cron-expressions-aws-eventbridge-lambda">Cron Expressions for AWS EventBridge and Lambda</Link></li>
               <li><Link href="/blog/cron-jobs-github-actions-tutorial">Cron Jobs with GitHub Actions Tutorial</Link></li>
               <li><Link href="/blog/debugging-cron-jobs-that-are-not-running">Debugging Cron Jobs That Are Not Running</Link></li>

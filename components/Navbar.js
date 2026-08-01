@@ -20,6 +20,7 @@ const TOOL_GROUPS = [
     heading: 'Explain',
     items: [
       { href: '/regex-explainer', label: 'Regex Explainer' },
+      { href: '/cron-explainer', label: 'Cron Expression Explainer' },
       { href: '/sql-explainer', label: 'SQL Query Explainer' },
       { href: '/sql-query-visualizer', label: 'SQL Query Visualizer' },
       { href: '/code-explainer', label: 'Code Explainer' },
