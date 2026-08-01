@@ -365,7 +365,9 @@ export default function JsonDiffViewer() {
           Need to pretty-print JSON first? Use the <Link href="/json-formatter">JSON Formatter</Link>.
           Comparing plain text or code instead of JSON? Use the{' '}
           <Link href="/diff-checker">Text Diff Checker</Link>. Validating structure against a
-          schema? Try the <Link href="/json-schema-generator">JSON Schema Generator</Link>.
+          schema? Try the <Link href="/json-schema-generator">JSON Schema Generator</Link>. Need
+          TypeScript types for either side of the diff? Use the{' '}
+          <Link href="/json-to-typescript">JSON to TypeScript Converter</Link>.
         </p>
       </div>
 

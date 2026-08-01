@@ -14,7 +14,7 @@ export default function Hero() {
         </h1>
 
         <p className="small" style={{ fontSize: '1rem', marginBottom: 16 }}>
-          31 free tools for developers — generate <strong>Regex</strong>,{' '}
+          32 free tools for developers — generate <strong>Regex</strong>,{' '}
           <strong>SQL queries</strong>, <strong>UUIDs</strong>, and{' '}
           <strong>passwords</strong>; decode <strong>JWTs</strong> and explain{' '}
           <strong>errors</strong> and <strong>code</strong>; format <strong>SQL</strong> and{' '}
@@ -47,7 +47,7 @@ export default function Hero() {
         {/* Trust signals — real, verifiable numbers only (no fabricated stats) */}
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap' }}>
           <div style={{ padding: 8 }}>
-            <div style={{ fontSize: 20, fontWeight: 700 }}>31</div>
+            <div style={{ fontSize: 20, fontWeight: 700 }}>32</div>
             <div className="small">Free tools</div>
           </div>
           <div style={{ padding: 8 }}>

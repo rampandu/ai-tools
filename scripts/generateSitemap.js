@@ -9,6 +9,7 @@ const routes = [
   "regex-generator",
   "sql-generator",
   "json-formatter",
+  "json-to-typescript",
   "ai-error-explainer",
   "json-schema-generator",
   "cron-generator",

@@ -314,7 +314,8 @@ export default function JsonFormatterPage() {
       <div className="card small">
         <h4>More developer tools from Dev Brains AI</h4>
         <p className="small">
-          Try our{" "}
+          Need TypeScript types for this JSON? Use the{" "}
+          <Link href="/json-to-typescript">JSON to TypeScript Converter</Link>. Or try our{" "}
           <Link href="/regex-generator">AI Regex Generator</Link> to build regex patterns from
           plain English, or{" "}
           <Link href="/sql-generator">AI SQL Generator</Link> to convert questions into SQL queries.

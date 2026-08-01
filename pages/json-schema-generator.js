@@ -381,9 +381,11 @@ export default function JsonSchemaGeneratorPage() {
         <p className="small">
           Combine this generator with the{" "}
           <Link href="/json-formatter">JSON Formatter &amp; Validator</Link> to
-          clean and validate payloads before defining schemas, or use the{" "}
+          clean and validate payloads before defining schemas, use the{" "}
           <Link href="/ai-error-explainer">AI Error Message Explainer</Link> to
-          understand validation errors and runtime issues more easily.
+          understand validation errors and runtime issues more easily, or convert the same
+          example JSON into TypeScript interfaces with the{" "}
+          <Link href="/json-to-typescript">JSON to TypeScript Converter</Link>.
         </p>
       </div>
     </div>

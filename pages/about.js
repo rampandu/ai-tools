@@ -11,7 +11,7 @@ export default function About() {
     url: 'https://dev-brains-ai.com/',
     logo: 'https://dev-brains-ai.com/logo.png',
     description:
-      'Dev Brains AI builds 31 free browser-based developer tools — regex, SQL, JSON, cron, JWT, hashing, and encoding utilities — plus 150+ in-depth guides.',
+      'Dev Brains AI builds 32 free browser-based developer tools — regex, SQL, JSON, cron, JWT, hashing, and encoding utilities — plus 150+ in-depth guides.',
   };
 
   const aboutPageJsonLd = {
@@ -24,7 +24,7 @@ export default function About() {
     url: 'https://dev-brains-ai.com/about',
     name: 'About Dev Brains AI',
     description:
-      'Dev Brains AI is a free toolkit of 31 browser-based developer utilities and 150+ guides covering regex, SQL, JSON, cron, JWT, and encoding.',
+      'Dev Brains AI is a free toolkit of 32 browser-based developer utilities and 150+ guides covering regex, SQL, JSON, cron, JWT, and encoding.',
     publisher: {
       '@id': 'https://dev-brains-ai.com/#organization',
     },
@@ -123,7 +123,7 @@ export default function About() {
           </h1>
 
           <p className="small" style={{ marginBottom: 16 }}>
-            <strong>Dev Brains AI</strong> is a free toolkit of 31 browser-based utilities for
+            <strong>Dev Brains AI</strong> is a free toolkit of 32 browser-based utilities for
             developers — regex, SQL, JSON, cron, JWT, hashing, encoding, and more — plus a library of
             150+ in-depth guides covering how each format and pattern actually works, not just a
             generator you paste output from without understanding it.

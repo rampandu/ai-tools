@@ -33,6 +33,7 @@ const TOOL_GROUPS = [
     heading: 'Convert & Format',
     items: [
       { href: '/json-formatter', label: 'JSON Formatter' },
+      { href: '/json-to-typescript', label: 'JSON to TypeScript' },
       { href: '/json-schema-generator', label: 'JSON Schema Generator' },
       { href: '/base64-tool', label: 'Base64 Tool' },
       { href: '/url-encoder', label: 'URL Encoder' },

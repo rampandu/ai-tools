@@ -49,6 +49,7 @@ const TOOL_SECTIONS = [
     blurb: 'Clean up, transform, or translate data between formats — all in your browser.',
     tools: [
       { href: '/json-formatter', name: 'JSON Formatter', desc: 'Pretty-print, validate, and minify JSON directly in your browser.' },
+      { href: '/json-to-typescript', name: 'JSON to TypeScript', desc: 'Paste example JSON and get matching TypeScript interfaces, nested objects included.' },
       { href: '/json-schema-generator', name: 'JSON Schema Generator', desc: 'Paste example JSON and instantly generate a draft JSON Schema.' },
       { href: '/base64-tool', name: 'Base64 Tool', desc: 'Encode or decode Base64 strings in your browser. No data uploaded.' },
       { href: '/url-encoder', name: 'URL Encoder', desc: 'Percent-encode or decode URL strings in your browser.' },
@@ -109,17 +110,17 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dev Brains AI — 31 Free Tools for Developers</title>
+        <title>Dev Brains AI — 32 Free Tools for Developers</title>
         <meta
           name="description"
-          content="31 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; explain cron schedules; format code and dates."
+          content="32 free developer tools: generate regex, SQL, UUIDs and passwords; decode JWTs; visualize SQL joins; diff JSON; explain cron schedules; convert JSON to TS."
         />
         <meta
           name="keywords"
           content="regex generator, sql generator, json formatter, jwt decoder, sql formatter, diff checker, timestamp converter, uuid generator, password generator, hash generator, yaml to json, markdown preview, color converter, developer tools, Dev Brains AI"
         />
         <link rel="canonical" href={siteUrl} />
-        <meta property="og:title" content="Dev Brains AI — 31 Free Tools for Developers" />
+        <meta property="og:title" content="Dev Brains AI — 32 Free Tools for Developers" />
         <meta
           property="og:description"
           content="Free developer tools: generate regex, SQL, and READMEs; explain errors, SQL, and code; format JSON and Base64. No signup, no cost."
