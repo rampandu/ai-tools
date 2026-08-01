@@ -20,7 +20,9 @@ const FAQ = [
   { q: 'Is there a free online regex builder?', a: 'Yes — this is a completely free online regex builder. Describe your pattern in plain English (for example "match a valid email address") and it generates a working regular expression instantly, with no signup, no account, and no daily limit.' },
   { q: 'What is an AI regex generator?', a: 'An AI regex generator turns a plain-English description of what you want to match into a working regular expression automatically, so you do not have to memorise regex syntax or hand-write character classes and quantifiers yourself.' },
   { q: 'Does this tool test my regex too?', a: 'Yes. Every pattern this generator produces is fed straight into the built-in Regex Tester below the results — paste sample text, set flags like i or g, and see a live match result and captured groups without leaving the page.' },
-  { q: "What's the difference between a regex builder and a regex tester?", a: 'A regex builder (or generator) creates a brand-new pattern from a description. A regex tester checks whether an existing pattern matches specific input text. This page includes both — use the builder to generate a pattern, then the tester below it to validate that pattern against your own sample data.' }
+  { q: "What's the difference between a regex builder and a regex tester?", a: 'A regex builder (or generator) creates a brand-new pattern from a description. A regex tester checks whether an existing pattern matches specific input text. This page includes both — use the builder to generate a pattern, then the tester below it to validate that pattern against your own sample data.' },
+  { q: 'How is this different from asking ChatGPT for a regex?', a: 'This generator is deterministic and rule-based rather than a live language model call — the same prompt always produces the same pattern, instantly, with no signup, rate limit, or risk of a hallucinated pattern that looks plausible but is subtly wrong. It covers common, well-defined pattern types reliably; for a pattern this tool does not recognise, a general-purpose AI chat tool may still be worth trying.' },
+  { q: 'Can I generate a regex for Indian ID formats like Aadhaar or PAN?', a: 'This generator includes common formats like Indian phone numbers out of the box. For the full set of Indian ID and document formats — Aadhaar, PAN, GSTIN, IFSC, passport, PIN code, and driving license — see the dedicated guide to regex for Indian ID and document validation, which covers which of these have a checksum digit regex cannot verify.' }
 ];
 
 export default function RegexGenerator() {
@@ -322,6 +324,32 @@ export default function RegexGenerator() {
         <p>
           If you're new to regular expressions, this tool is a great way to learn by doing.
           Experiment with different prompts and observe how patterns change.
+        </p>
+
+        <h3>Using the Generated Pattern in Your Code</h3>
+        <p>
+          Once you have a pattern, here is exactly how to drop it into the three most common
+          languages:
+        </p>
+        <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`// JavaScript
+const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/;
+re.test("user@example.com"); // true
+
+# Python
+import re
+pattern = re.compile(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$")
+bool(pattern.match("user@example.com"))  # True
+
+// Java
+Pattern p = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\\\.[a-zA-Z]{2,}$");
+p.matcher("user@example.com").matches(); // true`}
+        </pre>
+        <p className="small" style={{ marginBottom: 0 }}>
+          One thing that trips people up moving between languages: JavaScript and Java both need
+          the pattern wrapped as a string literal with backslashes escaped, while Python's raw
+          string prefix (<code>r"..."</code>) lets you paste the pattern as-is without doubling
+          the backslashes.
         </p>
       </div>
 

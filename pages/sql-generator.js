@@ -43,6 +43,14 @@ const FAQ = [
   {
     q: 'Can I generate MySQL, PostgreSQL, and SQLite queries?',
     a: 'Yes. This generator produces standard SQL (SELECT and WHERE clauses, comparisons, BETWEEN, IN, and LIKE conditions) that runs on MySQL, PostgreSQL, SQLite, SQL Server, and MariaDB without modification for common queries. Highly dialect-specific syntax, such as vendor-only functions, may still need manual adjustment.'
+  },
+  {
+    q: 'Can this tool generate INSERT, UPDATE, or DELETE queries?',
+    a: 'No — this generator is focused specifically on SELECT queries for reading and reporting on data, which is the safest and most common daily need. INSERT, UPDATE, and DELETE carry real risk if generated incorrectly, so we deliberately keep this tool read-only; write those statements by hand and double-check the WHERE clause before running them.'
+  },
+  {
+    q: 'How is this different from asking ChatGPT for SQL?',
+    a: 'This generator is deterministic rather than a live language-model call — the same prompt always produces the same query, instantly, with no signup, no rate limit, and no risk of a hallucinated column or table name that looks right but is not. It reliably handles common SELECT patterns; for something highly unusual or vendor-specific, a general-purpose AI chat tool may still be worth a try alongside it.'
   }
 ];
 
@@ -419,6 +427,30 @@ export default function SQLGenerator() {
         <p className="small">
           Used correctly, the Dev Brains AI SQL generator can speed up development, reduce syntax
           errors, and help you focus on the actual business logic instead of boilerplate code.
+        </p>
+
+        <h3 style={{ marginTop: 16 }}>Running the Generated Query in Your Code</h3>
+        <p className="small">
+          Once the query looks right, here is how to actually run it from the two most common
+          backend stacks:
+        </p>
+        <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`// Node.js (mysql2)
+const [rows] = await connection.execute(
+  'SELECT name, salary FROM employees WHERE salary > ?',
+  [50000]
+);
+
+# Python (psycopg2, PostgreSQL)
+cur.execute("SELECT name, salary FROM employees WHERE salary > %s", (50000,))
+rows = cur.fetchall()`}
+        </pre>
+        <p className="small" style={{ marginBottom: 0 }}>
+          Notice both examples pass the value as a parameter (<code>?</code> or{' '}
+          <code>%s</code>) instead of string-concatenating it into the query — that's what
+          prevents SQL injection. If you take a generated query and paste a value directly into
+          the WHERE clause instead of parameterizing it, you've reintroduced the exact risk this
+          tool's read-only design was meant to avoid.
         </p>
       </div>
 
