@@ -21,14 +21,14 @@ export default function GithubFlavoredMarkdownGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'GFM (GitHub Flavored Markdown) Guide — Tables, Alerts & Syntax',
+    headline: 'GFM Cheat Sheet: GitHub Flavored Markdown Tables & Alerts',
     description:
-      'Full GitHub Flavored Markdown (GFM) reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs.',
+      'The GFM (GitHub Flavored Markdown) cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/github-flavored-markdown-guide',
     datePublished: '2026-07-15',
-    dateModified: '2026-07-22',
+    dateModified: '2026-08-01',
   };
 
   const faqJsonLd = {
@@ -75,25 +75,41 @@ export default function GithubFlavoredMarkdownGuide() {
           text: 'Yes. Regular Markdown (CommonMark) covers headings, lists, links, and emphasis. GFM adds tables, task lists, strikethrough, autolinked issue references, syntax-highlighted code fences, footnotes, and alert boxes on top of that base.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'Will GFM tables and alerts work on GitLab or a static site?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Tables usually work on GitLab and most static site generators, since they were widely copied. Alerts ([!NOTE], [!WARNING]) will not — that syntax is GitHub-specific and renders as a plain blockquote with the literal "[!NOTE]" text everywhere else. Always test on the actual target platform before relying on GFM-only features.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Does CommonMark support tables or task lists?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Tables, task-list checkboxes, strikethrough, footnotes, and alerts are all GFM extensions, not part of the core CommonMark specification. A CommonMark-only renderer will show GFM table syntax as plain text with pipe characters rather than an actual table.',
+        },
+      },
     ],
   };
 
   return (
     <>
       <Head>
-        <title>GFM (GitHub Flavored Markdown) Guide — Tables &amp; Alerts | Dev Brains AI</title>
+        <title>GFM Cheat Sheet: GitHub Flavored Markdown Tables &amp; Alerts | Dev Brains AI</title>
         <meta
           name="description"
-          content="Full GFM (GitHub Flavored Markdown) reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs."
+          content="The GFM (GitHub Flavored Markdown) cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark."
         />
         <meta
           name="keywords"
-          content="gfm, gfm github, github flavored markdown, github markdown table, markdown task list, markdown alerts, github readme markdown, markdown syntax highlighting, gfm guide, gfm cheat sheet"
+          content="gfm, gfm github, github flavored markdown, gfm cheat sheet, github markdown table, markdown task list, markdown alerts, gfm vs commonmark, github readme markdown, markdown syntax highlighting"
         />
-        <meta property="og:title" content="GFM (GitHub Flavored Markdown) Guide — Tables &amp; Alerts" />
+        <meta property="og:title" content="GFM Cheat Sheet: GitHub Flavored Markdown Tables &amp; Alerts" />
         <meta
           property="og:description"
-          content="Full GFM reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs."
+          content="The GFM cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/github-flavored-markdown-guide" />
         <meta property="og:type" content="article" />
@@ -117,8 +133,16 @@ export default function GithubFlavoredMarkdownGuide() {
           </nav>
 
           <h1 style={{ fontSize: '2rem', fontWeight: 700, marginBottom: 12 }}>
-            GFM (GitHub Flavored Markdown) Guide — Tables, Alerts and Syntax
+            GFM Cheat Sheet: GitHub Flavored Markdown Tables, Alerts &amp; Syntax
           </h1>
+
+          <p className="small" style={{ marginBottom: 16 }}>
+            GitHub's own spec for GFM is the authoritative reference, but it reads like a grammar
+            document — precise, and not exactly built for someone who just needs to remember the
+            table syntax before a PR deadline. This page is the version built for that moment:{' '}
+            <strong>every GFM extension with a copy-paste example</strong>, what it looks like once
+            GitHub actually renders it, and where it silently stops working outside GitHub.
+          </p>
 
           <p className="small" style={{ marginBottom: 16 }}>
             <strong>GFM</strong> is short for <strong>GitHub Flavored Markdown</strong> — the exact
@@ -126,9 +150,7 @@ export default function GithubFlavoredMarkdownGuide() {
             covers headings, lists, links, and emphasis, but the moment you write a README, open an
             issue, or review a pull request on GitHub, you are using GFM's extensions on top of that
             base: tables, task lists, strikethrough, autolinks, syntax-highlighted code fences,
-            footnotes, and alert boxes. This guide covers every GFM extension with copy-paste
-            examples, explains exactly where each one works, and lists the mistakes that trip people
-            up most.
+            footnotes, and alert boxes.
           </p>
 
           <svg viewBox="0 0 640 190" style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }} role="img" aria-label="Diagram showing GFM as CommonMark plus GitHub extensions">
@@ -148,6 +170,45 @@ export default function GithubFlavoredMarkdownGuide() {
           </svg>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            GFM vs. Plain CommonMark: Feature by Feature
+          </h2>
+          <p className="small" style={{ marginBottom: 12 }}>
+            Every GFM document is valid CommonMark's superset, not the other way around — write
+            plain CommonMark and it works everywhere; write GFM tables or alerts and they degrade
+            to plain text (or a plain blockquote) anywhere that isn't GitHub.
+          </p>
+          <div style={{ overflowX: 'auto', marginBottom: 16 }}>
+            <table className="small" style={{ width: '100%', borderCollapse: 'collapse' }}>
+              <thead>
+                <tr style={{ borderBottom: '2px solid #e2e8f0', textAlign: 'left' }}>
+                  <th style={{ padding: '8px 10px' }}>Feature</th>
+                  <th style={{ padding: '8px 10px' }}>CommonMark</th>
+                  <th style={{ padding: '8px 10px' }}>GFM</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  ['Headings, emphasis, links, lists', 'Yes', 'Yes (inherited)'],
+                  ['Fenced code blocks', 'Yes (parsing only)', 'Yes + Linguist syntax highlighting'],
+                  ['Tables', 'No', 'Yes'],
+                  ['Task list checkboxes', 'No', 'Yes (interactive in issues/PRs)'],
+                  ['Strikethrough (~~text~~)', 'No', 'Yes'],
+                  ['Autolinked bare URLs', 'No (needs <angle brackets>)', 'Yes (automatic)'],
+                  ['Footnotes', 'No', 'Yes (added 2021)'],
+                  ['Alerts ([!NOTE], [!WARNING])', 'No', 'Yes, GitHub-only (added 2023)'],
+                  ['@mentions and #issue autolinks', 'No', 'Yes, GitHub-only'],
+                ].map((row) => (
+                  <tr key={row[0]} style={{ borderBottom: '1px solid #f1f5f9' }}>
+                    <td style={{ padding: '8px 10px', fontWeight: 600 }}>{row[0]}</td>
+                    <td style={{ padding: '8px 10px', color: '#64748b' }}>{row[1]}</td>
+                    <td style={{ padding: '8px 10px' }}>{row[2]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             Tables and Alignment Syntax
           </h2>
           <p className="small" style={{ marginBottom: 12 }}>
@@ -163,6 +224,28 @@ export default function GithubFlavoredMarkdownGuide() {
 | Payments      | Review   |      80% |
 | Notifications | Planned  |       0% |`}
           </pre>
+          <p className="small" style={{ marginBottom: 8 }}>
+            Here is what that source actually renders to on GitHub:
+          </p>
+          <div style={{ border: '1px solid #d0d7de', borderRadius: 6, overflow: 'hidden', marginBottom: 6, fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif' }}>
+            <table style={{ width: '100%', borderCollapse: 'collapse', fontSize: '0.8rem' }}>
+              <thead>
+                <tr style={{ background: '#f6f8fa' }}>
+                  <th style={{ textAlign: 'left', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Feature</th>
+                  <th style={{ textAlign: 'center', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Status</th>
+                  <th style={{ textAlign: 'right', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Coverage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td style={{ padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Login</td><td style={{ textAlign: 'center', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Done</td><td style={{ textAlign: 'right', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>95%</td></tr>
+                <tr><td style={{ padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Payments</td><td style={{ textAlign: 'center', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>Review</td><td style={{ textAlign: 'right', padding: '8px 12px', borderBottom: '1px solid #d0d7de', color: '#1f2328' }}>80%</td></tr>
+                <tr><td style={{ padding: '8px 12px', color: '#1f2328' }}>Notifications</td><td style={{ textAlign: 'center', padding: '8px 12px', color: '#1f2328' }}>Planned</td><td style={{ textAlign: 'right', padding: '8px 12px', color: '#1f2328' }}>0%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="small" style={{ fontSize: '0.75rem', color: '#64748b', marginBottom: 14 }}>
+            ↑ Rendered example (GitHub's actual UI, reproduced here — not a live GitHub page)
+          </p>
           <p className="small" style={{ marginBottom: 14 }}>
             You do not need to line up the pipes perfectly — GitHub renders ragged tables fine —
             but aligned source is much easier to review in a diff. Outer pipes are optional, and
@@ -186,6 +269,19 @@ export default function GithubFlavoredMarkdownGuide() {
 
 Use ~~strikethrough~~ for text that is no longer valid.`}
           </pre>
+          <p className="small" style={{ marginBottom: 8 }}>
+            Rendered, that becomes a real checklist with a progress count GitHub tracks automatically:
+          </p>
+          <div style={{ border: '1px solid #d0d7de', borderRadius: 6, padding: 12, marginBottom: 6, fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif', fontSize: '0.8rem', color: '#1f2328' }}>
+            <div style={{ color: '#656d76', marginBottom: 8, fontSize: '0.75rem' }}>2 of 4 tasks</div>
+            <div style={{ marginBottom: 4 }}><span style={{ marginRight: 6 }}>☑</span>Write the migration script</div>
+            <div style={{ marginBottom: 4 }}><span style={{ marginRight: 6 }}>☑</span>Add unit tests</div>
+            <div style={{ marginBottom: 4 }}><span style={{ marginRight: 6, border: '1px solid #d0d7de', display: 'inline-block', width: 12, height: 12, borderRadius: 3 }}></span>Update the API docs</div>
+            <div><span style={{ marginRight: 6, border: '1px solid #d0d7de', display: 'inline-block', width: 12, height: 12, borderRadius: 3 }}></span>Deploy to staging</div>
+          </div>
+          <p className="small" style={{ fontSize: '0.75rem', color: '#64748b', marginBottom: 14 }}>
+            ↑ Rendered example — on an issue or PR, each box is clickable and the "2 of 4" count updates live
+          </p>
           <p className="small" style={{ marginBottom: 14 }}>
             Strikethrough uses double tildes: <code>~~old plan~~</code> renders with a line through
             it. It is useful for showing superseded decisions without deleting the history of the
@@ -303,6 +399,35 @@ Fixes #128 — checkout was failing when \`discountCode\` was empty.
           </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            A Second Example: A Bug Report Issue
+          </h2>
+          <p className="small" style={{ marginBottom: 12 }}>
+            PR descriptions lean on tables and diffs; a good bug report leans harder on footnotes
+            and autolinked references instead:
+          </p>
+          <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
+{`## Bug: export button silently does nothing on Safari
+
+**Steps to reproduce**
+1. Open the dashboard on Safari 17[^1]
+2. Click "Export CSV"
+3. Nothing happens — no download, no error in console
+
+**Expected:** a CSV file downloads
+**Actual:** the click is silently swallowed
+
+Related to #204, which fixed the same symptom on Firefox last month.
+Introduced somewhere around @teammate's PR #198.
+
+[^1]: Not reproducible on Chrome or Firefox — appears Safari-specific.`}
+          </pre>
+          <p className="small" style={{ marginBottom: 14 }}>
+            The footnote keeps the "which browsers" caveat out of the main flow without deleting it,
+            and <code>#204</code> / <code>#198</code> autolink straight to those issues and PRs —
+            anyone reading this six months later can follow the whole history in two clicks.
+          </p>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
             Common GFM Mistakes
           </h2>
           <ul className="small" style={{ marginBottom: 14 }}>
@@ -361,6 +486,18 @@ Fixes #128 — checkout was failing when \`discountCode\` was empty.
             <strong>Is GFM different from regular Markdown?</strong>
             <p className="small" style={{ marginTop: 6 }}>
               Yes. Regular Markdown (CommonMark) covers headings, lists, links, and emphasis. GFM adds tables, task lists, strikethrough, autolinked issue references, syntax-highlighted code fences, footnotes, and alert boxes on top of that base.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Will GFM tables and alerts work on GitLab or a static site?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Tables usually work on GitLab and most static site generators, since they were widely copied. Alerts (<code>[!NOTE]</code>, <code>[!WARNING]</code>) will not — that syntax is GitHub-specific and renders as a plain blockquote with the literal &quot;[!NOTE]&quot; text everywhere else. Always test on the actual target platform before relying on GFM-only features.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Does CommonMark support tables or task lists?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              No. Tables, task-list checkboxes, strikethrough, footnotes, and alerts are all GFM extensions, not part of the core CommonMark specification. A CommonMark-only renderer will show GFM table syntax as plain text with pipe characters rather than an actual table.
             </p>
           </div>
 
