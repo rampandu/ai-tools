@@ -66,6 +66,7 @@ export default function CronJobsInLinuxCrontabTutorial() {
     <>
       <Head>
         <title>Linux Crontab Tutorial: Fix the #1 PATH Gotcha | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Edit the Linux crontab with crontab -e, redirect job output to a log file, and fix the #1 PATH gotcha that silently breaks cron jobs on every distro."

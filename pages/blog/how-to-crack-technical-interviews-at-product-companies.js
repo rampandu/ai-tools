@@ -66,6 +66,8 @@ export default function HowToCrackTechnicalInterviewsAtProductCompanies() {
     <>
       <Head>
         <title>How to Crack Technical Interviews at Product Companies | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="What Amazon, Flipkart, and Google test: 200-300 DSA problems by pattern, system design basics, STAR-framework behavioral rounds, and a realistic prep timeline."

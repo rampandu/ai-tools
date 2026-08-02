@@ -66,6 +66,8 @@ export default function FreelancingAsADeveloperGuideForIndians() {
     <>
       <Head>
         <title>Freelance Developer in India: Rates, Taxes, Contracts | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Real USD/INR freelance rates by experience level, GST and Section 44ADA tax rules, milestone payment contracts, and how to build a portfolio that lands clients."

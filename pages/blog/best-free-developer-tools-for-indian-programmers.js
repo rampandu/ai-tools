@@ -65,6 +65,7 @@ export default function BestFreeDeveloperToolsForIndianProgrammers() {
     <>
       <Head>
         <title>19 Free Developer Tools for Indian Programmers (2026) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="19 free tools for Indian developers, organized by category — editors, GitHub Student Pack, Postman, Vercel hosting, MongoDB Atlas — and why each is worth using."

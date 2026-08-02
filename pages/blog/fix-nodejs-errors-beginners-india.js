@@ -65,6 +65,8 @@ export default function FixNodejsErrorsBeginnersIndia() {
     <>
       <Head>
         <title>5 Common Node.js Errors Beginners Face in India | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="The 5 Node.js errors beginners in India hit most: Cannot find module, EACCES, ECONNREFUSED, unhandled rejections, and EADDRINUSE — with the fix for each."

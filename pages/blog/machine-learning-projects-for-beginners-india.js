@@ -66,6 +66,8 @@ export default function MachineLearningProjectsForBeginnersIndia() {
     <>
       <Head>
         <title>5 Machine Learning Projects for Beginners in India | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="5 beginner ML projects — from house price prediction to digit recognition — each with dataset, tech stack, and a step-by-step learning path to follow."

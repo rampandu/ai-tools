@@ -65,6 +65,7 @@ export default function CommonApiErrorsAndHowToFixThem() {
     <>
       <Head>
         <title>6 Common REST API Errors and How to Fix Them | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Fix the 6 REST API errors developers hit most — 400, 401, 403, 404, 429, 500 — with the real cause and a concrete fix for each status code."

@@ -34,6 +34,7 @@ export default function AiDevToolsSaveTime() {
         <title>
           5 AI Dev Tools That Save You Time (Using Dev Brains AI)
         </title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Discover five free AI-powered developer tools from Dev Brains AI that help you work faster with regex, SQL, JSON, and debugging."

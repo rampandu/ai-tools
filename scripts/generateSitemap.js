@@ -53,6 +53,12 @@ let blogRoutes = [];
 if (fs.existsSync(blogDir)) {
   blogRoutes = fs.readdirSync(blogDir)
     .filter((f) => f.endsWith(".js") && f !== "index.js")
+    .filter((f) => {
+      const src = fs.readFileSync(path.join(blogDir, f), "utf8");
+      // Skip posts explicitly marked noindex - a noindexed page listed in
+      // the sitemap is a contradictory signal to search engines.
+      return !/name="robots"\s+content="noindex/.test(src);
+    })
     .map((f) => "blog/" + f.replace(".js", ""));
 }
 

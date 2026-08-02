@@ -33,6 +33,7 @@ export default function CronAwsEventBridge() {
     <>
       <Head>
         <title>AWS EventBridge Cron: 6-Field Syntax for Lambda | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="AWS EventBridge cron uses 6 fields, not 5 — learn the day-of-week offset, the ? wildcard rule, rate expressions, and a working Terraform example for Lambda."

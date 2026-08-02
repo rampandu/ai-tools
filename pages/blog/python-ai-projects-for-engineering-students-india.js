@@ -65,6 +65,8 @@ export default function PythonAiProjectsForEngineeringStudentsIndia() {
     <>
       <Head>
         <title>12 Python AI Project Ideas for Engineering Students (India) | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="12 Python and AI project ideas for Indian engineering students, from beginner-friendly to final-year level, with the libraries and datasets needed for each."

@@ -35,6 +35,8 @@ export default function UrlEncodingRestApi() {
     <>
       <Head>
         <title>URL-Encode REST API Query Parameters (JS Examples) | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="URL-encode REST API query parameters correctly with encodeURIComponent, URLSearchParams, fetch, and axios — the mistakes that silently break API calls."

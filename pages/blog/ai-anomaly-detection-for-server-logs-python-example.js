@@ -5,6 +5,7 @@ export default function Blog() {
     <>
       <Head>
         <title>AI Anomaly Detection for Server Logs: Python Example | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Detect anomalies in server logs with Python's Isolation Forest algorithm, a working FastAPI microservice example, and real use cases from Indian startups."

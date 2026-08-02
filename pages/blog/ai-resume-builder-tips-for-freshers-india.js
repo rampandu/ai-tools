@@ -66,6 +66,7 @@ export default function AiResumeBuilderTipsForFreshersIndia() {
     <>
       <Head>
         <title>AI Resume Builder Tips for Indian Freshers (ATS Guide) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How Indian freshers can use AI resume tools without sounding like a robot: ATS formatting rules, what to keep human-written, and mistakes that get resumes rejected."

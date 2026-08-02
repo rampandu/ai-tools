@@ -65,6 +65,8 @@ export default function SqlQueryForSalesReportDashboard() {
     <>
       <Head>
         <title>SQL Queries for Sales Dashboards: Revenue & Growth | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Copy-paste SQL for revenue by month, revenue by region, top-selling products, and month-over-month growth using LAG(), built on a typical e-commerce schema."

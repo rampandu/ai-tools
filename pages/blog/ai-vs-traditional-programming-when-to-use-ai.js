@@ -66,6 +66,7 @@ export default function AiVsTraditionalProgrammingWhenToUseAi() {
     <>
       <Head>
         <title>AI vs Traditional Programming: A Simple Decision Test | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A 5-question checklist for choosing AI/ML vs traditional rule-based code, with real examples like fraud detection vs tax calculation, plus a hybrid code pattern."

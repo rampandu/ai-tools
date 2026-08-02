@@ -66,6 +66,8 @@ export default function RegexVsStringMethodsWhenToUseWhich() {
     <>
       <Head>
         <title>Regex vs String Methods: A Quick Decision Guide | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A task-by-task cheat sheet for when includes(), startsWith(), and split() beat regex — and when regex is the only tool that expresses the pattern you need."

@@ -66,6 +66,7 @@ export default function ComputerVisionProjectsForEngineeringStudents() {
     <>
       <Head>
         <title>4 Computer Vision Projects for Engineering Students | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="4 computer vision projects for engineering students — face mask detection, plate recognition, handwriting OCR, object detection — with code and tools for each."

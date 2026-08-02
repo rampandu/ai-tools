@@ -66,6 +66,8 @@ export default function RegexForExtractingHashtagsAndMentions() {
     <>
       <Head>
         <title>Regex for Extracting Hashtags and Mentions (JS Examples) | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How to extract #hashtags and @mentions from text using JavaScript regex with match and matchAll, including Unicode-friendly patterns."

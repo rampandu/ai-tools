@@ -65,6 +65,8 @@ export default function SqlQueryForDuplicateRecordsDetection() {
     <>
       <Head>
         <title>SQL Query to Find and Remove Duplicate Records | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Detect duplicate rows with GROUP BY and HAVING, then safely delete them using ROW_NUMBER() and PARTITION BY, plus a UNIQUE constraint to block repeats."

@@ -66,6 +66,8 @@ export default function NlpProjectsForFinalYearStudents() {
     <>
       <Head>
         <title>4 NLP Projects for Final Year Students (with Code) | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="4 final-year NLP projects — sentiment analysis, summarization, a domain chatbot, and a resume parser — each with approach, libraries, and working code."

@@ -73,6 +73,8 @@ export default function AiProjectsForEngineeringStudentsIndia() {
     <>
       <Head>
         <title>20 AI Project Ideas for Engineering Students in India | Dev Brains AI</title>
+
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="20 AI project ideas for Indian engineering students — beginner to final-year B.Tech capstone projects — with working Python and FastAPI deployment code."
