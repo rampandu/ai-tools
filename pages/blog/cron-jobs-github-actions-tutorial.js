@@ -33,6 +33,7 @@ export default function CronJobsGithubActions() {
     <>
       <Head>
         <title>GitHub Actions Cron Jobs: Syntax and Gotchas | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Schedule GitHub Actions workflows with cron: working YAML examples, the 5-minute minimum interval, UTC-only timing, and inactive-repo run skips."
