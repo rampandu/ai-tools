@@ -7,6 +7,23 @@ const nextConfig = {
   },
   async redirects() {
     return [
+      // www -> apex, permanent. Vercel's automatic domain-alias redirect for
+      // the www subdomain was observed serving a 307 (temporary) instead of
+      // a 301/308, which Google Search Console flagged as a failed
+      // "Page with redirect" validation - a temporary redirect doesn't
+      // reliably signal to transfer ranking/index status to the apex domain.
+      // This app-level rule fires with permanent:true (308) if the request
+      // reaches Next.js; if Vercel's platform-level alias redirect is what's
+      // actually serving the 307, it happens before this code ever runs and
+      // needs fixing in Vercel's dashboard (Project -> Settings -> Domains)
+      // instead.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.dev-brains-ai.com' }],
+        destination: 'https://dev-brains-ai.com/:path*',
+        permanent: true,
+      },
+
       // Consolidated into /blog/regex-for-indian-id-document-validation (2026-07-24)
       // to fix Google's "low value content" flag on near-duplicate, single-topic posts.
       { source: '/blog/regex-for-aadhaar-card-validation', destination: '/blog/regex-for-indian-id-document-validation', permanent: true },
