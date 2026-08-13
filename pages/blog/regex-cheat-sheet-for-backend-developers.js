@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 
 export default function Blog() {
   return (
@@ -42,7 +43,7 @@ export default function Blog() {
         </p>
 
         <p>
-          👉 Try Regex Generator Tool → https://dev-brains-ai.com/regex-generator
+          👉 Try the <Link href="/regex-generator">Regex Generator Tool</Link>
         </p>
 
         <hr />
@@ -92,6 +93,15 @@ export default function Blog() {
         <h3>PIN Code</h3>
         <pre>{`^[1-9][0-9]{5}$`}</pre>
 
+        <p>
+          For Aadhaar, passport, IFSC, driving license, and a deeper breakdown of
+          which of these regex patterns are actually safe to trust versus which
+          need a real checksum, see{" "}
+          <Link href="/blog/regex-for-indian-id-document-validation">
+            the complete guide to Indian ID and document regex validation
+          </Link>.
+        </p>
+
         <hr />
 
         <h2>4️⃣ Regex in Node.js Example</h2>
@@ -124,7 +134,7 @@ print(re.match(pattern, "9876543210"))
         </ul>
 
         <p>
-          👉 Try JSON Formatter → https://dev-brains-ai.com/json-formatter
+          👉 Try the <Link href="/json-formatter">JSON Formatter</Link>
         </p>
 
         <hr />
@@ -140,7 +150,7 @@ print(re.match(pattern, "9876543210"))
           <li>Validate password rules</li>
         </ul>
 
-        Practice using Dev-Brains-AI Regex Generator.
+        Practice using the <Link href="/regex-generator">Dev Brains AI Regex Generator</Link>.
 
         <hr />
 
@@ -167,7 +177,7 @@ print(re.match(pattern, "9876543210"))
         </p>
 
         <p>
-          👉 https://dev-brains-ai.com/
+          👉 <Link href="/">Browse all Dev Brains AI tools</Link>
         </p>
       </main>
     </>

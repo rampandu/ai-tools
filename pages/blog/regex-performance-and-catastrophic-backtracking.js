@@ -233,6 +233,7 @@ const goodWhitespace = /^\\s*$/;`}
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
+              <li><Link href="/regex-explainer">Regex Explainer — paste a pattern, get a token-by-token breakdown</Link></li>
               <li><Link href="/blog/regex-non-greedy-vs-greedy-matching">Regex Non-Greedy vs Greedy Matching</Link></li>
               <li><Link href="/blog/regex-for-ipv4-address-validation">Regex for IPv4 Address Validation</Link></li>
               <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>

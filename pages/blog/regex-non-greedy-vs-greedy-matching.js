@@ -247,6 +247,7 @@ html.match(/<([^>]*)>/)[1]; // 'b'  — same result here, but more robust on mes
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
+              <li><Link href="/regex-explainer">Regex Explainer — paste a pattern, get a token-by-token breakdown</Link></li>
               <li><Link href="/blog/regex-lookahead-and-lookbehind-explained">Regex Lookahead and Lookbehind Explained</Link></li>
               <li><Link href="/blog/regex-performance-and-catastrophic-backtracking">Regex Performance and Catastrophic Backtracking</Link></li>
               <li><Link href="/blog/regex-for-html-tag-stripping">Regex for HTML Tag Stripping</Link></li>

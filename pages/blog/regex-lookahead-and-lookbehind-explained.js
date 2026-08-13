@@ -242,6 +242,7 @@ const notUsDollar = /(?<!US)\\$\\d+/g;
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
+              <li><Link href="/regex-explainer">Regex Explainer — paste a pattern, get a token-by-token breakdown</Link></li>
               <li><Link href="/blog/regex-for-password-validation-rules">Regex for Password Validation Rules</Link></li>
               <li><Link href="/blog/regex-non-greedy-vs-greedy-matching">Regex Non-Greedy vs Greedy Matching</Link></li>
               <li><Link href="/blog/regex-performance-and-catastrophic-backtracking">Regex Performance and Catastrophic Backtracking</Link></li>
