@@ -410,6 +410,17 @@ export default function CronGenerator() {
           natural language into SQL queries.
         </p>
       </div>
+
+      <div className="card small">
+        <h4>Cron guides and tutorials</h4>
+        <ul className="small">
+          <li><Link href="/blog/cron-expression-complete-guide">Cron Expression Guide: Syntax, Fields &amp; Platform Differences</Link></li>
+          <li><Link href="/blog/cron-expression-examples-every-5-minutes">Cron Every 5 Minutes: Expression + Examples</Link></li>
+          <li><Link href="/blog/cron-expression-timezone-handling-guide">Cron Timezones Explained: UTC, CRON_TZ, DST</Link></li>
+          <li><Link href="/blog/cron-vs-setinterval-nodejs">Cron vs setInterval in Node.js</Link></li>
+          <li><Link href="/blog/debugging-cron-jobs-that-are-not-running">Cron Job Not Running? 5 Fixes That Actually Work</Link></li>
+        </ul>
+      </div>
     </div>
   );
 }

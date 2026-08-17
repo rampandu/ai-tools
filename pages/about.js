@@ -169,6 +169,23 @@ export default function About() {
             if a tool you need doesn't exist yet, that's useful to know — reach out via the{' '}
             <Link href="/contact">contact page</Link>.
           </p>
+
+          <h2 style={{ fontSize: '1.35rem', fontWeight: 600, marginTop: 28, marginBottom: 12 }}>
+            Who Builds Dev Brains AI
+          </h2>
+          <p className="small" style={{ marginBottom: 16 }}>
+            Dev Brains AI is built and maintained by a software engineer with professional
+            experience spanning SAP, Java, Node.js, cloud and integration technologies, and
+            developer tooling. The tools here come out of that background — utilities for problems
+            that come up repeatedly in real backend and integration work (parsing and validating
+            data, scheduling jobs, writing and debugging SQL and regex), turned into something
+            reusable instead of solved from scratch each time.
+          </p>
+          <p className="small">
+            Dev Brains AI is independently operated and not affiliated with, sponsored by, or
+            endorsed by SAP or any other company. Questions, corrections, or tool requests are
+            welcome via the <Link href="/contact">contact page</Link>.
+          </p>
         </section>
       </main>
     </>
