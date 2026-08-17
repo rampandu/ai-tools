@@ -5,6 +5,15 @@ export default function RegexTester({ pattern }) {
   const [input, setInput] = useState('');
   const [flags, setFlags] = useState(''); // e.g., 'i'
   const [error, setError] = useState(null);
+  const [copied, setCopied] = useState(false);
+
+  async function copyMatches(matches) {
+    try {
+      await navigator.clipboard.writeText(JSON.stringify(matches, null, 2));
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } catch {}
+  }
 
   const result = useMemo(() => {
     if (!pattern) return null;
@@ -59,7 +68,12 @@ export default function RegexTester({ pattern }) {
           <div className="small"><strong>Matches:</strong> {result.matched ? 'Yes' : 'No'}</div>
           {result.matches.length > 0 && (
             <div style={{ marginTop: 8 }}>
-              <strong>Captured groups / matches</strong>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <strong>Captured groups / matches</strong>
+                <button className="small" onClick={() => copyMatches(result.matches)}>
+                  {copied ? 'Copied!' : 'Copy'}
+                </button>
+              </div>
               <pre style={{ background: '#f3f4f6', padding: 12, borderRadius: 8 }}>{JSON.stringify(result.matches, null, 2)}</pre>
             </div>
           )}
