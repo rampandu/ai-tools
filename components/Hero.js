@@ -8,9 +8,11 @@ export default function Hero() {
       style={{ display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}
     >
       <div style={{ flex: '1 1 420px' }}>
-        {/* UPDATED: H1 now covers all 5 tools and leads with the transformation */}
-        <h1 style={{ fontSize: '2.25rem', marginBottom: 8 }}>
+        <div className="small" style={{ fontWeight: 600, color: '#0ea5a6', marginBottom: 6, letterSpacing: '0.02em', textTransform: 'uppercase', fontSize: '0.78rem' }}>
           Plain English → Production-Ready Code
+        </div>
+        <h1 style={{ fontSize: '2.25rem', marginBottom: 8 }}>
+          Developer Tools, Utilities &amp; Technical Guides
         </h1>
 
         <p className="small" style={{ fontSize: '1rem', marginBottom: 16 }}>
