@@ -3,6 +3,21 @@ import Head from "next/head";
 import Link from "next/link";
 
 export default function About() {
+  const personJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': 'https://dev-brains-ai.com/#author',
+    name: 'Rama Pandu Cheti',
+    jobTitle: 'Software Engineer',
+    description:
+      'Software engineer with professional experience spanning SAP, Java, Node.js, and cloud and integration technologies.',
+    url: 'https://dev-brains-ai.com/about',
+    sameAs: [
+      'https://github.com/rampandu',
+      'https://www.linkedin.com/in/rama-pandu-cheti-541a0332/',
+    ],
+  };
+
   const organizationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -12,6 +27,9 @@ export default function About() {
     logo: 'https://dev-brains-ai.com/logo.png',
     description:
       'Dev Brains AI builds 32 free browser-based developer tools — regex, SQL, JSON, cron, JWT, hashing, and encoding utilities — plus 150+ in-depth guides.',
+    founder: {
+      '@id': 'https://dev-brains-ai.com/#author',
+    },
   };
 
   const aboutPageJsonLd = {
@@ -67,6 +85,10 @@ export default function About() {
         <link rel="canonical" href="https://dev-brains-ai.com/about" />
 
         {/* Schema.org JSON-LD */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
@@ -174,12 +196,16 @@ export default function About() {
             Who Builds Dev Brains AI
           </h2>
           <p className="small" style={{ marginBottom: 16 }}>
-            Dev Brains AI is built and maintained by a software engineer with professional
-            experience spanning SAP, Java, Node.js, cloud and integration technologies, and
-            developer tooling. The tools here come out of that background — utilities for problems
-            that come up repeatedly in real backend and integration work (parsing and validating
-            data, scheduling jobs, writing and debugging SQL and regex), turned into something
-            reusable instead of solved from scratch each time.
+            Dev Brains AI is built and maintained by <strong>Rama Pandu Cheti</strong>, a software
+            engineer with professional experience spanning SAP, Java, Node.js, cloud and
+            integration technologies, and developer tooling. The tools here come out of that
+            background — utilities for problems that come up repeatedly in real backend and
+            integration work (parsing and validating data, scheduling jobs, writing and debugging
+            SQL and regex), turned into something reusable instead of solved from scratch each
+            time. Find more on{' '}
+            <a href="https://github.com/rampandu" target="_blank" rel="noopener noreferrer">GitHub</a>{' '}
+            or{' '}
+            <a href="https://www.linkedin.com/in/rama-pandu-cheti-541a0332/" target="_blank" rel="noopener noreferrer">LinkedIn</a>.
           </p>
           <p className="small">
             Dev Brains AI is independently operated and not affiliated with, sponsored by, or
