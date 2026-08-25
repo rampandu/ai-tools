@@ -2,6 +2,21 @@
 import Head from 'next/head';
 import Link from 'next/link';
 
+const FAQ = [
+  {
+    q: 'Are these patterns safe to use as-is in production?',
+    a: 'They cover the common case reliably, but a few are deliberately simplified — the email and URL patterns here are practical, not full RFC-compliant validators. For a stricter email pattern with edge-case handling, or a URL pattern that also matches bare domains and localhost, see the dedicated guides linked below.',
+  },
+  {
+    q: 'Why does the URL pattern not require the closing bracket or quote?',
+    a: 'It stops at the first whitespace character, which works well for plain text but will over-match if the URL is immediately followed by punctuation with no space, like a URL in parentheses. For pattern-matching inside HTML or Markdown specifically, a more context-aware approach is usually better than a single regex.',
+  },
+  {
+    q: 'What does the ? after * do in the non-greedy example?',
+    a: 'It flips the quantifier from greedy to lazy. The pattern <.*> on "<a><b>" matches the whole string from the first < to the last >, while <.*?> stops at the first >, matching just "<a>". See the dedicated guide to greedy vs non-greedy matching for more examples of where this distinction matters.',
+  },
+];
+
 export default function TopRegexPatterns() {
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -28,6 +43,29 @@ export default function TopRegexPatterns() {
     ],
   };
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: '10 Copy-Paste Regex Patterns Every Developer Needs',
+    description:
+      '10 ready-to-use regex patterns for emails, URLs, phone numbers, hex colors, and more — each with a working example you can paste straight into your code.',
+    author: { '@type': 'Organization', name: 'Dev Brains AI' },
+    publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
+    url: 'https://dev-brains-ai.com/blog/regex-top-patterns',
+    datePublished: '2026-02-26',
+    dateModified: '2026-08-25',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: FAQ.map((item) => ({
+      '@type': 'Question',
+      name: item.q,
+      acceptedAnswer: { '@type': 'Answer', text: item.a },
+    })),
+  };
+
   return (
     <>
       <Head>
@@ -47,6 +85,14 @@ export default function TopRegexPatterns() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
         />
       </Head>
 
@@ -174,13 +220,33 @@ export default function TopRegexPatterns() {
             </li>
           </ul>
 
-          <p className="small" style={{ marginTop: 12 }}>
-            If you want, try these patterns in our{' '}
-            <Link href="/regex-generator" className="text-blue-600 underline">
-              AI Regex Generator
-            </Link>{' '}
-            to see live examples and explanations.
+          <p className="small" style={{ marginTop: 12, marginBottom: 24 }}>
+            Want to generate a pattern for something not on this list, or get any of these
+            explained token by token? Try the{' '}
+            <Link href="/regex-generator">AI Regex Generator</Link> or the{' '}
+            <Link href="/regex-explainer">Regex Explainer</Link>.
           </p>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            Frequently Asked Questions
+          </h2>
+          {FAQ.map((f, i) => (
+            <div key={i} style={{ marginBottom: 10 }}>
+              <strong>{f.q}</strong>
+              <p className="small" style={{ marginTop: 6 }}>{f.a}</p>
+            </div>
+          ))}
+
+          <div style={{ marginTop: 28 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/regex-cheat-sheet-for-backend-developers">Regex Cheat Sheet for Backend Developers</Link></li>
+              <li><Link href="/blog/regex-for-email-validation-javascript-example">Regex for Email Validation in JS — Patterns &amp; Edge Cases</Link></li>
+              <li><Link href="/blog/regex-for-url-validation-javascript">Regex for URL Validation in JavaScript</Link></li>
+              <li><Link href="/blog/regex-non-greedy-vs-greedy-matching">Regex Non-Greedy vs Greedy Matching</Link></li>
+              <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">50 Ready-to-Use Regex Patterns for Developers</Link></li>
+            </ul>
+          </div>
         </article>
       </main>
     </>
