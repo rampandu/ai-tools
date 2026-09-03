@@ -66,7 +66,6 @@ export default function HowToDebugRestApiErrorsUsingAi() {
       <Head>
         <title>How to Debug REST API Errors Using AI: A 4-Step Workflow | Dev Brains AI</title>
 
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A repeatable 4-step workflow for debugging REST API errors with AI: capture the full error, include the exact request, trace it through your code, verify the fix."

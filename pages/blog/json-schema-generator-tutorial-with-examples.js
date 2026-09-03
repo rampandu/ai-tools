@@ -66,7 +66,6 @@ export default function JsonSchemaGeneratorTutorialWithExamples() {
       <Head>
         <title>JSON Schema Generator Tutorial: From Example to Ajv | Dev Brains AI</title>
 
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Turn a real API response into a working JSON Schema step by step, then refine it with patterns and enums, and validate incoming data with Ajv in Node.js."

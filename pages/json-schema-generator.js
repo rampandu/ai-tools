@@ -388,6 +388,16 @@ export default function JsonSchemaGeneratorPage() {
           <Link href="/json-to-typescript">JSON to TypeScript Converter</Link>.
         </p>
       </div>
+
+      <div className="card">
+        <h3>JSON Schema guides and tutorials</h3>
+        <ul className="small">
+          <li><Link href="/blog/json-schema-generator-tutorial-with-examples">JSON Schema Generator Tutorial: From Example to Ajv</Link></li>
+          <li><Link href="/blog/json-schema-validation-nodejs-example">JSON Schema Validation in Node.js with Ajv</Link></li>
+          <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
+          <li><Link href="/blog/rest-api-json-response-best-practices">REST API JSON Response Best Practices</Link></li>
+        </ul>
+      </div>
     </div>
   );
 }

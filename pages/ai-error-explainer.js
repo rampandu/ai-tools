@@ -309,6 +309,14 @@ export default function AiErrorExplainerPage() {
           <Link href="/json-formatter">JSON Formatter</Link> to debug JSON payloads.
         </p>
       </div>
+
+      <div className="card">
+        <h3>API error guides and tutorials</h3>
+        <ul className="small">
+          <li><Link href="/blog/common-api-errors-and-how-to-fix-them">6 Common REST API Errors and How to Fix Them</Link></li>
+          <li><Link href="/blog/how-to-debug-rest-api-errors-using-ai">How to Debug REST API Errors Using AI: A 4-Step Workflow</Link></li>
+        </ul>
+      </div>
     </div>
   );
 }
