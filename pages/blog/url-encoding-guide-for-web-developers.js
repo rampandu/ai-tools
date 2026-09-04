@@ -27,6 +27,39 @@ export default function UrlEncodingGuide() {
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-guide-for-web-developers',
+    datePublished: '2026-07-11',
+    dateModified: '2026-09-04',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the difference between encodeURI and encodeURIComponent?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'encodeURIComponent encodes a single value for use inside a URL — it escapes characters like &, =, and / that would otherwise be read as URL structure. encodeURI encodes a complete URL and leaves structural characters like :// ? & = # intact. Using encodeURI on a query parameter value is a common bug, since it will not escape & or =.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What happens if I encode an already-encoded URL?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You get double-encoding: the % from the first encoding pass gets encoded again into %25, turning a correct %20 into %2520. This is one of the most common URL encoding bugs, usually caused by encoding a value both on the client and again on the server, or by a framework that encodes automatically.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do I need to manually decode query parameters in JavaScript?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, in most cases. URLSearchParams decodes values automatically when you read them, so calling decodeURIComponent on top of that will decode the value twice. Reach for decodeURIComponent directly only when you have a raw percent-encoded string that did not come through URLSearchParams.',
+        },
+      },
+    ],
   };
 
   return (
@@ -44,6 +77,7 @@ export default function UrlEncodingGuide() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-encoding-guide-for-web-developers" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -149,6 +183,38 @@ decodeURIComponent('%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87'); //
             <li>Forgetting to encode redirect URLs passed as query parameters — the embedded URL's <code>?</code> and <code>&amp;</code> will corrupt the outer URL.</li>
             <li>Not encoding file names in download URLs — spaces and brackets in filenames cause broken links in some browsers.</li>
           </ul>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 20 }}>Frequently Asked Questions</h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What is the difference between encodeURI and encodeURIComponent?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              <code>encodeURIComponent</code> encodes a single value for use inside a URL — it
+              escapes characters like <code>&amp;</code>, <code>=</code>, and <code>/</code> that
+              would otherwise be read as URL structure. <code>encodeURI</code> encodes a complete
+              URL and leaves structural characters like <code>:// ? &amp; = #</code> intact. Using{' '}
+              <code>encodeURI</code> on a query parameter value is a common bug, since it will not
+              escape <code>&amp;</code> or <code>=</code>.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What happens if I encode an already-encoded URL?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              You get double-encoding: the <code>%</code> from the first encoding pass gets encoded
+              again into <code>%25</code>, turning a correct <code>%20</code> into{' '}
+              <code>%2520</code>. This is one of the most common URL encoding bugs, usually caused
+              by encoding a value both on the client and again on the server, or by a framework
+              that encodes automatically.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Do I need to manually decode query parameters in JavaScript?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              No, in most cases. <code>URLSearchParams</code> decodes values automatically when you
+              read them, so calling <code>decodeURIComponent</code> on top of that will decode the
+              value twice. Reach for <code>decodeURIComponent</code> directly only when you have a
+              raw percent-encoded string that did not come through <code>URLSearchParams</code>.
+            </p>
+          </div>
 
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Encode or decode any URL instantly</h3>
           <p className="small" style={{ marginTop: 8 }}>

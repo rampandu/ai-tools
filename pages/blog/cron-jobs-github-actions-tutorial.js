@@ -27,13 +27,45 @@ export default function CronJobsGithubActions() {
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-jobs-github-actions-tutorial',
+    datePublished: '2026-07-11',
+    dateModified: '2026-09-04',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the minimum interval for a GitHub Actions scheduled workflow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GitHub enforces a 5-minute minimum interval for scheduled workflows. More frequent cron expressions are accepted but will be throttled down to roughly every 5 minutes, and can be delayed further during periods of high load.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What timezone does GitHub Actions cron use?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GitHub Actions scheduled workflows always run in UTC. There is no per-workflow timezone setting, so convert your target local time to UTC before writing the cron expression.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why did my scheduled GitHub Actions workflow stop running?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GitHub automatically disables scheduled workflows on repositories with no activity for 60 days. Push a commit or manually re-enable the workflow from the Actions tab to resume its schedule.',
+        },
+      },
+    ],
   };
 
   return (
     <>
       <Head>
         <title>GitHub Actions Cron Jobs: Syntax and Gotchas | Dev Brains AI</title>
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Schedule GitHub Actions workflows with cron: working YAML examples, the 5-minute minimum interval, UTC-only timing, and inactive-repo run skips."
@@ -45,6 +77,7 @@ export default function CronJobsGithubActions() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-jobs-github-actions-tutorial" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -152,12 +185,47 @@ jobs:
     run: npm run build`}
           </pre>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>Frequently Asked Questions</h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What is the minimum interval for a GitHub Actions scheduled workflow?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              GitHub enforces a 5-minute minimum interval for scheduled workflows. More frequent
+              cron expressions are accepted but will be throttled down to roughly every 5 minutes,
+              and can be delayed further during periods of high load.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What timezone does GitHub Actions cron use?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              GitHub Actions scheduled workflows always run in UTC. There is no per-workflow
+              timezone setting, so convert your target local time to UTC before writing the cron
+              expression.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Why did my scheduled GitHub Actions workflow stop running?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              GitHub automatically disables scheduled workflows on repositories with no activity for
+              60 days. Push a commit or manually re-enable the workflow from the Actions tab to
+              resume its schedule.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Build your cron expression</h3>
           <p className="small" style={{ marginTop: 8 }}>
             Not sure how to write the cron string for your schedule? Use the{' '}
             <Link href="/cron-generator">Dev Brains AI Cron Expression Generator</Link> — type your
             schedule in plain English and get the correct expression with a field-by-field breakdown.
           </p>
+
+          <div style={{ marginTop: 24 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/cron-expression-complete-guide">Cron Expression Guide: Syntax, Fields &amp; Platforms</Link></li>
+              <li><Link href="/blog/cron-expressions-aws-eventbridge-lambda">AWS EventBridge Cron: 6-Field Syntax for Lambda</Link></li>
+              <li><Link href="/blog/cron-job-monitoring-and-alerting-guide">Cron Job Monitoring: Dead Man&apos;s Switch Guide</Link></li>
+            </ul>
+          </div>
 
         </article>
       </main>

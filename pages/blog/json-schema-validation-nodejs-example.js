@@ -276,6 +276,7 @@ app.post("/signup", validateBody(userSchema), (req, res) => {
             <ul className="small">
               <li><Link href="/blog/json-schema-generator-tutorial-with-examples">JSON Schema Generator Tutorial with Examples</Link></li>
               <li><Link href="/blog/how-to-validate-json-in-python-and-javascript">How to Validate JSON in Python and JavaScript</Link></li>
+              <li><Link href="/json-to-typescript">JSON to TypeScript Converter — generate interfaces from the same example JSON</Link></li>
               <li><Link href="/blog/rest-api-json-response-best-practices">REST API JSON Response Best Practices</Link></li>
               <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON Parsing Errors — Common Causes and Fixes</Link></li>
             </ul>

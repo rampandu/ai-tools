@@ -236,6 +236,11 @@ export default function CronExpressionCompleteGuide() {
             <Link href="/blog/cron-vs-quartz-scheduler-java">Cron vs Quartz in Java</Link>. For a
             full walkthrough of editing, logging, and the PATH gotcha on plain Linux crontab, see{' '}
             <Link href="/blog/cron-jobs-in-linux-crontab-tutorial">the Linux crontab tutorial</Link>.
+            For the AWS-specific 6-field syntax and the day-of-month/day-of-week{' '}
+            <code>?</code> rule, see{' '}
+            <Link href="/blog/cron-expressions-aws-eventbridge-lambda">cron for AWS EventBridge and Lambda</Link>,
+            and for GitHub Actions' 5-minute minimum and inactive-repo gotchas, see{' '}
+            <Link href="/blog/cron-jobs-github-actions-tutorial">cron jobs in GitHub Actions</Link>.
           </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>

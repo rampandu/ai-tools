@@ -27,13 +27,45 @@ export default function CronAwsEventBridge() {
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expressions-aws-eventbridge-lambda',
+    datePublished: '2026-07-11',
+    dateModified: '2026-09-04',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How many fields does an AWS EventBridge cron expression have?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Six: minute, hour, day-of-month, month, day-of-week, and year. Standard Unix cron only has five fields and has no year field.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why does EventBridge require a ? in day-of-month or day-of-week?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'EventBridge does not allow both day-of-month and day-of-week to be given real values in the same expression. Whichever one you are not constraining must be set to ? instead of *.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What timezone does AWS EventBridge cron use?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Standard EventBridge (CloudWatch Events) cron rules always run in UTC — there is no way to set a different timezone on the rule itself. Convert your target local time to UTC before writing the expression, or use the newer EventBridge Scheduler, which does support a timezone field.',
+        },
+      },
+    ],
   };
 
   return (
     <>
       <Head>
         <title>AWS EventBridge Cron: 6-Field Syntax for Lambda | Dev Brains AI</title>
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="AWS EventBridge cron uses 6 fields, not 5 — learn the day-of-week offset, the ? wildcard rule, rate expressions, and a working Terraform example for Lambda."
@@ -45,6 +77,7 @@ export default function CronAwsEventBridge() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/cron-expressions-aws-eventbridge-lambda" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -148,6 +181,32 @@ resource "aws_cloudwatch_event_target" "lambda_target" {
 cron(30 3 ? * 2-6 *)`}
           </pre>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>Frequently Asked Questions</h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>How many fields does an AWS EventBridge cron expression have?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Six: minute, hour, day-of-month, month, day-of-week, and year. Standard Unix cron only
+              has five fields and has no year field.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Why does EventBridge require a ? in day-of-month or day-of-week?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              EventBridge does not allow both day-of-month and day-of-week to be given real values
+              in the same expression. Whichever one you are not constraining must be set to{' '}
+              <code>?</code> instead of <code>*</code>.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What timezone does AWS EventBridge cron use?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Standard EventBridge (CloudWatch Events) cron rules always run in UTC — there is no
+              way to set a different timezone on the rule itself. Convert your target local time to
+              UTC before writing the expression, or use the newer EventBridge Scheduler, which does
+              support a timezone field.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Generate your cron expression</h3>
           <p className="small" style={{ marginTop: 8 }}>
             Use the{' '}
@@ -155,6 +214,15 @@ cron(30 3 ? * 2-6 *)`}
             base cron expression from plain English, then adjust it to AWS format by adding the
             year field and using <code>?</code> where required.
           </p>
+
+          <div style={{ marginTop: 24 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/cron-expression-complete-guide">Cron Expression Guide: Syntax, Fields &amp; Platforms</Link></li>
+              <li><Link href="/blog/cron-jobs-github-actions-tutorial">Cron Jobs in GitHub Actions: Complete Tutorial</Link></li>
+              <li><Link href="/blog/cron-expression-timezone-handling-guide">Cron Timezones Explained: UTC, CRON_TZ, DST</Link></li>
+            </ul>
+          </div>
 
         </article>
       </main>

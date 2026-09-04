@@ -78,6 +78,73 @@ const TOOL_SECTIONS = [
   },
 ];
 
+const TOPIC_CLUSTERS = [
+  {
+    name: 'Regex', accent: '#0ea5a6', accentSoft: '#f0fdfa',
+    tool: { href: '/regex-generator', label: 'Regex Generator' },
+    guides: [
+      { href: '/blog/regex-cheat-sheet-for-backend-developers', label: 'Regex Cheat Sheet for Backend Developers' },
+      { href: '/blog/top-50-useful-regex-patterns-for-developers', label: '50 Ready-to-Use Regex Patterns' },
+    ],
+  },
+  {
+    name: 'SQL', accent: '#2563eb', accentSoft: '#eff6ff',
+    tool: { href: '/sql-generator', label: 'SQL Generator' },
+    guides: [
+      { href: '/blog/sql-interview-questions-complete-guide', label: 'SQL Interview Questions: The Complete Guide' },
+      { href: '/blog/sql-indexing-strategies-for-faster-queries', label: 'SQL Indexing Strategies for Faster Queries' },
+    ],
+  },
+  {
+    name: 'Cron', accent: '#d97706', accentSoft: '#fffbeb',
+    tool: { href: '/cron-generator', label: 'Cron Generator' },
+    guides: [
+      { href: '/blog/cron-expression-complete-guide', label: 'Cron Expression Guide: Syntax, Fields & Platforms' },
+      { href: '/blog/debugging-cron-jobs-that-are-not-running', label: 'Debugging Cron Jobs That Are Not Running' },
+    ],
+  },
+  {
+    name: 'JSON', accent: '#7c3aed', accentSoft: '#f5f3ff',
+    tool: { href: '/json-formatter', label: 'JSON Formatter' },
+    guides: [
+      { href: '/blog/json-parsing-errors-common-causes-and-fixes', label: 'JSON Parsing Errors — Common Causes and Fixes' },
+      { href: '/blog/json-schema-generator-tutorial-with-examples', label: 'JSON Schema Generator Tutorial' },
+    ],
+  },
+  {
+    name: 'JWT', accent: '#0ea5a6', accentSoft: '#f0fdfa',
+    tool: { href: '/jwt-decoder', label: 'JWT Decoder' },
+    guides: [
+      { href: '/blog/jwt-expiry-claims-exp-iat-nbf-explained', label: 'JWT exp, iat & nbf Explained' },
+      { href: '/blog/jwt-authentication-explained-for-beginners', label: 'JWT Authentication Explained' },
+    ],
+  },
+  {
+    name: 'Base64 & Encoding', accent: '#2563eb', accentSoft: '#eff6ff',
+    tool: { href: '/base64-tool', label: 'Base64 Encoder / Decoder' },
+    guides: [
+      { href: '/blog/base64-encoding-vs-encryption-difference', label: 'Base64 Is Not Encryption' },
+      { href: '/blog/url-encoding-guide-for-web-developers', label: 'URL Encoding Guide for Web Developers' },
+    ],
+  },
+  {
+    name: 'UUID', accent: '#d97706', accentSoft: '#fffbeb',
+    tool: { href: '/uuid-generator', label: 'UUID Generator' },
+    guides: [
+      { href: '/blog/what-is-a-uuid-guid-explained', label: 'What Is a UUID? GUID vs UUID Explained' },
+      { href: '/blog/uuid-v1-v4-v5-v7-differences', label: 'UUID v1 vs v4 vs v5 vs v7' },
+    ],
+  },
+  {
+    name: 'Hashing', accent: '#7c3aed', accentSoft: '#f5f3ff',
+    tool: { href: '/hash-generator', label: 'Hash Generator' },
+    guides: [
+      { href: '/blog/what-is-hashing-explained-for-beginners', label: 'What Is Hashing? 4 Properties Explained' },
+      { href: '/blog/password-hashing-bcrypt-vs-sha256', label: 'Password Hashing: Why bcrypt Beats SHA-256' },
+    ],
+  },
+];
+
 export default function Home() {
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dev-brains-ai.com';
 
@@ -176,6 +243,48 @@ export default function Home() {
                 output works, so you're not just copy-pasting blindly.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* Browse by topic — tool + guides together, for visitors who know their topic */}
+        <section className="card" style={{ marginTop: 18 }}>
+          <h2>Browse by Topic</h2>
+          <p className="small">
+            Jump straight to a topic's tool and its deepest guides — regex, SQL, cron, and more.
+          </p>
+          <div
+            style={{
+              marginTop: 16,
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))',
+              gap: 16,
+            }}
+          >
+            {TOPIC_CLUSTERS.map((topic) => (
+              <div
+                className="card small"
+                style={{
+                  marginTop: 0,
+                  borderTop: `3px solid ${topic.accent}`,
+                  boxShadow: '0 2px 10px rgba(2,6,23,0.06)',
+                }}
+                key={topic.name}
+              >
+                <h3 style={{ marginBottom: 8, fontSize: '1rem' }}>{topic.name}</h3>
+                <Link
+                  href={topic.tool.href}
+                  className="small"
+                  style={{ display: 'inline-block', fontWeight: 700, color: topic.accent, marginBottom: 8 }}
+                >
+                  Open {topic.tool.label} →
+                </Link>
+                <ul className="small" style={{ paddingLeft: 18, margin: 0 }}>
+                  {topic.guides.map((g) => (
+                    <li key={g.href}><Link href={g.href}>{g.label}</Link></li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </div>
         </section>
 

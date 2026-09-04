@@ -27,6 +27,39 @@ export default function Base64EncodingJavaScript() {
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/base64-encoding-javascript-examples',
+    datePublished: '2026-07-11',
+    dateModified: '2026-09-04',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why does btoa() throw an error on some strings?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'btoa() only accepts characters in the Latin-1 range (code points 0-255). Any string containing emoji, accented letters outside Latin-1, or non-Latin scripts like Hindi or Chinese throws a DOMException. Encode the string to UTF-8 bytes with TextEncoder first, then pass the resulting byte string to btoa().',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I use btoa()/atob() or Buffer for Base64 in Node.js?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'In Node.js, prefer Buffer.from(str).toString(\'base64\') and Buffer.from(b64, \'base64\').toString(\'utf8\') — Buffer handles Unicode correctly out of the box, with no manual TextEncoder workaround needed. Reach for btoa()/atob() only in browser code, where Buffer is not available.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When do I need URL-safe Base64 instead of standard Base64?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Any time the encoded value will be placed inside a URL, query parameter, or filename — standard Base64\'s + and / characters can be misread as URL structure. URL-safe Base64 (Base64Url) replaces them with - and _ and drops padding, which is exactly what JWTs use for their header and payload segments.',
+        },
+      },
+    ],
   };
 
   return (
@@ -47,6 +80,7 @@ export default function Base64EncodingJavaScript() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/base64-encoding-javascript-examples" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -162,11 +196,53 @@ function fromBase64Url(b64url) {
             <li><strong>Passing binary in JSON APIs</strong> — encode file bytes as a Base64 string field</li>
           </ul>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 20 }}>Frequently Asked Questions</h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Why does btoa() throw an error on some strings?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              <code>btoa()</code> only accepts characters in the Latin-1 range (code points 0-255).
+              Any string containing emoji, accented letters outside Latin-1, or non-Latin scripts
+              like Hindi or Chinese throws a <code>DOMException</code>. Encode the string to UTF-8
+              bytes with <code>TextEncoder</code> first, then pass the resulting byte string to{' '}
+              <code>btoa()</code>.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Should I use btoa()/atob() or Buffer for Base64 in Node.js?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              In Node.js, prefer <code>Buffer.from(str).toString(&apos;base64&apos;)</code> and{' '}
+              <code>Buffer.from(b64, &apos;base64&apos;).toString(&apos;utf8&apos;)</code> — Buffer
+              handles Unicode correctly out of the box, with no manual TextEncoder workaround
+              needed. Reach for <code>btoa()</code>/<code>atob()</code> only in browser code, where
+              Buffer is not available.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>When do I need URL-safe Base64 instead of standard Base64?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Any time the encoded value will be placed inside a URL, query parameter, or filename
+              — standard Base64&apos;s <code>+</code> and <code>/</code> characters can be misread
+              as URL structure. URL-safe Base64 (Base64Url) replaces them with <code>-</code> and{' '}
+              <code>_</code> and drops padding, which is exactly what JWTs use for their header and
+              payload segments.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Try it instantly in your browser</h3>
           <p className="small" style={{ marginTop: 8 }}>
             Use our <Link href="/base64-tool">free Base64 Encoder / Decoder</Link> to encode or
             decode any string instantly. Supports Unicode and URL-safe mode — no data uploaded.
           </p>
+
+          <div style={{ marginTop: 24 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/base64-encoding-python-examples">Base64 Encoding in Python: b64encode, Errors and Fixes</Link></li>
+              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding: Key Differences</Link></li>
+              <li><Link href="/blog/decode-jwt-tokens-base64-javascript">Decode a JWT in JavaScript in 3 Lines</Link></li>
+              <li><Link href="/blog/base64-encoding-limitations-and-alternatives">Base64 Encoding Limitations: When to Use Base85 Instead</Link></li>
+            </ul>
+          </div>
 
         </article>
       </main>
