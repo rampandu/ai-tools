@@ -278,13 +278,49 @@ bool(re.match(pattern, "9876543210"))  # True`}
           </div>
 
           <div style={{ marginTop: 28 }}>
-            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
-            <ul className="small">
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 600 }}>The Complete Regex Guide Series</h2>
+            <p className="small" style={{ marginBottom: 12 }}>
+              This cheat sheet covers the syntax and the field-validation basics. For a specific
+              format, technique, or decision, jump straight to the dedicated guide:
+            </p>
+
+            <h4 style={{ marginBottom: 6 }}>Validation patterns by field</h4>
+            <ul className="small" style={{ marginBottom: 14 }}>
+              <li><Link href="/blog/regex-for-email-validation-javascript-example">Email validation</Link></li>
+              <li><Link href="/blog/regex-for-password-validation-rules">Password validation rules</Link></li>
+              <li><Link href="/blog/regex-for-username-validation-rules">Username validation rules</Link></li>
+              <li><Link href="/blog/regex-for-url-validation-javascript">URL validation</Link></li>
+              <li><Link href="/blog/regex-for-date-format-validation">Date format validation (DD/MM/YYYY, ISO 8601)</Link></li>
+              <li><Link href="/blog/regex-for-hexadecimal-color-code-validation">Hex color code validation</Link></li>
+              <li><Link href="/blog/regex-for-ipv4-address-validation">IPv4 address validation</Link></li>
+              <li><Link href="/blog/regex-for-credit-card-validation">Credit card validation (Visa, Mastercard, Amex, RuPay)</Link></li>
+              <li><Link href="/blog/regex-for-indian-id-document-validation">Indian ID &amp; document validation (Aadhaar, PAN, GST)</Link></li>
+              <li><Link href="/blog/regex-for-indian-vehicle-number-validation">Indian vehicle number validation</Link></li>
+            </ul>
+
+            <h4 style={{ marginBottom: 6 }}>Extraction &amp; text processing</h4>
+            <ul className="small" style={{ marginBottom: 14 }}>
+              <li><Link href="/blog/regex-for-extracting-numbers-from-string">Extracting numbers from a string</Link></li>
+              <li><Link href="/blog/regex-for-extracting-hashtags-and-mentions">Extracting hashtags and mentions</Link></li>
+              <li><Link href="/blog/regex-for-splitting-csv-strings">Splitting CSV strings (quoted commas)</Link></li>
+              <li><Link href="/blog/regex-for-html-tag-stripping">Stripping HTML tags — and the security risk of doing it wrong</Link></li>
+            </ul>
+
+            <h4 style={{ marginBottom: 6 }}>Syntax &amp; technique deep-dives</h4>
+            <ul className="small" style={{ marginBottom: 14 }}>
+              <li><Link href="/blog/regex-lookahead-and-lookbehind-explained">Lookahead vs lookbehind</Link></li>
+              <li><Link href="/blog/regex-non-greedy-vs-greedy-matching">Greedy vs non-greedy matching</Link></li>
+              <li><Link href="/blog/regex-for-multiline-text-matching">Multiline matching (m vs s flags)</Link></li>
+              <li><Link href="/blog/regex-performance-and-catastrophic-backtracking">Catastrophic backtracking and regex performance</Link></li>
+              <li><Link href="/blog/regex-vs-string-methods-when-to-use-which">When to use regex vs plain string methods</Link></li>
+            </ul>
+
+            <h4 style={{ marginBottom: 6 }}>Pattern libraries &amp; tools</h4>
+            <ul className="small" style={{ marginBottom: 0 }}>
+              <li><Link href="/blog/regex-top-patterns">Top 10 Regex Patterns Every Developer Needs</Link></li>
+              <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">50 Ready-to-Use Regex Patterns</Link></li>
+              <li><Link href="/blog/ai-regex-generator-guide">AI Regex Generator Guide</Link></li>
               <li><Link href="/regex-explainer">Regex Explainer — paste a pattern, get a token-by-token breakdown</Link></li>
-              <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">50 Ready-to-Use Regex Patterns for Developers</Link></li>
-              <li><Link href="/blog/regex-for-indian-id-document-validation">Regex for Indian ID & Document Validation</Link></li>
-              <li><Link href="/blog/regex-top-patterns">Top 10 Regex Patterns Every Developer Should Know</Link></li>
-              <li><Link href="/json-formatter">JSON Formatter</Link></li>
             </ul>
           </div>
 

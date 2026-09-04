@@ -515,11 +515,59 @@ rows = cur.fetchall()`}
         <ul className="small">
           <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
           <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
-
           <li><Link href="/blog/common-sql-errors-and-fix-using-ai">Common SQL Errors and How to Fix Them with AI</Link></li>
-          <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>
-          <li><Link href="/blog/mysql-vs-postgresql-performance-comparison">MySQL vs PostgreSQL Performance Comparison</Link></li>
           <li><Link href="/blog/ai-sql-practical">Practical AI SQL Use Cases for Developers</Link></li>
+        </ul>
+      </div>
+
+      {/* SQL guide series, organized by topic */}
+      <div className="card">
+        <h3>SQL guides, by topic</h3>
+
+        <h4 style={{ marginBottom: 6 }}>Joins, keys &amp; data retrieval</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/sql-join-types-explained-with-diagrams">SQL JOIN types explained (with diagrams)</Link></li>
+          <li><Link href="/blog/sql-subqueries-vs-joins-explained">Subqueries vs JOINs — which to use</Link></li>
+          <li><Link href="/blog/sql-union-vs-union-all-explained">UNION vs UNION ALL</Link></li>
+          <li><Link href="/blog/sql-group-by-having-clause-explained">GROUP BY vs HAVING</Link></li>
+          <li><Link href="/blog/sql-window-functions-explained-with-examples">Window functions: ROW_NUMBER, RANK, LAG, LEAD</Link></li>
+          <li><Link href="/blog/sql-cte-common-table-expressions-guide">CTEs — the WITH clause, chaining &amp; recursion</Link></li>
+          <li><Link href="/blog/sql-query-for-pagination-limit-offset">Pagination — LIMIT/OFFSET vs keyset</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Writing &amp; formatting style</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/sql-formatting-best-practices-style-guide">SQL formatting best practices</Link></li>
+          <li><Link href="/blog/sql-keywords-uppercase-or-lowercase">Uppercase or lowercase keywords?</Link></li>
+          <li><Link href="/blog/sql-code-review-checklist">SQL code review checklist</Link></li>
+          <li><Link href="/blog/sql-case-statement-examples">CASE statement examples</Link></li>
+          <li><Link href="/blog/sql-explainer-guide-how-it-works">How to read any SQL query (execution order)</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Performance &amp; schema design</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/sql-indexing-strategies-for-faster-queries">Indexing strategies — B-Tree, composite keys, EXPLAIN</Link></li>
+          <li><Link href="/blog/sql-optimization-techniques-for-large-tables">7 optimization techniques for large tables</Link></li>
+          <li><Link href="/blog/sql-normalization-explained-1nf-2nf-3nf">Normalization — 1NF, 2NF, 3NF</Link></li>
+          <li><Link href="/blog/sql-null-handling-best-practices">NULL handling best practices</Link></li>
+          <li><Link href="/blog/sql-transactions-acid-properties-explained">Transactions &amp; ACID properties</Link></li>
+          <li><Link href="/blog/sql-stored-procedures-vs-functions">Stored procedures vs functions</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Comparisons</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/sql-vs-nosql-when-to-choose-which">SQL vs NoSQL — when to choose which</Link></li>
+          <li><Link href="/blog/mysql-vs-postgresql-performance-comparison">MySQL vs PostgreSQL performance</Link></li>
+          <li><Link href="/blog/sql-date-functions-cheat-sheet">Date functions — MySQL vs PostgreSQL</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Real-world query recipes</h4>
+        <ul className="small" style={{ marginBottom: 0 }}>
+          <li><Link href="/blog/sql-query-for-duplicate-records-detection">Find and remove duplicate records</Link></li>
+          <li><Link href="/blog/sql-query-for-hierarchical-data-recursive-cte">Recursive CTEs for org charts and category trees</Link></li>
+          <li><Link href="/blog/sql-query-for-inventory-management-system">Inventory management queries</Link></li>
+          <li><Link href="/blog/sql-query-for-employee-attendance-report">Employee attendance &amp; late-arrival reports</Link></li>
+          <li><Link href="/blog/sql-query-for-sales-report-dashboard">Sales dashboard queries — revenue &amp; growth</Link></li>
         </ul>
       </div>
     </div>

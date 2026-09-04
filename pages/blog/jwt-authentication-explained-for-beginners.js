@@ -231,26 +231,47 @@ app.get('/api/profile', (req, res) => {
           </div>
 
           <div style={{ marginTop: 28, padding: 16, background: '#f0fdf4', borderRadius: 8, border: '1px solid #bbf7d0' }}>
-            <strong>Try the Free Base64 Encoder/Decoder</strong>
+            <strong>Decode a Real Token Instantly</strong>
             <p className="small" style={{ marginTop: 8, marginBottom: 12 }}>
-              Paste any JWT segment into our free tool to decode the header or payload instantly and
-              inspect the raw claims — no library or code required.
+              Paste any JWT into the free JWT Decoder to inspect its header, payload, and expiry
+              directly — no library, no code, nothing sent to a server.
             </p>
-            <Link href="/base64-tool">
+            <Link href="/jwt-decoder">
               <button style={{ background: '#16a34a', color: 'white', border: 'none', padding: '10px 20px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>
-                Open Base64 Encoder/Decoder →
+                Open JWT Decoder →
               </button>
             </Link>
           </div>
 
           <div style={{ marginTop: 28 }}>
-            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
-            <ul className="small">
-              <li><Link href="/blog/decode-jwt-tokens-base64-javascript">How to Decode JWT Tokens Using Base64 in JavaScript</Link></li>
-              <li><Link href="/blog/base64-encoding-vs-encryption-difference">Base64 Encoding vs Encryption — What's the Difference?</Link></li>
-              <li><Link href="/blog/base64-encoding-javascript-examples">Base64 Encoding in JavaScript — Complete Guide with Examples</Link></li>
-              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding — What's the Difference?</Link></li>
-              <li><Link href="/blog/base64-encoding-python-examples">Base64 Encoding in Python — Complete Guide with Examples</Link></li>
+            <h2 style={{ fontSize: '1.25rem', fontWeight: 600 }}>The Complete JWT Guide Series</h2>
+            <p className="small" style={{ marginBottom: 12 }}>
+              This page covers how JWT auth works end to end. For a specific piece — structure,
+              expiry, security, or how it compares to sessions — see the dedicated guide:
+            </p>
+
+            <h4 style={{ marginBottom: 6 }}>Fundamentals</h4>
+            <ul className="small" style={{ marginBottom: 14 }}>
+              <li><Link href="/blog/jwt-structure-explained-header-payload-signature">JWT structure: header, payload, signature</Link></li>
+              <li><Link href="/blog/jwt-expiry-claims-exp-iat-nbf-explained">exp, iat &amp; nbf explained — avoiding silent expiry bugs</Link></li>
+            </ul>
+
+            <h4 style={{ marginBottom: 6 }}>Decoding &amp; inspecting a token</h4>
+            <ul className="small" style={{ marginBottom: 14 }}>
+              <li><Link href="/blog/how-to-decode-a-jwt-token-safely">How to decode a JWT token safely</Link></li>
+              <li><Link href="/blog/decode-jwt-tokens-base64-javascript">Decode a JWT in JavaScript in 3 lines</Link></li>
+            </ul>
+
+            <h4 style={{ marginBottom: 6 }}>Security &amp; troubleshooting</h4>
+            <ul className="small" style={{ marginBottom: 14 }}>
+              <li><Link href="/blog/jwt-security-best-practices-for-developers">6 JWT security best practices</Link></li>
+              <li><Link href="/blog/common-jwt-errors-and-how-to-fix-them">4 common JWT errors and how to fix them</Link></li>
+            </ul>
+
+            <h4 style={{ marginBottom: 6 }}>Comparisons</h4>
+            <ul className="small" style={{ marginBottom: 0 }}>
+              <li><Link href="/blog/json-web-token-vs-session-authentication">JWT vs session authentication</Link></li>
+              <li><Link href="/blog/api-authentication-methods-explained-oauth-jwt-apikey">API keys vs JWT vs OAuth 2.0</Link></li>
             </ul>
           </div>
 

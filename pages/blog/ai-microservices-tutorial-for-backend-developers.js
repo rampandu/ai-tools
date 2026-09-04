@@ -65,7 +65,6 @@ export default function AiMicroservicesTutorialForBackendDevelopers() {
     <>
       <Head>
         <title>Build an AI Microservice for Your Backend (FastAPI) | Dev Brains AI</title>
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A working FastAPI example for wrapping an AI model as its own microservice, plus how to call it from Node.js, handle timeouts, and deploy it independently."
@@ -240,9 +239,9 @@ async function classifyReviewText(text) {
             <ul className="small">
               <li><Link href="/blog/rest-api-vs-graphql-comparison">REST vs GraphQL — A Practical Comparison for Backend Developers</Link></li>
               <li><Link href="/blog/how-to-design-a-rest-api-best-practices">How to Design a REST API — Best Practices That Actually Matter</Link></li>
-              <li><Link href="/blog/ai-anomaly-detection-for-server-logs-python-example">AI Anomaly Detection for Server Logs — Python Example</Link></li>
               <li><Link href="/blog/how-to-debug-rest-api-errors-using-ai">How to Debug REST API Errors Using AI</Link></li>
-              <li><Link href="/blog/python-ai-projects-for-engineering-students-india">Python AI Projects for Engineering Students in India</Link></li>
+              <li><Link href="/blog/how-to-handle-async-errors-in-nodejs">How to Handle Async Errors in Node.js the Right Way</Link></li>
+              <li><Link href="/blog/debugging-memory-leaks-in-nodejs">Debugging Memory Leaks in Node.js — A Practical Walkthrough</Link></li>
             </ul>
           </div>
 

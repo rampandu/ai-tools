@@ -321,6 +321,49 @@ export default function JsonFormatterPage() {
           <Link href="/sql-generator">AI SQL Generator</Link> to convert questions into SQL queries.
         </p>
       </div>
+
+      {/* JSON guide series, organized by topic */}
+      <div className="card">
+        <h3>JSON guides, by topic</h3>
+
+        <h4 style={{ marginBottom: 6 }}>Parsing &amp; validation</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/json-parsing-errors-common-causes-and-fixes">JSON parsing errors — common causes and fixes</Link></li>
+          <li><Link href="/blog/how-to-validate-json-in-python-and-javascript">Validate JSON in Python and JavaScript</Link></li>
+          <li><Link href="/blog/json-formatter-online-free-guide">Free online JSON formatter — full guide</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Schema &amp; type generation</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/json-schema-generator-tutorial-with-examples">JSON Schema generator tutorial</Link></li>
+          <li><Link href="/blog/json-schema-validation-nodejs-example">JSON Schema validation in Node.js with Ajv</Link></li>
+          <li><Link href="/json-to-typescript">JSON to TypeScript Converter</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Working with JSON in code</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/json-serialization-python-guide">Python JSON serialization — fixing the not-serializable error</Link></li>
+          <li><Link href="/blog/working-with-large-json-files-nodejs">Large JSON files in Node.js — avoiding heap out of memory</Link></li>
+          <li><Link href="/blog/nested-json-flattening-techniques">Flatten nested JSON in JavaScript</Link></li>
+          <li><Link href="/blog/json-minify-vs-pretty-print-explained">JSON minify vs pretty print</Link></li>
+          <li><Link href="/blog/json-diff-comparing-two-json-objects">Comparing two JSON objects</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>Comparisons &amp; format choices</h4>
+        <ul className="small" style={{ marginBottom: 14 }}>
+          <li><Link href="/blog/json-vs-xml-comparison-for-apis">JSON vs XML for APIs</Link></li>
+          <li><Link href="/blog/yaml-vs-json-differences-explained">YAML vs JSON — key differences</Link></li>
+          <li><Link href="/blog/when-to-use-yaml-json-toml-config">YAML vs JSON vs TOML for config</Link></li>
+          <li><Link href="/blog/convert-yaml-to-json-javascript-python">Convert YAML to JSON safely</Link></li>
+          <li><Link href="/blog/json-to-csv-conversion-guide">JSON to CSV conversion</Link></li>
+        </ul>
+
+        <h4 style={{ marginBottom: 6 }}>APIs &amp; real-world payloads</h4>
+        <ul className="small" style={{ marginBottom: 0 }}>
+          <li><Link href="/blog/rest-api-json-response-best-practices">REST API JSON response best practices</Link></li>
+          <li><Link href="/blog/json-formatter-for-indian-gst-apis">JSON formatter for Indian GST APIs</Link></li>
+        </ul>
+      </div>
     </div>
   );
 }
