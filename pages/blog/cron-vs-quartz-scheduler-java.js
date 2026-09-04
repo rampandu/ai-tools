@@ -66,7 +66,6 @@ export default function CronVsQuartzSchedulerJava() {
     <>
       <Head>
         <title>Cron vs Quartz in Java: The Seconds Field Trap | Dev Brains AI</title>
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Convert Unix cron to Quartz syntax in Java: the extra seconds field, the day-of-month/day-of-week ? rule, and a side-by-side table of matching expressions."

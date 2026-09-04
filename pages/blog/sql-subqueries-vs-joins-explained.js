@@ -274,6 +274,7 @@ WHERE EXISTS (
               <li><Link href="/blog/sql-cte-common-table-expressions-guide">SQL CTE (Common Table Expressions) Guide</Link></li>
               <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>
               <li><Link href="/blog/sql-indexing-strategies-for-faster-queries">SQL Indexing Strategies for Faster Queries</Link></li>
+              <li><Link href="/blog/sql-union-vs-union-all-explained">SQL UNION vs UNION ALL: Differences &amp; Performance</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
             </ul>
           </div>

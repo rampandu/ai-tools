@@ -519,7 +519,6 @@ rows = cur.fetchall()`}
           <li><Link href="/blog/common-sql-errors-and-fix-using-ai">Common SQL Errors and How to Fix Them with AI</Link></li>
           <li><Link href="/blog/sql-optimization-techniques-for-large-tables">SQL Optimization Techniques for Large Tables</Link></li>
           <li><Link href="/blog/mysql-vs-postgresql-performance-comparison">MySQL vs PostgreSQL Performance Comparison</Link></li>
-          <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers and Beginners</Link></li>
           <li><Link href="/blog/ai-sql-practical">Practical AI SQL Use Cases for Developers</Link></li>
         </ul>
       </div>

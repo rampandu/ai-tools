@@ -28,7 +28,38 @@ export default function UrlEncodingRestApi() {
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/url-encoding-rest-api-query-parameters',
     datePublished: '2026-02-26',
-    dateModified: '2026-07-22',
+    dateModified: '2026-09-04',
+  };
+
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why does an unencoded & in a query parameter break an API call?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The & character separates query parameters, so an unencoded & inside a value gets read as the start of a new parameter instead of part of the value — silently splitting your data and sending the server something different from what you intended.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Should I use encodeURIComponent or URLSearchParams for API query parameters?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'URLSearchParams is usually the better default — it encodes every value automatically and builds the full query string for you, so there is no risk of forgetting to encode one field. Use encodeURIComponent directly only when you are inserting a single value into a template string by hand.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do I need to manually decode query parameters on the server?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, in almost all cases. Frameworks like Express, and the built-in URL/URLSearchParams APIs in Node.js, automatically decode query parameters before your code sees them — manual decoding is rarely needed and can even double-decode a value if applied on top of the framework’s own decoding.',
+        },
+      },
+    ],
   };
 
   return (
@@ -36,7 +67,6 @@ export default function UrlEncodingRestApi() {
       <Head>
         <title>URL-Encode REST API Query Parameters (JS Examples) | Dev Brains AI</title>
 
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="URL-encode REST API query parameters correctly with encodeURIComponent, URLSearchParams, fetch, and axios — the mistakes that silently break API calls."
@@ -48,6 +78,7 @@ export default function UrlEncodingRestApi() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/url-encoding-rest-api-query-parameters" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -174,6 +205,35 @@ const q = url.searchParams.get('q'); // auto-decoded`}
             <li>Dates with colons and plus signs need encoding: <code>2024-01-01T09:00+05:30</code> → <code>2024-01-01T09%3A00%2B05%3A30</code>.</li>
           </ul>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>Frequently Asked Questions</h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Why does an unencoded &amp; in a query parameter break an API call?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              The <code>&amp;</code> character separates query parameters, so an unencoded{' '}
+              <code>&amp;</code> inside a value gets read as the start of a new parameter instead
+              of part of the value — silently splitting your data and sending the server something
+              different from what you intended.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Should I use encodeURIComponent or URLSearchParams for API query parameters?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              <code>URLSearchParams</code> is usually the better default — it encodes every value
+              automatically and builds the full query string for you, so there is no risk of
+              forgetting to encode one field. Use <code>encodeURIComponent</code> directly only when
+              you are inserting a single value into a template string by hand.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Do I need to manually decode query parameters on the server?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              No, in almost all cases. Frameworks like Express, and the built-in URL/URLSearchParams
+              APIs in Node.js, automatically decode query parameters before your code sees them —
+              manual decoding is rarely needed and can even double-decode a value if applied on top
+              of the framework&apos;s own decoding.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Encode or decode instantly</h3>
           <p className="small" style={{ marginTop: 8 }}>
             Use our <Link href="/url-encoder">free URL Encoder / Decoder</Link> to percent-encode
@@ -195,7 +255,7 @@ const q = url.searchParams.get('q'); // auto-decoded`}
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
               <li><Link href="/blog/url-encoding-guide-for-web-developers">URL Encoding Guide for Web Developers</Link></li>
-              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding — What\'s the Difference?</Link></li>
+              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding — What&apos;s the Difference?</Link></li>
               <li><Link href="/blog/decode-jwt-tokens-base64-javascript">Decode JWT Tokens Using Base64 in JavaScript</Link></li>
             </ul>
           </div>

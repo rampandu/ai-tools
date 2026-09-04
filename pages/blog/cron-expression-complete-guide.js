@@ -233,7 +233,9 @@ export default function CronExpressionCompleteGuide() {
           </div>
           <p className="small" style={{ marginBottom: 14 }}>
             For the Quartz/Java seconds-field trap specifically, see{' '}
-            <Link href="/blog/cron-vs-quartz-scheduler-java">Cron vs Quartz in Java</Link>.
+            <Link href="/blog/cron-vs-quartz-scheduler-java">Cron vs Quartz in Java</Link>. For a
+            full walkthrough of editing, logging, and the PATH gotcha on plain Linux crontab, see{' '}
+            <Link href="/blog/cron-jobs-in-linux-crontab-tutorial">the Linux crontab tutorial</Link>.
           </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>

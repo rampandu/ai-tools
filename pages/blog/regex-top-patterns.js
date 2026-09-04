@@ -245,6 +245,7 @@ export default function TopRegexPatterns() {
               <li><Link href="/blog/regex-for-url-validation-javascript">Regex for URL Validation in JavaScript</Link></li>
               <li><Link href="/blog/regex-non-greedy-vs-greedy-matching">Regex Non-Greedy vs Greedy Matching</Link></li>
               <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">50 Ready-to-Use Regex Patterns for Developers</Link></li>
+              <li><Link href="/blog/regex-for-credit-card-validation">Regex for Credit Card Validation — Visa, Mastercard, Amex, RuPay</Link></li>
             </ul>
           </div>
         </article>

@@ -302,7 +302,6 @@ SELECT name, salary FROM ranked WHERE rnk = 3; -- change 3 to N`}
           <div style={{ marginTop: 28 }}>
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
-              <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers in India</Link></li>
               <li><Link href="/blog/sql-window-functions-explained-with-examples">SQL Window Functions Explained with Examples</Link></li>
               <li><Link href="/blog/sql-normalization-explained-1nf-2nf-3nf">SQL Normalization Explained: 1NF, 2NF, 3NF</Link></li>
               <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL — How AI SQL Generators Work</Link></li>

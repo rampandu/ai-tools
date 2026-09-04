@@ -28,7 +28,7 @@ export default function RegexForExtractingHashtagsAndMentions() {
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/regex-for-extracting-hashtags-and-mentions',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-11',
+    dateModified: '2026-09-04',
   };
 
   const faqJsonLd = {
@@ -40,7 +40,7 @@ export default function RegexForExtractingHashtagsAndMentions() {
         name: 'What is the regex to extract hashtags from text?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The pattern /#[\\w]+/g matches hashtags made of word characters. For Unicode hashtags that include accented letters or non-Latin scripts, use /#[\\p{L}\\p{N}_]+/gu with the unicode flag.',
+          text: 'The pattern /#[\\w]+/g matches hashtags made of word characters. For Unicode hashtags that include accented letters or non-Latin scripts, use /#[\\p{L}\\p{N}\\p{Mn}_]+/gu with the unicode flag — the \\p{Mn} class is needed for combining marks used in Devanagari, Tamil, and similar scripts.',
         },
       },
       {
@@ -67,7 +67,6 @@ export default function RegexForExtractingHashtagsAndMentions() {
       <Head>
         <title>Regex for Extracting Hashtags and Mentions (JS Examples) | Dev Brains AI</title>
 
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How to extract #hashtags and @mentions from text using JavaScript regex with match and matchAll, including Unicode-friendly patterns."
@@ -163,10 +162,11 @@ matches.forEach((m) => {
           <p className="small" style={{ marginBottom: 12 }}>
             <code>\w</code> only covers ASCII letters, digits, and underscore. If your users post in
             Hindi, Tamil, or other non-Latin scripts, hashtags like <code>#नमस्ते</code> will not
-            match. Use Unicode property escapes with the <code>u</code> flag instead:
+            match — or worse, will match and silently truncate. Use Unicode property escapes with
+            the <code>u</code> flag instead:
           </p>
           <pre style={{ background: '#0f172a', color: '#94a3b8', padding: 14, borderRadius: 8, overflowX: 'auto', fontSize: '0.85rem', marginBottom: 14 }}>
-{`const unicodeHashtag = /#[\\p{L}\\p{N}_]+/gu;
+{`const unicodeHashtag = /#[\\p{L}\\p{N}\\p{Mn}_]+/gu;
 
 const text = 'खुश रहो #नमस्ते और #India साथ मिलकर!';
 console.log(text.match(unicodeHashtag));
@@ -174,8 +174,12 @@ console.log(text.match(unicodeHashtag));
           </pre>
           <p className="small" style={{ marginBottom: 14 }}>
             <code>\p{'{L}'}</code> matches any Unicode letter and <code>\p{'{N}'}</code> matches any
-            Unicode number — together with the <code>u</code> flag, this makes your pattern work
-            across scripts instead of only ASCII.
+            Unicode number, but Devanagari and several other Indic scripts build characters like{' '}
+            <code>ते</code> from a base letter plus a combining vowel mark that Unicode classifies
+            separately as <code>\p{'{Mn}'}</code> (nonspacing mark) — leaving it out silently chops
+            words like <code>नमस्ते</code> down to <code>नमस</code>. Include{' '}
+            <code>\p{'{Mn}'}</code> in the character class any time you're matching real-world text
+            in these scripts, not just <code>\p{'{L}'}</code> and <code>\p{'{N}'}</code>.
           </p>
 
           <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>

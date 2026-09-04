@@ -66,7 +66,6 @@ export default function JsonFormatterForIndianGstApis() {
       <Head>
         <title>JSON Formatter for Indian GST APIs: GSTIN & IRN Fields | Dev Brains AI</title>
 
-        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Decode India's GST e-invoice (IRP) JSON responses field by field — Irn, AckNo, GSTIN, HSN codes — plus formatting and debugging tips for failed e-invoices."

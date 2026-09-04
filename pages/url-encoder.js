@@ -380,6 +380,16 @@ export default function UrlEncoder() {
           patterns from plain English.
         </p>
       </div>
+
+      <div className="card">
+        <h4>URL encoding guides and tutorials</h4>
+        <ul className="small">
+          <li><Link href="/blog/url-encoding-guide-for-web-developers">URL Encoding Guide: encodeURI vs encodeURIComponent</Link></li>
+          <li><Link href="/blog/url-encoding-common-mistakes-developers-make">4 Common URL Encoding Mistakes (And How to Fix Them)</Link></li>
+          <li><Link href="/blog/url-encoding-vs-uri-encoding-difference">URL vs URI Encoding: What&apos;s the Real Difference?</Link></li>
+          <li><Link href="/blog/url-shortener-encoding-techniques-explained">How URL Shorteners Generate Short Codes (Base62 Explained)</Link></li>
+        </ul>
+      </div>
     </div>
   );
 }

@@ -333,7 +333,7 @@ ORDER BY absent_days DESC;`}
               <li><Link href="/blog/sql-group-by-having-clause-explained">SQL GROUP BY and HAVING Clause Explained</Link></li>
               <li><Link href="/blog/sql-date-functions-cheat-sheet">SQL Date Functions Cheat Sheet</Link></li>
               <li><Link href="/blog/sql-query-for-inventory-management-system">SQL Query for Inventory Management System</Link></li>
-              <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers in India</Link></li>
+              <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
             </ul>
           </div>

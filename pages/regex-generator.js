@@ -388,6 +388,7 @@ p.matcher("user@example.com").matches(); // true`}
           <li><Link href="/blog/top-50-useful-regex-patterns-for-developers">Top 50 Useful Regex Patterns for Developers</Link></li>
           <li><Link href="/blog/regex-for-email-validation-javascript-example">Regex for Email Validation in JavaScript</Link></li>
           <li><Link href="/blog/regex-for-password-validation-rules">Regex for Password Validation Rules</Link></li>
+          <li><Link href="/blog/regex-for-credit-card-validation">Regex for Credit Card Validation — Visa, Mastercard, Amex, RuPay</Link></li>
           <li><Link href="/blog/regex-for-indian-id-document-validation">Regex for Indian ID & Document Validation (Aadhaar, PAN, GST & More)</Link></li>
         </ul>
       </div>

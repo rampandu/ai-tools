@@ -157,6 +157,16 @@ decodeURIComponent('%E0%A4%A8%E0%A4%AE%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%87'); //
             <code>encodeURI</code> modes. No data is uploaded.
           </p>
 
+          <div style={{ marginTop: 24 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/url-encoding-common-mistakes-developers-make">4 Common URL Encoding Mistakes (And How to Fix Them)</Link></li>
+              <li><Link href="/blog/url-encoding-vs-uri-encoding-difference">URL vs URI Encoding: What&apos;s the Real Difference?</Link></li>
+              <li><Link href="/blog/url-shortener-encoding-techniques-explained">How URL Shorteners Generate Short Codes (Base62 Explained)</Link></li>
+              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding: Key Differences</Link></li>
+            </ul>
+          </div>
+
         </article>
       </main>
     </>

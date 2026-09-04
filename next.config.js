@@ -53,6 +53,12 @@ const nextConfig = {
       // ~95% duplicate: same 20 project ideas with only cosmetic rewording, both from an
       // earlier low-quality batch (raw <b> tags, plain-text URLs, no Link components).
       { source: '/blog/best-ai-projects-for-final-year-btech', destination: '/blog/ai-projects-for-engineering-students-india', permanent: true },
+
+      // Consolidated into /blog/sql-interview-questions-complete-guide (2026-09-04) — same
+      // "SQL interview prep for freshers" intent as the already-consolidated guide, missed by
+      // the 2026-07-24 round. Old page was pre-template quality (no Link components, plain-text
+      // URLs, title claimed 50 queries but only had 22) with nothing not already covered better.
+      { source: '/blog/50-sql-queries-for-freshers-in-india', destination: '/blog/sql-interview-questions-complete-guide', permanent: true },
     ];
   }
 };

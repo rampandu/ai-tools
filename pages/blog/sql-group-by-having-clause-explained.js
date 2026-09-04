@@ -274,7 +274,6 @@ ORDER BY avg_rating DESC;`}
             <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
             <ul className="small">
               <li><Link href="/blog/sql-window-functions-explained-with-examples">SQL Window Functions Explained with Examples</Link></li>
-              <li><Link href="/blog/50-sql-queries-for-freshers-in-india">50 SQL Queries for Freshers in India</Link></li>
               <li><Link href="/blog/sql-case-statement-examples">SQL CASE Statement Examples</Link></li>
               <li><Link href="/blog/sql-query-generator-tutorial-for-beginners">SQL Query Generator Tutorial for Beginners</Link></li>
               <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>

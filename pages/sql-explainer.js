@@ -337,6 +337,7 @@ export default function SqlExplainer() {
           <li><Link href="/sql-generator">Need to write a query instead? Try the SQL Generator →</Link></li>
           <li><Link href="/blog/sql-interview-questions-complete-guide">SQL Interview Questions: The Complete Guide</Link></li>
           <li><Link href="/blog/sql-group-by-having-clause-explained">SQL GROUP BY and HAVING Clause Explained</Link></li>
+          <li><Link href="/blog/sql-union-vs-union-all-explained">SQL UNION vs UNION ALL: Differences &amp; Performance</Link></li>
           <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL: A Complete Guide</Link></li>
         </ul>
       </div>

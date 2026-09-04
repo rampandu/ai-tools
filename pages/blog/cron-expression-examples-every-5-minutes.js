@@ -23,12 +23,12 @@ export default function CronExpressionExamplesEvery5Minutes() {
     '@type': 'BlogPosting',
     headline: 'Cron Every 5 Minutes: Expression + Examples',
     description:
-      'The cron expression for every 5 minutes is */5 * * * *. See ready-to-use patterns for every 10, 15, 30 minutes and every N hours, explained field by field.',
+      'Every 5, 10, 15 and 30-minute cron patterns, field by field — plus the overlap and scheduler-delay gotchas that break them in production.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/cron-expression-examples-every-5-minutes',
     datePublished: '2026-07-11',
-    dateModified: '2026-07-22',
+    dateModified: '2026-09-04',
   };
 
   const faqJsonLd = {
@@ -84,7 +84,7 @@ export default function CronExpressionExamplesEvery5Minutes() {
         <title>Cron Every 5 Minutes: Expression + Examples | Dev Brains AI</title>
         <meta
           name="description"
-          content="The cron expression for every 5 minutes is */5 * * * *. See ready-to-use patterns for every 10, 15, 30 minutes and every N hours, explained field by field."
+          content="Every 5, 10, 15 and 30-minute cron patterns, field by field — plus the overlap and scheduler-delay gotchas that break them in production."
         />
         <meta
           name="keywords"
@@ -93,7 +93,7 @@ export default function CronExpressionExamplesEvery5Minutes() {
         <meta property="og:title" content="Cron Every 5 Minutes: Expression + Examples" />
         <meta
           property="og:description"
-          content="The cron expression for every 5 minutes is */5 * * * *. See ready-to-use patterns for every 10, 15, 30 minutes and every N hours, explained field by field."
+          content="Every 5, 10, 15 and 30-minute cron patterns, field by field — plus the overlap and scheduler-delay gotchas that break them in production."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/cron-expression-examples-every-5-minutes" />
         <meta property="og:type" content="article" />
@@ -127,6 +127,8 @@ export default function CronExpressionExamplesEvery5Minutes() {
             value. This guide walks through every common minute-based and hour-based interval with
             copy-paste-ready expressions. For the full field-by-field syntax reference, see our{' '}
             <Link href="/blog/cron-expression-complete-guide">cron expression complete guide</Link>.
+            Already know the interval you need?{' '}
+            <Link href="/cron-generator">Skip to the Cron Expression Generator →</Link>
           </p>
 
           <svg viewBox="0 0 640 210" style={{ width: '100%', height: 'auto', marginBottom: 18, borderRadius: 8, background: '#0f172a' }} role="img" aria-label="Diagram of the five cron fields, with the minute field highlighted showing a step value of 5">
