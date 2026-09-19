@@ -59,6 +59,13 @@ const nextConfig = {
       // the 2026-07-24 round. Old page was pre-template quality (no Link components, plain-text
       // URLs, title claimed 50 queries but only had 22) with nothing not already covered better.
       { source: '/blog/50-sql-queries-for-freshers-in-india', destination: '/blog/sql-interview-questions-complete-guide', permanent: true },
+
+      // Ezoic ads.txt management (2026-09-19). Confirmed in Ezoic's dashboard setup
+      // wizard that the existing Google AdSense line (google.com, pub-9535310271167305,
+      // DIRECT, f08c47fec0942fa0) is included in what srv.adstxtmanager.com serves for
+      // this account before enabling this redirect - do not remove without re-confirming
+      // that entry is still present on Ezoic's side.
+      { source: '/ads.txt', destination: 'https://srv.adstxtmanager.com/19390/dev-brains-ai.com', permanent: true },
     ];
   }
 };
