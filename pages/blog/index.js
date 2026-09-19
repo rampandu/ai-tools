@@ -3,6 +3,7 @@ import Head from "next/head";
 import Link from "next/link";
 import fs from "fs";
 import path from "path";
+import EzoicAd from "../../components/EzoicAd";
 
 export default function BlogIndex({ posts }) {
   const breadcrumbJsonLd = {
@@ -66,6 +67,8 @@ export default function BlogIndex({ posts }) {
           regular expressions, SQL queries, cron scheduling, JSON handling, and AI-powered tools.
           All articles are free, practical, and written for real-world use.
         </p>
+
+        <EzoicAd />
 
         <ul style={{ listStyle: "none", padding: 0, marginTop: 16 }}>
           {posts.map((post) => (

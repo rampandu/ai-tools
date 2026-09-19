@@ -2,6 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Hero from '../components/Hero';
+import EzoicAd from '../components/EzoicAd';
 
 const TOOL_SECTIONS = [
   {
@@ -246,6 +247,8 @@ export default function Home() {
           </div>
         </section>
 
+        <EzoicAd />
+
         {/* Browse by topic — tool + guides together, for visitors who know their topic */}
         <section className="card" style={{ marginTop: 18 }}>
           <h2>Browse by Topic</h2>
@@ -344,6 +347,8 @@ export default function Home() {
             </div>
           </section>
         ))}
+
+        <EzoicAd />
 
         {/* Why Dev Brains AI — real differentiators, no fabricated stats */}
         <section className="card" style={{ marginTop: 18 }}>
