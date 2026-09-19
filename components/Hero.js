@@ -8,7 +8,7 @@ export default function Hero() {
       style={{ display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}
     >
       <div style={{ flex: '1 1 420px' }}>
-        <div className="small" style={{ fontWeight: 600, color: '#0ea5a6', marginBottom: 6, letterSpacing: '0.02em', textTransform: 'uppercase', fontSize: '0.78rem' }}>
+        <div className="small" style={{ fontWeight: 600, color: '#0a7a7b', marginBottom: 6, letterSpacing: '0.02em', textTransform: 'uppercase', fontSize: '0.78rem' }}>
           Plain English → Production-Ready Code
         </div>
         <h1 style={{ fontSize: '2.25rem', marginBottom: 8 }}>
@@ -68,7 +68,7 @@ export default function Hero() {
 
         {/* Internal SEO links */}
         <div style={{ marginTop: 28 }}>
-          <h3 style={{ marginBottom: 8 }}>Popular Guides</h3>
+          <h2 style={{ marginBottom: 8, fontSize: '1.1rem' }}>Popular Guides</h2>
           <ul className="small">
             <li><Link href="/blog/free-mysql-query-generator-online">Free MySQL Query Generator Online</Link></li>
             <li><Link href="/blog/natural-language-to-sql-guide">Natural Language to SQL — How It Works</Link></li>

@@ -140,7 +140,7 @@ a {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #94a3b8;
+  color: #64748b;
   margin-bottom: 6px;
 }
 
@@ -225,7 +225,7 @@ textarea, input {
 
 button, .btn {
   border-radius: 10px;
-  background: #0ea5a6;
+  background: #0a7a7b;
   border: none;
   color: white;
   padding: 10px 16px;
