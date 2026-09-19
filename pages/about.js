@@ -10,7 +10,7 @@ export default function About() {
     name: 'Rama Pandu Cheti',
     jobTitle: 'Software Engineer',
     description:
-      'Software engineer with professional experience spanning SAP, Java, Node.js, and cloud and integration technologies.',
+      'Software engineer with professional experience spanning Java, Node.js, and cloud and integration technologies.',
     url: 'https://dev-brains-ai.com/about',
     sameAs: [
       'https://github.com/rampandu',
@@ -197,7 +197,7 @@ export default function About() {
           </h2>
           <p className="small" style={{ marginBottom: 16 }}>
             Dev Brains AI is built and maintained by <strong>Rama Pandu Cheti</strong>, a software
-            engineer with professional experience spanning SAP, Java, Node.js, cloud and
+            engineer with professional experience spanning Java, Node.js, cloud and
             integration technologies, and developer tooling. The tools here come out of that
             background — utilities for problems that come up repeatedly in real backend and
             integration work (parsing and validating data, scheduling jobs, writing and debugging
@@ -209,7 +209,7 @@ export default function About() {
           </p>
           <p className="small">
             Dev Brains AI is independently operated and not affiliated with, sponsored by, or
-            endorsed by SAP or any other company. Questions, corrections, or tool requests are
+            endorsed by any company. Questions, corrections, or tool requests are
             welcome via the <Link href="/contact">contact page</Link>.
           </p>
         </section>
