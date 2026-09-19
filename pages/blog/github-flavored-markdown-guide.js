@@ -21,9 +21,9 @@ export default function GithubFlavoredMarkdownGuide() {
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
-    headline: 'GFM Cheat Sheet: GitHub Flavored Markdown Tables & Alerts',
+    headline: 'GFM (GitHub Flavored Markdown) Guide — Tables, Alerts & Syntax',
     description:
-      'The GFM (GitHub Flavored Markdown) cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark.',
+      'Full GitHub Flavored Markdown (GFM) reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs.',
     author: { '@type': 'Organization', name: 'Dev Brains AI' },
     publisher: { '@type': 'Organization', name: 'Dev Brains AI' },
     url: 'https://dev-brains-ai.com/blog/github-flavored-markdown-guide',
@@ -97,19 +97,19 @@ export default function GithubFlavoredMarkdownGuide() {
   return (
     <>
       <Head>
-        <title>GFM Cheat Sheet: GitHub Flavored Markdown Tables &amp; Alerts | Dev Brains AI</title>
+        <title>GFM (GitHub Flavored Markdown) Guide — Tables &amp; Alerts | Dev Brains AI</title>
         <meta
           name="description"
-          content="The GFM (GitHub Flavored Markdown) cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark."
+          content="Full GFM (GitHub Flavored Markdown) reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs."
         />
         <meta
           name="keywords"
           content="gfm, gfm github, github flavored markdown, gfm cheat sheet, github markdown table, markdown task list, markdown alerts, gfm vs commonmark, github readme markdown, markdown syntax highlighting"
         />
-        <meta property="og:title" content="GFM Cheat Sheet: GitHub Flavored Markdown Tables &amp; Alerts" />
+        <meta property="og:title" content="GFM (GitHub Flavored Markdown) Guide — Tables &amp; Alerts" />
         <meta
           property="og:description"
-          content="The GFM cheat sheet with real GitHub examples: tables, task lists, alerts, and a clear comparison to plain CommonMark."
+          content="Full GFM reference: tables, task lists, alerts, footnotes, and code fences — with copy-paste examples for READMEs, issues, and PRs."
         />
         <meta property="og:url" content="https://dev-brains-ai.com/blog/github-flavored-markdown-guide" />
         <meta property="og:type" content="article" />
