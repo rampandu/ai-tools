@@ -82,6 +82,17 @@ export default function UnitTestGeneratorPage() {
     ],
   };
 
+  const softwareJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Dev Brains AI Unit Test Generator',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'Web',
+    description:
+      'Free unit test generator. Paste a JavaScript or Python function signature and get a ready-to-run Jest or pytest test scaffold.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -105,6 +116,7 @@ export default function UnitTestGeneratorPage() {
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }} />
       </Head>
 
       <div className="card" aria-live="polite">

@@ -98,6 +98,17 @@ export default function RegexGenerator() {
     ]
   };
 
+  const softwareJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Dev Brains AI Regex Generator",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "Web",
+    description:
+      "Free AI regex generator. Describe a pattern in plain English and get a working regular expression with a clear explanation and a built-in live tester.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -126,6 +137,10 @@ export default function RegexGenerator() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
         />
  <meta name="viewport" content="width=device-width, initial-scale=1" />
 

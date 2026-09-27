@@ -108,6 +108,17 @@ export default function StackTraceAnalyzerPage() {
     ],
   };
 
+  const softwareJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Dev Brains AI Stack Trace Analyzer',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'Web',
+    description:
+      'Free stack trace analyzer. Paste a multi-line stack trace and get the error type, likely origin frame, a plain-English explanation, and suggested fixes.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -136,6 +147,10 @@ export default function StackTraceAnalyzerPage() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
         />
       </Head>
 

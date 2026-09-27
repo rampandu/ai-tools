@@ -95,6 +95,17 @@ export default function SqlExplainer() {
     ]
   };
 
+  const softwareJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Dev Brains AI SQL Query Explainer",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "Web",
+    description:
+      "Free SQL query explainer that breaks down any SQL query into a plain-English, clause-by-clause walkthrough.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -123,6 +134,10 @@ export default function SqlExplainer() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

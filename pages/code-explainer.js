@@ -119,6 +119,17 @@ export default function CodeExplainerPage() {
     ],
   };
 
+  const softwareJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Dev Brains AI Code Explainer',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'Web',
+    description:
+      'Free code explainer that breaks down a JavaScript, Python, or Java snippet into a plain-English, structural walkthrough of functions, loops, conditionals, and imports.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -142,6 +153,7 @@ export default function CodeExplainerPage() {
 
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }} />
       </Head>
 
       <div className="card" aria-live="polite">

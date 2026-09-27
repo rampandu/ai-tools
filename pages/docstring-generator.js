@@ -83,6 +83,17 @@ export default function DocstringGenerator() {
     ]
   };
 
+  const softwareJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "Dev Brains AI Docstring & JSDoc Generator",
+    applicationCategory: "DeveloperApplication",
+    operatingSystem: "Web",
+    description:
+      "Free tool that generates JSDoc comments and Python docstrings instantly from a function signature.",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -111,6 +122,10 @@ export default function DocstringGenerator() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>

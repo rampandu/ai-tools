@@ -115,6 +115,21 @@ export default function Base64Tool() {
     ],
   };
 
+  const softwareJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'Dev Brains AI Base64 Encoder / Decoder',
+    applicationCategory: 'DeveloperApplication',
+    operatingSystem: 'Web',
+    description:
+      'Free browser-based Base64 encoder and decoder. Supports standard and URL-safe Base64, runs entirely in your browser with no data uploaded.',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  };
+
   return (
     <div className="container" style={{ paddingTop: 16 }}>
       <Head>
@@ -143,6 +158,10 @@ export default function Base64Tool() {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareJsonLd) }}
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -310,6 +329,18 @@ export default function Base64Tool() {
           <Link href="/regex-generator">AI Regex Generator</Link> to build regex patterns from plain
           English.
         </p>
+      </div>
+
+      <div className="card">
+        <h4>Base64 guides and tutorials</h4>
+        <ul className="small">
+          <li><Link href="/blog/base64-encoding-javascript-examples">Base64 Encoding in JavaScript — Complete Guide</Link></li>
+          <li><Link href="/blog/base64-encoding-python-examples">Base64 Encoding in Python — Complete Guide</Link></li>
+          <li><Link href="/blog/base64-encoding-vs-encryption-difference">Base64 Is Not Encryption: The Real Difference</Link></li>
+          <li><Link href="/blog/base64-encoding-limitations-and-alternatives">Base64 Encoding Limitations: When to Use Base85</Link></li>
+          <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding — Key Differences</Link></li>
+          <li><Link href="/blog/base64-file-upload-encoding-guide">Base64 File Uploads: JSON APIs vs multipart/form-data</Link></li>
+        </ul>
       </div>
     </div>
   );
