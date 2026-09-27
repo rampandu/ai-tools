@@ -184,6 +184,28 @@ export default function Top10CronPatterns() {
 Special chars:  *=any  ,=list  -=range  /=step`}
           </pre>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24, marginBottom: 10 }}>
+            Frequently Asked Questions
+          </h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What cron expression runs a job every hour?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              <code>0 * * * *</code> — this runs at minute 0 of every hour.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What cron expression runs a job every weekday at 9am?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              <code>0 9 * * 1-5</code> — runs at 9:00 AM Monday through Friday.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What cron expression runs on the first day of every month?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              <code>0 0 1 * *</code> — runs at midnight on the 1st of every month.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Generate any cron expression from plain English</h3>
           <p className="small" style={{ marginTop: 8 }}>
             Can't remember the exact field order? Use the{' '}
@@ -191,6 +213,17 @@ Special chars:  *=any  ,=list  -=range  /=step`}
             your schedule in plain English and get the correct cron string with a field-by-field
             breakdown.
           </p>
+
+          <div style={{ marginTop: 28 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/cron-expression-complete-guide">Cron Expression Guide: Syntax, Fields &amp; Platforms</Link></li>
+              <li><Link href="/blog/cron-expression-examples-every-5-minutes">Cron Every 5 Minutes: Expression + Examples</Link></li>
+              <li><Link href="/blog/cron-job-best-practices-for-production">6 Cron Job Best Practices for Production</Link></li>
+              <li><Link href="/blog/debugging-cron-jobs-that-are-not-running">Cron Job Not Running? 5 Fixes That Actually Work</Link></li>
+              <li><Link href="/blog/cron-vs-setinterval-nodejs">Cron vs setInterval in Node.js</Link></li>
+            </ul>
+          </div>
 
         </article>
       </main>
