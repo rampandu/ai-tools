@@ -379,6 +379,10 @@ const payload = jwt.verify(token, process.env.JWT_SECRET, {
             <li><strong>Ignoring clock skew.</strong> Auth and API servers rarely share a perfectly synced clock. Without a small clockTolerance, valid tokens near their exp — or freshly issued tokens near their nbf — get rejected simply because one machine&apos;s clock drifted by a few seconds.</li>
             <li><strong>Forgetting that nbf silently rejects &quot;not yet valid&quot; tokens.</strong> nbf is optional and rarely used, so it is easy to forget it exists. When a token is verified before its nbf time, the request fails with the same kind of error as an expired token, which can look like an unrelated bug if you are not expecting it.</li>
           </ul>
+
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 24 }}>
+            Frequently Asked Questions
+          </h2>
           <div style={{ marginBottom: 10 }}>
             <strong>Is JWT exp in seconds or milliseconds?</strong>
             <p className="small" style={{ marginTop: 6 }}>

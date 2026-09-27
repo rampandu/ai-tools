@@ -317,6 +317,17 @@ process.on('SIGTERM', () => {
               <Link href="/cron-generator"><button style={{ background: '#8b5cf6', color: 'white', border: 'none', padding: '8px 16px', borderRadius: 6, cursor: 'pointer', fontWeight: 600 }}>Cron Generator →</button></Link>
             </div>
           </div>
+
+          <div style={{ marginTop: 28 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/cron-expression-complete-guide">Cron Expression Guide: Syntax, Fields &amp; Platforms</Link></li>
+              <li><Link href="/blog/cron-vs-message-queue-when-to-use-which">Cron vs Message Queue: A Decision Checklist</Link></li>
+              <li><Link href="/blog/cron-jobs-python-schedule-library-guide">Python Cron Jobs: schedule vs APScheduler</Link></li>
+              <li><Link href="/blog/debugging-cron-jobs-that-are-not-running">Cron Job Not Running? 5 Fixes That Actually Work</Link></li>
+              <li><Link href="/blog/cron-job-best-practices-for-production">6 Cron Job Best Practices for Production</Link></li>
+            </ul>
+          </div>
         </article>
       </main>
     </>

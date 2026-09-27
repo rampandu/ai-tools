@@ -29,6 +29,37 @@ export default function EncodeImagesBase64() {
     url: 'https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css',
   };
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Does Base64-encoding an image make the file bigger or smaller?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Bigger. Base64 encoding increases the data size by roughly 33% compared to the original binary file, because it represents every 3 bytes of binary data as 4 ASCII characters. The trade-off is eliminating a separate HTTP request, not reducing size.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can browsers cache a Base64-encoded image the same way as a normal image file?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No, not independently. A data URI is embedded directly in the HTML or CSS file, so it is only cached as part of that file — the browser cannot cache the image separately and reuse it across pages the way it would with a standalone image URL.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What image formats work best as Base64 data URIs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Small, simple images compress the trade-off best: icons, logos, and SVGs under a few kilobytes. Large photos or complex images should stay as regular file references, since the 33% size increase and loss of independent caching outweigh the benefit of skipping one HTTP request.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Head>
@@ -47,6 +78,7 @@ export default function EncodeImagesBase64() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/encode-images-base64-data-uri-html-css" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -150,6 +182,35 @@ const html = \`<img src="\${dataUri}" alt="Logo" />\`;`}
             <li>❌ <strong>Avoid for:</strong> SVGs that change at runtime — use an external <code>&lt;img&gt;</code> or inline <code>&lt;svg&gt;</code> tag instead.</li>
           </ul>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 20 }}>
+            Frequently Asked Questions
+          </h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Does Base64-encoding an image make the file bigger or smaller?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Bigger. Base64 encoding increases the data size by roughly 33% compared to the
+              original binary file, because it represents every 3 bytes of binary data as 4 ASCII
+              characters. The trade-off is eliminating a separate HTTP request, not reducing size.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Can browsers cache a Base64-encoded image the same way as a normal image file?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              No, not independently. A data URI is embedded directly in the HTML or CSS file, so it
+              is only cached as part of that file — the browser cannot cache the image separately
+              and reuse it across pages the way it would with a standalone image URL.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>What image formats work best as Base64 data URIs?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Small, simple images compress the trade-off best: icons, logos, and SVGs under a few
+              kilobytes. Large photos or complex images should stay as regular file references,
+              since the 33% size increase and loss of independent caching outweigh the benefit of
+              skipping one HTTP request.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Encode and decode Base64 instantly</h3>
           <p className="small" style={{ marginTop: 8 }}>
             Use our <Link href="/base64-tool">free Base64 Encoder / Decoder</Link> to quickly
@@ -157,6 +218,16 @@ const html = \`<img src="\${dataUri}" alt="Logo" />\`;`}
             conversion, use the JavaScript <code>FileReader</code> snippet above in your browser
             console.
           </p>
+
+          <div style={{ marginTop: 28 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/base64-encoding-javascript-examples">Base64 Encoding in JavaScript — Complete Guide</Link></li>
+              <li><Link href="/blog/base64-encoding-limitations-and-alternatives">Base64 Encoding Limitations: When to Use Base85 Instead</Link></li>
+              <li><Link href="/blog/base64-file-upload-encoding-guide">Base64 File Uploads: JSON APIs vs multipart/form-data</Link></li>
+              <li><Link href="/blog/base64-vs-url-encoding-difference">Base64 vs URL Encoding — Key Differences</Link></li>
+            </ul>
+          </div>
 
         </article>
       </main>

@@ -29,6 +29,37 @@ export default function DecodeJwtBase64() {
     url: 'https://dev-brains-ai.com/blog/decode-jwt-tokens-base64-javascript',
   };
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Can I decode a JWT without a library in JavaScript?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. A JWT header and payload are just Base64Url-encoded JSON strings, so splitting the token on its dots and running each part through atob() (browser) or Buffer.from(str, "base64") (Node.js) is enough to read the contents — no jsonwebtoken or jose library required for decoding alone.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why does atob() fail on a JWT segment?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'JWTs use Base64Url encoding, which replaces the standard Base64 characters + and / with - and _, and strips the trailing = padding. Calling atob() directly on a raw segment often throws or produces garbled output; you need to substitute the characters back and re-add padding first.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is decoding a JWT the same as verifying it?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'No. Decoding only reveals the claims inside the token — it does not check the signature, so an attacker can hand-edit an unsigned decode of the payload before sending it back. Verification (checking the signature with the secret or public key) is a separate, required step for any authorization decision.',
+        },
+      },
+    ],
+  };
+
   return (
     <>
       <Head>
@@ -44,6 +75,7 @@ export default function DecodeJwtBase64() {
         <link rel="canonical" href="https://dev-brains-ai.com/blog/decode-jwt-tokens-base64-javascript" />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
 
       <main className="container" style={{ paddingTop: 22 }}>
@@ -155,12 +187,56 @@ if (payload.exp) {
             <li>Server-side, always use <code>jwt.verify()</code> — never <code>jwt.decode()</code> alone for access control decisions.</li>
           </ul>
 
+          <h2 style={{ fontSize: '1.25rem', fontWeight: 600, marginTop: 20 }}>
+            Frequently Asked Questions
+          </h2>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Can I decode a JWT without a library in JavaScript?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              Yes. A JWT header and payload are just Base64Url-encoded JSON strings, so splitting
+              the token on its dots and running each part through <code>atob()</code> (browser) or{' '}
+              <code>Buffer.from(str, &apos;base64&apos;)</code> (Node.js) is enough to read the
+              contents — no jsonwebtoken or jose library required for decoding alone.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Why does atob() fail on a JWT segment?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              JWTs use Base64Url encoding, which replaces the standard Base64 characters{' '}
+              <code>+</code> and <code>/</code> with <code>-</code> and <code>_</code>, and strips
+              the trailing <code>=</code> padding. Calling <code>atob()</code> directly on a raw
+              segment often throws or produces garbled output; you need to substitute the
+              characters back and re-add padding first, as the <code>base64UrlDecode</code>{' '}
+              helper above does.
+            </p>
+          </div>
+          <div style={{ marginBottom: 10 }}>
+            <strong>Is decoding a JWT the same as verifying it?</strong>
+            <p className="small" style={{ marginTop: 6 }}>
+              No. Decoding only reveals the claims inside the token — it does not check the
+              signature, so an attacker can hand-edit an unsigned decode of the payload before
+              sending it back. Verification (checking the signature with the secret or public key)
+              is a separate, required step for any authorization decision.
+            </p>
+          </div>
+
           <h3 style={{ marginTop: 20, fontSize: '1.1rem', fontWeight: 600 }}>Decode Base64 strings instantly</h3>
           <p className="small" style={{ marginTop: 8 }}>
             You can paste any Base64Url-encoded JWT section directly into our{' '}
             <Link href="/base64-tool">Base64 Encoder / Decoder</Link> to read the raw JSON — useful
             for quick debugging without writing any code.
           </p>
+
+          <div style={{ marginTop: 28 }}>
+            <h3 style={{ fontSize: '1rem', fontWeight: 600 }}>Related articles</h3>
+            <ul className="small">
+              <li><Link href="/blog/how-to-decode-a-jwt-token-safely">How to Decode a JWT Token Safely</Link></li>
+              <li><Link href="/blog/jwt-structure-explained-header-payload-signature">JWT Structure Explained: Header, Payload, Signature</Link></li>
+              <li><Link href="/blog/jwt-expiry-claims-exp-iat-nbf-explained">JWT exp, iat &amp; nbf Explained</Link></li>
+              <li><Link href="/blog/jwt-security-best-practices-for-developers">6 JWT Security Best Practices Every Developer Needs</Link></li>
+              <li><Link href="/blog/jwt-authentication-explained-for-beginners">JWT Authentication Explained for Beginners</Link></li>
+            </ul>
+          </div>
 
         </article>
       </main>
