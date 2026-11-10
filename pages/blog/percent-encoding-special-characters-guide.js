@@ -66,6 +66,7 @@ export default function PercentEncodingSpecialChars() {
     <>
       <Head>
         <title>Percent-Encoding Cheat Sheet: 12 Characters + JS Examples | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A quick-reference table for percent-encoding 12 common special characters — space, &, =, ?, # and more — each with a working encodeURIComponent example."

@@ -66,6 +66,7 @@ export default function CronExpressionForBusinessHoursOnly() {
     <>
       <Head>
         <title>Cron Expressions for Business Hours (9-to-5) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Cron patterns to run jobs only on weekdays 9-to-5, plus split-shift schedules, lunch-hour exclusions, and the top mistakes that break business-hours cron."

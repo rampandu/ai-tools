@@ -66,6 +66,7 @@ export default function ConvertColorsInJavascriptExamples() {
     <>
       <Head>
         <title>Convert Colors in JavaScript: HEX, RGB & HSL (Code) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A copy-paste JavaScript cookbook for color conversion — hex to RGB, RGB to HSL, getComputedStyle, and canvas pixel reads — with a reusable utility module."

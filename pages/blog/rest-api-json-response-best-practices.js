@@ -66,6 +66,7 @@ export default function RestApiJsonResponseBestPractices() {
     <>
       <Head>
         <title>REST API JSON Response Best Practices (With Examples) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A consistent envelope format, structured error objects, pagination metadata, and camelCase vs snake_case rules — with real JSON examples you can copy."

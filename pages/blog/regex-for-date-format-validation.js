@@ -66,6 +66,7 @@ export default function RegexForDateFormatValidation() {
     <>
       <Head>
         <title>Regex for Date Format Validation — DD/MM/YYYY, ISO 8601 | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Regex patterns for validating DD/MM/YYYY, MM-DD-YYYY, and ISO 8601 (YYYY-MM-DD) dates, plus why regex alone cannot catch impossible dates like Feb 30."

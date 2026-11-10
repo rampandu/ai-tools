@@ -66,6 +66,7 @@ export default function PasswordEntropyExplained() {
     <>
       <Head>
         <title>Password Entropy Explained: Why Length Beats Complexity | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Password entropy with real math: bits = length × log2(pool), worked examples, GPU cracking-time tables, and why human patterns destroy theoretical entropy."

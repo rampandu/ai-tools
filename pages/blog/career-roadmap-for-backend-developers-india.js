@@ -66,6 +66,7 @@ export default function CareerRoadmapForBackendDevelopersIndia() {
     <>
       <Head>
         <title>Backend Developer Roadmap in India: Fresher to Senior | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A 4-stage backend developer roadmap for India — fresher, SDE-1, SDE-2, senior — with exact skills, tools, and milestones expected at each career level."

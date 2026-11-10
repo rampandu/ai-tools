@@ -66,6 +66,7 @@ export default function PassphrasesVsRandomPasswords() {
     <>
       <Head>
         <title>Passphrases vs Random Passwords — Which Should You Use? | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Diceware passphrases (~12.9 bits/word, memorable) vs random strings (denser, need a manager): threat models, honest math, and a real diceware how-to."

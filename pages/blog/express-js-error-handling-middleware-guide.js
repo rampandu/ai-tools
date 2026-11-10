@@ -66,6 +66,7 @@ export default function ExpressJsErrorHandlingMiddlewareGuide() {
     <>
       <Head>
         <title>Express.js Error Handling Middleware: A Working Example | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Build centralized Express.js error-handling middleware: a custom error class, async route errors, a 404 handler, and the fix for ERR_HTTP_HEADERS_SENT."

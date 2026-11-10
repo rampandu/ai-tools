@@ -66,6 +66,7 @@ export default function JsonDiffComparingTwoJsonObjects() {
     <>
       <Head>
         <title>JSON Diff: How to Compare Two JSON Objects (With Code) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Why JSON.stringify comparison fails, a working deepEqual function, a diffJson() that lists exactly what changed, and 5 libraries that do it for you."

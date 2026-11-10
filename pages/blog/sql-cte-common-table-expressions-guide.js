@@ -66,6 +66,7 @@ export default function SqlCteCommonTableExpressionsGuide() {
     <>
       <Head>
         <title>SQL CTE Guide: WITH Clause, Chaining & Recursion | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Learn SQL CTEs with the WITH clause — why they beat nested subqueries for readability, how to chain multiple CTEs, and a simple recursive CTE example."

@@ -65,6 +65,7 @@ export default function AiMicroservicesTutorialForBackendDevelopers() {
     <>
       <Head>
         <title>Build an AI Microservice for Your Backend (FastAPI) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A working FastAPI example for wrapping an AI model as its own microservice, plus how to call it from Node.js, handle timeouts, and deploy it independently."

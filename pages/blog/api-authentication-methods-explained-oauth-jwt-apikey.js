@@ -66,6 +66,7 @@ export default function ApiAuthenticationMethodsExplained() {
     <>
       <Head>
         <title>API Keys vs JWT vs OAuth 2.0: Which Should You Use? | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Compare API keys, JWT bearer tokens, and OAuth 2.0 side by side with code samples for each, so you can pick the right authentication method instead of guessing."

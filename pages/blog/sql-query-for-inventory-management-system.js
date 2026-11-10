@@ -66,6 +66,7 @@ export default function SqlQueryForInventoryManagementSystem() {
     <>
       <Head>
         <title>SQL Queries for Inventory Management Systems | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Track current stock levels, trigger low-stock alerts, generate reorder reports, and audit movement history with a real products-and-stock-movements SQL schema."

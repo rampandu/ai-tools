@@ -64,6 +64,7 @@ export default function EncodeImagesBase64() {
     <>
       <Head>
         <title>Base64 Image Encoding in HTML/CSS: When It Helps | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Embed images directly in HTML and CSS with Base64 data URIs and skip the HTTP request — when it helps, when it hurts performance, and code examples."

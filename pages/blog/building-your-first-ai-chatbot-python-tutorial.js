@@ -66,6 +66,7 @@ export default function BuildingYourFirstAiChatbotPythonTutorial() {
     <>
       <Head>
         <title>Build an AI Chatbot in Python: 3 Approaches (With Code) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Build a Python chatbot 3 ways — rule-based, ML classifier, and LLM-powered — with full runnable code for each, no machine learning degree required."

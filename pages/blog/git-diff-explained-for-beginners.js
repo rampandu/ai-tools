@@ -66,6 +66,7 @@ export default function GitDiffExplainedForBeginners() {
     <>
       <Head>
         <title>Git Diff Explained for Beginners: Every Variant You Need | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Beginner-friendly git diff guide: working tree vs --staged, comparing commits and branches, single files, --stat, --word-diff, -w, and reading unified output."

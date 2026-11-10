@@ -66,6 +66,7 @@ export default function CronExplainerGuide() {
     <>
       <Head>
         <title>Cron Expression Explainer Guide: How to Read the Output | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A worked example showing how the Cron Expression Explainer turns a cron string into a plain-English sentence and next-run list, plus why timezone changes the answer."

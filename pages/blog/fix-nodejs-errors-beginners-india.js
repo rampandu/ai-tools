@@ -65,6 +65,7 @@ export default function FixNodejsErrorsBeginnersIndia() {
     <>
       <Head>
         <title>5 Common Node.js Errors Beginners Face in India | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

@@ -66,6 +66,7 @@ export default function ChoosingAColorPaletteForYourWebsite() {
     <>
       <Head>
         <title>How to Choose a Website Color Palette: A 6-Step Method | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A repeatable 6-step method for a website color palette — one brand hue, the 60-30-10 rule, contrast checks, and dark mode — with a complete hex code example."

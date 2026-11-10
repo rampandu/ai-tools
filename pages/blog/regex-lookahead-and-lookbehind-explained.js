@@ -66,6 +66,7 @@ export default function RegexLookaheadAndLookbehindExplained() {
     <>
       <Head>
         <title>Regex Lookahead vs Lookbehind: 4 Patterns Explained | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="All four regex lookaround assertions — positive/negative lookahead and lookbehind — explained with password validation and currency-formatting examples."

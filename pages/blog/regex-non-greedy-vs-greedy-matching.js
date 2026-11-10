@@ -66,6 +66,7 @@ export default function RegexNonGreedyVsGreedyMatching() {
     <>
       <Head>
         <title>Greedy vs Non-Greedy Regex: Side-by-Side Match Results | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See exactly what .* and .*? match differently on the same HTML string, plus when a negated character class beats a lazy quantifier for safe extraction."

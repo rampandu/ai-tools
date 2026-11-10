@@ -66,6 +66,7 @@ export default function JsonWebTokenVsSessionAuthentication() {
     <>
       <Head>
         <title>JWT vs Session Authentication — Which Should You Use? | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Compare JSON Web Tokens (JWT) with traditional server-side session authentication — statelessness, scalability, revocation, and security trade-offs explained."

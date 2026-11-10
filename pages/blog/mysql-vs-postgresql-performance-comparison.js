@@ -65,6 +65,7 @@ export default function MysqlVsPostgresqlPerformanceComparison() {
     <>
       <Head>
         <title>MySQL vs PostgreSQL: Which Wins for Your Workload? | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="MySQL vs PostgreSQL on real workloads: InnoDB reads vs MVCC writes, JSONB indexing, EXPLAIN ANALYZE, and a 4-point rule of thumb for picking the right one."

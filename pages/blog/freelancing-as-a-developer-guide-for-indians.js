@@ -66,6 +66,7 @@ export default function FreelancingAsADeveloperGuideForIndians() {
     <>
       <Head>
         <title>Freelance Developer in India: Rates, Taxes, Contracts | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

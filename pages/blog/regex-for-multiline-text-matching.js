@@ -66,6 +66,7 @@ export default function RegexForMultilineTextMatching() {
     <>
       <Head>
         <title>Regex Multiline Matching in JS: m vs s Flags Explained | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See exactly how JavaScript's m and s regex flags change ^, $, and . behavior, with copy-paste examples for parsing multi-line logs and YAML frontmatter."

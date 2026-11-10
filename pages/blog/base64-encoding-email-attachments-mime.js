@@ -66,6 +66,7 @@ export default function Base64EmailMime() {
     <>
       <Head>
         <title>How Base64 Encodes Email Attachments (MIME Explained) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See the raw MIME structure behind an email attachment: why Base64 is required, how Content-Transfer-Encoding works, and why attachments end up 33% larger."

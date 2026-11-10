@@ -66,6 +66,7 @@ export default function SqlNullHandlingBestPractices() {
     <>
       <Head>
         <title>SQL NULL Handling Best Practices (COALESCE, IS NULL) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Why 'WHERE column = NULL' always returns zero rows, how three-valued logic works, and how to use COALESCE, IFNULL, and IS NOT DISTINCT FROM correctly."

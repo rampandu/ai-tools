@@ -65,6 +65,7 @@ export default function Top50UsefulRegexPatternsForDevelopers() {
     <>
       <Head>
         <title>50 Ready-to-Use Regex Patterns for Developers | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="50 copy-paste regex patterns for email, URL, phone, IP, password, and date validation — organized by category with real examples, not abstract syntax."

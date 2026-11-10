@@ -66,6 +66,7 @@ export default function HowToFormatLongSqlQueries() {
     <>
       <Head>
         <title>Format Long SQL Queries: 3-Step Refactor Example | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Turn a 150-line SQL nightmare into readable code: CTEs, one JOIN per line, comment headers, and a real 3-step before/after refactor of a messy query."

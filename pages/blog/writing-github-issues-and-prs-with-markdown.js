@@ -66,6 +66,7 @@ export default function WritingGithubIssuesAndPrsWithMarkdown() {
     <>
       <Head>
         <title>Write GitHub Issues &amp; PRs That Get Fixed Faster | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Write GitHub issues and PRs that get fixed faster: minimal repros in code blocks, task-list checklists, collapsible logs, and environment tables."

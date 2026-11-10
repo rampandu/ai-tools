@@ -66,6 +66,7 @@ export default function SqlHierarchicalDataRecursiveCte() {
     <>
       <Head>
         <title>SQL Recursive CTE for Org Charts and Category Trees | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Write a WITH RECURSIVE query that walks org charts and category trees of any depth, including the depth-counter trick that stops infinite loops on bad data."

@@ -66,6 +66,7 @@ export default function JsDocVsPythonDocstringsGuide() {
     <>
       <Head>
         <title>JSDoc vs Python Docstrings: 3 Styles Compared | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="JSDoc's @param/@returns tags vs Python's Google, NumPy, and reST docstring styles — worked examples for both plus rules for when detail is worth adding."

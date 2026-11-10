@@ -66,6 +66,7 @@ export default function SqlDateFunctionsCheatSheet() {
     <>
       <Head>
         <title>SQL Date Functions Cheat Sheet: MySQL vs PostgreSQL | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="NOW(), DATE_ADD, DATEDIFF, and DATE_FORMAT side-by-side in MySQL and PostgreSQL syntax — plus the index-friendly way to filter by date range in both."

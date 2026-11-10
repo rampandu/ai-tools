@@ -66,6 +66,7 @@ export default function CronVsMessageQueueWhenToUseWhich() {
     <>
       <Head>
         <title>Cron vs Message Queue: A Decision Checklist | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Decide between cron and a queue like SQS or RabbitMQ with a 4-point checklist, real examples for each, and the hybrid pattern of cron feeding a queue."

@@ -65,6 +65,7 @@ export default function HowToValidateJsonInPythonAndJavascript() {
     <>
       <Head>
         <title>Validate JSON in Python & JavaScript: Syntax + Schema | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Validate JSON two ways in Python and JavaScript: syntax checks with json.loads/JSON.parse, plus schema validation using jsonschema and Ajv, with code examples."

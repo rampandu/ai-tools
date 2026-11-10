@@ -66,6 +66,7 @@ export default function RegexVsStringMethodsWhenToUseWhich() {
     <>
       <Head>
         <title>Regex vs String Methods: A Quick Decision Guide | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

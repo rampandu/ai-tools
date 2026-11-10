@@ -66,6 +66,7 @@ export default function SqlCaseStatementExamples() {
     <>
       <Head>
         <title>SQL CASE Statement Examples: 4 Real-World Patterns | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Four copy-paste SQL CASE WHEN examples — age bands, order status labels, letter grades, and conditional SUM aggregation — plus CASE inside ORDER BY."

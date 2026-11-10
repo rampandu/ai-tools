@@ -66,6 +66,7 @@ export default function HowPasswordManagersWork() {
     <>
       <Head>
         <title>How Password Managers Work — Under the Hood | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Master password → KDF (PBKDF2/Argon2) → AES-256 encrypted vault. Zero-knowledge architecture, sync and breach implications, and why autofill blocks phishing."

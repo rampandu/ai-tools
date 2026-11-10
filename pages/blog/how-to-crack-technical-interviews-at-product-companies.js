@@ -66,6 +66,7 @@ export default function HowToCrackTechnicalInterviewsAtProductCompanies() {
     <>
       <Head>
         <title>How to Crack Technical Interviews at Product Companies | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

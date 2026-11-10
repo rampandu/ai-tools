@@ -66,6 +66,7 @@ export default function JsonMinifyVsPrettyPrintExplained() {
     <>
       <Head>
         <title>JSON Minify vs Pretty Print: Save ~28% with Examples | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="JSON minify vs pretty-print explained with real before/after code — when to use each, plus a worked example showing a 28% payload size reduction."

@@ -66,6 +66,7 @@ export default function RegexForCreditCardValidation() {
     <>
       <Head>
         <title>Regex for Credit Card Validation — Visa, Mastercard, Amex, RuPay | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Regex patterns to validate major credit card formats — Visa, Mastercard, Amex, RuPay, Discover — plus why you also need the Luhn algorithm for real validity."

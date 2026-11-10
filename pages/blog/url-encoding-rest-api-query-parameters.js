@@ -66,6 +66,7 @@ export default function UrlEncodingRestApi() {
     <>
       <Head>
         <title>URL-Encode REST API Query Parameters (JS Examples) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

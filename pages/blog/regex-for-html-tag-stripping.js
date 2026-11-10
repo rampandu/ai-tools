@@ -66,6 +66,7 @@ export default function RegexForHtmlTagStripping() {
     <>
       <Head>
         <title>Regex for HTML Tag Stripping — and Its Security Risks | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How to strip HTML tags with regex for plain-text previews, and why a proper HTML parser is required instead for untrusted, security-sensitive input."

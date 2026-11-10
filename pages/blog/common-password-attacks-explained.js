@@ -66,6 +66,7 @@ export default function CommonPasswordAttacksExplained() {
     <>
       <Head>
         <title>7 Common Password Attacks Explained (and How to Stop Them) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Brute force, credential stuffing, phishing, rainbow tables, and 3 more password attacks explained — how each works and the exact defence that stops it."

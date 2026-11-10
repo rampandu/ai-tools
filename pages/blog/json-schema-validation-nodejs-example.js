@@ -66,6 +66,7 @@ export default function JsonSchemaValidationNodejsExample() {
     <>
       <Head>
         <title>JSON Schema Validation in Node.js with Ajv: Full Example | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A complete, working Ajv walkthrough: define a schema, compile the validator, read structured error messages, and wire it up as Express middleware."

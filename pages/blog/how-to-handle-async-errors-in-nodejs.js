@@ -66,6 +66,7 @@ export default function HowToHandleAsyncErrorsInNodejs() {
     <>
       <Head>
         <title>Node.js Async Error Handling: Avoid Unhandled Rejections | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Stop silent crashes from unhandled promise rejections in Node.js — working try/catch patterns, an Express async route wrapper, and Promise.allSettled examples."

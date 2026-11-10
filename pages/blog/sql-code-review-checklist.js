@@ -66,6 +66,7 @@ export default function SqlCodeReviewChecklist() {
     <>
       <Head>
         <title>SQL Code Review Checklist: 4 Things to Check First | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A repeatable 4-step SQL review order — correctness, performance, safety, style — with real before/after query fixes for JOINs, indexes, and SQL injection."

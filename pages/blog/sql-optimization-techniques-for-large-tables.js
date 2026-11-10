@@ -64,6 +64,7 @@ export default function SqlOptimizationTechniquesForLargeTables() {
     <>
       <Head>
         <title>7 SQL Optimization Techniques for Large Tables | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Speed up slow queries on multi-million row tables: sargable WHERE clauses, JOIN order, the N+1 query problem, partitioning trade-offs, and reading EXPLAIN output."

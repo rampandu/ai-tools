@@ -66,6 +66,7 @@ export default function AiPoweredCodeDocumentationGeneratorGuide() {
     <>
       <Head>
         <title>AI Code Documentation Generators: Before and After | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See a real before/after example of AI-generated Python docstrings, how documentation generators actually work, and where they still need a human review pass."

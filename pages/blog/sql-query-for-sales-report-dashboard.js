@@ -65,6 +65,7 @@ export default function SqlQueryForSalesReportDashboard() {
     <>
       <Head>
         <title>SQL Queries for Sales Dashboards: Revenue & Growth | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

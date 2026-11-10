@@ -66,6 +66,7 @@ export default function RegexForUrlValidationJavascript() {
     <>
       <Head>
         <title>JavaScript URL Validation: Regex vs the URL Constructor | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A working regex for validating URLs in JavaScript, plus why the built-in URL constructor catches edge cases regex misses — with code for both."

@@ -65,6 +65,7 @@ export default function JsonFormatterForIndianGstApis() {
     <>
       <Head>
         <title>JSON Formatter for Indian GST APIs: GSTIN & IRN Fields | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

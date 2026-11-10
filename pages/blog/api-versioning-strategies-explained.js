@@ -66,6 +66,7 @@ export default function ApiVersioningStrategiesExplained() {
     <>
       <Head>
         <title>API Versioning: URL vs Header vs Query Param Compared | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="URL path, header, and query param API versioning compared side by side, with code examples and a practical recommendation for public-facing APIs."

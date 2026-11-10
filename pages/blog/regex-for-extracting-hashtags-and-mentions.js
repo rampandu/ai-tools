@@ -66,6 +66,7 @@ export default function RegexForExtractingHashtagsAndMentions() {
     <>
       <Head>
         <title>Regex for Extracting Hashtags and Mentions (JS Examples) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

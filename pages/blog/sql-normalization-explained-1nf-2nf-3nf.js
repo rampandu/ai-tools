@@ -66,6 +66,7 @@ export default function SqlNormalizationExplained1nf2nf3nf() {
     <>
       <Head>
         <title>SQL Normalization Explained: 1NF, 2NF, 3NF in One Example | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See one messy table split step by step into 1NF, 2NF, and 3NF, with the exact SQL needed to remove redundancy and prevent update, insert, and delete anomalies."

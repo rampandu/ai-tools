@@ -66,6 +66,7 @@ export default function CronExpressionForMonthlyAndYearlySchedules() {
     <>
       <Head>
         <title>Cron for Monthly & Yearly Jobs (Last-Day Trick) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Cron patterns for monthly, quarterly, and yearly schedules, plus the workaround for cron's missing last-day-of-month field — no native L flag needed."

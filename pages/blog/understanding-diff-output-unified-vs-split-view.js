@@ -66,6 +66,7 @@ export default function UnderstandingDiffOutputUnifiedVsSplit() {
     <>
       <Head>
         <title>Unified vs Split Diff View — How to Read Any Diff | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Learn to read unified diff hunks (@@ headers, +/- lines) and split view side by side, when to use each in code review, and how to silence whitespace-only diff noise."

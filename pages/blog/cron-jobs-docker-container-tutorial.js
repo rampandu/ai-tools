@@ -66,6 +66,7 @@ export default function CronJobsDockerContainerTutorial() {
     <>
       <Head>
         <title>Cron Jobs in Docker: 3 Approaches Compared | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Three ways to run cron in Docker: an in-container daemon, host cron with docker exec, or a sidecar container — with working Dockerfile and CronJob examples."

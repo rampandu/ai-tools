@@ -66,6 +66,7 @@ export default function UrlVsUriEncoding() {
     <>
       <Head>
         <title>URL vs URI Encoding: What's the Real Difference? | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="URL encoding and URI encoding both mean percent-encoding, but the terms come from different specs — learn the nuance and which term to use where."

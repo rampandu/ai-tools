@@ -66,6 +66,7 @@ export default function SqlQueryForEmployeeAttendanceReport() {
     <>
       <Head>
         <title>SQL Queries for Employee Attendance & Late Arrivals | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Build an employee attendance report: daily status, monthly attendance percentage, late check-in detection, and absentee counts in MySQL and PostgreSQL."

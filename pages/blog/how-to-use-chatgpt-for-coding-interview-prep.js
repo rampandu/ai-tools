@@ -66,6 +66,7 @@ export default function HowToUseChatgptForCodingInterviewPrep() {
     <>
       <Head>
         <title>ChatGPT for Coding Interview Prep: 4 Smart Strategies | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="4 practical ways to use ChatGPT for coding interview prep — generate targeted problems, mock interviews, and the one mistake that sabotages candidates."

@@ -66,6 +66,7 @@ export default function WhyConsistentSqlStyleMatters() {
     <>
       <Head>
         <title>Why Consistent SQL Style Speeds Up Code Review | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A shared SQL style speeds up code reviews, cuts diff noise, and exposes hidden bugs. Here's how to adopt one on your team with sqlfluff, CI, and a formatter."

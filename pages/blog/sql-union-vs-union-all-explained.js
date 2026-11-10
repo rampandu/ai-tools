@@ -66,6 +66,7 @@ export default function SqlUnionVsUnionAllExplained() {
     <>
       <Head>
         <title>SQL UNION vs UNION ALL: Differences & Performance | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See why UNION ALL is faster than UNION, when UNION's deduplication step can silently drop real rows, and a quick decision guide for picking the right one."

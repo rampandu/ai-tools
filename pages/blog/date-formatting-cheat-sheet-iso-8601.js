@@ -66,6 +66,7 @@ export default function DateFormattingCheatSheetIso8601() {
     <>
       <Head>
         <title>ISO 8601 & RFC 3339 Date Formatting Cheat Sheet | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="ISO 8601 anatomy, RFC 3339 differences, why ISO dates sort correctly as strings, and a format-token comparison across JavaScript, Python, and SQL."

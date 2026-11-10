@@ -66,6 +66,7 @@ export default function RegexForHexadecimalColorCodeValidation() {
     <>
       <Head>
         <title>Regex for Hexadecimal Color Code Validation (3, 6, 8-Digit) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Regex patterns to validate 3-digit and 6-digit hex color codes, with and without #, plus the 8-digit alpha-channel format, with CSS and JS examples."

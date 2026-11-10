@@ -66,6 +66,7 @@ export default function RegexForSplittingCsvStrings() {
     <>
       <Head>
         <title>Split CSV Strings with Regex (Quoted Commas Fixed) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Why str.split(',') breaks on quoted CSV fields, the lookahead regex that fixes it, and when to reach for a real parser like PapaParse or csv-parse."

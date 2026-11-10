@@ -82,6 +82,7 @@ export default function CronJobsPythonScheduleLibraryGuide() {
     <>
       <Head>
         <title>Python Cron Jobs: schedule vs APScheduler | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Python schedule library vs APScheduler: which to use for cron-style jobs, interval tasks, and persistence. Working code examples for both, plus system cron."

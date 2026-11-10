@@ -66,6 +66,7 @@ export default function MarkdownForTechnicalDocumentationTips() {
     <>
       <Head>
         <title>Markdown for Technical Docs — 7 Tips for Readable Docs | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Practical Markdown tips for technical docs: heading hierarchy, code block language tags, relative links, alt text, tables vs lists, and docs-as-code CI."

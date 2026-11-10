@@ -66,6 +66,7 @@ export default function SqlSubqueriesVsJoinsExplained() {
     <>
       <Head>
         <title>SQL Subqueries vs JOINs: Which Should You Use? | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Compare the same query written as a JOIN and as a subquery, see why correlated subqueries can be a performance trap, and when EXISTS beats IN for filtering."

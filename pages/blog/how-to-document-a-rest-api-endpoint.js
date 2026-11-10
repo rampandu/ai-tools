@@ -66,6 +66,7 @@ export default function HowToDocumentARestApiEndpoint() {
     <>
       <Head>
         <title>REST API Endpoint Documentation: 7-Point Checklist | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See exactly what to include when documenting a REST endpoint — a 7-item checklist, a full worked POST /api/orders example, and when Markdown beats OpenAPI."

@@ -66,6 +66,7 @@ export default function SqlTransactionsAcidPropertiesExplained() {
     <>
       <Head>
         <title>SQL Transactions & ACID Properties (Bank Example) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Learn BEGIN, COMMIT, and ROLLBACK plus the four ACID properties using a real bank-transfer example that shows exactly what breaks without transactions."

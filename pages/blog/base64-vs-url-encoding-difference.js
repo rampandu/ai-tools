@@ -66,6 +66,7 @@ export default function Base64VsUrlEncoding() {
     <>
       <Head>
         <title>Base64 vs URL Encoding: Key Differences (With Code) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Base64 and URL encoding solve different problems — compare output size, character sets, and JavaScript code, then see exactly when to use each one."

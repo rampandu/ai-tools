@@ -66,6 +66,7 @@ export default function CronJobMonitoringAndAlertingGuide() {
     <>
       <Head>
         <title>Cron Job Monitoring: Dead Man's Switch Guide | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Monitor cron jobs with exit-code alerts, the dead man's switch healthcheck-ping pattern, and centralized logging that catches jobs that silently stop running."

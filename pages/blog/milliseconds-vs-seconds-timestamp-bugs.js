@@ -66,6 +66,7 @@ export default function MillisecondsVsSecondsTimestampBugs() {
     <>
       <Head>
         <title>Milliseconds vs Seconds: Fix the 1000x Bug | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Dates showing 1970 or year 56789? Spot the milliseconds vs seconds bug, fix JWT exp pitfalls, dodge the year-2038 problem, and copy a normalization function."

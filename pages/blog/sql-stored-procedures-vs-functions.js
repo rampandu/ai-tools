@@ -66,6 +66,7 @@ export default function SqlStoredProceduresVsFunctions() {
     <>
       <Head>
         <title>SQL Stored Procedures vs Functions: Key Differences | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="See exactly when to use a stored procedure vs a function in SQL, with runnable MySQL CREATE PROCEDURE and CREATE FUNCTION examples plus PostgreSQL differences."

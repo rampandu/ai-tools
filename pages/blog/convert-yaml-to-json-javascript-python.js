@@ -66,6 +66,7 @@ export default function ConvertYamlToJsonJavascriptPython() {
     <>
       <Head>
         <title>Convert YAML to JSON in JavaScript & Python (Safely) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Convert YAML to JSON using js-yaml and PyYAML safe_load, dodge the yaml.load security trap, and see what round-tripping silently loses: comments and anchors."

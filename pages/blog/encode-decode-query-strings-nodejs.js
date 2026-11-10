@@ -66,6 +66,7 @@ export default function EncodeDecodeQueryStringsNodejs() {
     <>
       <Head>
         <title>Node.js Query Strings: Encode & Decode the Right Way | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Stop hand-rolling URL encoding. Build and parse Node.js query strings correctly with URLSearchParams — arrays, special characters, and pitfalls."

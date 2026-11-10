@@ -66,6 +66,7 @@ export default function ConvertCurlCommandsToFetchAxiosPython() {
     <>
       <Head>
         <title>Convert cURL to fetch, axios & Python Requests (Example) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Turn any curl command into fetch, axios, or Python requests code — flag mappings plus one full POST request converted to all three, side by side."

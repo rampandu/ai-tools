@@ -66,6 +66,7 @@ export default function NestedJsonFlatteningTechniques() {
     <>
       <Head>
         <title>Flatten Nested JSON in JavaScript: A Recursive Function | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Copy a recursive JavaScript function that flattens nested JSON into dot-notation keys (customer.address.city) — plus how to handle arrays and 4 common pitfalls."

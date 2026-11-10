@@ -66,6 +66,7 @@ export default function JsonToCsvConversionGuide() {
     <>
       <Head>
         <title>JSON to CSV in JavaScript: Working Code + 4 Libraries | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Convert JSON arrays to CSV with a copy-paste JavaScript function that handles RFC 4180 escaping, plus 4 popular libraries and 5 pitfalls to avoid."

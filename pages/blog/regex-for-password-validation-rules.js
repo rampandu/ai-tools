@@ -65,6 +65,7 @@ export default function RegexForPasswordValidationRules() {
     <>
       <Head>
         <title>Password Validation Regex: 4 Rules, One Line (JS & Python) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Enforce password strength — length, case, digits, symbols — with a single regex lookahead pattern. Includes ready-to-use JavaScript and Python code."

@@ -66,6 +66,7 @@ export default function JsonSerializationPythonGuide() {
     <>
       <Head>
         <title>Python JSON Serialization: Fix the Not-Serializable Error | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Stuck on Python's not-JSON-serializable TypeError? Two working fixes — a default function and a custom JSONEncoder — plus datetime and Decimal examples."

@@ -66,6 +66,7 @@ export default function RegexForUsernameValidationRules() {
     <>
       <Head>
         <title>Username Validation Regex: Length, Characters & Edge Cases | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Copy-paste regex for username rules — 3-20 characters, no leading digits, no double dots — plus GitHub- and Instagram-style social patterns."

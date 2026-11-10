@@ -66,6 +66,7 @@ export default function VerifyFileIntegrityWithChecksums() {
     <>
       <Head>
         <title>Verify File Integrity with SHA-256 Checksums | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Verify downloads with sha256sum, certutil, and Get-FileHash on Linux, macOS, and Windows — spot corrupted or tampered files, and automate checks in CI."

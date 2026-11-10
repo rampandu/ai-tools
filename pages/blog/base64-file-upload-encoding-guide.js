@@ -66,6 +66,7 @@ export default function Base64FileUploadGuide() {
     <>
       <Head>
         <title>Base64 File Uploads: JSON APIs vs multipart/form-data | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Working code for Base64-encoding a file upload into a JSON API, the 33% size overhead it adds, and when multipart/form-data is the faster choice instead."

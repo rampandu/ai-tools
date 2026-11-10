@@ -66,6 +66,7 @@ export default function Base64LimitationsAlternatives() {
     <>
       <Head>
         <title>Base64 Encoding Limitations: When to Use Base85 Instead | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Base64's real costs: 33% size overhead, CPU time, and worse gzip compression, plus when Base85, multipart/form-data, or raw binary are the better choice."

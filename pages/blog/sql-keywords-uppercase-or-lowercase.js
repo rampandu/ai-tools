@@ -66,6 +66,7 @@ export default function SqlKeywordsUppercaseOrLowercase() {
     <>
       <Head>
         <title>SQL Keywords: Uppercase or Lowercase? Here&apos;s the Answer | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="SELECT or select? The real history behind SQL keyword casing, arguments for each style, what GitLab and Celko's style guides recommend, and why consistency wins."

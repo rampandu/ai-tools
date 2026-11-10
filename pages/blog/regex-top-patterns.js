@@ -70,6 +70,7 @@ export default function TopRegexPatterns() {
     <>
       <Head>
         <title>10 Copy-Paste Regex Patterns Every Developer Needs | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="10 ready-to-use regex patterns for emails, URLs, phone numbers, hex colors, and more — each with a working example you can paste straight into your code."

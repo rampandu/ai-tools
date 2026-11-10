@@ -66,6 +66,7 @@ export default function HowAiCodeGeneratorsWorkExplained() {
     <>
       <Head>
         <title>How AI Code Generators Work (And Why They Hallucinate) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How tools like Copilot turn a prompt into code: training data, tokenization, and token-by-token generation — plus why they invent APIs that do not exist."

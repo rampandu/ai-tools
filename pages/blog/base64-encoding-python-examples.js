@@ -66,6 +66,7 @@ export default function Base64EncodingPython() {
     <>
       <Head>
         <title>Base64 Encoding in Python: b64encode, Errors and Fixes | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Working Python code for base64.b64encode and b64decode on strings and files, plus fixes for the Incorrect padding and bytes-vs-str errors everyone hits."

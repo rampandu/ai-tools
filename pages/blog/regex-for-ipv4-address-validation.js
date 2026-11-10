@@ -66,6 +66,7 @@ export default function RegexForIpv4AddressValidation() {
     <>
       <Head>
         <title>Regex for IPv4 Address Validation (Correct Octet Range) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
 
         <meta
           name="description"

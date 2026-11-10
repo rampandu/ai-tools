@@ -66,6 +66,7 @@ export default function WorkingWithLargeJsonFilesNodejs() {
     <>
       <Head>
         <title>Large JSON Files in Node.js: Avoid Heap Out of Memory | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How to process large JSON files in Node.js without crashing with 'heap out of memory' — streaming parsers, NDJSON, and working code examples."

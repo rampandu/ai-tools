@@ -66,6 +66,7 @@ export default function ApiRateLimitingStrategiesExplained() {
     <>
       <Head>
         <title>API Rate Limiting: Fixed Window vs Sliding vs Token Bucket | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Fixed window, sliding window, and token bucket rate limiting explained with working Express.js middleware code you can drop straight into your API."

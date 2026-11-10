@@ -66,6 +66,7 @@ export default function CompareConfigFilesAcrossEnvironments() {
     <>
       <Head>
         <title>Find Config Drift Across Environments: A 3-Step Guide | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Find configuration drift between dev, staging, and prod in 3 steps — redact secrets, sort keys before diffing, and automate detection in CI — plus a worked example."

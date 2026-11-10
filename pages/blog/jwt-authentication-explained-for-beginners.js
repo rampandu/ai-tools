@@ -66,6 +66,7 @@ export default function JwtAuthExplained() {
     <>
       <Head>
         <title>JWT Authentication Explained: How It Works + 4 Mistakes | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A beginner's walkthrough of JWT auth: the header.payload.signature format, why Base64url is used, the full login flow, and 4 mistakes that break token security."

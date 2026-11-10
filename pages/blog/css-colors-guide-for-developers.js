@@ -66,6 +66,7 @@ export default function CssColorsGuideForDevelopers() {
     <>
       <Head>
         <title>CSS Colors: Every Syntax Plus Dark Mode Tokens | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="Every CSS color syntax — hex, rgb, hsl, currentColor — plus custom-property palettes, opacity vs alpha explained, gradient tips, and a dark-mode token setup."

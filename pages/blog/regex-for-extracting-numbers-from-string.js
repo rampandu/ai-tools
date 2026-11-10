@@ -66,6 +66,7 @@ export default function RegexForExtractingNumbersFromString() {
     <>
       <Head>
         <title>Regex for Extracting Numbers from a String (JS Examples) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="How to extract integers, decimals, and negative numbers from mixed text using JavaScript regex, with working code for common real-world formats."

@@ -66,6 +66,7 @@ export default function RegexForIndianVehicleNumberValidation() {
     <>
       <Head>
         <title>Regex for Indian Vehicle Number Validation (RTO + BH Series) | Dev Brains AI</title>
+        <meta name="robots" content="noindex, follow" />
         <meta
           name="description"
           content="A complete regex pattern for validating Indian vehicle registration numbers (state code, RTO code, series, number), including the BH series format."
