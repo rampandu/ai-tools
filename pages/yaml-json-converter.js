@@ -2,7 +2,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import { useState } from 'react';
-import yaml from 'js-yaml';
+import * as yaml from 'js-yaml';
 
 const DEFAULT_YAML = `version: "3.8"
 services:
